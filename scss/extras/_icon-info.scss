@@ -1,0 +1,98 @@
+//
+// Icon info
+//
+
+.icon-info-1 {
+  display: table;
+
+  .icon-element {
+    display: table-cell;
+    width: $icon-info-1-icon-w;
+    line-height: 1.2;
+    color: $icon-info-default-color-primary;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .icon-info-text {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  @include icon-info-a;
+}
+
+.icon-info-2 {
+  display: table;
+
+  .icon-element {
+    display: table-cell;
+    width: $icon-info-2-icon-w;
+    color: $icon-info-2-icon-color;
+    vertical-align: top;
+  }
+
+  .icon-element-inner {
+    width: $icon-info-2-icon-w;
+    height: $icon-info-2-icon-w;
+    background-color: $icon-info-default-color-secondary;
+    border-radius: $circle-border-radius;
+    @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+  }
+
+  .icon-info-text {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  &:hover {
+    .icon-element-inner {
+      box-shadow: $icon-info-2-icon-shadow;
+    }
+  }
+
+  @include icon-info-a;
+}
+
+.icon-info-3 {
+
+  .icon-title {
+
+    i {
+      color: $icon-info-default-color-primary;
+    }
+  }
+
+  @include icon-info-a;
+}
+
+.icon-info-4 {
+
+  .icon-element {
+    color: $icon-info-default-color-primary;
+  }
+
+  @include icon-info-a;
+}
+
+.icon-info-5 {
+
+  .icon-element {
+    width: $icon-info-5-icon-w;
+    height: $icon-info-5-icon-w;
+    margin-right: auto;
+    margin-left: auto;
+    color: $icon-info-5-icon-color;
+    background-color: $icon-info-default-color-secondary;
+    border-radius: $circle-border-radius;
+    @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+  }
+
+  &:hover {
+    .icon-element {
+      box-shadow: $icon-info-5-icon-shadow;
+    }
+  }
+
+  @include icon-info-a;
+}

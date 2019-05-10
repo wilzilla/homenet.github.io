@@ -1,0 +1,50 @@
+.tooltip-inner {
+  box-shadow: $tooltip-box-shadow;
+
+  @if $enable-rounded-theming {
+    border-radius: $tooltip-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}
+
+// Tooltip light
+.tooltip-light {
+
+  .tooltip-inner {
+    color: $tooltip-color-dark;
+    background-color: $tooltip-bg-light;
+  }
+
+  &.bs-tooltip-top {
+    .arrow {
+      &::before {
+        border-top-color: $tooltip-arrow-color-light;
+      }
+    }
+  }
+
+  &.bs-tooltip-right {
+    .arrow {
+      &::before {
+        border-right-color: $tooltip-arrow-color-light;
+      }
+    }
+  }
+
+  &.bs-tooltip-bottom {
+    .arrow {
+      &::before {
+        border-bottom-color: $tooltip-arrow-color-light;
+      }
+    }
+  }
+
+  &.bs-tooltip-left {
+    .arrow {
+      &::before {
+        border-left-color: $tooltip-arrow-color-light;
+      }
+    }
+  }
+}

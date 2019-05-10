@@ -1,0 +1,54 @@
+// Actual modal
+.modal-content {
+  overflow: hidden;
+  border: none;
+  box-shadow: $modal-content-box-shadow;
+
+  @if $enable-rounded-theming {
+    border-radius: $modal-content-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  .close {
+    position: absolute;
+    top: $modal-close-spacer;
+    right: $modal-close-spacer;
+    padding: $modal-header-footer-py;
+    margin: 0;
+  }
+}
+
+// Modal header
+.modal-header {
+  padding: $modal-header-footer-py $modal-inner-padding;
+  background-color: $modal-header-bg-color;
+  border-bottom: none;
+
+  @if $enable-rounded-theming {
+    border-top-left-radius: $modal-content-border-radius;
+    border-top-right-radius: $modal-content-border-radius;
+  } @else {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+// Modal background image
+.modal-bg-image {
+  background: $modal-background-image no-repeat center;
+  background-size: cover;
+}
+
+// Footer
+.modal-footer {
+  padding: $modal-header-footer-py $modal-inner-padding;
+  border-top: none;
+}
+
+// Custom width signup modal dialog
+@include media-breakpoint-up(sm) {
+  .modal-dialog-signup {
+    max-width: $modal-dialog-signup-width;
+  }
+}

@@ -1,0 +1,660 @@
+//
+// Transition
+//
+
+@mixin transition-prefix($property, $duration, $timing) {
+  transition: #{$property} #{$duration} #{$timing};
+}
+
+//
+// Transform
+//
+
+@mixin transform-prefix($name, $value) {
+  transform: #{$name}(#{$value});
+}
+
+//
+// Gradient
+//
+
+@mixin gradient($color-top, $color-bottom, $location-top, $location-bottom) {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, $color-top $location-top, $color-bottom $location-bottom);
+}
+
+//
+// Multiple box shadows
+//
+
+@mixin multiple-box-shadows {
+  box-shadow: $shadow-size-front rgba($black, $shadow-opacity-front), $shadow-size-mid rgba($black, $shadow-opacity-mid), $shadow-size-back rgba($black, $shadow-opacity-back);
+}
+
+//
+// Tables
+//
+
+@mixin table-row-variant($state, $background) {
+  .table-#{$state} {
+    &,
+    > th,
+    > td {
+      color: $white;
+      background-color: $background;
+    }
+  }
+
+  .table-hover {
+    $hover-background: darken($background, 4%);
+
+    .table-#{$state} {
+      @include hover {
+
+        &,
+        > td,
+        > th {
+          background-color: $hover-background;
+        }
+      }
+    }
+  }
+}
+
+//
+// Buttons
+//
+
+@mixin button-shadow-variant($color, $btn-color, $size-front, $size-mid, $size-back, $opacity-front, $opacity-mid, $opacity-back, $shadow-color-focus) {
+  color: $btn-color;
+  background-color: $color;
+
+  @if $enable-shadows-theming {
+    box-shadow: "#{$size-front} rgba($color, $opacity-front)", "#{$size-mid} rgba($black, $opacity-mid)", "#{$size-back} rgba($black, $opacity-back)";
+  } @else {
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-color;
+    background-color: lighten($color, 7.5%);
+    border-color: lighten($color, 7.5%);
+
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-focus rgba($shadow-color-focus, $shadow-opacity-focus);
+    } @else {
+      box-shadow: none;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $btn-color;
+    background-color: $color;
+    border-color: $color;
+
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-focus rgba($shadow-color-focus, $shadow-opacity-focus);
+    } @else {
+      box-shadow: none;
+    }
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+
+    &,
+    &:focus {
+      color: $btn-color;
+      background-color: $color;
+      border-color: transparent;
+
+      @if $enable-shadows-theming {
+        box-shadow: $shadow-size-focus rgba($shadow-color-focus, $shadow-opacity-focus);
+      } @else {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@mixin button-outline-variant($color, $color-hover, $shadow-color-focus, $active-background: $color, $active-border: $color) {
+  color: $color;
+  background-color: transparent;
+  background-image: none;
+  border-color: $color;
+  box-shadow: none;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $color-hover;
+    background-color: $active-background;
+    border-color: $active-border;
+
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-focus rgba($shadow-color-focus, $shadow-opacity-focus);
+    } @else {
+      box-shadow: none;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+    border-color: $color;
+    box-shadow: none;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+
+    &,
+    &:focus {
+      color: $color-hover;
+      background-color: $active-background;
+      border-color: $active-border;
+
+      @if $enable-shadows-theming {
+        box-shadow: $shadow-size-focus rgba($shadow-color-focus, $shadow-opacity-focus);
+      } @else {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@mixin button-gray-shadow {
+  %btn-gray-shadow {
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-front rgba($black, $shadow-opacity-front), $shadow-size-mid rgba($black, $shadow-opacity-mid), $shadow-size-back rgba($black, $shadow-opacity-back);
+    } @else {
+      box-shadow: none;
+    }
+  }
+  %btn-light-gray-shadow {
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-front rgba($black, ( $shadow-opacity-front - .1 )), $shadow-size-mid rgba($black, $shadow-opacity-mid), $shadow-size-back rgba($black, ( $shadow-opacity-back - .07 ));
+    } @else {
+      box-shadow: none;
+    }
+  }
+  %btn-gray-shadow-hover {
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-focus rgba($black, ( $shadow-opacity-focus - .1 ));
+    } @else {
+      box-shadow: none;
+    }
+  }
+  %btn-light-gray-shadow-hover {
+    @if $enable-shadows-theming {
+      box-shadow: $shadow-size-focus-light rgba($black, ( $shadow-opacity-focus - .2 ));
+    } @else {
+      box-shadow: none;
+    }
+  }
+  @each $color, $value in $theme-colors {
+    .btn-#{$color} {
+      &.btn-gray-shadow {
+
+        @if ($color == "light") {
+          @extend %btn-light-gray-shadow;
+        } @else {
+          @extend %btn-gray-shadow;
+        }
+
+        &:hover,
+        &:focus,
+        &.focus,
+        &.disabled,
+        &:disabled {
+
+          @if ($color == "light") {
+            @extend %btn-light-gray-shadow-hover;
+          } @else {
+            @extend %btn-gray-shadow-hover;
+          }
+        }
+
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active,
+        .show > &.dropdown-toggle {
+
+          &:focus {
+
+            @if ($color == "light") {
+              @extend %btn-light-gray-shadow-hover;
+            } @else {
+              @extend %btn-gray-shadow-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+  @each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+      &.btn-gray-shadow {
+        &:hover,
+        &:focus,
+        &.focus {
+
+          @if ($color == "light") {
+            @extend %btn-light-gray-shadow-hover;
+          } @else {
+            @extend %btn-gray-shadow-hover;
+          }
+        }
+
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active,
+        .show > &.dropdown-toggle {
+
+          &,
+          &:focus {
+
+            @if ($color == "light") {
+              @extend %btn-light-gray-shadow-hover;
+            } @else {
+              @extend %btn-gray-shadow-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+  @each $color, $value in $theme-colors {
+    .btn-group-#{$color} {
+      &.btn-gray-shadow {
+
+        @if ($color == "light") {
+          @extend %btn-light-gray-shadow;
+        } @else {
+          @extend %btn-gray-shadow;
+        }
+      }
+    }
+  }
+}
+
+@mixin btn-link {
+
+  &,
+  &:hover,
+  &:focus,
+  &.focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $main-color;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+
+  @if $enable-rounded-button {
+    border-radius: $border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}
+
+@mixin button-group-variant($color, $size-front, $size-mid, $size-back, $opacity-front, $opacity-mid, $opacity-back) {
+  @if $enable-shadows-theming {
+    box-shadow: "#{$size-front} rgba($color, $opacity-front)", "#{$size-mid} rgba($black, $opacity-mid)", "#{$size-back} rgba($black, $opacity-back)";
+  } @else {
+    box-shadow: none;
+  }
+}
+
+@mixin btn-shadow-none {
+  box-shadow: none;
+}
+
+//
+// Badges
+//
+
+@mixin badge-variant($color, $bg) {
+  color: $color;
+  background-color: $bg;
+
+  &[href] {
+    @include hover-focus {
+      color: $color;
+      text-decoration: none;
+      background-color: lighten($bg, 7.5%);
+    }
+  }
+}
+
+//
+// Caret
+//
+
+@mixin caret-down {
+  content: "\f0d7";
+}
+
+@mixin caret-up {
+  content: "\f0d8";
+}
+
+@mixin caret-right {
+  content: "\f0da";
+}
+
+@mixin caret-left {
+  content: "\f0d9";
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+
+    &::after {
+      width: auto;
+      height: auto;
+      /* stylelint-disable */
+      font-family: "Font Awesome 5 Free";
+      /* stylelint-enable */
+      font-size: $caret-size;
+      line-height: 1;
+      vertical-align: initial;
+      border: none;
+
+      @if $direction == down {
+        @include caret-down;
+      } @else if $direction == up {
+        @include caret-up;
+      } @else if $direction == right {
+        @include caret-right;
+      }
+    }
+
+    @if $direction == left {
+      &::before {
+        width: auto;
+        height: auto;
+        /* stylelint-disable */
+        font-family: "Font Awesome 5 Free";
+        /* stylelint-enable */
+        font-size: $caret-size;
+        line-height: 1;
+        vertical-align: initial;
+        border: none;
+        @include caret-left;
+      }
+    }
+  }
+}
+
+//
+// Form
+//
+
+@mixin form-control-focus-light-1() {
+  &:focus {
+    border-color: $input-focus-border-color;
+    box-shadow: $input-focus-box-shadow;
+  }
+}
+
+@mixin form-control-focus-light-2() {
+  &:focus {
+    border-color: $white;
+    box-shadow: $input-focus-box-shadow-light;
+  }
+}
+
+@mixin form-validation-state($state, $color) {
+
+  .#{$state}-tooltip {
+    left: 0;
+    font-size: 80%;
+  }
+
+  .form-control,
+  .custom-select {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      border-color: $color;
+
+      &:focus {
+        border-color: $color;
+        box-shadow: $input-focus-box-shadow;
+
+        ~ .input-focus-bg {
+          /* stylelint-disable-next-line declaration-no-important */
+          border-color: $color !important;
+        }
+      }
+
+      ~ .input-focus-bg {
+        border-color: $color;
+      }
+    }
+  }
+
+  .custom-select {
+
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+
+      @if $enable-validation-icons {
+        $form-feedback-icon: if($state == "valid", $form-feedback-icon-valid, $form-feedback-icon-invalid);
+        background: $custom-select-indicator no-repeat right ( $custom-select-padding-x - .1875 ) center / $custom-select-bg-size, $form-feedback-icon no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+      }
+    }
+
+    .was-validated.form-light-1 &:#{$state},
+    &.is-#{$state} {
+
+      @if $enable-validation-icons {
+        $form-feedback-icon: if($state == "valid", $form-feedback-icon-valid, $form-feedback-icon-invalid);
+        background: $custom-select-indicator-gray no-repeat right ( $custom-select-padding-x - .1875 ) center / $custom-select-bg-size, $form-feedback-icon no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+      }
+    }
+
+    .was-validated.form-light-2 &:#{$state},
+    &.is-#{$state} {
+
+      @if $enable-validation-icons {
+        $form-feedback-icon: if($state == "valid", $form-feedback-icon-valid, $form-feedback-icon-invalid);
+        background: $custom-select-indicator-white no-repeat right ( $custom-select-padding-x - .1875 ) center / $custom-select-bg-size, $form-feedback-icon no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+      }
+    }
+  }
+
+  .custom-control-input {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+
+      &:focus {
+        ~ .custom-control-label::before {
+          box-shadow: $custom-control-indicator-focus-box-shadow;
+        }
+      }
+    }
+  }
+
+  .custom-file-input {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+
+      &:focus {
+        ~ .custom-file-label {
+          box-shadow: $input-focus-box-shadow;
+        }
+      }
+    }
+  }
+
+  .form-light-2.was-validated {
+    .form-control,
+    .custom-select {
+      &:focus {
+        box-shadow: $input-focus-box-shadow-light;
+      }
+    }
+
+    .custom-file-input {
+      &:focus {
+        ~ .custom-file-label {
+          box-shadow: $input-focus-box-shadow-light;
+        }
+      }
+    }
+  }
+}
+
+//
+// Input groups
+//
+
+@mixin input-group-focus() {
+  border-color: $input-focus-border-color;
+
+  @if $enable-shadows {
+    box-shadow: $input-box-shadow, $input-focus-box-shadow;
+  } @else {
+    box-shadow: $input-focus-box-shadow;
+  }
+}
+
+@mixin input-group-focus-light-1() {
+  border-color: $input-focus-border-color;
+  box-shadow: $input-focus-box-shadow;
+}
+
+@mixin input-group-focus-light-2() {
+  border-color: $white;
+  box-shadow: $input-focus-box-shadow-light;
+}
+
+//
+// List groups
+//
+
+@mixin list-group-item-variant($state, $background, $color, $active-color) {
+  .list-group-item-#{$state} {
+    /* stylelint-disable */
+    color: $color !important;
+    background-color: $background !important;
+
+    &::before {
+      background-color: $active-color !important;
+    }
+    /* stylelint-enable */
+  }
+}
+
+//
+// Navs
+//
+
+@mixin nav-pills-shadow($color, $size-front, $size-mid, $size-back, $opacity-front, $opacity-mid, $opacity-back) {
+  @if $enable-shadows-theming {
+    box-shadow: "#{$size-front} rgba($color, $opacity-front)", "#{$size-mid} rgba($black, $opacity-mid)", "#{$size-back} rgba($black, $opacity-back)";
+  } @else {
+    box-shadow: none;
+  }
+}
+
+//
+// Pagination
+//
+
+@mixin pagination-size-custom($min-width, $margin, $padding-y, $padding-x, $font-size, $line-height, $border-radius, $round-border-radius, $box-shadow) {
+  .page-link {
+    min-width: $min-width;
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+    line-height: $line-height;
+
+    @if $enable-rounded-theming {
+      border-radius: $border-radius;
+    } @else {
+      border-radius: 0;
+    }
+  }
+
+  .page-item {
+    margin: $margin;
+
+    &:first-child {
+      .page-link {
+        @if $enable-rounded-theming {
+          border-top-left-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+        } @else {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+    &:last-child {
+      .page-link {
+        @if $enable-rounded-theming {
+          border-top-right-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        } @else {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+    &.active .page-link {
+      @if $enable-shadows-theming {
+        box-shadow: $box-shadow;
+      } @else {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.pagination-round {
+    .page-link {
+      min-width: $min-width + .0625;
+      border-radius: $round-border-radius;
+    }
+
+    .page-item {
+      &:first-child {
+        .page-link {
+          @include border-left-radius($round-border-radius);
+        }
+      }
+      &:last-child {
+        .page-link {
+          @include border-right-radius($round-border-radius);
+        }
+      }
+    }
+  }
+}
+
+//
+// Icon info
+//
+
+@mixin icon-info-a {
+  a {
+    display: block;
+
+    &,
+    &:hover {
+      color: inherit;
+    }
+  }
+}

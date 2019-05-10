@@ -1,0 +1,101 @@
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+
+  @include caret;
+
+  &::before,
+  &::after {
+    margin-left: .6em;
+    /* stylelint-disable */
+    font-size: $dropdown-caret-size !important;
+    line-height: .5 !important;
+    /* stylelint-enable */
+  }
+
+  &.btn-sm {
+    &::before,
+    &::after {
+      /* stylelint-disable-next-line declaration-no-important */
+      font-size: $dropdown-caret-size-sm !important;
+    }
+  }
+
+  &.btn-lg {
+    &::before,
+    &::after {
+      /* stylelint-disable-next-line declaration-no-important */
+      font-size: $dropdown-caret-size-lg !important;
+    }
+  }
+}
+
+.dropup {
+  .dropdown-toggle {
+    @include caret(up);
+
+    &::before,
+    &::after {
+      margin-left: .6em;
+    }
+  }
+}
+
+.dropright {
+  .dropdown-toggle {
+    @include caret(right);
+
+    &::before,
+    &::after {
+      margin-left: .6em;
+    }
+  }
+}
+
+.dropleft {
+  .dropdown-toggle {
+    @include caret(left);
+
+    &::before,
+    &::after {
+      margin-right: .6em;
+      margin-left: 0;
+    }
+  }
+}
+
+.dropdown-caret-only {
+  padding-right: $dropdown-caret-only-px;
+  padding-left: $dropdown-caret-only-px;
+
+  &::after,
+  &::before {
+    margin: 0;
+  }
+}
+
+// The dropdown menu
+.dropdown-menu {
+  font-size: $dropdown-menu-font-size;
+  border: none;
+  box-shadow: $dropdown-box-shadow;
+
+  @if $enable-rounded-theming {
+    border-radius: $dropdown-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}
+
+// Links, buttons, and more within the dropdown menu
+.dropdown-item {
+  @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+}
+
+.dropdown-header {
+  padding: $dropdown-header-padding-y $dropdown-item-padding-x;
+}
+
+.dropdown-divider {
+  @include nav-divider($dropdown-divider-bg, $dropdown-divider-padding-y);
+}

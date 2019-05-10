@@ -1,0 +1,84 @@
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+
+    @if ($color == "light") {
+      @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-light-border-level), $viridian-100);
+    } @else {
+      @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), $white);
+    }
+  }
+}
+
+//
+// Customizations
+//
+
+.alert {
+  border: none;
+
+  @if $enable-rounded-theming {
+    border-radius: $alert-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}
+
+.alert-link {
+  @include transition-prefix("opacity", $transition-duration-base, $transition-timing-base);
+
+  /* stylelint-disable-next-line declaration-no-important */
+  color: inherit !important;
+
+  &:hover {
+    text-decoration: none;
+    opacity: $hover-fade-opacity;
+  }
+}
+
+// Alert icon
+.alert-icon {
+  padding-left: $alert-container-height;
+
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $alert-container-height;
+    font-size: $alert-icon-size;
+    line-height: $alert-container-height;
+    text-align: center;
+  }
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+.alert-dismissible {
+  .close {
+    width: $alert-container-height;
+    height: $alert-container-height;
+
+    span {
+      &::before,
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+// Alert theme light
+.alert-light {
+  .close {
+    span {
+      &::before,
+      &::after {
+        background-color: $viridian-100;
+      }
+    }
+  }
+}

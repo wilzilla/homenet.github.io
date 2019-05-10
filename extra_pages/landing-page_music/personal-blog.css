@@ -1,0 +1,62 @@
+.carousel-item {
+    position: relative;
+    min-height: 460px;
+}
+
+.carousel-item-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+    background: url('images/blog-banner-slide-01.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background: url('images/blog-banner-slide-02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background: url('images/blog-banner-slide-03.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.banner-info-box {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.author-section {
+    min-height: 400px;
+    background: url('images/author-section-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel-item .lead {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        min-height: 520px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item:nth-child(2) .lead,
+    .carousel-item:nth-child(3) .lead {
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-item {
+        min-height: 640px;
+    }
+}

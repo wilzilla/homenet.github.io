@@ -1,0 +1,186 @@
+//
+// Hover transitions
+//
+
+.hover-item {
+  position: relative;
+  overflow: hidden;
+
+  .hover-transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: $hover-transition-overlay-color;
+    opacity: 0;
+
+    @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .hover-down {
+    bottom: $hover-element-offset;
+    padding: 0 $hover-element-padding ( $hover-element-padding / 2 ) $hover-element-padding;
+  }
+
+  .hover-up {
+    top: $hover-element-offset;
+    padding: ( $hover-element-padding / 6 ) $hover-element-padding 0 $hover-element-padding;
+  }
+
+  &:hover {
+
+    .hover-transition {
+      opacity: 1;
+    }
+
+    .hover-down {
+      bottom: ( $hover-element-offset - 14% );
+      opacity: 1;
+    }
+
+    .hover-up {
+      top: ( $hover-element-offset - 14% );
+      opacity: 1;
+    }
+  }
+}
+
+//
+// Hover caption
+//
+
+.hover-down,
+.hover-up {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+
+  @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+}
+
+.hover-icon,
+.hover-title {
+  color: $white;
+}
+
+.hover-desc {
+  font-size: $hover-desc-font-size;
+  color: $white-75;
+}
+
+//
+// Hover scale
+//
+
+.hover-scale {
+
+  figure {
+    position: relative;
+    z-index: 1;
+
+    @include transition-prefix("all", $hover-scale-duration-base, $transition-timing-base);
+  }
+
+  &:hover {
+    figure {
+      @include transform-prefix("scale", "(1.1)");
+    }
+  }
+}
+
+//
+// Hover border
+//
+
+.hover-border {
+
+  .hover-transition {
+    background-color: transparent;
+    @include transition-prefix("all", $hover-scale-duration-base, $transition-timing-base);
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      bottom: 50%;
+      left: 50%;
+      z-index: -1;
+      content: "";
+      background-color: $hover-transition-overlay-color;
+      opacity: 0;
+
+      @include transition-prefix("all", $hover-scale-duration-base, $transition-timing-base);
+    }
+  }
+
+  .hover-down,
+  .hover-up {
+    @include transition-prefix("all", ( $hover-scale-duration-base / 2 ), $transition-timing-base);
+  }
+
+  &:hover {
+
+    .hover-transition::after {
+      top: 15px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      opacity: 1;
+    }
+
+    .hover-down,
+    .hover-up {
+      @include transition-prefix("all", ( $hover-scale-duration-base / 2 ), $transition-timing-base);
+      transition-delay: $hover-scale-duration-base / 2;
+    }
+  }
+}
+
+//
+// Disabled element
+//
+
+.hover-uncaption {
+
+  &:hover {
+
+    .hover-down {
+      bottom: ( $hover-element-offset - 15% );
+    }
+  }
+
+  .hover-down {
+    padding: 0 $hover-element-padding;
+    @include transform-prefix("translateY", "(50%)");
+  }
+
+  .hover-up {
+    display: none;
+  }
+}
+
+.hover-unicon {
+
+  &:hover {
+
+    .hover-up {
+      top: ( $hover-element-offset - 15% );
+    }
+  }
+
+  .hover-up {
+    padding: 0 $hover-element-padding;
+    @include transform-prefix("translateY", "(-50%)");
+  }
+
+  .hover-down {
+    display: none;
+  }
+}

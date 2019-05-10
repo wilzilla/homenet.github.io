@@ -1,0 +1,55 @@
+/* Lester scss variables */
+/* Points */
+/* Content css-variables */
+:root {
+  /* Common */
+  --primary-color: #fd5721;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Muli", sans-serif;
+  /* Additional Colors */
+  --white-section: #fff;
+  --gray-section: #f8f8f8;
+  --black-section: #222020;
+  --light-gray-section: #fcfcfc;
+  --selection_background: #dcdcdc;
+  --selection_color: #232323;
+  /* Primary Sizes */
+  --hero-header_default_height: 100vh;
+  --hero-header_responsive_height: 600px;
+  --breadcrumbs-height: 450px;
+  --page-header-height: 370px;
+  --white-overlay-top: -55px;
+  --white-overlay-bottom: 55px;
+  /* Overlay rgba Colors */
+  --default_overlay: rgba(44, 44, 44, 0.4);
+  --color_overlay: rgba(35, 35, 70, 0.25);
+  --dark_overlay: rgba(20, 20, 20, 0.55);
+  --black_overlay: rgba(33, 33, 33, 0.5);
+  /* Borders Colors */
+  --default-border: rgba(#999999, 0.2);
+  --card-border: rgba(#999999, 0.1);
+  --white-border: rgba(#ececec, 0.5);
+  --thin-border: rgba(#ececec, 0.09);
+  --light-border: rgba(#ececec, 0.2);
+  --button-border: rgba(#ececec, 0.4);
+  /* Fonts Colors */
+  --primary-font-color: #545454;
+  --gray-font-color: #dcdcdc;
+  --gray-default-font: #7f7f7f;
+  --light-font-color: #f3f3f3;
+  /* Box Shadow Colors */
+  --box-shadow-dark: rgba(21, 21, 21, 0.2);
+  --box-shadow-medium: rgba(31, 31, 31, 0.1);
+  --box-shadow-light: rgba(31, 31, 31, 0.02);
+  --box-shadow-boxes: rgba(31, 31, 31, 0.02);
+  /* Test Shadow Colors */
+  --text-shadow-dark: rgba(31, 31, 31, 0.5);
+  --text-shadow-medium: rgba(31, 31, 31, 0.2);
+  --text-shadow-light: rgba(31, 31, 31, 0.1);
+  --button-shadow-light: rgba(11, 11, 11, 0.15);
+  /* Functional Colors */
+  --black_default: #232323; }
+
+/* ## ## ## ## ## ## ## ## ## ## */
+
+/*# sourceMappingURL=_theming.css.map */

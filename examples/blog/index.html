@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- ZKIN UI KIT CSS -->
+    <link href="../../assets/css/zkin-ui-kit.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark navbar-round fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="43" height="43" alt="Navbar brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mt-3 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-light-1 my-3 my-md-0">
+            <div class="input-group input-group-round">
+                <div class="input-group-inner">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search">
+                    <div class="input-group-append">
+                        <button class="btn btn-round btn-secondary mb-0 shadow-none" type="button" id="button-search">Search</button>
+                    </div>
+                    <div class="input-focus-bg"></div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner rounded-0 bg-dark">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1 class="text-uppercase">Example headline</h1>
+                <p class="text-white-75 mb-5">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit nec mi porta gravida eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-round btn-lg btn-primary btn-gray-shadow" href="#" role="button">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="text-uppercase">Another example headline</h1>
+                <p class="text-white-75 mb-5">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit nec mi porta gravida eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-round btn-lg btn-primary btn-gray-shadow" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1 class="text-uppercase">One more for good measure</h1>
+                <p class="text-white-75 mb-5">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit nec mi porta gravida eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-round btn-lg btn-primary btn-gray-shadow" href="#" role="button">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow" src="../../assets/images/portrait-01.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2 class="mt-4 mb-3">Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod nullam ac dolor id nibh ultricies vehicula dolor elit morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus.</p>
+            <p><a class="btn btn-round btn-secondary mt-4" href="#" role="button"><i class="fas fa-pen-nib"></i>View details</a></p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow" src="../../assets/images/portrait-02.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2 class="mt-4 mb-3">Heading</h2>
+            <p>Duis mollis, est non commodo luctus nisi ligula, eget lacinia odio semper nec elit cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-round btn-secondary mt-4" href="#" role="button"><i class="fas fa-pen-nib"></i>View details</a></p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow" src="../../assets/images/portrait-03.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2 class="mt-4 mb-3">Heading</h2>
+            <p>Donec sea odio dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper tellus ac cursus commodo, tortor mauris condimentum fermentum massa justo commodo in amet risus.</p>
+            <p><a class="btn btn-round btn-secondary mt-4" href="#" role="button"><i class="fas fa-pen-nib"></i>View details</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading mb-4">First featurette heading. <span class="font-weight-300 text-primary">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="../../assets/images/square-image-01.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading mb-4">Oh yeah, it's that good. <span class="font-weight-300 text-primary">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="../../assets/images/square-image-02.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading mb-4">And lastly, this one. <span class="font-weight-300 text-primary">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="../../assets/images/square-image-03.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

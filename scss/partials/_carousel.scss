@@ -1,0 +1,96 @@
+.carousel-inner {
+  @if $enable-rounded-theming {
+    border-radius: $border-radius-lg;
+  } @else {
+    border-radius: 0;
+  }
+}
+
+//
+// Left/right controls for nav
+//
+
+.carousel-control-prev,
+.carousel-control-next {
+  @include transition-prefix("opacity", $transition-duration-base, $transition-timing-base);
+
+  @include hover-focus {
+    opacity: 1;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: auto;
+  height: auto;
+  font-size: $carousel-control-size;
+  background-image: none;
+}
+
+//
+// Optional indicator pips
+//
+
+.carousel-indicators {
+  bottom: 4px;
+  align-items: flex-end;
+  height: $carousel-indicator-height * 3;
+
+  li {
+    @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+  }
+
+  .active {
+    height: $carousel-indicator-height * 3;
+  }
+}
+
+// Carousel indicator circle
+.carousel-indicator-circle {
+  bottom: 9px;
+  align-items: center;
+  height: $carousel-indicator-height * 8;
+
+  li {
+    width: $carousel-indicator-circle-height;
+    height: $carousel-indicator-circle-height;
+    margin-right: $carousel-indicator-circle-spacer;
+    margin-left: $carousel-indicator-circle-spacer;
+    border-radius: $circle-border-radius;
+
+    @include transition-prefix("all", 0s, $transition-timing-base);
+  }
+
+  .active {
+    width: $carousel-indicator-circle-active;
+    height: $carousel-indicator-circle-active;
+    margin-right: $carousel-indicator-circle-spacer / 2;
+    margin-left: $carousel-indicator-circle-spacer / 2;
+    background-color: transparent;
+    border: ($carousel-indicator-circle-height / 2) solid $white;
+  }
+}
+
+//
+// Optional captions
+//
+
+.carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  padding: $carousel-caption-padding;
+
+  @include gradient($gradient-color-top, $gradient-color-bottom, $gradient-location-top, $gradient-location-bottom);
+
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+}

@@ -1,0 +1,87 @@
+//
+// Dividers
+//
+
+%divider {
+  width: 100%;
+  margin-bottom: $spacer * 2;
+}
+
+.divider-1 {
+  @extend %divider;
+
+  height: $divider-thin;
+  background-color: $divider-bg-dark;
+}
+
+.divider-2 {
+  @extend %divider;
+
+  border-bottom: $divider-thin dashed $divider-bg-dark;
+}
+
+.divider-3 {
+  @extend %divider;
+
+  height: $divider-thick;
+  background-color: $divider-3-bg-dark;
+}
+
+.divider-4 {
+  @extend .divider-1;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -($title-divider-height /2);
+    left: 50%;
+    width: $title-divider-width;
+    height: $title-divider-height;
+    margin-left: -($title-divider-width / 2);
+    content: "";
+    background-color: $main-color;
+  }
+
+  &.divider-align-left::before {
+    left: 0;
+    margin-left: 0;
+  }
+
+  &.divider-align-right::before {
+    right: 0;
+    left: inherit;
+    margin-left: 0;
+  }
+}
+
+// Divider light 1
+//
+// Use for container background dark.
+.divider-light-1 {
+  background-color: $divider-bg-light-1;
+
+  &.divider-2 {
+    background-color: transparent;
+    border-color: $divider-bg-light-1;
+  }
+
+  &.divider-3 {
+    background-color: $divider-3-bg-light-1;
+  }
+}
+
+// Divider light 2
+//
+// Use for container background color.
+.divider-light-2 {
+  background-color: $divider-bg-light-2;
+
+  &.divider-2 {
+    background-color: transparent;
+    border-color: $divider-bg-light-2;
+  }
+
+  &.divider-3 {
+    background-color: $divider-3-bg-light-2;
+  }
+}

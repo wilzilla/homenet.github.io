@@ -1,0 +1,11 @@
+//
+// Base styles
+//
+
+.toast {
+  @if $enable-rounded-toasts {
+    border-radius: $toast-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}

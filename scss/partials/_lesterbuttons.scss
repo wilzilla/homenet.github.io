@@ -1,0 +1,294 @@
+// Buttons group default
+.button-group-default {
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media(max-width: $lg) {
+    margin-bottom: 40px;
+  }
+  @media(max-width: $md) {
+    margin-bottom: 25px;
+  }
+  @media(max-width: $sm) {
+    margin-bottom: 15px;
+  }
+  button {
+    padding: 7px 25px;
+    background-color: transparent;
+    border: 1px solid var(--default-border);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+    @media(max-width: $lg) {
+      font-size: 12px;
+      padding: 5px 20px;
+    }
+    @media(max-width: $md) {
+      padding: 5px 15px;
+      margin-bottom: 5px;
+    }
+  }
+  .active-button {
+    background-color: $main-color;
+    color: $white;
+  }
+  button:not(:last-child) {
+    margin-right: 10px;
+    @media(max-width: $md) {
+      margin-right: 5px;
+    }
+  }
+}
+
+// Buttons general styles
+.button-default-color, .button-default-color-2, .button-default-white, .button-default-white-2, .button-default-white-3, .button-default-black, .button-default-black-2 {
+  font-weight: 500;
+  display: flex;
+  line-height: 1;
+  font-family: var(--secondary-font);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 27px;
+  border-radius: 4px;
+  position: relative;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 11px;
+  margin-bottom: 1em;
+  @media(max-width: $md) {
+    padding: 13px 17px;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+
+// Button default black type 1
+.button-default-black {
+  background-color: $main-color;
+  color: $white;
+}
+
+.button-default-black:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+  left: 0;
+}
+
+.button-default-black:hover:after {
+  left: -100%;
+}
+
+.button-default-black:hover {
+  color: $white;
+}
+
+// Button default black type 2
+.button-default-black-2 {
+  background-color: var(--dark);
+  color: $white;
+  border-radius: 25px;
+  align-items: center;
+  i {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+.button-default-black-2:hover {
+  color: $white;
+  background-color: $main-color;
+}
+
+// Button default color type 1
+.button-default-color {
+  border: 1px solid var(--default-border);
+  color: rgba($white, 0.9);
+  background-color: $main-color;
+}
+
+.button-default-color:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(33, 33, 33, 0.07);
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  border-radius: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.button-default-color:hover {
+  color: $white;
+}
+
+.button-default-color:hover:after {
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+// Button default color type 2
+.button-default-color-2 {
+  border: 1px solid var(--default-border);
+  color: rgba($white, 0.9);
+  background-color: $main-color;
+}
+
+.button-default-color-2:hover {
+  color: $white;
+}
+
+.button-default-color-2:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(33, 33, 33, 0.1);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all .5s ease-in-out;
+}
+
+.button-default-color-2:hover:after {
+  left: 0;
+}
+
+// Button default white type 1
+.button-default-white {
+  border: 1px solid var(--default-border);
+  color: rgba($black, 0.7);
+  background-color: $white;
+}
+
+.button-default-white:hover {
+  color: $black;
+}
+
+// Button default white type 2
+.button-default-white-2 {
+  border: 1px solid var(--default-border);
+  color: $black;
+  background-color: $white;
+}
+
+.button-default-white-2:hover {
+  color: $white;
+  background-color: var(--dark);
+}
+
+// Button default white type 3
+.button-default-white-3 {
+  border: 1px solid var(--default-border);
+  color: $black;
+  background-color: $white;
+}
+
+.button-default-white-3:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  background-color: $main-color;
+  top: 100%;
+  transition: all .3s ease-in-out;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.button-default-white-3:hover {
+  border: none;
+  color: $white;
+}
+
+.button-default-white-3:hover:after {
+  top: 0;
+}
+
+// Button submit
+.button-submit {
+  font-weight: 600;
+  line-height: 1;
+  font-family: var(--secondary-font);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  border-radius: 30px;
+  position: relative;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 11px;
+  color: $white;
+  background-color: $main-color;
+  border: 2px solid $main-color;
+  cursor: pointer;
+  margin-bottom: 1em;
+  @media(max-width: $md) {
+    padding: 13px 25px;
+  }
+}
+
+.button-submit:hover {
+  background-color: transparent;
+  color: $main-color;
+}
+
+// Button play
+.play-btn-scale {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px var(--box-shadow-medium);
+  z-index: 2;
+  overflow: hidden;
+  i {
+    color: $main-color;
+    transition: all .2s ease;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.play-btn-scale:after {
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .2s ease;
+  background-color: $main-color;
+  transform: scale(0);
+  z-index: 1;
+}
+
+.play-btn-scale:hover:after {
+  transform: scale(1);
+}
+
+.play-btn-scale:hover {
+  i {
+    color: $white !important;
+  }
+}

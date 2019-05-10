@@ -1,0 +1,313 @@
+//
+// Basic table
+//
+
+.table {
+  margin-bottom: ($spacer * 2);
+
+  @if $enable-rounded-theming {
+    border-radius: $border-radius-sm;
+  } @else {
+    border-radius: 0;
+  }
+
+  .thead-dark {
+    th {
+      background-color: $dark;
+    }
+  }
+
+  .thead-light {
+    th {
+      color: $dark;
+      background-color: rgba($black, .08);
+    }
+  }
+}
+
+thead th {
+  color: $white;
+  background-color: $main-color;
+  /* stylelint-disable-next-line declaration-no-important */
+  border: none !important;
+
+  &:first-child {
+    @if $enable-rounded-theming {
+      border-top-left-radius: $border-radius-sm;
+      border-bottom-left-radius: $border-radius-sm;
+    } @else {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &:last-child {
+    @if $enable-rounded-theming {
+      border-top-right-radius: $border-radius-sm;
+      border-bottom-right-radius: $border-radius-sm;
+    } @else {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+%border-bottom-disable {
+  &:first-child {
+    border-bottom-left-radius: 0;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 0;
+  }
+}
+
+.table-dark thead th {
+  @extend %border-bottom-disable;
+}
+
+.table-striped thead th {
+  @extend %border-bottom-disable;
+}
+
+/* stylelint-disable */
+tbody tr {
+
+  &:first-child {
+
+    th,
+    td {
+      border: none;
+    }
+  }
+
+  th {
+
+    &,
+    &.table-light {
+      color: $heading-color-base;
+    }
+  }
+
+  td {
+
+    &.table-light {
+      color: $body-color-base;
+    }
+  }
+
+  &.table-light {
+
+    > th {
+      color: $heading-color-base;
+    }
+    
+    > td {
+      color: $body-color-base;
+    }
+  }
+}
+
+// Border versions
+//
+// Add or remove borders all around the table and between all the columns.
+.table-bordered {
+
+  border-color: $main-color;
+  border-radius: 0;
+
+  tbody tr {
+
+    &:first-child {
+
+      th,
+      td {
+        border: $table-border-width solid $table-border-color;
+      }
+    }
+  }
+}
+
+.table-bordered thead th {
+  border-radius: 0;
+}
+/* stylelint-enable */
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+.table-striped {
+  th,
+  td {
+    border: none;
+  }
+}
+
+// Table backgrounds
+//
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
+@each $color, $value in $theme-colors {
+
+  @include table-row-variant($color, $value);
+
+  .table {
+    .bg-#{$color} {
+      > th {
+        @if ($color == "light") {
+          color: $heading-color-base;
+        } @else {
+          color: $white;
+        }
+      }
+      > td {
+        @if ($color == "light") {
+          color: $body-color-base;
+        } @else {
+          color: $white;
+        }
+      }
+    }
+
+    &.table-border-#{$color} {
+      th,
+      td {
+        /* stylelint-disable-next-line declaration-no-important */
+        border-color: lighten($value, 15%) !important;
+      }
+    }
+  }
+}
+
+// Dark styles
+//
+// Same table markup, but inverted color scheme: dark background and light text.
+%table-dark-color-scheme {
+  color: rgba($white, .5);
+
+  tbody th {
+    color: $white;
+  }
+
+  &.table-bordered {
+    border: $table-border-width solid $main-color;
+  }
+}
+
+.table-dark {
+  @extend %table-dark-color-scheme;
+
+  th,
+  td {
+    /* stylelint-disable-next-line declaration-no-important */
+    border-color: lighten($dark, .8%) !important;
+  }
+}
+
+// Tables light 1
+//
+// Use for container background dark, same table markup, 50% light text and border color.
+.table-light-1 {
+  @extend %table-dark-color-scheme;
+
+  th,
+  td {
+    /* stylelint-disable-next-line declaration-no-important */
+    border-color: $gray-800 !important;
+  }
+
+  .thead-light {
+    th {
+      background-color: rgba($white, .9);
+    }
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: $table-dark-accent-bg;
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        background-color: $table-dark-hover-bg;
+      }
+    }
+  }
+
+  @include table-row-variant(active, $table-dark-accent-bg);
+}
+
+// Tables light 2
+//
+// Use for container background color, same table markup, light text and border color.
+.table-light-2 {
+
+  &,
+  tbody th {
+    color: $white;
+  }
+
+  th,
+  td {
+    /* stylelint-disable-next-line declaration-no-important */
+    border-color: darken($white, 12%) !important;
+  }
+
+  .thead-light {
+    th {
+      background-color: rgba($white, .9);
+    }
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: $table-light-2-accent-bg;
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        background-color: $table-light-2-accent-bg;
+      }
+    }
+  }
+
+  @include table-row-variant(active, $table-light-2-accent-bg);
+}
+
+// IE fixed
+//
+// Remove border-radius to fixed IE bug.
+
+/* stylelint-disable */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.table {
+    border-radius: 0;
+  }
+  thead th:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  thead th:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@supports (-ms-accelerator:true) {
+  .table {
+    border-radius: 0;
+  }
+  thead th:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  thead th:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+/* stylelint-enable */

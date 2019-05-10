@@ -1,0 +1,56 @@
+%close-shape {
+  position: absolute;
+  content: "";
+  background-color: $close-color;
+}
+
+.close {
+  @include transition-prefix("opacity", $transition-duration-base, $transition-timing-base);
+
+  opacity: $hover-fill-opacity;
+
+  &:hover {
+    opacity: $hover-fade-opacity;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  span {
+    @include transform-prefix("rotate", "(45deg)");
+
+    position: relative;
+    display: block;
+    width: $close-length;
+    height: $close-length;
+
+    &::before {
+      @extend %close-shape;
+      top: 0;
+      left: 50%;
+      width: $close-spacer;
+      height: $close-length;
+      margin-left: -($close-spacer / 2);
+    }
+
+    &::after {
+      @extend %close-shape;
+      top: 50%;
+      left: 0;
+      width: $close-length;
+      height: $close-spacer;
+      margin-top: -($close-spacer / 2);
+    }
+  }
+}
+
+// Close white
+.close-white {
+  span {
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Clients section type 1
+.clients-type-1 {
+  background-size: cover;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Clients section type 2
+.clients-type-2 {
+  .grid {
+    justify-content: center;
+    margin-bottom: -30px;
+    .img-wrapper {
+      width: 100%;
+      border: 1px solid var(--default-border);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: $white;
+      position: relative;
+      height: 180px;
+      transition: all .2s ease-in-out;
+    }
+    .img-wrapper:hover {
+      box-shadow: 0 5px 15px var(--box-shadow-boxes);
+    }
+  }
+}

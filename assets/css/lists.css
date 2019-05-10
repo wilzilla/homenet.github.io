@@ -1,0 +1,66 @@
+.content-page .main-content .white-section .list {
+  padding: 9px 10px 34px 0px;
+}
+
+.content-page .main-content .white-section .list-type-1 li {
+  display: flex;
+  padding-left: 15px;
+  position: relative; }
+.content-page .main-content .white-section .list-type-1 li p {
+  font-weight: 700;
+    color: #2d3131;
+    letter-spacing: 0.01px;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+ }
+.content-page .main-content .white-section .list-type-1 li:not(:last-child) {
+  margin-bottom: 15px; }
+.content-page .main-content .white-section .list-type-1 li:before {
+  position: absolute;
+  left: 0;
+  content: ' ';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: var(--black_default);
+  margin-top: 10px;
+  opacity: 0.5; }
+
+.content-page .main-content .white-section .list-type-2 li {
+  position: relative;
+  display: flex; }
+  .list-type-2 li p {
+    color: var(--black_default);
+    font-weight: 500;
+    font-family: var(--secondary-font); }
+.content-page .main-content .white-section .list-type-2 li:before {
+  content: '\f00c';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--primary-color); }
+.content-page .main-content .white-section .list-type-2 li:not(:last-child) {
+  margin-bottom: 15px; }
+
+.content-page .main-content .white-section .list-type-3 li {
+  position: relative;
+  display: flex; }
+  .content-page .main-content .white-section .list-type-3 li p {
+    color: #fff;
+    font-weight: 500;
+    font-family: var(--secondary-font); }
+.content-page .main-content .white-section .list-type-3 li:before {
+  content: '\f00c';
+  display: block;
+  margin-right: 10px;
+  background-color: var(--primary-color);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin-top: 7px; }
+.content-page .main-content .white-section .list-type-3 li:not(:last-child) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }

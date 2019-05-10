@@ -1,0 +1,160 @@
+//
+// Section title
+//
+
+%section-title-bottom {
+  margin-bottom: $spacer;
+}
+
+// Section title 1
+%title-vertical-line {
+  display: block;
+  width: $title-line-spacer;
+  height: $title-line-length;
+  content: "";
+  background-color: $title-line-color;
+  /* stylelint-disable */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  /* stylelint-enable */
+}
+.section-title-1 {
+  @extend %section-title-bottom;
+  /* stylelint-disable-next-line declaration-no-important */
+  text-align: center !important;
+
+  &::before {
+    @extend %title-vertical-line;
+
+    margin-bottom: $title-1-line-margin;
+  }
+  &::after {
+    @extend %title-vertical-line;
+
+    margin-top: $title-1-line-margin;
+  }
+}
+
+// Section title 2
+%title-horizontal-line {
+  display: inline-block;
+  width: $title-line-length;
+  height: $title-line-spacer;
+  margin-bottom: $title-2-line-margin;
+  content: "";
+  background-color: $title-line-color;
+}
+.section-title-2 {
+  @extend %section-title-bottom;
+
+  &::before {
+    @extend %title-horizontal-line;
+
+    margin-right: $spacer;
+  }
+  &::after {
+    @extend %title-horizontal-line;
+
+    margin-left: $spacer;
+  }
+  &.text-left::before,
+  &.text-right::after {
+    display: none;
+  }
+}
+
+// Section title 3
+.section-title-3 {
+  margin-bottom: $spacer + .625;
+
+  &::after {
+    display: block;
+    width: $title-divider-width;
+    height: $title-divider-height;
+    margin: $title-divider-mt auto 0;
+    content: "";
+    background-color: $title-divider-bg-dark;
+  }
+  &.text-left::after {
+    margin-left: 0;
+  }
+  &.text-right::after {
+    margin-right: 0;
+  }
+}
+
+// Section title 4
+%title-divider-round {
+  top: 0;
+  display: block;
+  width: $title-divider-round-size;
+  height: $title-divider-round-size;
+  content: "";
+  background-color: $title-divider-bg-dark;
+  border-radius: 50%;
+}
+.title-divider-round {
+  @extend %title-divider-round;
+
+  position: relative;
+  margin: ($title-divider-mt * .85) auto 0;
+
+  &::before {
+    @extend %title-divider-round;
+
+    position: absolute;
+    left: -($title-divider-round-size * 2);
+  }
+  &::after {
+    @extend %title-divider-round;
+
+    position: absolute;
+    right: -($title-divider-round-size * 2);
+  }
+}
+.section-title-4 {
+  &.text-left {
+    .title-divider-round {
+      margin-left: $title-divider-round-size * 2;
+    }
+  }
+  &.text-right {
+    .title-divider-round {
+      margin-right: $title-divider-round-size * 2;
+    }
+  }
+}
+
+// Title light 1
+//
+// Use for container background dark.
+.title-light-1 {
+  color: $white;
+
+  &::before,
+  &::after {
+    background-color: $title-line-color-light-1;
+  }
+  &.section-title-3::after {
+    background-color: $title-divider-bg-light;
+  }
+  .title-divider-round {
+    &,
+    &::before,
+    &::after {
+      background-color: $title-divider-bg-light;
+    }
+  }
+}
+
+// Title light 2
+//
+// Use for container background color.
+.title-light-2 {
+  @extend .title-light-1;
+
+  &::before,
+  &::after {
+    background-color: $title-line-color-light-2;
+  }
+}

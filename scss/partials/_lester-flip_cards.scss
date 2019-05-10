@@ -1,0 +1,191 @@
+// Flip container
+.flip-container {
+    perspective: 800px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    .img-wrapper {
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all .5s ease-in-out;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+
+        .side {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .front {
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 2;
+            transform: rotateX(0deg);
+        }
+
+        .back {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: var(--black_default);
+
+            .content-wrapper {
+                height: 100%;
+                padding: 25px 40px;
+
+                @media(max-width: $sm) {
+                    padding: 15px 20px;
+                }
+
+                h4 {
+                    text-align: center;
+                    font-weight: 600;
+                    color: $white;
+                    margin-bottom: 10px;
+                    line-height: 1;
+
+                    @media(max-width: $md) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: $sm) {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                p {
+                    color: rgba($white, 0.9);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.flip-container.flip-vertical.hover-flip:hover .img-wrapper,
+.flip-container.flip-vertical.active-flip:active .img-wrapper
+ {
+        transform: rotateX(180deg);
+}
+
+.flip-container.flip-horizontal.hover-flip:hover .img-wrapper,
+.flip-container.flip-horizontal.active-flip:active .img-wrapper
+ {
+        transform: rotateY(180deg);
+}
+
+
+.flip-container.flip-vertical {
+    .img-wrapper {
+        .back {
+            transform: rotateX(180deg);
+        }
+    }
+}
+
+.flip-container.flip-horizontal {
+    .img-wrapper {
+        .back {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+
+/* Focus Flip */
+a.focus-flip {
+  display: block;
+}
+a.focus-flip-back {
+  display: none;
+}
+a.focus-flip, a.focus-flip-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+}
+.focus-flip:focus + .focus-flip-back {
+        display: block;
+}
+
+.focus-flip:focus ~ .img-wrapper {
+        transform: rotateX(180deg);
+}
+
+/* Focus Flip End */
+
+
+.flip-container .front.side:hover .card-img-overlay,
+.flip-container .front.side:hover .card-img-overlay .overlay-elements {
+    opacity: 1;
+}
+
+
+
+
+
+.flip-container .front.side .card-img-overlay {
+    content: ' ';
+    display: block;
+    background-color: var(--dark_overlay);
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card-img-overlay {
+position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card-img-overlay .overlay-elements {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.card-img-overlay .overlay-elements .btn,
+.card-img-overlay .overlay-elements .card-overlay-text {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-img-overlay .overlay-elements .btn {
+    top: -30px;
+}
+
+.card-img-overlay .overlay-elements .card-overlay-text {
+    top: 30px;
+}
+
+.flip-container .front.side:hover .overlay-elements .card-overlay-text,
+.flip-container .front.side:hover .overlay-elements .btn {
+    top: 0px;
+}
+/*
+.flip-container .front.side:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flip-container .front.side {
+    z-index: 1;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+*/

@@ -1,0 +1,35 @@
+//
+// Body
+//
+
+body {
+  font-size: $font-size-base * .875;
+}
+
+//
+// Typography
+//
+
+dt {
+  color: $heading-color-base;
+}
+
+//
+// Links
+//
+
+a {
+  @include transition-prefix("color", $transition-duration-base, $transition-timing-base);
+
+  @include hover {
+    text-decoration: $link-decoration;
+  }
+}
+
+//
+// Forms
+//
+
+label {
+  font-size: $label-font-size;
+}

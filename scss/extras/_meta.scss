@@ -1,0 +1,144 @@
+.meta-item {
+  margin-right: $meta-item-mr;
+  font-size: $meta-item-font-size;
+  font-weight: $font-weight-500;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    color: $body-color-base;
+    @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+
+    &:hover {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    margin-right: $meta-icon-mr;
+    font-size: $meta-icon-size;
+  }
+}
+
+.meta-author {
+  width: $meta-author-width;
+  margin-right: $meta-author-mr;
+}
+
+// Meta light 1
+//
+// Use for container background dark
+.meta-light-1 {
+  a {
+    color: $white-50;
+  }
+}
+
+// Meta light 2
+//
+// Use for container background color
+.meta-light-2 {
+  a {
+    /* stylelint-disable-next-line declaration-no-important */
+    color: $white !important;
+
+    &:hover {
+      opacity: $hover-fade-opacity;
+    }
+  }
+}
+
+//
+// Meta entry
+//
+
+.meta-entry {
+  padding: 0;
+  list-style: none;
+}
+
+.meta-entry-item {
+  display: inline;
+  font-size: $meta-entry-font-size;
+  font-style: italic;
+  text-transform: uppercase;
+
+  a {
+    color: $meta-entry-color;
+    @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+
+    &:hover {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  + .meta-entry-item {
+    padding-left: $meta-entry-item-padding;
+
+    &::before {
+      display: inline-block;
+      padding-right: $meta-entry-divider-padding;
+      padding-left: $meta-entry-divider-padding;
+      margin-right: $meta-entry-item-padding;
+      overflow: hidden;
+      line-height: $meta-entry-divider-height;
+      color: $meta-entry-divider-color;
+      content: $meta-entry-divider;
+    }
+  }
+}
+
+// Meta entry light 1
+//
+// Use for container background dark
+%meta-entry-color-light-1 {
+  color: $meta-entry-color-light-1;
+}
+
+.meta-entry-light-1 {
+
+  .meta-entry-item {
+
+    a {
+      @extend %meta-entry-color-light-1;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+    + .meta-entry-item::before {
+      @extend %meta-entry-color-light-1;
+    }
+  }
+}
+
+// Meta entry light 2
+//
+// Use for container background color
+%meta-entry-color-light-2 {
+  color: $meta-entry-color-light-2;
+}
+
+.meta-entry-light-2 {
+
+  .meta-entry-item {
+
+    a {
+      @extend %meta-entry-color-light-2;
+
+      &:hover {
+        opacity: $hover-fade-opacity;
+      }
+    }
+
+    + .meta-entry-item::before {
+      @extend %meta-entry-color-light-2;
+    }
+  }
+}

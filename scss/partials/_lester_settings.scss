@@ -1,0 +1,76 @@
+/* General settings */
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black_default);
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+  line-height: 1.7;
+}
+
+#main-wrapper {
+  overflow: hidden !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+.ie-support {
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+  p {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+iframe {
+  border: none;
+}
+
+.wrapper-hidden {
+  transition: all 1.2s ease-in-out;
+  opacity: 0.5;
+}
+
+section {
+  position: relative;
+  z-index: 100;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--primary-font);
+  letter-spacing: 0.3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--secondary-font);
+}
+
+::selection {
+  background-color: var(--selection_background);
+  color: var(--selection_color);
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+.mfp-container {
+  position: fixed;
+}

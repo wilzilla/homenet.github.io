@@ -1,0 +1,78 @@
+.progress-bar {
+  padding-right: $progress-bar-padding-x;
+  padding-left: $progress-bar-padding-x;
+}
+
+//
+// Progress bar thin
+//
+
+.progress-thin {
+  height: $progress-thin-height;
+
+  @if $enable-rounded-theming {
+    border-radius: $progress-thin-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+}
+
+// Progress label
+.progress-label {
+  margin-bottom: $progress-label-margin-bottom;
+  font-size: $progress-label-font-size;
+  font-weight: $progress-label-font-weight;
+  color: $progress-label-dark-color;
+}
+
+//
+// Progress bar thick
+//
+
+.progress-thick {
+  height: $progress-thick-height;
+
+  @if $enable-rounded-theming {
+    border-radius: $progress-thick-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  .progress-label {
+    margin-bottom: 0;
+    color: $white;
+  }
+
+  .progress-bar.bg-light {
+    .progress-label {
+      color: $viridian-100;
+    }
+  }
+
+  &.progress-round {
+    border-radius: $progerss-round-border-radius;
+
+    .progress-bar {
+      border-top-right-radius: $progerss-round-border-radius;
+      border-bottom-right-radius: $progerss-round-border-radius;
+    }
+  }
+}
+
+// Progress bar light 1
+//
+// Use for container background dark
+.progress-light-1 {
+  &.progress {
+    background-color: $progress-bg-light-1;
+  }
+}
+
+// Progress bar light 2
+//
+// Use for container background color
+.progress-light-2 {
+  &.progress {
+    background-color: $progress-bg-light-2;
+  }
+}

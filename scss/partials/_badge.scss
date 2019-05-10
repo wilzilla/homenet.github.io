@@ -1,0 +1,49 @@
+// Base class
+
+.badge {
+  padding: $badge-padding-t $badge-padding-x $badge-padding-b;
+  line-height: inherit;
+  text-transform: uppercase;
+
+  @if $enable-rounded-theming {
+    border-radius: $badge-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  @include transition-prefix("background-color", $transition-duration-base, $transition-timing-base);
+
+  @at-root a#{&} {
+    @include hover-focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.btn .badge {
+  padding: $badge-padding-t $badge-btn-padding-x $badge-btn-padding-b $badge-btn-padding-x;
+  line-height: 1;
+}
+
+// Pill badges
+//
+// Make them extra rounded with a modifier to replace v3's badges.
+
+.badge-pill {
+  border-radius: $badge-pill-border-radius;
+}
+
+// Colors
+//
+// Contextual variations (linked badges get darker on :hover).
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+
+    @if ($color == "light") {
+      @include badge-variant($viridian-100, $value);
+    } @else {
+      @include badge-variant($white, $value);
+    }
+  }
+}

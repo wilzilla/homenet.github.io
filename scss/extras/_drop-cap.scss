@@ -1,0 +1,12 @@
+//
+// Drop caps
+//
+
+.drop-cap {
+  float: left;
+  margin-right: $drop-cap-margin-r;
+  font-family: $drop-cap-font-family;
+  font-size: $drop-cap-font-size;
+  line-height: $drop-cap-line-height;
+  color: $drop-cap-color;
+}

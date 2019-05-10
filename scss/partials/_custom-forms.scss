@@ -1,0 +1,351 @@
+// Checkboxes and radios
+//
+// Base class takes care of all the key behavioral aspects.
+.custom-control-input {
+
+  &:disabled {
+    ~ .custom-control-label {
+      opacity: $disabled-opacity;
+    }
+  }
+}
+
+// Custom control indicators
+//
+// Build the custom controls out of pseudo-elements.
+.custom-control-label {
+
+  &::before,
+  &::after {
+    top: (($line-height-base - $custom-control-indicator-size) / 10);
+    border: none;
+  }
+}
+
+// Checkboxes
+//
+// Tweak just a few things for checkboxes.
+.custom-checkbox {
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      @include gradient-bg($custom-control-indicator-checked-bg);
+    }
+  }
+
+  .custom-control-label {
+    &::after {
+      background-size: 100%;
+    }
+  }
+}
+
+// Radios
+//
+// Tweak just a few things for radios.
+.custom-radio {
+  .custom-control-label {
+    &::after {
+      background-size: 100%;
+    }
+  }
+}
+
+// switches
+//
+// Tweak a few things for switches
+.custom-switch {
+  &.custom-control {
+    min-height: $custom-switch-container-height;
+  }
+
+  .custom-control-label {
+    padding-top: 1px;
+
+    &::before {
+      height: $custom-switch-height;
+      border-radius: $custom-switch-height / 2;
+    }
+
+    &::after {
+      top: calc(#{(($font-size-base * $line-height-base - $custom-control-indicator-size) / 2)} - #{$custom-control-indicator-border-width});
+      left: calc(#{-($custom-switch-width + $custom-control-gutter)} + #{$custom-control-indicator-border-width});
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      background-color: $white;
+      transform: translateX($custom-control-indicator-size);
+    }
+  }
+}
+
+// Select
+//
+// Replaces the browser default select with a custom one
+.custom-select {
+  font-size: $custom-select-font-size;
+  background-position: right ( $custom-select-padding-x - .1875 ) center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  @if $enable-rounded-form-input {
+    border-radius: $custom-select-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  &[multiple],
+  &[size]:not([size="1"]) {
+    padding-right: $custom-select-padding-y;
+    padding-left: $custom-select-padding-y;
+    /* stylelint-disable-next-line declaration-no-important */
+    background-image: none !important;
+
+    option {
+      padding: $custom-select-option-padding;
+      margin: $custom-select-option-my 0;
+
+      @if $enable-rounded-form-input {
+        border-radius: $custom-select-option-border-radius;
+      } @else {
+        border-radius: 0;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.form-control-sm,
+    &.custom-select-sm {
+      padding-right: $custom-select-padding-y-sm;
+      padding-left: $custom-select-padding-y-sm;
+
+      option {
+        padding: $custom-select-option-padding-sm;
+      }
+    }
+
+    &.form-control-lg,
+    &.custom-select-lg {
+      padding-right: $custom-select-padding-y-lg;
+      padding-left: $custom-select-padding-y-lg;
+
+      option {
+        padding: $custom-select-option-padding-lg;
+      }
+    }
+  }
+
+  &.form-control-sm,
+  &.custom-select-sm {
+    @extend %custom-select-sm-style;
+
+    &:not([size]):not([multiple]) {
+      height: $input-min-height-sm;
+    }
+  }
+
+  &.form-control-lg,
+  &.custom-select-lg {
+    @extend %custom-select-lg-style;
+
+    &:not([size]):not([multiple]) {
+      height: $input-min-height-lg;
+    }
+  }
+
+  @include form-control-focus();
+}
+
+.form-light-1 {
+  .custom-select {
+    background-image: $custom-select-indicator-gray;
+  }
+}
+
+.form-light-2 {
+  .custom-select {
+    background-image: $custom-select-indicator-white;
+  }
+
+  .custom-switch {
+    .custom-control-input {
+      &:disabled ~ .custom-control-label {
+        &::before {
+          background-color: $custom-switch-bg-light-2;
+        }
+      }
+    }
+
+    .custom-control-label {
+      &::before {
+        background-color: $custom-switch-bg-light-2;
+      }
+
+      &::after {
+        background-color: $white-75;
+      }
+    }
+  }
+}
+
+%custom-select-sm-style {
+  padding: $custom-select-padding-y-sm ($custom-select-padding-x-sm + $custom-select-indicator-padding) $custom-select-padding-y-sm $custom-select-padding-x-sm;
+  font-size: $custom-select-font-size-sm;
+  background-size: $custom-select-bg-size-sm;
+}
+
+%custom-select-lg-style {
+  padding: $custom-select-padding-y-lg ($custom-select-padding-x-lg + $custom-select-indicator-padding) $custom-select-padding-y-lg $custom-select-padding-x-lg;
+  font-size: $custom-select-font-size-lg;
+  background-size: $custom-select-bg-size-lg;
+}
+
+// File
+//
+// Custom file input.
+%custom-file-vertical-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.custom-file-label {
+  margin-bottom: 0;
+  @extend %custom-file-vertical-center;
+
+  @if $enable-rounded-form-input {
+    border-radius: $custom-file-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  &::after {
+    @extend %custom-file-vertical-center;
+
+    top: $custom-file-btn-spacer;
+    right: $custom-file-btn-spacer;
+    bottom: $custom-file-btn-spacer;
+    height: auto;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: none;
+
+    @if $enable-rounded-form-input {
+      border-radius: $custom-file-border-radius;
+    } @else {
+      border-radius: 0;
+    }
+  }
+}
+
+%custom-file-height-sm {
+  height: $input-min-height-sm;
+}
+
+%custom-file-height-lg {
+  height: $input-min-height-lg;
+}
+
+.custom-file-lg {
+  @extend %custom-file-height-lg;
+
+  .custom-file-input {
+    @extend %custom-file-height-lg;
+  }
+
+  .custom-file-label {
+    @extend %custom-file-height-lg;
+    padding: $input-btn-padding-y-lg $input-btn-padding-x-lg;
+    font-size: $input-font-size-lg;
+  }
+}
+
+.custom-file-sm {
+  @extend %custom-file-height-sm;
+
+  .custom-file-input {
+    @extend %custom-file-height-sm;
+  }
+
+  .custom-file-label {
+    @extend %custom-file-height-sm;
+    padding: $input-btn-padding-y-lg $input-btn-padding-x-sm;
+    font-size: $input-font-size-sm;
+    line-height: .5; // Fixed for Firefox
+
+    &::after {
+      line-height: .5; // Fixed for Firefox
+    }
+  }
+}
+
+// Range
+.custom-range {
+
+  &:hover,
+  &:focus {
+    &::-webkit-slider-thumb {
+      @if $enable-shadows-theming {
+        box-shadow: $custom-range-thumb-focus-box-shadow;
+      } @else {
+        box-shadow: none;
+      }
+    }
+    &::-moz-range-thumb     {
+      @if $enable-shadows-theming {
+        box-shadow: $custom-range-thumb-focus-box-shadow;
+      } @else {
+        box-shadow: none;
+      }
+    }
+    &::-ms-thumb            {
+      @if $enable-shadows-theming {
+        box-shadow: $custom-range-thumb-focus-box-shadow;
+      } @else {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &::-webkit-slider-thumb {
+    @if $enable-shadows-theming {
+      box-shadow: $custom-range-thumb-box-shadow;
+    } @else {
+      box-shadow: none;
+    }
+  }
+
+  &::-moz-range-thumb {
+    @if $enable-shadows-theming {
+      box-shadow: $custom-range-thumb-box-shadow;
+    } @else {
+      box-shadow: none;
+    }
+  }
+
+  &::-ms-thumb {
+    width: 1rem;
+    height: 1rem;
+
+    @if $enable-shadows-theming {
+      box-shadow: $custom-range-thumb-box-shadow;
+    } @else {
+      box-shadow: none;
+    }
+  }
+
+  &::-ms-track {
+    border-width: ($custom-range-thumb-height * .8);
+  }
+}

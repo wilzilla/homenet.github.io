@@ -1,0 +1,239 @@
+/* Additional classes */
+// Background styles
+.bg-attachment-fixed {
+  background-attachment: fixed;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-position-center {
+  background-position: center;
+}
+
+// z-index : 100
+.z-index-100 {
+  position: relative;
+  z-index: 100;
+}
+
+// Borders
+.border-bottom-simple {
+  border-bottom: 1px solid var(--default-border);
+}
+
+.border-top-simple {
+  border-top: 1px solid var(--default-border);
+}
+
+// Overlay
+.default_overlay:after, .color_overlay:after, .dark_overlay:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.black_overlay:after, .dark_overlay_gradient:before, .color_overlay_gradient:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.default_overlay:after {
+  background-color: var(--default_overlay);
+}
+
+.color_overlay:after {
+  background-color: var(--color_overlay);
+}
+
+.dark_overlay:after {
+  background-color: var(--dark_overlay);
+}
+
+.black_overlay:after {
+  background-color: var(--black_overlay);
+}
+
+.dark_overlay_gradient:before {
+  background: linear-gradient(to bottom, rgba($white, 0.2), rgba($black, 0.8));
+}
+
+.color_overlay_gradient:before {
+  background: linear-gradient(to bottom, transparent, var(--primary-color));
+  opacity: 0.25;
+}
+
+// Heading weight
+.thin-heading {
+  font-weight: 300;
+}
+
+.light-heading {
+  font-weight: 400;
+}
+
+.default-heading {
+  font-weight: 500;
+}
+
+.bold-heading {
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+
+// Section sizes
+.small-section {
+  padding: 80px 0;
+  @media(max-width: $xl) {
+    padding: 50px 0;
+  }
+}
+
+.cards-section {
+  padding: 140px 0 110px 0;
+  @media(max-width: $xl) {
+    padding: 100px 0 70px 0;
+  }
+  @media(max-width: $lg) {
+    padding: 80px 0 50px 0;
+  }
+  @media(max-width: $md) {
+    padding: 50px 0 20px 0;;
+  }
+}
+
+.large-section {
+  padding: 140px 0;
+  @media(max-width: $xl) {
+    padding: 100px 0;
+  }
+  @media(max-width: $lg) {
+    padding: 80px 0;
+  }
+  @media(max-width: $md) {
+    padding: 50px 0;
+  }
+}
+
+// Section colors
+.white-section {
+  background-color: var(--white-section);
+}
+
+.gray-section {
+  background-color: var(--gray-section);
+}
+
+.light-gray-section {
+  background-color: var(--light-gray-section);
+}
+
+.color-section {
+  background-color: var(--primary-color);
+}
+
+.black-section {
+  background-color: var(--black-section);
+}
+
+// Social icons colors
+.facebook-h {
+  background-color: #3b5999;
+  border: 2px solid #3b5999;
+}
+
+.facebook-h:hover {
+  background-color: #2b498b;
+  border: 2px solid #2b498b;
+}
+
+.twitter-h {
+  background-color: #55acee;
+  border: 2px solid #55acee;
+}
+
+.twitter-h:hover {
+  background-color: #3991d4;
+  border: 2px solid #3991d4;
+}
+
+.linkedin-h {
+  background-color: #0077B5;
+  border: 2px solid #0077B5;
+}
+
+.linkedin-h:hover {
+  background-color: #03669a;
+  border: 2px solid #03669a;
+}
+
+.google-plus-h {
+  background-color: #d64937;
+  border: 2px solid #d64937;
+}
+
+.google-plus-h:hover {
+  background-color: #bf3c2b;
+  border: 2px solid #bf3c2b;
+}
+
+.instagram-h {
+  background-color: #e4405f;
+  border: 2px solid #e4405f;
+}
+
+.instagram-h:hover {
+  background-color: #c72947;
+  border: 2px solid #c72947;
+}
+
+// Colorful backgrounds
+.bg-color-purple {
+  background-color: #996ce9;
+}
+
+.bg-color-pink {
+  background-color: #ee3158;
+}
+
+.bg-color-red {
+  background-color: #e30c0c;
+}
+
+.bg-color-blue {
+  background-color: #2196f3;
+}
+
+.bg-color-green {
+  background-color: #4caf50;
+}
+
+.bg-color-yellow {
+  background-color: #ff9800;
+}
+
+/* Gradient */
+.gradient-background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

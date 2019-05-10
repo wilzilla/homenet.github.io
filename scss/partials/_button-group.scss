@@ -1,0 +1,46 @@
+// Button group
+
+.btn-group,
+.btn-group-vertical {
+  margin-bottom: $spacer;
+  border-radius: $btn-border-radius-sm;
+
+  @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+
+  > .btn {
+    margin-bottom: 0;
+  }
+
+  &:not(.btn-group-outline) {
+    > .btn {
+      @include btn-shadow-none;
+    }
+  }
+}
+
+.btn-group-default {
+  @include button-group-variant($btn-default-bg, $shadow-size-front, $shadow-size-mid, $shadow-size-back, $shadow-opacity-front, $shadow-opacity-mid, $shadow-opacity-back);
+}
+
+@each $color, $value in $theme-colors {
+  .btn-group-#{$color} {
+
+    @if ($color == "light") {
+      @include button-group-variant($value, $shadow-size-front, $shadow-size-mid, $shadow-size-back-light, $shadow-opacity-front, $shadow-opacity-mid, $shadow-opacity-back-light);
+    } @else {
+      @include button-group-variant($value, $shadow-size-front, $shadow-size-mid, $shadow-size-back, $shadow-opacity-front, $shadow-opacity-mid, $shadow-opacity-back);
+    }
+  }
+}
+
+.btn-group-round {
+  border-radius: $btn-round-radius;
+}
+
+.btn-group-round-lg {
+  border-radius: $btn-round-radius-lg;
+}
+
+.btn-group-round-sm {
+  border-radius: $btn-round-radius-sm;
+}

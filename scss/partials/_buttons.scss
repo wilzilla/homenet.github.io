@@ -1,0 +1,136 @@
+//
+// Base styles
+//
+
+.btn {
+  margin-bottom: $spacer;
+  text-transform: uppercase;
+
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius-sm);
+  @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+  @include button-shadow-variant($btn-default-bg, $btn-color, $shadow-size-front, $shadow-size-mid, $shadow-size-back, $shadow-opacity-front, $shadow-opacity-mid, $shadow-opacity-back, $btn-default-bg);
+
+  > i {
+    margin-right: $btn-icon-mr;
+    font-size: $btn-icon-size;
+  }
+}
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @if ($color == "light") {
+      @include button-shadow-variant($value, $btn-light-color, $shadow-size-front, $shadow-size-mid, $shadow-size-back-light, $shadow-opacity-front, $shadow-opacity-mid, $shadow-opacity-back-light, $shadow-btn-light-focus);
+    } @else {
+      @include button-shadow-variant($value, $btn-color, $shadow-size-front, $shadow-size-mid, $shadow-size-back, $shadow-opacity-front, $shadow-opacity-mid, $shadow-opacity-back, $value);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @if ($color == "light") {
+      @include button-outline-variant($value, $viridian-100, $shadow-btn-light-focus);
+    } @else {
+      @include button-outline-variant($value, $white, $value);
+    }
+  }
+}
+
+@include button-gray-shadow;
+
+//
+// Link buttons
+//
+
+.btn.btn-link {
+  @include btn-link;
+
+  font-weight: $btn-font-weight;
+  text-decoration: none;
+
+  &:hover,
+  &.focus,
+  &:focus {
+    color: transparentize($main-color, ( $hover-fade-opacity / 4 ));
+  }
+}
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-sm);
+
+  > i {
+    font-size: $btn-icon-size-lg;
+  }
+}
+
+.btn-sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+
+  > i {
+    font-size: $btn-icon-size-sm;
+  }
+}
+
+//
+// Button round
+//
+
+.btn-round {
+  border-radius: $btn-round-radius;
+
+  &.btn-lg {
+    border-radius: $btn-round-radius-lg;
+  }
+
+  &.btn-sm {
+    border-radius: $btn-round-radius-sm;
+  }
+}
+
+//
+// Button icon only
+//
+
+.btn-icon-only {
+  width: $btn-icon-only-size;
+  height: $btn-icon-only-size;
+  padding: 0;
+  line-height: $btn-icon-only-size - 2;
+
+  > i {
+    margin: 0;
+  }
+
+  &.btn-lg {
+    width: $btn-icon-only-size-lg;
+    height: $btn-icon-only-size-lg;
+    line-height: $btn-icon-only-size-lg - 2;
+  }
+
+  &.btn-sm {
+    width: $btn-icon-only-size-sm;
+    height: $btn-icon-only-size-sm;
+    line-height: $btn-icon-only-size-sm - 3;
+  }
+
+  &.btn-round {
+    border-radius: $circle-border-radius;
+  }
+}
+
+//
+// Button no focus ring
+//
+
+
+button:focus {
+  outline: none;
+}
