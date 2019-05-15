@@ -1,7 +1,4 @@
-// ZKIN - Bootstrap 4 Skin & UI Kit
-// Copyright (c) 2019, Pophonic
-// Author: Pophonic
-// Profile: https://codecanyon.net/user/pophonic
+// Homenet - Bootstrap UI Kit & Custom Skin
 
 
 // Theme customizations
@@ -10,7 +7,7 @@
 // Import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Modified & Extended
+// General UI Kit
 @import "mixins";
 @import "partials/reboot";
 @import "partials/type";
@@ -35,29 +32,40 @@
 @import "partials/tooltip";
 @import "partials/popover";
 @import "partials/carousel";
-@import "partials/footer";
-@import "partials/navbar-absolute";
-@import "partials/portfolio";
-@import "partials/lesterbuttons";
-@import "partials/content-pages";
-@import "partials/lester_additional";
-@import "partials/lester_settings";
-@import "partials/lester-tabs";
-@import "partials/lester-icon_boxes";
-@import "partials/lester_hero";
-@import "partials/lester-simple_sections";
-@import "partials/lester_services_items";
-@import "partials/lester_members_sliders";
-@import "partials/lester-swiper";
-@import "partials/lester-clients";
-@import "partials/lester_counters";
-@import "partials/lester_content_sections";
-@import "partials/homenet-titles";
-@import "partials/homenet-info-pages";
 @import "utilities/background";
 @import "utilities/colors";
 @import "utilities/shadows";
 @import "utilities/text";
+
+// Homenet Customs
+@import "partials/homenet-navbar";
+@import "partials/homenet-footer";
+@import "partials/portfolio";
+@import "partials/lesterbuttons";
+@import "partials/content-pages";
+@import "partials/homenet-lists";
+@import "partials/lester_additional";
+@import "partials/lester_settings";
+@import "partials/lester-tabs";
+@import "partials/homenet-icon_boxes";
+@import "partials/lester_hero";
+@import "partials/homenet-simple_sections";
+@import "partials/lester_services_items";
+@import "partials/lester_members_sliders";
+@import "partials/homenet-clients";
+@import "partials/lester_content_sections";
+@import "partials/homenet-titles";
+@import "partials/homenet-info-pages";
+@import "partials/homenet-flip-cards";
+@import "partials/homenet-bubble-quote";
+
+// Homenet Animations
+@import "partials/homenet-agent-pop-effect";
+
+// Homenet Effects
+@import "partials/homenet-swiper";
+@import "partials/homenet-counters";
+
 
 // Extra components
 @import "extras/title";

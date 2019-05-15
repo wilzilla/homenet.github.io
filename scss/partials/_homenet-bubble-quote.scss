@@ -7,20 +7,24 @@
     clear: left;
 }
 
-
 /* Default left style in page */
-@media (min-width: 500px) {
-.bubblequote-wrapper {
-width: 54%;
-    float: left;
-    padding: 4% 5% 8% 0;
-    margin-left: -9%;
-    clear: left;
-}
+@media (min-width: 650px) {
+    .bubblequote-wrapper {
+        width: 54%;
+        float: left;
+        padding: 4% 5% 8% 0;
+        margin-left: -9%;
+        clear: left;
+    }
 }
 
 /* correct for reset css */
-.bubblequote-wrapper, .bubblequote-wrapper::before, .bubblequote-wrapper::after, .bubblequote, .bubblequote::before, .bubblequote::after {
+.bubblequote-wrapper,
+.bubblequote-wrapper::before,
+.bubblequote-wrapper::after,
+.bubblequote,
+.bubblequote::before,
+.bubblequote::after {
     box-sizing: inherit;
 }
 
@@ -38,21 +42,20 @@ width: 54%;
 /* bubblequote header */
 .bubblequote h3 {
     font-weight: 700;
-    position: relative; /* for pseudos */
-    /*  color: #f3590d; */
+    position: relative;
     color: #434c4e;
-font-size: 1.5em;
+    font-size: 1.5em;
     line-height: 1.5;
     margin: 0;
     border: 2px solid;
     border-color: #f3590d;
-    border-radius:20px;
+    border-radius: 20px;
     padding: 8% 8% 9% 10%;
 }
 
 /* bubblequote right double quotes */
 .bubblequote h3:after {
-    content:"";
+    content: "";
     position: absolute;
     border: 2px solid #f3590d;
     border-radius: 0 50px 0 0;
@@ -62,11 +65,11 @@ font-size: 1.5em;
     left: 13%;
     border-bottom: none;
     border-left: none;
-    z-index: 3; 
+    z-index: 3;
 }
 
 .bubblequote h3:before {
-    content:"";
+    content: "";
     position: absolute;
     width: 25%;
     border: 6px solid #fff;
@@ -75,24 +78,20 @@ font-size: 1.5em;
     z-index: 2;
 }
 
-
-
-
 /* increase header size after 700px */
 @media all and (min-width: 700px) {
     .bubblequote h3 {
-    font-size: 1.3rem;
-    line-height: 1.3;
-    letter-spacing: 0.1px;
-   }
-.bubblequote h3:after {
-    width: 16%;
-    height: 15%;
-    bottom: -15%;
-    left: 15%;
-}
+        font-size: 1.3rem;
+        line-height: 1.3;
+        letter-spacing: 0.1px;
+    }
 
-
+    .bubblequote h3:after {
+        width: 16%;
+        height: 15%;
+        bottom: -15%;
+        left: 15%;
+    }
 }
 
 /* bubblequote subheader */
@@ -105,11 +104,10 @@ font-size: 1.5em;
     margin: 0;
     padding-top: 15px;
     z-index: 1;
-    margin-left:150px;
-    padding-left:12px;
+    margin-left: 150px;
+    padding-left: 12px;
 }
 
- 
 .bubblequote h4:first-letter {
-  margin-left:-12px;
+    margin-left: -12px;
 }

@@ -1,7 +1,7 @@
 /*** 
 
 ====================================================================
-	Testimonial Section
+	Agent Pop Out Effect Type 1
 ====================================================================
 
 ***/
@@ -135,16 +135,6 @@
 	left:5%;
 	top:42%;
 }
-
-/*.agent-pop .image-column .inner-column .author-one{
-	position:absolute;
-	left:0%;
-	top:42%;
-	border-radius:50%;
-	overflow:hidden;
-	width:154px;
-	height:154px;
-} */
 
 .agent-pop .image-column .inner-column .author-two{
 	position:absolute;
@@ -369,7 +359,7 @@
 /*** 
 
 ====================================================================
-	Agent Pop Two
+	Agent Pop Out Effect Type 2
 ====================================================================
 
 ***/
@@ -377,88 +367,6 @@
 .agent-pop-two{
 	position:relative;
 	padding:120px 0px 100px;
-}
-
-.agent-pop-two .carousel-column{
-	position: relative;
-	z-index:1;
-}
-
-.agent-pop-two .carousel-column .owl-nav{
-	display:none;
-}
-
-.agent-pop-two .carousel-column .owl-dots{
-	position: relative;
-	margin-top:30px;
-}
-
-.agent-pop-two .carousel-column .owl-dots .owl-dot{
-	position: relative;
-	width:14px;
-	height:6px;
-	margin-right:5px;
-	border-radius:4px;
-	display:inline-block;
-	border:1px solid #cccccc;
-	transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
-	-webkit-transition:all 0.5s ease;
-	-ms-transition:all 0.5s ease;
-	-o-transition:all 0.5s ease;	
-}
-
-.agent-pop-two .carousel-column .owl-dots .owl-dot.active,
-.agent-pop-two .carousel-column .owl-dots .owl-dot:hover{
-	width:24px;
-	border-color:#ff6489;
-	background-color:#ff6489;
-}
-
-.agent-pop-two .carousel-column .inner-column{
-	position: relative;
-	padding-top:40px;
-	padding-right:0px;
-}
-
-.agent-pop-two .carousel-column .inner-column h2{
-	position: relative;
-	color:#444444;
-	font-size:35px;
-	line-height:1.3em;
-}
-
-.agent-pop-two .carousel-column .inner-column .designation{
-	position: relative;
-	color:#777777;
-	font-size:15px;
-	line-height:1.3em;
-	margin-top:12px;
-}
-
-.agent-pop-two .carousel-column .inner-column .quote-icon{
-	position: relative;
-	color:#9f70ed;
-	font-size:36px;
-	margin:20px 0px 25px;
-}
-
-.agent-pop-two .carousel-column .inner-column .text{
-	position: relative;
-	color:#7f8497;
-	font-size:16px;
-	line-height:1.8em;
-}
-
-.agent-pop-two .carousel-column .inner-column .big-letter{
-	position:absolute;
-	right:85px;
-	top:100px;
-	color:#f7f9ff;
-	line-height:1em;
-	font-size:400px;
-	font-weight:700;
-	font-family: 'Poppins', sans-serif;
 }
 
 .agent-pop-two .image-column{
@@ -478,33 +386,37 @@
 
 
 /* Author Img General */
-
 .agent-pop-two img {
 	display: inline-block;
     max-width: 100%;
 }
 
-/* Author One */
-
-.agent-pop-two .image-column .inner-column .author-one{
+/* Author Img Style*/
+.agent-pop-two .image-column .inner-column .author-img{
 	position:absolute;
 	content:'';
-	left:50%;
-	top:50%;
-	width:89px;
-	height:89px;
 	border-radius:50%;
 	overflow:hidden;
-	padding:5px;
-	margin-left:-44.5px;
-	margin-top:-44.5px;
-	background-color:#ffffff;
+	padding:4px;
+	background-color:#fff;
 	transition: all 1200ms ease;
     -moz-transition: all 1200ms ease;
     -webkit-transition: all 1200ms ease;
     -ms-transition: all 1200ms ease;
     -o-transition: all 1200ms ease;
 	box-shadow:0px 3px 12px rgba(0,0,0,0.20);
+}
+
+/* List of Authors */
+
+/* Author One */
+.agent-pop-two .image-column .inner-column .author-one{
+	left:50%;
+	top:50%;
+	width:89px;
+	height:89px;
+	margin-left:-44.5px;
+	margin-top:-44.5px;
 }
 
 .agent-pop-two .image-column .inner-column .author-one img{
@@ -517,26 +429,13 @@
 }
 
 /* Author Two */
-
 .agent-pop-two .image-column .inner-column .author-two{
-	position:absolute;
-	content:'';
 	right:50%;
 	top:50%;
 	width:66px;
 	height:66px;
-	border-radius:50%;
-	overflow:hidden;
-	padding:5px;
 	margin-right:-33px;
 	margin-top:-33px;
-	transition: all 1200ms ease;
-    -moz-transition: all 1200ms ease;
-    -webkit-transition: all 1200ms ease;
-    -ms-transition: all 1200ms ease;
-    -o-transition: all 1200ms ease;
-	background-color:#ffffff;
-	box-shadow:0px 3px 12px rgba(0,0,0,0.20);
 }
 
 .agent-pop-two .image-column .inner-column .author-two img{
@@ -549,26 +448,13 @@
 }
 
 /* Author Three */
-
 .agent-pop-two .image-column .inner-column .author-three{
-	position:absolute;
-	content:'';
 	left:50%;
 	bottom:50%;
 	width:72px;
 	height:72px;
-	border-radius:50%;
-	overflow:hidden;
-	padding:5px;
 	margin-left:-36px;
 	margin-bottom:-36px;
-	transition: all 1200ms ease;
-    -moz-transition: all 1200ms ease;
-    -webkit-transition: all 1200ms ease;
-    -ms-transition: all 1200ms ease;
-    -o-transition: all 1200ms ease;
-	background-color:#ffffff;
-	box-shadow:0px 3px 12px rgba(0,0,0,0.20);
 }
 
 .agent-pop-two .image-column .inner-column .author-three img{
@@ -582,26 +468,13 @@
 }
 
 /* Author Four */
-
 .agent-pop-two .image-column .inner-column .author-four{
-	position:absolute;
-	content:'';
 	right:50%;
 	bottom:50%;
 	width:44px;
 	height:43px;
-	border-radius:50%;
-	overflow:hidden;
-	padding:5px;
 	margin-right:-22px;
 	margin-bottom:-22px;
-	transition: all 1200ms ease;
-    -moz-transition: all 1200ms ease;
-    -webkit-transition: all 1200ms ease;
-    -ms-transition: all 1200ms ease;
-    -o-transition: all 1200ms ease;
-	background-color:#ffffff;
-	box-shadow:0px 3px 12px rgba(0,0,0,0.20);
 }
 
 .agent-pop-two .image-column .inner-column .author-four img{
@@ -614,26 +487,13 @@
 }
 
 /* Author Five */
-
 .agent-pop-two .image-column .inner-column .author-five{
-	position:absolute;
-	content:'';
 	left:50%;
 	bottom:50%;
 	width:137px;
 	height:137px;
-	border-radius:50%;
-	overflow:hidden;
-	padding:5px;
 	margin-left:-68.5px;
 	margin-bottom:-68.5px;
-	transition: all 1200ms ease;
-    -moz-transition: all 1200ms ease;
-    -webkit-transition: all 1200ms ease;
-    -ms-transition: all 1200ms ease;
-    -o-transition: all 1200ms ease;
-	background-color:#ffffff;
-	box-shadow:0px 3px 12px rgba(0,0,0,0.20);
 }
 
 .agent-pop-two .image-column .inner-column .author-five img{
@@ -647,27 +507,26 @@
 }
 
 /* Icon */
-
 .agent-pop-two .image-column .inner-column .icon{
-	position:absolute;
-	content:'';
-	left:50%;
-	bottom:50%;
-	width:44px;
-	height:43px;
-	border-radius:50%;
-	overflow:hidden;
-	padding:5px;
-	color:#ffffff;
-	margin-left:-22px;
-	margin-bottom:-22px;
-	transition: all 1200ms ease;
+	position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 50%;
+    width: 44px;
+    height: 43px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    color: #ffffff;
+    margin-left: -22px;
+    margin-bottom: -22px;
+    transition: all 1200ms ease;
     -moz-transition: all 1200ms ease;
     -webkit-transition: all 1200ms ease;
     -ms-transition: all 1200ms ease;
     -o-transition: all 1200ms ease;
-	background-color:#ffffff;
-	box-shadow:0px 3px 12px rgba(0,0,0,0.20);
+    background-color: #ffffff;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.20);
 }
 
 .agent-pop-two .image-column .inner-column .icon .fa{
@@ -688,14 +547,12 @@
 }
 
 /* Circles placement */
-
 .agent-pop-circles {
     position: absolute;
     left: 13%;
 }
 
 /* Circle One */
-
 .agent-pop-two .image-column .inner-column .circle-one{
 	position:absolute;
 	left:70px;
@@ -728,7 +585,6 @@
 }
 
 /* Circle Animation */
-
 @keyframes rotateme {
     from {
         transform: rotate(0deg);
@@ -789,4 +645,87 @@
     -o-animation-duration: 30s; 
     -o-animation-iteration-count: infinite;
     -o-animation-timing-function: linear;
+}
+
+/* Carousel Option - add later */
+
+.agent-pop-two .carousel-column{
+	position: relative;
+	z-index:1;
+}
+
+.agent-pop-two .carousel-column .owl-nav{
+	display:none;
+}
+
+.agent-pop-two .carousel-column .owl-dots{
+	position: relative;
+	margin-top:30px;
+}
+
+.agent-pop-two .carousel-column .owl-dots .owl-dot{
+	position: relative;
+	width:14px;
+	height:6px;
+	margin-right:5px;
+	border-radius:4px;
+	display:inline-block;
+	border:1px solid #cccccc;
+	transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;	
+}
+
+.agent-pop-two .carousel-column .owl-dots .owl-dot.active,
+.agent-pop-two .carousel-column .owl-dots .owl-dot:hover{
+	width:24px;
+	border-color:#ff6489;
+	background-color:#ff6489;
+}
+
+.agent-pop-two .carousel-column .inner-column{
+	position: relative;
+	padding-top:40px;
+	padding-right:0px;
+}
+
+.agent-pop-two .carousel-column .inner-column h2{
+	position: relative;
+	color:#444444;
+	font-size:2.1875rem;
+	line-height:1.3em;
+}
+
+.agent-pop-two .carousel-column .inner-column .designation{
+	position: relative;
+	color:#777777;
+	font-size:0.9375rem;
+	line-height:1.3em;
+	margin-top:12px;
+}
+
+.agent-pop-two .carousel-column .inner-column .quote-icon{
+	position: relative;
+	color:#9f70ed;
+	font-size:2.25rem;
+	margin:20px 0px 25px;
+}
+
+.agent-pop-two .carousel-column .inner-column .text{
+	position: relative;
+	color:#7f8497;
+	font-size:1rem;
+	line-height:1.8em;
+}
+
+.agent-pop-two .carousel-column .inner-column .big-letter{
+	position:absolute;
+	right:85px;
+	top:100px;
+	color:#f7f9ff;
+	line-height:1em;
+	font-size:25rem;
+	font-weight:700;
 }
