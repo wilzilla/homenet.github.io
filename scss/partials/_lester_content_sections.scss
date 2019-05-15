@@ -27,7 +27,7 @@
         i {
           font-size: 48px;
           margin-right: 20px;
-          color: var(--primary-color);
+          color: $theme-color;
           @media(max-width: $lg) {
             margin-right: 15px;
             font-size: 36px;
@@ -82,7 +82,7 @@
         }
         i {
           transition: all .3s ease-in-out;
-          color: var(--primary-color);
+          color: $theme-color;
           font-size: 30px;
           position: relative;
           z-index: 10;
@@ -93,7 +93,7 @@
         display: block;
         border-radius: 5px;
         position: absolute;
-        background-color: var(--primary-color);
+        background-color: $theme-color;
         width: 100%;
         height: 100%;
         left: 0;

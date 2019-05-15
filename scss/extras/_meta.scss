@@ -9,7 +9,7 @@
   }
 
   a {
-    color: $body-color-base;
+    color: $sub-color-base;
     @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
 
     &:hover {

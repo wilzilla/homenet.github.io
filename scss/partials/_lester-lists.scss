@@ -7,7 +7,7 @@
     p {
       color: var(--black_default);
       font-weight: 500;
-      font-family: var(--secondary-font);
+      font-family: $font-secondary;
     }
   }
   li:not(:last-child) {
@@ -35,7 +35,7 @@
     p {
       color: var(--black_default);
       font-weight: 500;
-      font-family: var(--secondary-font);
+      font-family: $font-secondary;
     }
   }
   li:before {
@@ -44,7 +44,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-    color: var(--primary-color);
+    color: $theme-color;
   }
   li:not(:last-child) {
     margin-bottom: 15px;
@@ -59,14 +59,14 @@
     p {
       color: $white;
       font-weight: 500;
-      font-family: var(--secondary-font);
+      font-family: $font-secondary;
     }
   }
   li:before {
     content: '\f00c';
     display: block;
     margin-right: 10px;
-    background-color: var(--primary-color);
+    background-color: $theme-color;
     width: 5px;
     height: 5px;
     border-radius: 100%;

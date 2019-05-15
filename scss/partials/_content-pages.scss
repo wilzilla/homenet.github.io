@@ -40,7 +40,7 @@
         flex-direction: row;
       }
       .num {
-        color: var(--primary-color);
+        color: $theme-color;
         font-weight: 400;
         line-height: 1;
         margin-right: 20px;
@@ -298,7 +298,7 @@
                 }
                 span {
                   color: $white;
-                  font-family: var(--secondary-font);
+                  font-family: $font-secondary;
                   font-weight: 500;
                   font-size: 14px;
                   letter-spacing: 1px;
@@ -340,7 +340,7 @@
         top: 0;
         left: 0;
         position: absolute;
-        background: linear-gradient(to bottom, $white, var(--primary-color));
+        background: linear-gradient(to bottom, $white, $theme-color);
         transition: all .35s ease-in-out;
         opacity: 0;
         transform: scale(0.9);
@@ -552,7 +552,7 @@
             padding: 8px 18px;
             line-height: 1;
             border-radius: 5px;
-            font-family: var(--secondary-font);
+            font-family: $font-secondary;
             color: $white;
             font-size: 12px;
             font-weight: 300;
@@ -594,7 +594,7 @@
             color: var(--black_default);
           }
           a:hover {
-            color: var(--primary-color);
+            color: $theme-color;
           }
         }
         .content {
@@ -609,7 +609,7 @@
             margin-bottom: 15px;
           }
           a {
-            color: var(--primary-color);
+            color: $theme-color;
             margin-left: 3px;
           }
         }
@@ -621,7 +621,7 @@
             font-weight: 500;
             transform: translateZ(25px);
             color: var(--black_default);
-            font-family: var(--secondary-font);
+            font-family: $font-secondary;
             text-transform: uppercase;
             letter-spacing: 0.7px;
             @media(max-width: $xl) {
@@ -631,7 +631,7 @@
           }
           i {
             margin-right: 5px;
-            color: var(--primary-color);
+            color: $theme-color;
           }
           .fa-calendar-o {
             font-size: 12px;
@@ -738,7 +738,7 @@
           font-weight: 600;
           font-size: 12px;
           color: var(--heading-color) !important;
-          font-family: var(--secondary-font);
+          font-family: $font-secondary;
         }
         svg {
           border-radius: 5px;
@@ -815,7 +815,7 @@
           letter-spacing: 0.5px;
           i {
             margin-right: 10px;
-            color: var(--primary-color);
+            color: $theme-color;
           }
         }
         p {
@@ -907,12 +907,12 @@
         margin-bottom: 20px;
       }
       .up-text {
-        color: var(--primary-color);
+        color: $theme-color;
         font-weight: 400;
         line-height: 1;
         opacity: 0.9;
         letter-spacing: 0.7px;
-        font-family: var(--secondary-font);
+        font-family: $font-secondary;
       }
       .title {
         margin-bottom: 10px;
@@ -982,7 +982,7 @@
       padding: 35px 20px;
       background-color: $white;
       margin-bottom: 30px;
-      border-bottom: 2px solid var(--primary-color);
+      border-bottom: 2px solid $theme-color;
       h6 {
         font-weight: 600;
         font-size: 18px;
@@ -1191,7 +1191,7 @@
         }
       }
       a:hover {
-        color: var(--primary-color);
+        color: $theme-color;
       }
     }
     .white {
@@ -1294,7 +1294,7 @@
       text-transform: uppercase;
       color: var(--black_default);
       font-weight: 500;
-      font-family: var(--secondary-font);
+      font-family: $font-secondary;
       margin-bottom: 5px;
     }
     i {

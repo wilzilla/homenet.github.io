@@ -65,12 +65,12 @@
           }
         }
         .active {
-          color: var(--primary-color);
+          color: $theme-color;
           border-bottom: 1px solid transparent;
           @media(max-width: $lg) {
             border-bottom: 1px solid var(--default-border);
             color: $white;
-            background-color: var(--primary-color);
+            background-color: $theme-color;
           }
         }
       }
@@ -225,11 +225,11 @@
         }
         .active {
           i {
-            color: var(--primary-color);
+            color: $theme-color;
             opacity: 1;
           }
           h6 {
-            color: var(--primary-color);
+            color: $theme-color;
             opacity: 1;
           }
         }

@@ -16,7 +16,7 @@
     margin: 0 6px !important;
   }
   .swiper-pagination-bullet-active {
-    background-color: var(--primary-color);
+    background-color: $theme-color;
   }
 }
 
@@ -44,7 +44,7 @@
     margin: 6px 0 !important;
   }
   .swiper-pagination-bullet-active {
-    background-color: var(--primary-color);
+    background-color: $theme-color;
   }
 }
 
@@ -66,7 +66,7 @@
     transition: all .3s ease;
   }
   .swiper-pagination-bullet-active {
-    background-color: var(--primary-color);
+    background-color: $theme-color;
     transform: scale(1);
   }
 }
@@ -96,7 +96,7 @@
 .swiper-button-prev-default:hover, .swiper-button-next-default:hover {
   transform: scale(1.5);
   i {
-    color: var(--primary-color);
+    color: $theme-color;
   }
 }
 
@@ -192,7 +192,7 @@
 .swiper-button-prev-vertical:hover, .swiper-button-next-vertical:hover {
   transform: scale(1.1) translateY(-50%);
   i {
-    color: var(--primary-color);
+    color: $theme-color;
   }
 }
 

@@ -92,7 +92,7 @@ tbody tr {
   td {
 
     &.table-light {
-      color: $body-color-base;
+      color: $sub-color-base;
     }
   }
 
@@ -103,7 +103,7 @@ tbody tr {
     }
     
     > td {
-      color: $body-color-base;
+      color: $sub-color-base;
     }
   }
 }
@@ -162,7 +162,7 @@ tbody tr {
       }
       > td {
         @if ($color == "light") {
-          color: $body-color-base;
+          color: $sub-color-base;
         } @else {
           color: $white;
         }

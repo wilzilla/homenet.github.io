@@ -75,7 +75,7 @@
 }
 
 .color_overlay_gradient:before {
-  background: linear-gradient(to bottom, transparent, var(--primary-color));
+  background: linear-gradient(to bottom, transparent, $theme-color);
   opacity: 0.25;
 }
 
@@ -94,7 +94,6 @@
 
 .bold-heading {
   font-weight: 700;
-  font-family: var(--primary-font);
 }
 
 // Section sizes
@@ -145,7 +144,7 @@
 }
 
 .color-section {
-  background-color: var(--primary-color);
+  background-color: $theme-color;
 }
 
 .black-section {

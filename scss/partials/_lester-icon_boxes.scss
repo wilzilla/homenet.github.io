@@ -8,7 +8,7 @@
       margin-right: auto;
     }
     i {
-      color: var(--primary-color);
+      color: $theme-color;
       font-size: 42px;
       margin-bottom: 20px;
     }
@@ -102,7 +102,7 @@
       transform: translateZ(25px);
       text-align: center;
       margin-bottom: 20px;
-      color: var(--primary-color);
+      color: $theme-color;
       @media(max-width: $xl) {
         margin-bottom: 10px;
       }
@@ -166,19 +166,19 @@
         transform: none;
       }
       .icon {
-        color: var(--primary-color);
+        color: $theme-color;
         @media(max-width: $lg) {
           color: var(--black_default);
         }
       }
       .icon-title {
-        color: var(--primary-color);
+        color: $theme-color;
         @media(max-width: $lg) {
           color: var(--black_default);
         }
       }
       .icon-text {
-        color: var(--primary-color);
+        color: $theme-color;
         @media(max-width: $lg) {
           color: var(--black_default);
         }

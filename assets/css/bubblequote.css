@@ -27,7 +27,6 @@ width: 54%;
 /* bubblequote main style */
 .bubblequote {
     position: relative;
-    font-family: var(--primary-font), sans-serif;
     max-width: 620px;
     align-self: center;
 }
@@ -38,7 +37,6 @@ width: 54%;
 
 /* bubblequote header */
 .bubblequote h3 {
-    font-family: var(--primary-font), cursive;
     font-weight: 700;
     position: relative; /* for pseudos */
     /*  color: #f3590d; */
