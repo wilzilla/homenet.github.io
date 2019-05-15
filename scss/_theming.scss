@@ -806,9 +806,10 @@ $divider-3-bg-light-2:                  rgba($white, .35);
 
 // Drop caps
 $drop-cap-margin-r:                     1rem;
-$drop-cap-font-family:                  "Playfair Display", serif;
-$drop-cap-font-size:                    4.0625rem;
-$drop-cap-line-height:                  3.4375rem;
+$drop-cap-font-family:                  $font-family-base;
+$drop-cap-font-size:                    4.25rem;
+$drop-cap-font-weight:                  600;
+$drop-cap-line-height:                  4.25rem;
 $drop-cap-color:                        $dark;
 
 // Meta

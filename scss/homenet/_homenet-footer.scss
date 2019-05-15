@@ -26,7 +26,6 @@ footer .footer-inner {
 
 footer .footer-inner {
     color: var(--white);
-    font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to bottom left, #2d2e33, #2c393c);
 }
 
@@ -131,7 +130,7 @@ footer .footer-inner .footer-body {
 /* Links */
 footer .footer-inner .footer-body .footer_header {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 0.8125rem;
     letter-spacing: 1.1px;
     text-transform: uppercase;
 }
@@ -143,7 +142,7 @@ footer .footer-inner .footer-body .foot_link_list .foot_link {
 
 footer .footer-inner .footer-body .foot_link_list {
     padding-bottom: 30px;
-    font-family: muli;
+    font-family: $font-secondary;
     font-size: 0.85em;
     letter-spacing: 0.4px;
     font-weight: 300;

@@ -51,15 +51,15 @@
         line-height: 1;
         margin-bottom: 10px;
         font-weight: 400;
-        font-size: 38px;
+        font-size: 2.375rem;
         @media(max-width: $xl) {
           text-align: center;
         }
         @media(max-width: $lg) {
-          font-size: 30px;
+          font-size: 1.875rem;
         }
         @media(max-width: $md) {
-          font-size: 28px;
+          font-size: 1.75rem;
         }
       }
       p {
@@ -105,7 +105,7 @@
           padding: 0 25px;
           color: $white;
           cursor: pointer;
-          font-size: 13px;
+          font-size: 0.8125rem;
           font-weight: 500;
           text-transform: uppercase;
           transition: all .2s ease-in-out;
@@ -115,7 +115,7 @@
           @media(max-width: $md) {
             min-width: 100px;
             padding: 0 15px;
-            font-size: 11px;
+            font-size: 0.6875rem;
           }
           i {
             margin-left: 5px;

@@ -36,7 +36,7 @@
           text-align: center;
           padding: 15px 20px;
           cursor: pointer;
-          font-size: 14px;
+          font-size: 0.875rem;
           position: relative;
           bottom: -1px;
           margin-right: 15px;
@@ -47,7 +47,7 @@
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
           @media(max-width: $xl) {
-            font-size: 13px;
+            font-size: 0.8125rem;
             padding: 10px 15px;
           }
           @media(max-width: $lg) {
@@ -57,7 +57,7 @@
             border-radius: 5px;
           }
           @media(max-width: $md) {
-            font-size: 12px;
+            font-size: 0.75rem;
           }
           @media(max-width: $sm) {
             margin-right: 0;
@@ -88,11 +88,11 @@
             margin-bottom: 15px;
             font-weight: 600;
             @media(max-width: $lg) {
-              font-size: 26px;
+              font-size: 1.625rem;
               margin-bottom: 10px;
             }
             @media(max-width: $md) {
-              font-size: 24px;
+              font-size: 1.5rem;
               margin-bottom: 5px;
             }
           }
@@ -204,18 +204,18 @@
             color: var(--black_default);
             opacity: 0.5;
             text-align: center;
-            font-size: 30px;
+            font-size: 1.875rem;
             margin-bottom: 30px;
             transition: all .2s ease-in-out;
             @media(max-width: $md) {
-              font-size: 28px;
+              font-size: 1.75rem;
               margin-bottom: 20px;
               margin-top: 15px;
             }
           }
           h6 {
             text-align: center;
-            font-size: 12px;
+            font-size: 0.75rem;
             text-transform: uppercase;
             color: var(--black_default);
             opacity: 0.6;

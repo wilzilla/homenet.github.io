@@ -21,7 +21,7 @@
       .prop-obj {
         color: var(--heading-color);
         font-weight: 700;
-        font-size: 70px;
+        font-size: 4.375rem;
         letter-spacing: 1px;
         line-height: 1;
         margin-bottom: 8px;
@@ -29,18 +29,18 @@
         opacity: 0.3;
         transition: all .2s ease-in-out;
         @media(max-width: $lg) {
-          font-size: 60px;
+          font-size: 3.75rem;
         }
         @media(max-width: $md) {
-          font-size: 48px;
+          font-size: 3rem;
         }
         @media(max-width: $sm) {
-          font-size: 42px;
+          font-size: 2.625rem;
         }
       }
       .title-counter {
         opacity: 0.4;
-        font-size: 13px;
+        font-size: 0.8125rem;
         font-weight: 700;
         letter-spacing: 0.5px;
         font-family: $font-secondary;
@@ -52,7 +52,7 @@
           margin-bottom: 5px;
         }
         @media(max-width: $sm) {
-          font-size: 12px;
+          font-size: 0.75rem;
           letter-spacing: normal;
         }
       }
@@ -92,7 +92,7 @@
         border-bottom: 1px solid var(--default-border);
       }
       .title-counter {
-        font-size: 13px;
+        font-size: 0.8125rem;
         font-weight: 700;
         letter-spacing: 0.5px;
         font-family: $font-secondary;
@@ -105,12 +105,12 @@
           margin-bottom: 5px;
         }
         @media(max-width: $sm) {
-          font-size: 12px;
+          font-size: 0.75rem;
           letter-spacing: normal;
         }
       }
       .prop-obj {
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 700;
         font-family: $font-secondary;
         color: rgba($black, 0.3);
@@ -118,13 +118,13 @@
         transition: all .3s ease-in-out;
         letter-spacing: 2px;
         @media(max-width: $lg) {
-          font-size: 60px;
+          font-size: 3.75rem;
         }
         @media(max-width: $md) {
-          font-size: 48px;
+          font-size: 3rem;
         }
         @media(max-width: $sm) {
-          font-size: 42px;
+          font-size: 2.625rem;
         }
       }
     }
@@ -188,14 +188,14 @@
         }
         .prop-obj {
           line-height: 1;
-          font-size: 40px;
+          font-size: 2.5rem;
           letter-spacing: 1px;
           font-weight: 600;
           font-family: $font-secondary;
           width: 90px;
           color: $theme-color;
           @media(max-width: $xl) {
-            font-size: 32px;
+            font-size: 2rem;
             width: 80px;
           }
           @media(max-width: $md) {
@@ -206,15 +206,15 @@
         .title-counter {
           text-align: center;
           transition: all .3s ease-in-out;
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 500;
           color: $white;
           line-height: 1;
           @media(max-width: $xl) {
-            font-size: 13px;
+            font-size: 0.8125rem;
           }
           @media(max-width: $sm) {
-            font-size: 12px;
+            font-size: 0.75rem;
           }
         }
       }

@@ -10,7 +10,6 @@
 // General UI Kit
 @import "mixins";
 @import "partials/reboot";
-@import "partials/type";
 @import "partials/tables";
 @import "partials/forms";
 @import "partials/buttons";
@@ -38,6 +37,7 @@
 @import "utilities/text";
 
 // Homenet Customs
+@import "homenet/homenet-type";
 @import "homenet/homenet-settings";
 @import "homenet/homenet-additional";
 @import "homenet/homenet-navbar";
