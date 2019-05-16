@@ -16731,13 +16731,13 @@ a.focus-flip:focus {
 .dropdown-item.pandan::before {
   background-color: #5e9259; }
 
-.dropdown-item.blueberry::before {
+.dropdown-item.grape::before {
   background-color: #676799; }
 
 .dropdown-item.custard::before {
   background-color: #e4a153; }
 
-.dropdown-item.blackcurrent::before {
+.dropdown-item.blueberry::before {
   background-color: #678d99; }
 
 .dropdown-item.sweetpotato::before {
