@@ -1,4 +1,3 @@
-/* Lester scss variables */
 /* Points */
 /* Content css-variables */
 :root {
@@ -16709,6 +16708,49 @@ a.focus-flip:focus {
 
 .bubblequote h4:first-letter {
   margin-left: -12px; }
+
+.dropdown.color-picker button {
+  min-width: 178px; }
+
+.dropdown.color-picker .dropdown-item::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 50%;
+  margin-right: 13px; }
+
+.dropdown-item.taro::before {
+  background-color: #a77ca8; }
+
+.dropdown-item.strawberry::before {
+  background-color: #d5637e; }
+
+.dropdown-item.pandan::before {
+  background-color: #5e9259; }
+
+.dropdown-item.blueberry::before {
+  background-color: #676799; }
+
+.dropdown-item.custard::before {
+  background-color: #e4a153; }
+
+.dropdown-item.blackcurrent::before {
+  background-color: #678d99; }
+
+.dropdown-item.sweetpotato::before {
+  background-color: #99679e; }
+
+.dropdown-item.chocolate::before {
+  background-color: #937a5c; }
+
+.dropdown-item.greentea::before {
+  background-color: #6a9e71; }
+
+.dropdown-item.raspberry::before {
+  background-color: #c37892; }
 
 .button-group-default {
   margin-bottom: 50px;

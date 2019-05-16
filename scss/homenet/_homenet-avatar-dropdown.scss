@@ -1,0 +1,46 @@
+.dropdown.color-picker button {
+    min-width: 178px
+}
+
+.dropdown.color-picker .dropdown-item::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.dropdown-item.taro::before {
+background-color: $taro;
+}
+.dropdown-item.strawberry::before {
+background-color: $strawberry;
+}
+.dropdown-item.pandan::before {
+background-color: $pandan;
+}
+.dropdown-item.blueberry::before {
+background-color: $blueberry;
+}
+.dropdown-item.custard::before {
+background-color: $custard;
+}
+.dropdown-item.blackcurrent::before {
+background-color: $blackcurrent;
+}
+.dropdown-item.sweetpotato::before {
+background-color: $sweetpotato;
+}
+.dropdown-item.chocolate::before {
+background-color: $chocolate;
+}
+.dropdown-item.greentea::before {
+background-color: $greentea;
+}
+.dropdown-item.raspberry::before {
+background-color: $raspberry;
+}
+

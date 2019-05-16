@@ -99,3 +99,8 @@
 .dropdown-divider {
   @include nav-divider($dropdown-divider-bg, $dropdown-divider-padding-y);
 }
+
+// Dropdown color picker
+.dropdown.color-picker .dropdown-item::before {
+
+}
