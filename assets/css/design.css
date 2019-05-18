@@ -4,10 +4,14 @@ Type
 ################
 */
 
-#zh {
+.zh {
     font-family: "Muli", 'Verdana', 'Avenir', "Noto Serif SC", 宋体, SimSun, sans-serif;
 }
 
+/* General */
+.textarea {
+    font-family: var(--secondary-font);
+}
 
 /* Homepage */
 .search_engine {
@@ -77,6 +81,110 @@ Type
 
 .account .profile .lang #zh {
     font-weight: 500;
+}
+
+/* Account Dashboard */
+
+.account .dashboard .name,
+.account .dashboard .edit,
+.account .dashboard .top_cell .count,
+.account .dashboard .top_cell .live
+ {
+    font-family: var(--secondary-font);
+}
+
+/* Account Listing Backend*/
+
+.account .listing-process h1,
+.account .listing-process .step,
+.account .listing-process .placeholder,
+.account .listing-process .note_advice
+ {
+    font-family: var(--secondary-font);
+}
+
+/* Account Listing Management*/
+
+.account .listing-manage .side_counts .count,
+.account .listing-manage .sticky_progress,
+.account .listing-manage .listing.table,
+.account .listing-manage .note_advice,
+.account .listing-manage .progress_divide
+ {
+    font-family: var(--secondary-font);
+}
+
+.account .listing-manage .listing.table .details,
+.account .listing-manage .listing.table .note,
+.account .listing-manage .listing.table .delete,
+.account .listing-manage .listing.table .edit,
+.account .listing-manage .listing.table .incomplete {
+    font-family: var(--primary-font);
+}
+
+/* Account Listing Chat*/
+
+.account .chat .menu,
+.account .chat .message .phone,
+.account .chat .message .msg,
+.account .chat .chat_frame,
+.account .chat .chatting_to,
+.account .chat .send_button
+ {
+    font-family: var(--secondary-font);
+}
+
+.account .chat .menu .title,
+.account .chat .chat_frame .listing_type,
+.account .chat .chatting_to .account,
+.account .chat .chatting_to .divider
+ {
+    font-family: var(--primary-font);
+}
+
+/* Others */
+
+.agent_box,
+.new_msg_box,
+.settings_box,
+.popup_box
+ {
+    font-family: var(--secondary-font);
+}
+
+.agent_box .agent
+ {
+    font-family: var(--primary-font);
+}
+
+/*
+################
+Accounts General Styles
+################
+*/
+
+/* Backgrounds */
+
+.account .bg {
+    background-color: #e9eff0;
+}
+.account .chat .bg {
+    background-color: #eef0f5;
+}
+
+
+/* Account Sub Nav */
+.account .sub-nav span {
+    color: #343e5c;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    font-size: 13px;
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.account .sub-nav span.current {
+    opacity: 0.5;
 }
 
 
@@ -1492,35 +1600,13 @@ District Page
     padding: 0 10px;
 }
 
+
+
 /*
 ################
-Account General
+Profile Page
 ################
 */
-
-/* Backgrounds */
-
-.account .bg {
-    background-color: #e9eff0;
-}
-
-/* Account Sub Nav */
-.account .sub_nav span {
-    color: #343e5c;
-    font-weight: 600;
-    letter-spacing: 0.1px;
-    font-size: 13px;
-    display: inline-block;
-    padding: 0px 30px;
-}
-
-.account .sub_nav span.current {
-    opacity: 0.5;
-}
-
-
-
-
 
 
 .profile .input_form {
@@ -1807,4 +1893,1055 @@ Account General
     color: #545661;
     display: block;
     text-transform: uppercase;
+}
+
+/*
+################
+Dashboard
+################
+*/
+
+.dashboard {
+	color: #616471;
+}
+.dashboard .bg {
+	height: 990px;
+	margin-top: 20px;
+}
+.dashboard .name {
+	font-size: 35px;
+	color: #fff;
+}
+.dashboard .edit {
+	font-size: 16px;
+	color: #fff;
+}
+.dashboard .cell {
+	text-align: center;
+	background-color: #fff;
+	color: #343e5c;
+	position: relative;
+	margin: 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+}
+.dashboard .top_cell {
+	width: 246px;
+	height: 221px;
+}
+.dashboard .top_cell .count {
+	font-weight: 400;
+	letter-spacing: 0.4px;
+	font-size: 27px;
+	color: #5e6477;
+}
+.dashboard .top_cell .live {
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.dashboard .header {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: block;
+	border-bottom: solid 1px #e1e5e5;
+	padding: 13px 0px;
+}
+.dashboard .tip {
+	font-weight: 400;
+	letter-spacing: -0.1px;
+	font-size: 14.5px;
+	width: 80%;
+	display: inline-block;
+}
+.dashboard .button {
+	display: inline-block;
+	font-size: 14px;
+	width: 182px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	letter-spacing: 0.3px;
+	margin-bottom: 20px;
+	background-color: #5aa9e2;
+	border-radius: 42px;
+}
+.dashboard .button .text {
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.dashboard .left_cell {
+	width: 234px;
+	height: 265px;
+}
+.dashboard .left_cell .item {
+	font-size: 14px;
+	letter-spacing: 0px;
+}
+.dashboard .left_cell .button_sq {
+	width: 195px;
+	height: 41px;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 2px solid #fd7f56;
+	display: inline-block;
+}
+.dashboard .left_cell #add .text {
+	font-size: 13.5px;
+	letter-spacing: 0.3px;
+	font-weight: 400;
+	display: block;
+	color: #1d233a;
+}
+.dashboard .left_cell_photo {
+	width: 234px;
+	height: 41px;
+}
+.dashboard .left_cell_photo .change {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 10px;
+}
+.dashboard .orange {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 10px;
+	color: #ef4f1c;
+}
+.dashboard .inbox_cell {
+	width: 770px;
+	height: 200px;
+}
+
+/*
+################
+Listing Process
+################
+*/
+
+.listing-process .listing-status span {
+	letter-spacing: 1.1px;
+	font-size: 13.5px;
+	text-transform: uppercase;
+	padding: 0px 3px;
+}
+
+.listing-process .listing-status span.status {
+	padding-left: 12px;
+}
+.listing-process .input_form .bg {
+	background-color: #e9eff0;
+	height: 640px;
+	margin-top: 20px;
+}
+.listing-process .input_form .form {
+	background-color: #fff;
+	color: #3f3f3f;
+	width: 90%;
+	height: 600px;
+	position: relative;
+	display: inline-block;
+	margin: 20px;
+	border-radius: 6px;
+	-webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+}
+.listing-process .input_form .form .content {
+	padding: 30px 75px;
+}
+.listing-process .input_form .form .content .header {
+	border-bottom: 1px solid #dadee4;
+}
+.listing-process .input_form .form .content h1 {
+	color: #2a324b;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	font-size: 17px;
+	margin: 0px 19px;
+	display: inline-block;
+}
+.listing-process .input_form .form .content .header .step {
+	color: #222328;
+	font-size: 14px;
+	color: #3f3f3f;
+	font-weight: 600;
+	border-radius: 50%;
+	border: 2px solid #bcc6c9;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	display: inline-block;
+}
+
+.listing-process .lang #zh{
+	    font-weight: 400;
+}
+
+.listing-process .input_form .form .content .note {
+    color: #63697e;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    font-size: 13.5px;
+    margin: 10px 0 11px 0px;
+}
+.listing-process .input_form .form .content span {
+	color: #343e5c;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+	font-size: 13px;
+	margin: 10px 0px 10px 5px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.listing-process .input_form .form .content .lang span {
+letter-spacing: 0.5px;
+}
+.listing-process .input_form .input {
+	font-size: 15px;
+	width: 408px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	letter-spacing: 0.3px;
+	margin-bottom: 20px;
+	border: 1px solid #d2d7df;
+	background-color: #f5f7fc;
+	border-radius: 42px;
+}
+.listing-process .input_form .input .placeholder {
+	color: #919caf;
+	text-align: left;
+	padding-left: 25px;
+	font-weight: 300;
+	font-size: 13.5px;
+}
+.listing-process .input_form .input .text {
+	color: #2a324b;
+	text-align: left;
+	padding-left: 25px;
+	font-weight: 400;
+}
+.listing-process .input_form .select {
+	font-size: 14px;
+	width: 255px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	letter-spacing: 0.3px;
+	margin-bottom: 20px;
+	border: 1px solid #d2d7df;
+	background-color: #fff;
+	border-radius: 42px;
+}
+.listing-process .input_form .select .text {
+	color: #343e5c;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+	font-size: 13px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.listing-process .input_form .sub_header {
+	font-size: 14px;
+	width: 195px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	letter-spacing: 0.3px;
+	margin-bottom: 20px;
+	border: 1px solid #d2d7df;
+	background-color: #fff;
+	border-radius: 42px;
+}
+.listing-process .input_form .sub_header .text {
+	color: #6d7588;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.listing-process .input_form .form .content span.checkbox {
+	color: #656a76;
+	font-size: 12.5px;
+}
+.listing-process .input_form .form .content span.addmore {
+	color: #ff715a;
+	font-size: 12.5px;
+}
+.listing-process .input_form .form .content span.tag {
+	font-size: 11.5px;
+	letter-spacing: 0.7px;
+}
+.listing-process .input_form .form .content p.caption {
+	font-size: 11px;
+	color: #111;
+  letter-spacing: 0.3px;
+}
+.listing-process .side .bg {
+	background-color: #e9eff0;
+	margin-top: 20px;
+	padding: 30px 20px;
+  height: 200px;
+}
+.listing-process .side .status_header {
+	width: 276px;
+	height: 52px;
+	text-align: left;
+	line-height: 52px;
+	margin-bottom: 20px;
+	border: 2px solid #bcc6c9;
+	background-color: #fff;
+	border-radius: 42px;
+}
+.listing-process .side .status_header .text {
+	color: #343e5c;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+	font-size: 13.5px;
+	text-transform: uppercase;
+	display: block;
+	padding-left: 49px;
+}
+.listing-process .side .step {
+	color: #222328;
+	font-size: 13.5px;
+	color: #343e5c;
+	background-color: #fff;
+	font-weight: 800;
+	border-radius: 50%;
+	border: 2px solid #bcc6c9;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	display: inline-block;
+}
+.listing-process .side .status_header .step_text {
+	color: #343e5c;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+	font-size: 13px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding-left: 19px;
+}
+.listing-process .side .next {
+color: #343e5c;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 19px;
+}
+.listing-process .my_note .bg {
+	background-color: #e9eff0;
+	margin-top: 20px;
+	padding: 30px 20px;
+}
+.listing-process .my_note .container {
+	width: 338px;
+	height: 403px;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 2px solid #dadee5;
+	position: relative;
+}
+.listing-process .my_note .save_note {
+	width: 200px;
+	height: 41px;
+	text-align: center;
+	line-height: 41px;
+	border: 2px solid #dadee5;
+	background-color: #fff;
+	border-radius: 41px;
+	position: absolute;
+	bottom: 7%;
+	left: 19%;
+}
+.listing-process .my_note .save_note .text {
+	color: #343e5c;
+	font-weight: 600;
+	letter-spacing: 1.4px;
+	font-size: 12.5px;
+	text-transform: uppercase;
+	display: block;
+}
+.listing-process .my_note .note_head {
+	margin: 55px 0px;
+	color: #4f5a7b;
+	font-weight: 600;
+	letter-spacing: 0.8px;
+	font-size: 19px;
+	text-align: center;
+}
+.listing-process .my_note .note_advice {
+	color: #808696;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	font-size: 13px;
+	text-align: center;
+	padding: 0 33px;
+	line-height: 19px;
+}
+
+/*
+################
+Listing Management
+################
+*/
+
+.listing-manage {
+	color: #616471;
+}
+.listing-manage .bg {
+	background-color: #e9eff0;
+	height: 550px;
+	margin-top: 20px;
+}
+.listing-manage .side_counts {
+	text-align: center;
+}
+.listing-manage .side_counts .count {
+	font-size: 24px;
+	letter-spacing: 0.5px;
+}
+.listing-manage .side_counts span {
+	font-size: 14.5px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+}
+.listing-manage .table {
+	background-color: #fff;
+	color: #343e5c;
+	position: relative;
+	margin: 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+}
+.listing-manage .topbar {
+	width: 865px;
+	height: 66px;
+}
+.listing-manage .topbar span {
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.8px;
+	padding: 25px 10px;
+	display: inline-block;
+	font-weight: 600;
+}
+.listing-manage .topbar span.filter {
+	color: #6d7486;
+	font-weight: 400;
+}
+.listing-manage .topbar .keywords {
+	font-size: 15px;
+	width: 200px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	letter-spacing: 0.3px;
+	margin-bottom: 20px;
+	border: 1px solid #d2d7df;
+	background-color: #f5f7fc;
+	border-radius: 42px;
+	display: inline-block;
+}
+.listing-manage .topbar .keywords .placeholder {
+	color: #919caf;
+	text-align: center;
+	font-weight: 300;
+	font-size: 11px;
+}
+.listing-manage .sticky_progress {
+	width: 198px;
+	height: 50px;
+	border-radius: 50px;
+	text-align: center;
+}
+.listing-manage .sticky_progress span.list-progress {
+	padding: 15px 0px;
+	display: inline-block;
+	font-size: 13.5px;
+	font-weight: 600;
+	letter-spacing: 0.3px;
+}
+.listing-manage .sticky_progress span.list-progress span.count {
+	font-weight: 700;
+}
+.listing-manage .listing {
+	width: 865px;
+	height: 233px;
+	color: #252e4c;
+}
+.listing-manage .listing .name {
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: -0.3px;
+	line-height: 14px;
+}
+.listing-manage .listing span.cur {
+	padding-right: 4px;
+	letter-spacing: -0.2px;
+}
+.listing-manage .listing .sale {
+	font-size: 19px;
+	letter-spacing: -0.3px;
+}
+.listing-manage .listing .rent {
+	font-size: 19px;
+	letter-spacing: -0.1px;
+}
+.listing-manage .listing .rent span.cur {
+	padding-right: 3px;
+}
+.listing-manage .listing .rent span.per {
+	padding-left: 3px;
+	font-size: 13px;
+}
+.listing-manage .listing .neighbourhood {
+	font-size: 11.5px;
+	letter-spacing: 0.2px;
+}
+.listing-manage .listing .layout {
+	padding-right: 4px;
+	display: inline-block;
+}
+.listing-manage .listing .size {
+	border-left: 1px solid #000;
+	padding: 0px 6px;
+	display: inline-block;
+	line-height: 15.5px;
+	letter-spacing: -0.1px;
+}
+.listing-manage .listing .size span.number {
+	letter-spacing: -0.1px;
+}
+.listing-manage .listing .size span.feet {
+	font-size: 13px;
+}
+.listing-manage .listing .size span.square {
+	font-size: 16px;
+}
+.listing-manage .listing .details {
+	font-size: 12.5px;
+	letter-spacing: 0.4px;
+}
+.listing-manage .listing .note {
+	font-size: 12.5px;
+	color: #51b792;
+}
+.listing-manage .listing .note .bold {
+	font-weight: 600;
+}
+.listing-manage .listing .delete {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #565e75;
+}
+.listing-manage .listing .edit {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #565e75;
+}
+.listing-manage .listing .button {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.listing-manage .listing .incomplete {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #565e75;
+}
+.listing-manage .progress_divide {
+	font-size: 13.5px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+}
+
+/*
+################
+Chat
+################
+*/
+
+.chat .menu {
+	border-bottom: solid 1px #e5e8e8;
+}
+.chat .menu .box {
+	letter-spacing: -0.1px;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 23px 0px;
+	text-align: center;
+	width: 204px;
+	display: inline-block;
+	background-color: white;
+}
+.chat .menu .current {
+	border-bottom: solid 2px #43abff;
+}
+.chat .menu .box .count {
+	padding-right: 4px;
+	font-weight: 400;
+	color: #000;
+}
+.chat .menu .box .new {
+	font-size: 8.5px;
+	color: #fff;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background: #fe7d52;
+	text-align: center;
+	line-height: 16px;
+	display: inline-block;
+	font-weight: 700;
+	position: relative;
+	bottom: 8px;
+	left: 2px;
+}
+.chat .bg {
+	height: 730px;
+	margin-top: 20px;
+	padding: 20px;
+}
+.chat .message .name {
+	font-size: 18px;
+	font-weight: 600;
+	color: #373737;
+	letter-spacing: -0.3px;
+	line-height: 14px;
+}
+.chat .message .phone {
+	font-size: 13.5px;
+	letter-spacing: 0.2px;
+}
+.chat .message .about {
+	font-size: 12px;
+	letter-spacing: 0.2px;
+}
+.chat .message .msg {
+	font-size: 13.5px;
+	letter-spacing: 0px;
+}
+.chat .message .listing {
+	font-size: 12.5px;
+	letter-spacing: 0.2px;
+	color: #7d808b;
+}
+.chat .message .date {
+	font-size: 12.5px;
+	letter-spacing: 0.1px;
+	color: #7d808b;
+}
+
+.chat .chat_frame {
+	color: #222a3b;
+}
+.chat .chat_frame .side .recieved {
+	font-size: 13.5px;
+	letter-spacing: 0.1px;
+	font-weight: 600;
+}
+.chat .chat_frame .side .highlight {
+	color: #7e879f;
+}
+.chat .chat_frame .side .listing_header .listing_name {
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: -0.3px;
+	color: #5c6170;
+}
+.chat .chat_frame .side .listing_header .listing_sub {
+	font-size: 11.5px;
+	font-weight: 600;
+	letter-spacing: -0.1px;
+}
+.chat .chat_frame .side .listing_type {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #000;
+}
+.chat .chat_frame .side .price {
+	color: #353e52;
+}
+.chat .chat_frame .side .price span.cur {
+	padding-right: 4px;
+	letter-spacing: -0.2px;
+}
+.chat .chat_frame .side .price .sale {
+	font-size: 18.5px;
+	letter-spacing: -0.4px;
+}
+.chat .chat_frame .side .price .rent {
+	font-size: 18.5px;
+	letter-spacing: -0.4px;
+}
+.chat .chat_frame .side .price .rent span.cur {
+	padding-right: 3px;
+}
+.chat .chat_frame .side .price .rent span.per {
+	padding-left: 3px;
+	font-size: 13px;
+}
+.chat .chat_frame .side .date {
+	font-size: 13.5px;
+	letter-spacing: -0.1px;
+}
+.chat .chat_frame .side .date .rec {
+	color: #368a9b;
+}
+.chat .chat_frame .side .details {
+	font-size: 17px;
+	color: #2a2a2a;
+	padding: 0px 0px;
+	margin: 20px 0px letter-spacing: -0.1px;
+}
+.chat .chat_frame .side .layout {
+	padding-right: 4px;
+	display: inline-block;
+}
+.chat .chat_frame .side .size {
+	border-left: 1px solid #000;
+	padding: 0px 6px;
+	display: inline-block;
+	line-height: 15.5px;
+	letter-spacing: -0.1px;
+}
+.chat .chat_frame .side .size span.number {
+	letter-spacing: -0.1px;
+}
+.chat .chat_frame .side .size span.feet {
+	font-size: 13px;
+}
+.chat .chat_frame .side .size span.square {
+	font-size: 16px;
+}
+.chat .chat_frame .side .appoint_head {
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 0.1px;
+}
+.chat .chat_frame .side .viewing {
+	font-size: 13.5px;
+	letter-spacing: 0.3px;
+}
+.chat .chat_frame .side .viewing .sub {
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: -0.1px;
+}
+.chat .chat_frame .table {
+	background-color: #fff;
+	color: #343e5c;
+	position: relative;
+	margin: 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+}
+.chat .chat_frame .chatting_to {
+	width: 680px;
+	height: 103px;
+	color: #373737;
+}
+.chat .chat_frame .chatting_to .content {
+	padding: 10px;
+}
+.chat .chat_frame .chatting_to .name {
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: -0.2px;
+}
+.chat .chat_frame .chatting_to .account {
+	font-size: 12px;
+	letter-spacing: -0.1px;
+	color: #111;
+}
+.chat .chat_frame .chatting_to .account {
+	font-size: 12px;
+	letter-spacing: -0.1px;
+}
+.chat .chat_frame .chatting_to .contact {
+	font-size: 13.5px;
+	letter-spacing: -0.2px;
+	padding-right: 10px;
+}
+.chat .chat_frame .divider {
+	font-size: 13px;
+}
+.chat .chat_frame .divider .date {
+	font-weight: 400;
+}
+.chat .chat_frame .speech {
+	position: relative;
+	margin: 20px;
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(0, 13, 38, 0.10);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(0, 13, 38, 0.10);
+	box-shadow: 0px 0px 10px -1px rgba(0, 13, 38, 0.10);
+}
+.chat .chat_frame .msg_recieved {
+	color: #3f3f3f;
+	background-color: #fff;
+	width: 576px;
+	height: 86px;
+	border-radius: 22px 22px 22px 0px;
+}
+.chat .chat_frame .msg_recieved .message {
+	padding: 10px 20px;
+	display: block;
+	color: #111;
+	font-size: 15px;
+}
+.chat .chat_frame .msg_sent {
+	color: #fff;
+	background-color: #43abff;
+	width: 576px;
+	height: 86px;
+	border-radius: 22px 0px 22px 22px;
+}
+.chat .chat_frame .msg_sent .message {
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+}
+.chat .chat_frame .speech .date {
+	display: block;
+	font-size: 13.5px;
+	padding: 10px 20px;
+	opacity: 0.65;
+	font-weight: 600;
+	letter-spacing: -0.3px;
+}
+.chat .textarea {
+	font-size: 14px;
+	width: 960px;
+	height: 36px;
+	line-height: 36px;
+	letter-spacing: 0.3px;
+	margin: 20px;
+	border: 1px solid #e5e8e8;
+	background-color: #eef0f5;
+	border-radius: 36px;
+}
+.chat .textarea .placeholder {
+	color: #555;
+	text-align: left;
+	padding-left: 40px;
+	font-weight: 300;
+	font-size: 14px;
+}
+.chat .send_button {
+	width: 130px;
+	height: 36px;
+	background-color: #43abff;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.2px;
+	border-radius: 2px;
+	margin: 20px;
+	display: inline-block;
+	font-size: 13.5px;
+	line-height: 34px;
+}
+
+/*
+#####################
+		Others
+#####################
+*/
+
+
+/*
+################
+Agent Promo
+################
+*/
+
+.agent_box {
+	width: 500px;
+	height: 203px;
+	background-color: #364a4e;
+	margin: 20px;
+	color: #fff;
+}
+.agent_box .content {
+	padding: 12px 12px 12px 231px;
+}
+.agent_box .agent {
+	font-size: 13px;
+	float: right;
+}
+.agent_box .name {
+	font-size: 24px;
+	letter-spacing: -0.1px;
+}
+.agent_box .lang {
+	font-size: 13.5px;
+	letter-spacing: 0.2px;
+}
+.agent_box .details {
+	font-size: 13.5px;
+	letter-spacing: 0.3px;
+	font-weight: 300;
+}
+/*
+################
+New Msg Notification
+################
+*/
+
+.new_msg_box {
+	width: 370px;
+	height: 149px;
+	background-color: rgba(54, 74, 78, 0.99);
+	margin: 20px;
+	color: #fff;
+}
+.new_msg_box .content {
+	padding: 12px 12px 12px 12px;
+	font-size: 13.5px;
+	font-weight: 300;
+}
+.new_msg_box .recieved {
+	font-size: 16px;
+	font-weight: 400;
+}
+.new_msg_box .from {
+	font-weight: 600;
+}
+.new_msg_box .about {
+	font-weight: 600;
+}
+
+/*
+################
+Site Settings
+################
+*/
+
+.settings_box {
+	width: 286px;
+	height: 341px;
+	background-color: #b0b6b8;
+	margin: 20px;
+	color: #fff;
+	-webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+}
+.settings_box .content {
+	padding: 21px 40px;
+}
+.settings_box span {
+	font-size: 15px;
+	line-height: 32px;
+	opacity: 0.5;
+}
+.settings_box span.eng {
+	letter-spacing: 0.4px;
+}
+
+.settings_box span.lang_select {
+	width: 52px;
+	height: 32px;
+	border: solid 2px white;
+	display: inline-block;
+	text-align: center;
+	border-radius: 4px;
+	font-weight: 600;
+	opacity: 1;
+}
+.settings_box span.cur_select {
+	display: block;
+	text-align: left;
+	font-weight: 400;
+	opacity: 1;
+}
+
+/*
+################
+Action Popup
+################
+*/
+
+.popup_box {
+	width: 310px;
+	height: 186px;
+	background-color: rgba(54, 74, 78, 0.98);
+	margin: 20px;
+	color: #fff;
+	border-radius: 7px;
+	-webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+.popup_box .content {
+	padding: 28px 50px 14px 50px;
+	text-align: center;
+	display: block;
+}
+.popup_box .content .title {
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: -0.1px;
+	line-height: 1;
+}
+.popup_box .content .action {
+	color: #dde0e8;
+	font-size: 15.5px;
+	padding: 10px 10px 8px 10px;
+	display: block;
+	line-height: 1.3;
+}
+.popup_box .button {
+	width: 111px;
+	height: 36px;
+	border-radius: 4px;
+	line-height: 36px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px;
+	font-weight: 300;
+	font-size: 15.5px;
+}
+.popup_box .confirm {
+	background-color: #f00a2b;
+	line-height: 35px;
+}
+.popup_box .cancel {
+	background-color: #656571;
+	line-height: 35px;
 }
