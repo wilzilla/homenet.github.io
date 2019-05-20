@@ -2,10 +2,14 @@
 // Text Block
 //
 
-p {
+body p {
   font-family: $font-secondary;
   font-weight: $font-weight-400;
   letter-spacing: 0.01px;
+}
+
+body.zh p {
+  font-family: $font-zh;
 }
 
 //

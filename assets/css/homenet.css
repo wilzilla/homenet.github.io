@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Points */
 /* Content css-variables */
 :root {
@@ -9332,7 +9333,7 @@ textarea.form-control {
   transition: all 0.2s ease-in-out;
   color: #fff;
   background-color: #bdc3c7;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn:hover, .btn:focus, .btn.focus {
     color: #fff;
     background-color: #d2d6d9;
@@ -9355,7 +9356,7 @@ textarea.form-control {
 .btn-primary {
   color: #fff;
   background-color: #3498db;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #54a8e1;
@@ -9375,7 +9376,7 @@ textarea.form-control {
 .btn-secondary {
   color: #fff;
   background-color: #45b39d;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
     color: #fff;
     background-color: #5ec1ad;
@@ -9395,7 +9396,7 @@ textarea.form-control {
 .btn-success {
   color: #fff;
   background-color: #2ecc71;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-success:hover, .btn-success:focus, .btn-success.focus {
     color: #fff;
     background-color: #4ad685;
@@ -9415,7 +9416,7 @@ textarea.form-control {
 .btn-info {
   color: #fff;
   background-color: #85c1e9;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-info:hover, .btn-info:focus, .btn-info.focus {
     color: #fff;
     background-color: #a5d1ef;
@@ -9435,7 +9436,7 @@ textarea.form-control {
 .btn-warning {
   color: #fff;
   background-color: #f1c40f;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-warning:hover, .btn-warning:focus, .btn-warning.focus {
     color: #fff;
     background-color: #f3cd33;
@@ -9455,7 +9456,7 @@ textarea.form-control {
 .btn-danger {
   color: #fff;
   background-color: #e94b35;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-danger:hover, .btn-danger:focus, .btn-danger.focus {
     color: #fff;
     background-color: #ed6a57;
@@ -9475,7 +9476,7 @@ textarea.form-control {
 .btn-light {
   color: #2c3e50;
   background-color: #f7f9f9;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 8px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-light:hover, .btn-light:focus, .btn-light.focus {
     color: #2c3e50;
     background-color: white;
@@ -9495,7 +9496,7 @@ textarea.form-control {
 .btn-dark {
   color: #fff;
   background-color: #2c3e50;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-dark:hover, .btn-dark:focus, .btn-dark.focus {
     color: #fff;
     background-color: #3a5169;
@@ -9515,7 +9516,7 @@ textarea.form-control {
 .btn-facebook {
   color: #fff;
   background-color: #2874a6;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-facebook:hover, .btn-facebook:focus, .btn-facebook.focus {
     color: #fff;
     background-color: #2f8ac5;
@@ -9535,7 +9536,7 @@ textarea.form-control {
 .btn-twitter {
   color: #fff;
   background-color: #5dade2;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-twitter:hover, .btn-twitter:focus, .btn-twitter.focus {
     color: #fff;
     background-color: #7dbde8;
@@ -9555,7 +9556,7 @@ textarea.form-control {
 .btn-pinterest {
   color: #fff;
   background-color: #b03a2e;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-pinterest:hover, .btn-pinterest:focus, .btn-pinterest.focus {
     color: #fff;
     background-color: #cb4739;
@@ -9575,7 +9576,7 @@ textarea.form-control {
 .btn-google-plus {
   color: #fff;
   background-color: #e74c3c;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-google-plus:hover, .btn-google-plus:focus, .btn-google-plus.focus {
     color: #fff;
     background-color: #eb6b5e;
@@ -9595,7 +9596,7 @@ textarea.form-control {
 .btn-instagram {
   color: #fff;
   background-color: #af7ac5;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-instagram:hover, .btn-instagram:focus, .btn-instagram.focus {
     color: #fff;
     background-color: #bf95d1;
@@ -9615,7 +9616,7 @@ textarea.form-control {
 .btn-dribbble {
   color: #fff;
   background-color: #cd6155;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-dribbble:hover, .btn-dribbble:focus, .btn-dribbble.focus {
     color: #fff;
     background-color: #d67c73;
@@ -9635,7 +9636,7 @@ textarea.form-control {
 .btn-youtube {
   color: #fff;
   background-color: #cb4335;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-youtube:hover, .btn-youtube:focus, .btn-youtube.focus {
     color: #fff;
     background-color: #d35f53;
@@ -9655,7 +9656,7 @@ textarea.form-control {
 .btn-vimeo {
   color: #fff;
   background-color: #85c1e9;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-vimeo:hover, .btn-vimeo:focus, .btn-vimeo.focus {
     color: #fff;
     background-color: #a5d1ef;
@@ -9675,7 +9676,7 @@ textarea.form-control {
 .btn-stumbleupon {
   color: #fff;
   background-color: #e67e22;
-  box-shadow: "0 12px 35px -10px rgba($color, $opacity-front)", "0 8px 10px -5px rgba($black, $opacity-mid)", "0 4px 25px -2px rgba($black, $opacity-back)"; }
+  box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14); }
   .btn-stumbleupon:hover, .btn-stumbleupon:focus, .btn-stumbleupon.focus {
     color: #fff;
     background-color: #ea9244;
@@ -12297,10 +12298,13 @@ button.bg-viridian-500:focus {
   color: rgba(255, 255, 255, 0.75) !important; }
 
 /* stylelint-enable */
-p {
+body p {
   font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif;
   font-weight: 400;
   letter-spacing: 0.01px; }
+
+body.zh p {
+  font-family: "Montserrat", "Verdana", "Avenir", "Noto Serif SC", Õ«ïõ¢ô, SimSun, sans-serif; }
 
 h1,
 .h1 {
@@ -16938,7 +16942,6 @@ a.focus-flip:focus {
 .button-submit {
   font-weight: 600;
   line-height: 1;
-  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 18px 40px;
@@ -16960,6 +16963,11 @@ a.focus-flip:focus {
 .button-submit:hover {
   background-color: transparent;
   color: #85c3ae; }
+
+.button-submit:active {
+  background-color: #85c3ae;
+  color: #fff;
+  opacity: 0.5; }
 
 .play-btn-scale {
   cursor: pointer;
@@ -16997,6 +17005,96 @@ a.focus-flip:focus {
 
 .play-btn-scale:hover i {
   color: #fff !important; }
+
+.button-contact, .button-action, .button-search {
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer; }
+
+.button-contact {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  border-radius: 100px;
+  background-color: #85c3ae;
+  border: 2px solid #85c3ae;
+  letter-spacing: 0.5px;
+  min-width: 126px;
+  min-height: 41px; }
+  @media (max-width: 767px) {
+    .button-contact {
+      padding: 13px 25px; } }
+
+.button-contact:hover {
+  background-color: transparent;
+  color: #85c3ae; }
+
+.button-contact:active {
+  background-color: #85c3ae;
+  color: #fff;
+  opacity: 0.7; }
+
+.button-search {
+  font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 0.96875em;
+  text-transform: none;
+  border-radius: 100px;
+  background-color: #f75311;
+  border: 2px solid #f75311;
+  letter-spacing: 0.4px;
+  min-width: 128px;
+  height: 45px;
+  padding-left: 9px; }
+  @media (max-width: 767px) {
+    .button-search {
+      padding: 13px 25px; } }
+
+.button-search:hover {
+  background-color: rgba(247, 83, 17, 0.28);
+  color: #e64200; }
+
+.button-search:active {
+  background-color: #f75311;
+  color: #fff;
+  opacity: 0.7; }
+
+.button-action {
+  font-weight: 400;
+  font-size: 1em;
+  border-radius: 4px;
+  background-color: #ff755a;
+  border: 2px solid #ff755a; }
+  @media (max-width: 767px) {
+    .button-action {
+      padding: 13px 25px; } }
+
+.button-action:hover {
+  background-color: transparent;
+  color: #ff755a;
+  font-weight: 600; }
+
+.button-action:active {
+  background-color: #ff755a;
+  color: #fff;
+  opacity: 0.7; }
+
+.button-action.listing-enquiry {
+  text-transform: uppercase;
+  min-width: 263px;
+  min-height: 43px;
+  letter-spacing: 0.5px; }
+
+.button-action.save {
+  text-transform: uppercase;
+  min-width: 202px;
+  min-height: 45px;
+  letter-spacing: 1.3px; }
 
 .portfolio-layout .grid-wrapper {
   margin: 0 13px; }

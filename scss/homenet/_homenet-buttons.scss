@@ -219,11 +219,12 @@
   top: 0;
 }
 
+
 // Button submit
+
 .button-submit {
   font-weight: 600;
   line-height: 1;
-  font-family: $font-secondary;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 18px 40px;
@@ -246,6 +247,12 @@
 .button-submit:hover {
   background-color: transparent;
   color: $main-color;
+}
+
+.button-submit:active {
+  background-color: $main-color;
+  color: $white;
+  opacity: 0.5;
 }
 
 // Button play
@@ -291,4 +298,110 @@
   i {
     color: $white !important;
   }
+}
+
+//**** Homenet Solid Buttons General Styles ****//
+
+.button-contact, .button-action, .button-search {
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+}
+
+// Button General - Contact
+.button-contact {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    border-radius: 100px;
+    background-color: $main-color;
+    border: 2px solid $main-color;
+    letter-spacing: 0.5px;
+    min-width: 126px;
+    min-height: 41px;
+  @media(max-width: $md) {
+    padding: 13px 25px;
+  }
+}
+.button-contact:hover {
+  background-color: transparent;
+  color: $main-color;
+}
+.button-contact:active {
+  background-color: $main-color;
+  color: $white;
+  opacity: 0.7;
+}
+
+// Button General - Search
+.button-search {
+  font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 0.96875em;
+    text-transform: none;
+    border-radius: 100px;
+    background-color: #f75311;
+    border: 2px solid #f75311;
+    letter-spacing: 0.4px;
+    min-width: 128px;
+    height: 45px;
+    padding-left: 9px;
+  @media(max-width: $md) {
+    padding: 13px 25px;
+  }
+}
+.button-search:hover {
+  background-color: rgba(247, 83, 17, 0.28);
+  color: #e64200;
+}
+.button-search:active {
+  background-color: #f75311;
+  color: $white;
+  opacity: 0.7;
+}
+
+// Button Action General
+.button-action {
+    font-weight: 400;
+    font-size: 1em;
+    border-radius: 4px;
+    background-color: #ff755a;
+    border: 2px solid #ff755a;
+  @media(max-width: $md) {
+    padding: 13px 25px;
+  }
+}
+
+.button-action:hover {
+  background-color: transparent;
+  color: #ff755a;
+  font-weight: 600;
+}
+
+.button-action:active {
+  background-color: #ff755a;
+  color: $white;
+  opacity: 0.7;
+}
+
+
+// Button Action - Enquiry
+.button-action.listing-enquiry {
+    text-transform: uppercase;
+    min-width: 263px;
+    min-height: 43px;
+    letter-spacing: 0.5px;
+}
+
+// Button Action - Save
+.button-action.save {
+    text-transform: uppercase;
+    min-width: 202px;
+    min-height: 45px;
+    letter-spacing: 1.3px;
 }

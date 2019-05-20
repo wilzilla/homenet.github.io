@@ -4,155 +4,157 @@ Type
 ################
 */
 
-.zh {
-    font-family: "Muli", 'Verdana', 'Avenir', "Noto Serif SC", 宋体, SimSun, sans-serif;
+body.zh {
+    font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", 宋体, SimSun, sans-serif !important;
+}
+body.en .zh {
+    font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", 宋体, SimSun, sans-serif !important;
 }
 
 /* General */
-.textarea {
+body.en .textarea {
     font-family: var(--secondary-font);
 }
 
+/* Buttons */
+body.en .button-submit {
+  font-family: var(--secondary-font);
+}
+
+/* Buttons */
+body.en .button-submit,
+body.en .button-contact,
+body.en .button-action 
+ {
+  font-family: var(--secondary-font);
+}
+
 /* Homepage */
-.search_engine {
+body.en .search_engine {
     font-family: var(--secondary-font);
 }
 
 /* Listing Pages */
-.listing-name,
-.location,
-.price,
-.listing-info,
-.listing-source-box .source,
-.listing-source-box .name,
-.listing-source-box .call,
-.listing-source-box .enquiry_button {
+body.en .listing-name,
+body.en .location,
+body.en .price,
+body.en .listing-info,
+body.en .listing-source-box .source,
+body.en .listing-source-box .name,
+body.en .listing-source-box .call,
+body.en .listing-source-box .enquiry_button {
     font-family: var(--secondary-font);
 }
-
-.listing-card-small {
+body.en .listing-card-small {
     font-family: var(--secondary-font);
 }
 
 /* Search Pages */
-.map-listing-card {
+body.en .map-listing-card {
     font-family: var(--secondary-font);
 }
-
-.search-page {
+body.en .search-page {
     font-family: var(--secondary-font);
 }
-
-.search-page .neighbourhood {
+body.en .search-page .neighbourhood {
     font-family: var(--primary-font);
 }
 
 /* Profile Pages */
-.profile-page {
+body.en .profile-page {
     font-family: var(--secondary-font);
 }
-
-.profile-page .veri_head {
+body.en .profile-page .veri_head {
     font-family: var(--primary-font);
 }
 
 /* Building Pages */
-.building-page {
+body.en .building-page {
     font-family: var(--secondary-font);
 }
-
-.building-page .building-card .address,
-.building-page .building-card .feature,
+body.en .building-page .building-card .address,
+body.en .building-page .building-card .feature,
     {
     font-family: var(--primary-font);
 }
 
 /* District Pages */
-.district-page {
+body.en .district-page {
     font-family: var(--secondary-font);
 }
 
 /* Account */
-.account .profile .name,
-.account .profile .avatar,
-.account .profile .textarea {
+body.en .account .profile .name,
+body.en .account .profile .avatar,
+body.en .account .profile .textarea {
     font-family: var(--secondary-font);
 }
-
-.account .profile .lang #zh {
+body.en .account .profile .lang .zh {
     font-weight: 500;
 }
 
 /* Account Dashboard */
-
-.account .dashboard .name,
-.account .dashboard .edit,
-.account .dashboard .top_cell .count,
-.account .dashboard .top_cell .live
+body.en .account .dashboard .name,
+body.en .account .dashboard .edit,
+body.en .account .dashboard .top_cell .count,
+body.en .account .dashboard .top_cell .live
  {
     font-family: var(--secondary-font);
 }
 
 /* Account Listing Backend*/
-
-.account .listing-process h1,
-.account .listing-process .step,
-.account .listing-process .placeholder,
-.account .listing-process .note_advice
+body.en .account .listing-process h1,
+body.en .account .listing-process .step,
+body.en .account .listing-process .placeholder,
+body.en .account .listing-process .note_advice
  {
     font-family: var(--secondary-font);
 }
 
 /* Account Listing Management*/
-
-.account .listing-manage .side_counts .count,
-.account .listing-manage .sticky_progress,
-.account .listing-manage .listing.table,
-.account .listing-manage .note_advice,
-.account .listing-manage .progress_divide
+body.en .account .listing-manage .side_counts .count,
+body.en .account .listing-manage .sticky_progress,
+body.en .account .listing-manage .listing.table,
+body.en .account .listing-manage .note_advice,
+body.en .account .listing-manage .progress_divide
  {
     font-family: var(--secondary-font);
 }
-
-.account .listing-manage .listing.table .details,
-.account .listing-manage .listing.table .note,
-.account .listing-manage .listing.table .delete,
-.account .listing-manage .listing.table .edit,
-.account .listing-manage .listing.table .incomplete {
+body.en .account .listing-manage .listing.table .details,
+body.en .account .listing-manage .listing.table .note,
+body.en .account .listing-manage .listing.table .delete,
+body.en .account .listing-manage .listing.table .edit,
+body.en .account .listing-manage .listing.table .incomplete {
     font-family: var(--primary-font);
 }
 
 /* Account Listing Chat*/
-
-.account .chat .menu,
-.account .chat .message .phone,
-.account .chat .message .msg,
-.account .chat .chat_frame,
-.account .chat .chatting_to,
-.account .chat .send_button
+body.en .account .chat .menu,
+body.en .account .chat .message .phone,
+body.en .account .chat .message .msg,
+body.en .account .chat .chat_frame,
+body.en .account .chat .chatting_to,
+body.en .account .chat .send_button
  {
     font-family: var(--secondary-font);
 }
-
-.account .chat .menu .title,
-.account .chat .chat_frame .listing_type,
-.account .chat .chatting_to .account,
-.account .chat .chatting_to .divider
+body.en .account .chat .menu .title,
+body.en .account .chat .chat_frame .listing_type,
+body.en .account .chat .chatting_to .account,
+body.en .account .chat .chatting_to .divider
  {
     font-family: var(--primary-font);
 }
 
 /* Others */
-
-.agent_box,
-.new_msg_box,
-.settings_box,
-.popup_box
+body.en .agent_box,
+body.en .new_msg_box,
+body.en .settings_box,
+body.en .popup_box
  {
     font-family: var(--secondary-font);
 }
-
-.agent_box .agent
+body.en .agent_box .agent
  {
     font-family: var(--primary-font);
 }
@@ -165,10 +167,15 @@ Accounts General Styles
 
 /* Backgrounds */
 
-.account .bg {
+.account .bg,
+.listing-process .bg,
+.listing-manage .bg
+ {
     background-color: #e9eff0;
 }
-.account .chat .bg {
+.account .chat .bg,
+.account .chat .textarea
+ {
     background-color: #eef0f5;
 }
 
@@ -370,7 +377,7 @@ Listing Page
     font-size: 17px;
 }
 
-.listing-page .save_button {
+.save_button {
     background-color: rgba(44, 46, 47, 0.66);
     width: 103px;
     height: 40px;
@@ -380,7 +387,7 @@ Listing Page
     text-align: right;
 }
 
-.listing-page .save_button span {
+.save_button span {
     padding-right: 20px;
     letter-spacing: 0.6px;
     font-size: 15px;
@@ -427,7 +434,7 @@ Listing Page
 
 .listing-breadcrumb {
     font-size: 11.5px;
-    padding: 10px;
+    padding: 8.5px;
     letter-spacing: -0.2px;
     color: #fff;
     background-color: #8f9da0;
@@ -440,9 +447,9 @@ Listing Page
 
 .listing-page .sole_agent {
     width: 113px;
-    height: 30px;
+    height: 31px;
     text-align: center;
-    line-height: 29px;
+    line-height: 31px;
     background-color: #fff;
     border-radius: 30px;
     border: 1px solid #1b75ad;
@@ -479,7 +486,7 @@ Listing Page
     color: #000;
 }
 
-.listing-page .enquiry_button {
+.enquiry_button {
     background-color: #ff755a;
     border: none;
     color: #fff;
@@ -658,6 +665,7 @@ Search Page
     font-size: 15px;
     color: #fff;
     display: inline;
+    font-weight: 500;
 }
 
 .search-page .listing-card .building_name {
@@ -953,7 +961,7 @@ Profile Pages
     width: 33px;
     height: 33px;
     text-align: center;
-    line-height: 33px;
+    line-height: 31px;
     display: inline-block;
 }
 
@@ -1029,7 +1037,7 @@ Profile Pages
     font-size: 15px;
     border-radius: 44px;
     padding-left: 6px;
-    width: 234px;
+    width: 242px;
     height: 44px;
     text-align: center;
     line-height: 44px;
@@ -1654,8 +1662,8 @@ Profile Page
 }
 
 .profile .input_form .button {
-    width: 202px;
-    height: 39px;
+    width: 204px;
+    height: 41px;
     text-align: center;
     line-height: 36px;
     margin-bottom: 20px;
@@ -1697,8 +1705,8 @@ Profile Page
 
 .profile .input_form .input {
     font-size: 15px;
-    width: 500px;
-    height: 42px;
+    width: 502px;
+    height: 43px;
     text-align: center;
     line-height: 42px;
     letter-spacing: 0.3px;
@@ -1773,8 +1781,8 @@ Profile Page
 }
 
 .profile .input_form .select {
-    width: 240px;
-    height: 39px;
+    width: 242px;
+    height: 41px;
     text-align: left;
     line-height: 39px;
     margin-bottom: 20px;
@@ -1825,7 +1833,7 @@ Profile Page
     padding: 12px 25px;
 }
 
-.profile .input_form .button_sq {
+.button_sq {
     width: 202px;
     height: 44px;
     text-align: center;
@@ -1834,7 +1842,7 @@ Profile Page
     border-radius: 4px;
 }
 
-.profile .input_form #save {
+#save {
     color: #fff;
     font-weight: 400;
     letter-spacing: 1.3px;
@@ -1987,15 +1995,15 @@ Dashboard
 	letter-spacing: 0px;
 }
 .dashboard .left_cell .button_sq {
-	width: 195px;
-	height: 41px;
-	text-align: center;
-	line-height: 40px;
-	margin-bottom: 20px;
-	background-color: #fff;
-	border-radius: 3px;
-	border: 2px solid #fd7f56;
-	display: inline-block;
+	width: 197px;
+    height: 43px;
+    text-align: center;
+    line-height: 39px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid #fd7f56;
+    display: inline-block;
 }
 .dashboard .left_cell #add .text {
 	font-size: 13.5px;
@@ -2047,7 +2055,6 @@ Listing Process
 	padding-left: 12px;
 }
 .listing-process .input_form .bg {
-	background-color: #e9eff0;
 	height: 640px;
 	margin-top: 20px;
 }
@@ -2086,14 +2093,14 @@ Listing Process
 	font-weight: 600;
 	border-radius: 50%;
 	border: 2px solid #bcc6c9;
-	width: 32px;
-	height: 32px;
+	width: 34px;
+	height: 34px;
 	text-align: center;
 	line-height: 32px;
 	display: inline-block;
 }
 
-.listing-process .lang #zh{
+.listing-process .input_form .form .content .lang .zh{
 	    font-weight: 400;
 }
 
@@ -2118,8 +2125,8 @@ letter-spacing: 0.5px;
 }
 .listing-process .input_form .input {
 	font-size: 15px;
-	width: 408px;
-	height: 42px;
+	width: 410px;
+	height: 45px;
 	text-align: center;
 	line-height: 42px;
 	letter-spacing: 0.3px;
@@ -2143,8 +2150,8 @@ letter-spacing: 0.5px;
 }
 .listing-process .input_form .select {
 	font-size: 14px;
-	width: 255px;
-	height: 42px;
+	width: 257px;
+	height: 44px;
 	text-align: center;
 	line-height: 42px;
 	letter-spacing: 0.3px;
@@ -2163,8 +2170,8 @@ letter-spacing: 0.5px;
 }
 .listing-process .input_form .sub_header {
 	font-size: 14px;
-	width: 195px;
-	height: 36px;
+	width: 197px;
+	height: 39px;
 	text-align: center;
 	line-height: 36px;
 	letter-spacing: 0.3px;
@@ -2198,14 +2205,13 @@ letter-spacing: 0.5px;
   letter-spacing: 0.3px;
 }
 .listing-process .side .bg {
-	background-color: #e9eff0;
 	margin-top: 20px;
 	padding: 30px 20px;
   height: 200px;
 }
 .listing-process .side .status_header {
-	width: 276px;
-	height: 52px;
+	width: 280px;
+	height: 56px;
 	text-align: left;
 	line-height: 52px;
 	margin-bottom: 20px;
@@ -2230,8 +2236,8 @@ letter-spacing: 0.5px;
 	font-weight: 800;
 	border-radius: 50%;
 	border: 2px solid #bcc6c9;
-	width: 32px;
-	height: 32px;
+	width: 34px;
+	height: 34px;
 	text-align: center;
 	line-height: 32px;
 	display: inline-block;
@@ -2254,7 +2260,6 @@ color: #343e5c;
     padding-left: 19px;
 }
 .listing-process .my_note .bg {
-	background-color: #e9eff0;
 	margin-top: 20px;
 	padding: 30px 20px;
 }
@@ -2267,8 +2272,8 @@ color: #343e5c;
 	position: relative;
 }
 .listing-process .my_note .save_note {
-	width: 200px;
-	height: 41px;
+	width: 202px;
+	height: 43px;
 	text-align: center;
 	line-height: 41px;
 	border: 2px solid #dadee5;
@@ -2314,7 +2319,6 @@ Listing Management
 	color: #616471;
 }
 .listing-manage .bg {
-	background-color: #e9eff0;
 	height: 550px;
 	margin-top: 20px;
 }
@@ -2752,7 +2756,6 @@ Chat
 	letter-spacing: 0.3px;
 	margin: 20px;
 	border: 1px solid #e5e8e8;
-	background-color: #eef0f5;
 	border-radius: 36px;
 }
 .chat .textarea .placeholder {
@@ -2874,8 +2877,8 @@ Site Settings
 }
 
 .settings_box span.lang_select {
-	width: 52px;
-	height: 32px;
+	width: 54px;
+	height: 34px;
 	border: solid 2px white;
 	display: inline-block;
 	text-align: center;
