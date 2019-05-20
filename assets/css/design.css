@@ -24,7 +24,9 @@ body.en .button-submit {
 /* Buttons */
 body.en .button-submit,
 body.en .button-contact,
-body.en .button-action 
+body.en .button-action,
+body.en .button-msg-send,
+body.en .button-popup
  {
   font-family: var(--secondary-font);
 }

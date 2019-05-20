@@ -302,7 +302,7 @@
 
 //**** Homenet Solid Buttons General Styles ****//
 
-.button-contact, .button-action, .button-search {
+.button-contact, .button-action, .button-search, .button-dash, .button-msg-send, .button-verify, .button-popup {
     line-height: 1;
     text-align: center;
     position: relative;
@@ -310,7 +310,6 @@
     overflow: hidden;
     z-index: 1;
     color: #fff;
-    cursor: pointer;
 }
 
 // Button General - Contact
@@ -365,6 +364,114 @@
   opacity: 0.7;
 }
 
+// Button General - Dash
+.button-dash {
+  font-family: $font-family-base;
+    font-weight: 600;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-color: #5aa9e2;
+    letter-spacing: 0.6px;
+    width: 182px;
+    height: 42px;
+    border: none;
+}
+.button-dash:hover {
+  box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
+-moz-box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
+-webkit-box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
+}
+.button-dash:active {
+  background-color: #4987b3;
+}
+
+// Button General - Message Send
+.button-msg-send {
+    font-weight: 600;
+    font-size: 0.84375em;
+    text-transform: none;
+    border-radius: 4px;
+    background-color: #43abff;
+    letter-spacing: 0.2px;
+    width: 131px;
+    height: 36px;
+    border: none;
+}
+.button-msg-send:hover {
+  box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
+-moz-box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
+-webkit-box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
+}
+.button-msg-send:active {
+  background-color: #4987b3;
+}
+
+// Button General - Verify
+.button-verify {
+  font-family: $font-family-base;
+    font-weight: 600;
+    font-size: 0.8125em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #4be1ab;
+    letter-spacing: 0.5px;
+    width: 200px;
+    height: 41px;
+    border: none;
+}
+.button-verify:hover {
+box-shadow: 0 1px 9px 0 rgba(75, 225, 171, 0.5);
+-moz-box-shadow: 0 1px 9px 0 rgba(75, 225, 171, 0.5);
+-webkit-box-shadow: 0 1px 9px 0 rgba(75, 225, 171, 0.5);
+}
+.button-verify:active {
+  background-color: #14cc89;
+}
+
+// Button General - Popup Dialog 
+
+.button-popup {
+    font-weight: 400;
+    font-size: 0.96875em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    width: 113px;
+    height: 36px;
+    border: none;
+}
+
+// Confirm
+.button-popup.confirm {
+    background-color: #f00a2b;
+        letter-spacing: 0.4px;
+}
+.button-popup.confirm:hover {
+box-shadow: 0 1px 9px 0 rgba(240, 10, 43, 0.5);
+-moz-box-shadow: 0 1px 9px 0 rgba(240, 10, 43, 0.5);
+-webkit-box-shadow: 0 1px 9px 0 rgba(240, 10, 43, 0.5);
+}
+.button-popup.confirm:active {
+  background-color: #e20020;
+}
+
+// Cancel
+.button-popup.cancel {
+    background-color: #656571;
+        letter-spacing: 0.5px;
+}
+.button-popup.cancel:hover {
+box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
+-moz-box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
+-webkit-box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
+
+}
+.button-popup.cancel:active {
+  background-color: #454556;
+}
+
+//////////////////////////////////
+
 // Button Action General
 .button-action {
     font-weight: 400;
@@ -405,3 +512,4 @@
     min-height: 45px;
     letter-spacing: 1.3px;
 }
+
