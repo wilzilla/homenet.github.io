@@ -9,8 +9,6 @@
     <title>Homenet Design Styles</title>
     <!-- Homenet Bootstrap Styles -->
     <link rel="stylesheet" href="assets/css/homenet.css">
-    <!-- Homenet Design Styles -->
-    <link rel="stylesheet" href="assets/css/design.css">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Google Font -->
@@ -439,7 +437,7 @@
     <!-- Content -->
     <div id="content">
         <div class="section-title-2 font-weight-800 text-uppercase text-center pt-5" style="font-size: 40px;color: #fd5721;">
-            Homenet Design Styles <br> - Styles + Element Sizes + Background ONLY
+            Reference for Styles + Element Sizes + Background Colors
         </div>
         <!-- Homepage -->
         <div class="section home-page">
@@ -452,9 +450,9 @@
                         <div class="search_engine">
                             Neighbourhood<br>
                             Building Name or Address<br>
-                            <div class="search">
-                                Search
-                            </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-search">Search</button>
+                    </div>
                             <div class="bar">
                                 <div class="rent">
                                     RENT
@@ -507,16 +505,14 @@
                     <div class="sole_agent">
                         SOLE AGENT
                     </div>
-                    <div class="save_button">
-                        <span>Save</span>
-                    </div>
-                    <div class="price">
+
+                    <div class="price-container">
                         <h2 class="type">FOR SALE | FOR RENT</h2>
                         <div class="sale">
-                            <span class="cur">HKD</span>$22,000,000
+                            <span class="cur">HKD</span><span class="price">$22,000,000</span>
                         </div>
                         <div class="rent">
-                            <span class="cur">HKD</span>$22,000<span class="per">/ mth</span>
+                            <span class="cur">HKD</span><span class="price">$22,000</span><span class="per">/ mth</span>
                         </div>
                     </div>
                     <div class="listing-info">
@@ -557,9 +553,9 @@
                         <span class="verification">Mobile Verified</span><br>
                         <span class="verification">Commission Free</span><br>
                         <span class="call">Call Owner Now</span><br>
-                        <div class="enquiry_button">
-                            Send Enquiry
-                        </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-action listing-enquiry">Send Enquiry</button>
+                    </div>
                         <span class="ref">Ref 235671 . Updated 19 Jan 2019 . Report</span>
                     </div>
                 </div>
@@ -663,39 +659,36 @@
                             Listed for 1 day
                         </div>
                     </div>
-                    <div class="filter_button">
-                        More Filters
+                     <div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn search-btn more-filters">More Filters</button>
                     </div>
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-contact">Contact</button>
-                    </div>
-
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-search">Search</button>
-                    </div>
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-dash">Start Now</button>
-                    </div>
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-msg-send">Send Message</button>
+                    <div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn search-btn close-filters">Close</button>
                     </div> 
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-verify">Verify Via SMS</button>
-                    </div>
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-popup confirm">Confirm</button>
-                    </div>
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-popup cancel">Cancel</button>
-                    </div>
+
 
 
 <div class="mb-5 flex-wrap d-flex">
-                        <button class="button-action listing-enquiry">Send Enquiry</button>
+                        <button class="homenet-btn button-contact">Contact</button>
                     </div>
-<div class="mb-5 flex-wrap d-flex">
-                        <button class="button-action save">Save</button>
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 </div>
@@ -977,12 +970,16 @@
                                         <div class="avatar">
                                             My Avatar
                                         </div>
-                                        <div class="button" id="change_pic">
-                                            Change UserPic
-                                        </div>
-                                        <div class="button" id="delete_pic">
-                                            Delete UserPic
-                                        </div><span class="fields">Name</span> <span class="fields">Email</span> <span class="fields">Mobile</span><br>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-bordered-rnd change-pic">Change UserPic</button>
+                    </div>
+
+      <div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-bordered-rnd delete-pic">Delete UserPic</button>
+                    </div>
+
+
+                                        <span class="fields">Name</span> <span class="fields">Email</span> <span class="fields">Mobile</span><br>
                                         <div class="input">
                                             <div class="textarea">
                                                 Rose Tico
@@ -1007,29 +1004,29 @@
                                                 Remove
                                             </div>
                                         </div>
-                                        <div class="select">
+                                        <div class="selector mobile">
                                             Mobile Public
                                         </div>
-                                        <div class="verify_button">
-                                            Verifiy Via SMS
-                                        </div><span class="cancel">Cancel</span>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-verify">Verify Via SMS</button>
+                    </div>
+
+                                        <span class="cancel">Cancel</span>
                                         <div class="description textarea">
                                             Rose Tico and her older sister Paige grew up Hays Minor, a impoverished mining colony in the Otomok system. The First Order forced her people to mine their planet's resources to feed their war machine, then shelled them to test the results. Having lost everything they had to the First Order, Rose and her sister joined the Resistance to avenge their homeworld.
                                         </div>
-                                        <div class="button_sq" id="save">
-                                            <div class="text">
-                                                Save
-                                            </div>
-                                        </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-action save">Save</button>
+                    </div>
                                     </div>
                                 </div>
                                 <div class="side_menu">
                                     <div class="container">
                                         <div class="content">
                                             <span>Edit Profile</span> <span>Change User Pic</span> <span>Account Password</span> <span>My Agent Reviews(1)</span>
-                                            <div class="button_sq" id="view">
-                                                View Profile
-                                            </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-bordered view-profile">View Profile</button>
+                    </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1068,11 +1065,9 @@
                                 <div class="tip">
                                     “Verify your HK Mobile to List a property for Free”
                                 </div>
-                                <div class="button">
-                                    <div class="text">
-                                        Start Now
-                                    </div>
-                                </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-dash">Start Now</button>
+                    </div>
                             </div>
                             <div class="left_cell cell">
                                 <div class="header">
@@ -1084,11 +1079,9 @@
                                 <div class="item">
                                     Mobile
                                 </div>
-                                <div class="button_sq" id="add">
-                                    <div class="text">
-                                        Add Verification
-                                    </div>
-                                </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-bordered verify">Add Verification</button>
+                    </div>
                             </div>
                             <div class="left_cell_photo cell">
                                 <div class="change">
@@ -1155,7 +1148,7 @@
                                                     123 Long Road Drive
                                                 </div>
                                             </div>
-                                            <div class="select">
+                                            <div class="selector">
                                                 <div class="text">
                                                     Select
                                                 </div>
@@ -1199,11 +1192,9 @@
                                         <div class="note_advice">
                                             Add a private note here for this property, this note will not be shown to the public.
                                         </div>
-                                        <div class="save_note">
-                                            <div class="text">
-                                                Save Note
-                                            </div>
-                                        </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-bordered-rnd save-note">Save Note</button>
+                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -1400,9 +1391,9 @@
                         <div class="textarea">
                             <span class="placeholder">Type a Message...</span>
                         </div>
-                        <div class="send_button">
-                            Send Message
-                        </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-msg-send">Send Message</button>
+                    </div> 
                     </div>
                 </div>
             </div>
@@ -1444,12 +1435,9 @@
                             <span class="title">Delete this Chat?</span><br>
                             <span class="action">This action is permanent and cannot be undone.</span>
                         </div>
-                        <div class="button confirm">
-                            CONFIRM
-                        </div>
-                        <div class="button cancel">
-                            CANCEL
-                        </div>
+<div class="mb-5 flex-wrap d-flex">
+                        <button class="homenet-btn button-popup confirm">Confirm</button>                        <button class="homenet-btn button-popup cancel">Cancel</button>
+                    </div>
                     </div>
                 </div>
             </div>

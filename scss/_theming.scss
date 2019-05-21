@@ -9,8 +9,23 @@ $body-color-base:       #1f2323;
 $sub-color-base:        #717171;
 $heading-color-base:    #202020;
 
+// Homenet Variables
+$theme-light-color:     #ff755a;
+$action-color:          #ef4f1c;
+$verify-color:          #4be1ab;
+$input-field-color:     #f5f7fc;
+$input-field-border:    1px solid #d2d7df;
+$chat-action-color:     #43abff;
+$delete-color:          #f00a2b;
+$account-font:          #343e5c;
+$info-pg-cell-bg:       #405256;
+
+$speech-shadow:         0px 0px 10px -1px rgba(0, 13, 38, 0.10);
+$cell-shadow:           -4px 4px 18px -3px rgba(0, 0, 0, 0.18);
+$pop-up-shadow:         0px 10px 30px 0px rgba(0, 0, 0, 0.5);
+
 // Fonts
-//
+
 // Font, line-height, and color for body text, headings, and more.
 $font-family-base: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
 $font-secondary: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
@@ -91,7 +106,6 @@ $blockquote-small-color:                #a1a1a1;
 $blockquote-footer-margin:              .625rem;
 
 $mark-bg:                               #f4f6f7;
-
 
 // Homenet breakpoint variables
 /* Points */

@@ -300,16 +300,15 @@
   }
 }
 
-//**** Homenet Solid Buttons General Styles ****//
+//**** Homenet Solid General Styles ****//
 
-.button-contact, .button-action, .button-search, .button-dash, .button-msg-send, .button-verify, .button-popup {
+.homenet-btn {
     line-height: 1;
     text-align: center;
     position: relative;
     transition: all .2s ease-in-out;
     overflow: hidden;
     z-index: 1;
-    color: #fff;
 }
 
 // Button General - Contact
@@ -323,9 +322,7 @@
     letter-spacing: 0.5px;
     min-width: 126px;
     min-height: 41px;
-  @media(max-width: $md) {
-    padding: 13px 25px;
-  }
+    color: #fff;
 }
 .button-contact:hover {
   background-color: transparent;
@@ -350,9 +347,7 @@
     min-width: 128px;
     height: 45px;
     padding-left: 9px;
-  @media(max-width: $md) {
-    padding: 13px 25px;
-  }
+    color: #fff;
 }
 .button-search:hover {
   background-color: rgba(247, 83, 17, 0.28);
@@ -376,6 +371,7 @@
     width: 182px;
     height: 42px;
     border: none;
+    color: #fff;
 }
 .button-dash:hover {
   box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
@@ -392,11 +388,13 @@
     font-size: 0.84375em;
     text-transform: none;
     border-radius: 4px;
-    background-color: #43abff;
+    background-color: $chat-action-color;
     letter-spacing: 0.2px;
     width: 131px;
     height: 36px;
     border: none;
+    color: #fff;
+    line-height: 34px;
 }
 .button-msg-send:hover {
   box-shadow: 0 1px 9px 0 rgba(52, 152, 219, 0.5);
@@ -414,11 +412,12 @@
     font-size: 0.8125em;
     text-transform: uppercase;
     border-radius: 50px;
-    background-color: #4be1ab;
+    background-color: $verify-color;
     letter-spacing: 0.5px;
     width: 200px;
     height: 41px;
     border: none;
+    color: #fff;
 }
 .button-verify:hover {
 box-shadow: 0 1px 9px 0 rgba(75, 225, 171, 0.5);
@@ -443,8 +442,9 @@ box-shadow: 0 1px 9px 0 rgba(75, 225, 171, 0.5);
 
 // Confirm
 .button-popup.confirm {
-    background-color: #f00a2b;
+    background-color: $delete-color;
         letter-spacing: 0.4px;
+    color: #fff;
 }
 .button-popup.confirm:hover {
 box-shadow: 0 1px 9px 0 rgba(240, 10, 43, 0.5);
@@ -452,13 +452,14 @@ box-shadow: 0 1px 9px 0 rgba(240, 10, 43, 0.5);
 -webkit-box-shadow: 0 1px 9px 0 rgba(240, 10, 43, 0.5);
 }
 .button-popup.confirm:active {
-  background-color: #e20020;
+  opacity: 0.5;
 }
 
 // Cancel
 .button-popup.cancel {
     background-color: #656571;
         letter-spacing: 0.5px;
+    color: #fff;
 }
 .button-popup.cancel:hover {
 box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
@@ -470,6 +471,9 @@ box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
   background-color: #454556;
 }
 
+
+
+
 //////////////////////////////////
 
 // Button Action General
@@ -477,22 +481,21 @@ box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
     font-weight: 400;
     font-size: 1em;
     border-radius: 4px;
-    background-color: #ff755a;
-    border: 2px solid #ff755a;
-  @media(max-width: $md) {
-    padding: 13px 25px;
+    background-color: $theme-light-color;
+    border: 2px solid $theme-light-color;
+    color: #fff;
   }
-}
+
 
 .button-action:hover {
   background-color: transparent;
-  color: #ff755a;
+  color: $theme-light-color;
   font-weight: 600;
 }
 
 .button-action:active {
-  background-color: #ff755a;
-  color: $white;
+  background-color: $theme-light-color;
+  color: #fff;
   opacity: 0.7;
 }
 
@@ -512,4 +515,168 @@ box-shadow: 0 1px 9px 0 rgba(101, 101, 113, 0.5);
     min-height: 45px;
     letter-spacing: 1.3px;
 }
+
+//////////////////////////////////
+
+// Button Bordered - Account Profile Buttons
+
+.button-bordered  {
+    border-radius: 4px;
+    border: 2px solid $theme-light-color;
+  background-color: transparent;
+  font-family: $font-family-base;
+}
+
+.button-bordered.view-profile:hover,
+.button-bordered.verify:hover {
+  background-color: $theme-light-color;
+  color: #fff;
+}
+
+.button-bordered.view-profile:active, 
+.button-bordered.verify:active {
+opacity: 0.5;
+}
+
+// Button Bordered - Profile
+.button-bordered.view-profile {
+    text-transform: uppercase;
+    min-width: 222px;
+    min-height: 43px;
+    font-size: 0.8125em;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    color: #545661;
+}
+
+// Button Bordered - Add Verification
+.button-bordered.verify {
+    min-width: 197px;
+    min-height: 43px;
+    font-size: 0.84375em;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    color: #1d233a;
+}
+
+//////////////////////////////////
+
+// Button Bordered Round - General
+
+.button-bordered-rnd  {
+    border-radius: 50px;
+  background-color: transparent;
+  font-family: $font-family-base;
+}
+
+// Button Bordered Round - Change Pic
+.button-bordered-rnd.change-pic {
+    text-transform: uppercase;
+    min-width: 204px;
+    min-height: 42px;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: $account-font;
+    border: 2px solid #dadee5;
+}
+
+.button-bordered-rnd.change-pic:hover {
+  background-color: #96a0b7;
+    border: 2px solid #96a0b7;
+  color: #fff;
+}
+
+.button-bordered-rnd.change-pic:active {
+  background-color: #666c7b;
+    border: 2px solid #666c7b;
+  color: #fff;
+}
+
+// Button Bordered Round - Delete Pic
+.button-bordered-rnd.delete-pic {
+    text-transform: uppercase;
+    min-width: 204px;
+    min-height: 42px;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #ff7547;
+    border: 2px solid #fea082;
+}
+
+.button-bordered-rnd.delete-pic:hover {
+  background-color: $theme-light-color;
+    border: 2px solid $theme-light-color;
+  color: #fff;
+}
+
+.button-bordered-rnd.delete-pic:active {
+  background-color: $delete-color;
+    border: 2px solid $delete-color;
+  color: #fff;
+}
+
+// Button Bordered Round - Save Note
+.button-bordered-rnd.save-note {
+    text-transform: uppercase;
+    min-width: 202px;
+    min-height: 44px;
+    font-size: 0.78125em;
+letter-spacing: 1.4px;
+    font-weight: 600;
+    color: $account-font;
+    border: 2px solid #dadee5;
+}
+
+.button-bordered-rnd.save-note:hover {
+  background-color: #96a0b7;
+    border: 2px solid #96a0b7;
+  color: #fff;
+}
+
+.button-bordered-rnd.save-note:active {
+  background-color: #666c7b;
+    border: 2px solid #666c7b;
+  color: #fff;
+}
+
+//////////////////////////////////
+
+// Button Bordered - Search Page Buttons General
+.search-btn {
+    border-radius: 4px;
+    border: 1px solid #81bea9;
+  background-color: transparent;
+    color: #62a18b;
+}
+
+.search-btn:hover{
+  background-color: #83c3ad;
+  color: #fff;
+}
+
+.search-btn:active{
+opacity: 0.5;
+}
+
+// Button Bordered - Search Page More Filters
+.search-btn.more-filters {
+    min-width: 115px;
+    min-height: 37px;
+    font-size: 0.8125em;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+// Button Bordered - Search Page More Filters
+.search-btn.close-filters {
+    min-width: 136px;
+    min-height: 37px;
+    font-size: 0.8125em;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+
 
