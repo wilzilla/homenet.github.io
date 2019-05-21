@@ -3,7 +3,7 @@
 /* Content Layout */
 .content-page .content-section #content-nav,
 .content-page .content-section .main-content {
-    top: var(--white-overlay-top);
+    top: $white-overlay-top;
 }
 
 .content-page .white-section {
@@ -79,8 +79,8 @@
         height: auto !important;
         visibility: visible;
         position: sticky;
-        margin-top: var(--white-overlay-top);
-        margin-bottom: var(--white-overlay-bottom);
+        margin-top: $white-overlay-top;
+        margin-bottom: $white-overlay-bottom;
     }
     .content-page #content-nav .list-group {
         padding: 1.25rem 0 0.5rem 0;

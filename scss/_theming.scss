@@ -24,6 +24,27 @@ $speech-shadow:         0px 0px 10px -1px rgba(0, 13, 38, 0.10);
 $cell-shadow:           -4px 4px 18px -3px rgba(0, 0, 0, 0.18);
 $pop-up-shadow:         0px 10px 30px 0px rgba(0, 0, 0, 0.5);
 
+ // Homenet Main UI Background Colors - Footer and Navbar
+$ui-color-main: #2d2e33;
+$ui-color-sub: #2c393c;
+
+// Homenet Content Page White Overlay to Header
+$white-overlay-top:     -53px;
+$white-overlay-bottom:  53px; 
+
+
+// Homenet Avatar Color Picker
+$taro:                  #a77ca8;
+$strawberry:            #d5637e;
+$pandan:                #5e9259;
+$grape:                 #676799;
+$custard:               #e4a153;
+$blueberry:             #678d99;
+$sweetpotato:           #99679e;
+$chocolate:             #937a5c;
+$greentea:              #6a9e71;
+$raspberry:             #c37892;
+
 // Fonts
 
 // Font, line-height, and color for body text, headings, and more.
@@ -108,24 +129,13 @@ $blockquote-footer-margin:              .625rem;
 $mark-bg:                               #f4f6f7;
 
 // Homenet breakpoint variables
+
 /* Points */
 $xs: 0px;
 $sm: 575px;
 $md: 767px;
 $lg: 991px;
 $xl: 1199px;
-
-// Homenet Avatar Color Picker
-$taro:                  #a77ca8;
-$strawberry:            #d5637e;
-$pandan:                #5e9259;
-$grape:                 #676799;
-$custard:               #e4a153;
-$blueberry:             #678d99;
-$sweetpotato:           #99679e;
-$chocolate:             #937a5c;
-$greentea:              #6a9e71;
-$raspberry:             #c37892;
 
 // Color settings
 
@@ -947,10 +957,7 @@ $info-box-4-caption-py:                 5rem;
   /* Common */
   // Primary color
   --primary-color: #fd5721;
-  // Primary font
-  --primary-font: "Montserrat", sans-serif;
-  // Secondary font
-  --secondary-font: "Muli", sans-serif;
+
   /* Additional Colors */
   // White section background color
   --white-section: #fff;
@@ -966,12 +973,8 @@ $info-box-4-caption-py:                 5rem;
   --selection_background: #dcdcdc;
   // Selection color
   --selection_color: #232323;
-  // Homenet Footer Background
-  --footer-color: #2d2e33;
-  --footer-btm-color: #2c393c;
-  
 
- 
+
   /* Primary Sizes */
   // Hero-header default height
   --hero-header_default_height: 100vh;
@@ -983,10 +986,7 @@ $info-box-4-caption-py:                 5rem;
   --page-header-height: 370px;
   // Page Header height
   --engage-header-height: 550px;
-  // Content Page White Overlay to Header
-  --white-overlay-top: -53px;
-  --white-overlay-bottom: 53px;
- 
+
 
   /* Overlay rgba Colors */
   // Default overlay

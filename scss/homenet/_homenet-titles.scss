@@ -8,7 +8,7 @@
 }
 
 .section-title .highlight {
-    color: var(--primary-color);
+    color: $theme-color;
 }
 
 .section-title:hover:after {
@@ -88,7 +88,7 @@
 }
 
 .content-page-title .highlight {
-    color: var(--primary-color);
+    color: $theme-color;
     margin-left: 1px;
     font-size: 0.8em;
 }
@@ -185,7 +185,7 @@ nav.title-breadcrumb ol.breadcrumb li.breadcrumb-item {
 }
 
 .page-section-title .highlight {
-    color: var(--primary-color);
+    color: $theme-color;
     margin-left: 2px;
     font-size: 0.9em;
 }

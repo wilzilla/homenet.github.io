@@ -26,7 +26,7 @@ footer .footer-inner {
 
 footer .footer-inner {
     color: var(--white);
-    background-image: linear-gradient(to bottom left, #2d2e33, #2c393c);
+    background-image: linear-gradient(to bottom left, $ui-color-main, $ui-color-sub);
 }
 
 
@@ -203,7 +203,7 @@ footer img:not(:disabled):not(.disabled).active:focus {
 
 /* Footer Bottom */
 footer .footer-inner .footer_bottom {
-    background-color: var(--footer-btm-color);
+    background-color: $ui-color-sub;
     padding: 15px 0;
 }
 

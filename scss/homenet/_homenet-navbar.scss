@@ -771,7 +771,7 @@ Media queries for responsive design
     width: 100%;
     padding-left: 4%;
     padding-right: 4%;
-    background-image: linear-gradient(to bottom right, #2d2e33, #2c393c);
+    background-image: linear-gradient(to bottom right, $ui-color-main, $ui-color-sub);
     }
     .homenet-menu ul li>a {
     text-transform: uppercase;
