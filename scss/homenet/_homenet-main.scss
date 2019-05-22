@@ -1042,9 +1042,9 @@ Building Page
 .building-page .details {
     background-color: #fff;
     color: #fff;
-    -webkit-box-shadow: $cell-shadow;
-    -moz-box-shadow: $cell-shadow;
-    box-shadow: $cell-shadow;
+    -webkit-box-shadow: $infobox-shadow;
+    -moz-box-shadow: $infobox-shadow;
+    box-shadow: $infobox-shadow;
     width: 96%;
     height: 590px;
     position: relative;
@@ -1233,9 +1233,9 @@ District Page
 .district-page .table1 {
     background-color: #607a8f;
     color: #fff;
-    -webkit-box-shadow: $cell-shadow;
-    -moz-box-shadow: $cell-shadow;
-    box-shadow: $cell-shadow;
+    -webkit-box-shadow: $infobox-shadow;
+    -moz-box-shadow: $infobox-shadow;
+    box-shadow: $infobox-shadow;
     width: 23%;
     height: 230px;
     position: relative;
@@ -1246,9 +1246,9 @@ District Page
 
 .district-page .table2 {
     background-color: #fff;
-    -webkit-box-shadow: $cell-shadow;
-    -moz-box-shadow: $cell-shadow;
-    box-shadow: $cell-shadow;
+    -webkit-box-shadow: $infobox-shadow;
+    -moz-box-shadow: $infobox-shadow;
+    box-shadow: $infobox-shadow;
     width: 66%;
     height: 230px;
     position: relative;
@@ -1281,9 +1281,9 @@ District Page
 .district-page .details {
     background-color: #fff;
     color: #3f3f3f;
-    -webkit-box-shadow: $cell-shadow;
-    -moz-box-shadow: $cell-shadow;
-    box-shadow: $cell-shadow;
+    -webkit-box-shadow: $infobox-shadow;
+    -moz-box-shadow: $infobox-shadow;
+    box-shadow: $infobox-shadow;
     width: 90%;
     height: 230px;
     position: relative;
@@ -1406,9 +1406,9 @@ Profile Page
     display: inline-block;
     margin: 20px;
     border-radius: 6px;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .profile .input_form .form .content {
@@ -1571,9 +1571,9 @@ Profile Page
     display: inline-block;
     margin: 20px;
     border-radius: 6px;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .profile .side_menu .container .content {
@@ -1623,9 +1623,9 @@ Dashboard
     position: relative;
     margin: 20px;
     border-radius: 5px;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .dashboard .top_cell {
@@ -1735,9 +1735,9 @@ Listing Process
     display: inline-block;
     margin: 20px;
     border-radius: 6px;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .listing-process .input_form .form .content {
@@ -2012,9 +2012,9 @@ Listing Management
     position: relative;
     margin: 20px;
     border-radius: 5px;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .listing-manage .topbar {
@@ -2409,9 +2409,9 @@ Chat
     position: relative;
     margin: 20px;
     border-radius: 5px;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .chat .chat_frame .chatting_to {
@@ -2611,9 +2611,9 @@ Site Settings
     background-color: #b0b6b8;
     margin: 20px;
     color: #fff;
-    -webkit-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
-    box-shadow: -3px 3px 9px -3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: $cell-shadow;
+    -moz-box-shadow: $cell-shadow;
+    box-shadow: $cell-shadow;
 }
 
 .settings_box .content {
