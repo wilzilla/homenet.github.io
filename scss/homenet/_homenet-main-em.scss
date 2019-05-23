@@ -23,7 +23,7 @@ General Styles
     color: $account-font;
     font-weight: 600;
     letter-spacing: 0.1px;
-    font-size: 13px;
+    font-size: 0.8125em;
     display: inline-block;
     padding: 0px 30px;
 }
@@ -41,7 +41,7 @@ Homepage
 
 
 .home-page .search_engine {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .home-page .search_engine .bar .rent {
@@ -51,7 +51,7 @@ Homepage
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
     margin: 0 3px 0 0;
     cursor: pointer;
     line-height: 35px;
@@ -68,7 +68,7 @@ Homepage
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     line-height: 35px;
     width: 128px;
@@ -85,7 +85,7 @@ Homepage
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
     margin: 4px 2px;
     cursor: pointer;
     line-height: 35px;
@@ -98,7 +98,7 @@ Homepage
 
 .home-page .hp_footer_links {
     background-color: rgba(55, 66, 73, 0.66);
-    font-size: 17px;
+    font-size: 1.0625em;
     margin: 0px 0px 10px 0px;
     letter-spacing: 0.1px;
     color: #fff;
@@ -116,21 +116,21 @@ Listing Page
 }
 
 .listing-page h1 {
-    font-size: 31px;
+    font-size: 1.9375em;
     margin: 0px 0px 10px 0px;
     letter-spacing: -0.5px;
     color: #373737;
 }
 
 .listing-page h2.location {
-    font-size: 15px;
+    font-size: 0.9375em;
     margin: 0px 0px;
     font-weight: 600;
     color: #373737;
 }
 
 .listing-page h2.type {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     font-weight: 300;
     line-height: 50px;
     letter-spacing: 0.2px;
@@ -139,21 +139,21 @@ Listing Page
 }
 
 .listing-page h2.location {
-    font-size: 16px;
+    font-size: 1em;
     margin: 0px 0px;
     font-weight: 600;
     color: #373737;
 }
 
 .listing-page h2.source {
-    font-size: 15.5px;
+    font-size: 0.96875em;
     margin: 0px 0px;
     font-weight: 600;
     color: #222;
 }
 
 .listing-page h3 {
-    font-size: 19px;
+    font-size: 1.1875em;
     font-weight: 600;
     margin: 0px 0px 0px 0px;
     padding: 10px 0px;
@@ -171,17 +171,17 @@ Listing Page
 }
 
 .listing-page .sale .price {
-    font-size: 26px;
+    font-size: 1.625em;
     letter-spacing: -0.3px;
 }
 
 .listing-page .sale span.cur {
     padding-right: 6px;
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .listing-page .rent .price {
-    font-size: 23px;
+    font-size: 1.4375em;
     letter-spacing: -0.1px;
 }
 
@@ -207,14 +207,14 @@ Listing Page
 .save_button span {
     padding-right: 20px;
     letter-spacing: 0.6px;
-    font-size: 15px;
+    font-size: 0.9375em;
     line-height: 40px;
     font-weight: 300;
 }
 
 .listing-page .details {
     padding: 20px 20px;
-    font-size: 15px;
+    font-size: 0.9375em;
     letter-spacing: -0.1px;
     font-weight: 600;
     color: #414141;
@@ -222,7 +222,7 @@ Listing Page
 
 .listing-page .details .feet {
     padding: 0px 3px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: 0px;
     font-weight: 600;
     color: #414141;
@@ -230,27 +230,27 @@ Listing Page
 
 .listing-page .highlights {
     padding: 20px 20px;
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 0px;
     color: #252525;
 }
 
 .listing-page .listing_info {
     padding: 20px 20px;
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 0px;
     color: #252525;
 }
 
 .listing-page .photo_tag {
     padding: 20px 20px;
-    font-size: 15px;
+    font-size: 0.9375em;
     letter-spacing: 0px;
     color: #252525;
 }
 
 .listing-breadcrumb {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     padding: 8.5px;
     letter-spacing: -0.2px;
     color: #fff;
@@ -272,14 +272,14 @@ Listing Page
     border-radius: 30px;
     border: 1px solid #1b75ad;
     color: #18689a;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: -0.4px;
     display: inline-block;
     text-transform: uppercase;
 }
 
 .listing-page span.name {
-    font-size: 18.5px;
+    font-size: 1.15625em;
     margin: 0px 0px;
     font-weight: 600;
     color: #222;
@@ -287,27 +287,27 @@ Listing Page
 }
 
 .listing-page span.verification {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     margin: 0px 0px;
     color: #111;
     letter-spacing: -0.3px;
 }
 
 .listing-page span.call {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #111;
     letter-spacing: 0.1px;
 }
 
 .listing-page span.join {
-    font-size: 12px;
+    font-size: 0.75em;
     letter-spacing: 0.1px;
     color: #000;
 }
 
 
 .listing-page span.ref {
-    font-size: 12px;
+    font-size: 0.75em;
     letter-spacing: 0.2px;
     color: #111;
 }
@@ -317,7 +317,7 @@ Listing Page
 }
 
 .listing-page .listing-card-small .building_name {
-    font-size: 17px;
+    font-size: 1.0625em;
     font-weight: 600;
     color: #373737;
     letter-spacing: -0.3px;
@@ -325,14 +325,14 @@ Listing Page
 }
 
 .listing-page .listing-card-small .neighbourhood {
-    font-size: 11px;
+    font-size: 0.6875em;
     color: #000;
     display: block;
     padding: 5px 0px;
 }
 
 .listing-page .listing-card-small .source {
-    font-size: 10px;
+    font-size: 0.625em;
     font-weight: 600;
     letter-spacing: -0.1px;
     padding: 5px 0px;
@@ -347,19 +347,19 @@ Listing Page
 
 .listing-page .listing-card-small .sale {
     padding: 0px 20px;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #fff;
     letter-spacing: 0.0px;
 }
 
 .listing-page .listing-card-small .sale span.cur {
     padding-right: 4px;
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .listing-page .listing-card-small .rent {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 0.9375em;
     letter-spacing: -0.1px;
     color: #fff;
 }
@@ -370,11 +370,11 @@ Listing Page
 
 .listing-page .listing-card-small .rent span.per {
     padding-left: 3px;
-    font-size: 11.5px;
+    font-size: 0.71875em;
 }
 
 .listing-page .listing-card-small .details {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #2a2a2a;
     padding: 0px 0px;
     letter-spacing: -0.1px;
@@ -397,15 +397,15 @@ Listing Page
 }
 
 .listing-page .listing-card-small .size span.feet {
-    font-size: 12px;
+    font-size: 0.9em;
 }
 
 .listing-page .listing-card-small .size span.square {
-    font-size: 16px;
+    font-size: 1.1em;
 }
 
 .listing-page .listing-card-small .date {
-    font-size: 10px;
+    font-size: 0.625em;
     color: #000;
 }
 
@@ -420,7 +420,7 @@ Search Page
 }
 
 .search-page .filters {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: #000;
     letter-spacing: 0.2px;
 }
@@ -432,7 +432,7 @@ Search Page
 .search-page .source_filter {
     background-color: rgba(63, 81, 84, 0.95);
     padding: 10px 20px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: #fff;
     letter-spacing: 0.3px;
 }
@@ -442,7 +442,7 @@ Search Page
     letter-spacing: 0.4px;
     padding: 10px;
     font-weight: 600;
-    font-size: 13.5px;
+    font-size: 0.84375em;
 }
 
 .search-page .source_filter span {
@@ -456,21 +456,21 @@ Search Page
 }
 
 .search-page .found span {
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 600;
     color: #fff;
     letter-spacing: 0.3px;
 }
 
 .search-page h1 {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #fff;
     display: inline;
     font-weight: 500;
 }
 
 .search-page .listing-card .building_name {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 600;
     color: #373737;
     letter-spacing: -0.3px;
@@ -480,14 +480,14 @@ Search Page
 }
 
 .search-page .listing-card .neighbourhood {
-    font-size: 12px;
+    font-size: 0.75em;
     color: #000;
     display: block;
     padding: 5px 0px;
 }
 
 .search-page .listing-card .source {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     font-weight: 700;
     letter-spacing: -0.2px;
     padding: 5px 0px;
@@ -502,7 +502,7 @@ Search Page
 
 .search-page .sale {
     padding: 0px 20px;
-    font-size: 17px;
+    font-size: 1.0625em;
     color: #fff;
 }
 
@@ -512,7 +512,7 @@ Search Page
 
 .search-page .rent {
     padding: 10px 20px;
-    font-size: 17px;
+    font-size: 1.0625em;
     letter-spacing: -0.1px;
     color: #fff;
 }
@@ -523,11 +523,11 @@ Search Page
 
 .search-page .rent span.per {
     padding-left: 3px;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .search-page .details {
-    font-size: 17px;
+    font-size: 1.0625em;
     color: #2a2a2a;
     padding: 0px 0px;
     margin: 20px 0px;
@@ -552,15 +552,15 @@ Search Page
 }
 
 .search-page .size span.feet {
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .search-page .size span.square {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .search-page .date {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     color: #383838;
 }
 
@@ -576,7 +576,7 @@ Map Listings
 }
 
 .map-listing-card .building_name {
-    font-size: 17px;
+    font-size: 1.0625em;
     font-weight: 600;
     color: #373737;
     letter-spacing: -0.3px;
@@ -584,13 +584,13 @@ Map Listings
 }
 
 .map-listing-card .neighbourhood {
-    font-size: 11px;
+    font-size: 0.6875em;
     color: #000;
     display: block;
 }
 
 .map-listing-card .source {
-    font-size: 10px;
+    font-size: 0.625em;
     font-weight: 600;
     letter-spacing: -0.2px;
     padding: 10px 0px;
@@ -605,7 +605,7 @@ Map Listings
 
 .map-listing-card .sale {
     padding: 0px 20px;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #fff;
 }
 
@@ -615,7 +615,7 @@ Map Listings
 
 .map-listing-card .rent {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 0.875em;
     letter-spacing: -0.1px;
     color: #fff;
 }
@@ -626,11 +626,11 @@ Map Listings
 
 .map-listing-card .rent span.per {
     padding-left: 3px;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .map-listing-card .details {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #2a2a2a;
     padding: 0px 0px;
     margin: 20px 0px;
@@ -655,15 +655,15 @@ Map Listings
 }
 
 .map-listing-card .size span.feet {
-    font-size: 12.5px;
+    font-size: 0.9em;
 }
 
 .map-listing-card .size span.square {
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 .map-listing-card .date {
-    font-size: 10px;
+    font-size: 0.625em;
     color: #000;
 }
 
@@ -674,20 +674,20 @@ Profile Pages
 */
 
 .profile-page .name {
-    font-size: 43px;
+    font-size: 2.6875em;
     color: #474747;
     letter-spacing: -0.3px;
 }
 
 .profile-page h1 {
-    font-size: 22px;
+    font-size: 1.375em;
     color: #fd5721;
     letter-spacing: -0.3px;
     margin: 6px 0px;
 }
 
 .profile-page h3 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #3f3f3f;
     letter-spacing: -0.3px;
     font-weight: 600;
@@ -695,7 +695,7 @@ Profile Pages
 }
 
 .profile-page h2.district {
-    font-size: 19px;
+    font-size: 1.1875em;
     color: #3f3f3f;
     letter-spacing: 0.1px;
     margin: 0px 0px;
@@ -703,31 +703,31 @@ Profile Pages
 }
 
 .profile-page .since {
-    font-size: 16px;
+    font-size: 1em;
     color: #3f3f3f;
     letter-spacing: -0.1px;
 }
 
 .profile-page .report {
-    font-size: 16px;
+    font-size: 1em;
     color: #3f3f3f;
     letter-spacing: -0.1px;
 }
 
 .profile-page .show {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: #282828;
     letter-spacing: -0.1px;
 }
 
 .profile-page .reviews {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #3f3f3f;
     padding-left: 8px;
 }
 
 .profile-page .count {
-    font-size: 16px;
+    font-size: 1em;
     color: #3f3f3f;
     border-radius: 50%;
     border: 1px solid #f74811;
@@ -739,26 +739,26 @@ Profile Pages
 }
 
 .profile-page .agency {
-    font-size: 16px;
+    font-size: 1em;
     color: #3f3f3f;
 }
 
 .profile-page .agency .license {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     padding-left: 4px;
     color: #333;
     letter-spacing: -0.1px;
 }
 
 .profile-page .more {
-    font-size: 13px;
+    font-size: 0.8125em;
     display: block;
     padding-top: 20px;
     color: #4b6970;
 }
 
 .profile-page .review p {
-    font-size: 16px;
+    font-size: 1em;
     color: #3c3c3c;
     letter-spacing: 0.2px;
     line-height: 24px;
@@ -766,21 +766,21 @@ Profile Pages
 }
 
 .profile-page .review .name {
-    font-size: 16px;
+    font-size: 1em;
     color: #3a4c4f;
     letter-spacing: 0.2px;
     font-weight: 700;
 }
 
 .profile-page .review .date {
-    font-size: 12.5px;
+    font-size: 0.78125em;
     color: #a8acb9;
     letter-spacing: 0.2px;
     padding-left: 2px;
 }
 
 .profile-page .review .load {
-    font-size: 14.5px;
+    font-size: 0.90625em;
     display: block;
     padding-top: 20px;
     color: #373737;
@@ -788,26 +788,26 @@ Profile Pages
 }
 
 .profile-page .review .add {
-    font-size: 17px;
+    font-size: 1.0625em;
     display: block;
     color: #3f3f3f;
     letter-spacing: 0.1px;
 }
 
 .profile-page .veri_head {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: #282828;
     letter-spacing: 0.4px;
 }
 
 .profile-page .veri {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #3f3f3f;
     letter-spacing: 0.2px;
 }
 
 .profile-page .button {
-    font-size: 15px;
+    font-size: 0.9375em;
     border-radius: 44px;
     padding-left: 6px;
     width: 242px;
@@ -835,7 +835,7 @@ Profile Pages
 }
 
 .profile-page .listing-card .building_name {
-    font-size: 17px;
+    font-size: 1.0625em;
     font-weight: 600;
     color: #373737;
     letter-spacing: -0.3px;
@@ -843,14 +843,14 @@ Profile Pages
 }
 
 .profile-page .listing-card .neighbourhood {
-    font-size: 11px;
+    font-size: 0.6875em;
     color: #000;
     padding: 5px 0px;
     display: block;
 }
 
 .profile-page .listing-card .source {
-    font-size: 10px;
+    font-size: 0.625em;
     font-weight: 600;
     letter-spacing: -0.1px;
     padding: 5px 0px;
@@ -865,7 +865,7 @@ Profile Pages
 
 .profile-page .listing-card .sale {
     padding: 0px 20px;
-    font-size: 12.5px;
+    font-size: 0.78125em;
     color: #fff;
 }
 
@@ -875,7 +875,7 @@ Profile Pages
 
 .profile-page .listing-card .rent {
     padding: 10px 20px;
-    font-size: 12.5px;
+    font-size: 0.78125em;
     letter-spacing: -0.2px;
     color: #fff;
 }
@@ -886,11 +886,11 @@ Profile Pages
 
 .profile-page .listing-card .rent span.per {
     padding-left: 2.5px;
-    font-size: 11px;
+    font-size: 0.9em;
 }
 
 .profile-page .listing-card .details {
-    font-size: 13px;
+    font-size: 0.8125em;
     color: #2a2a2a;
     padding: 0px 0px;
     margin: 20px 0px;
@@ -915,15 +915,15 @@ Profile Pages
 }
 
 .profile-page .listing-card .size span.feet {
-    font-size: 12px;
+    font-size: 0.93em;
 }
 
 .profile-page .listing-card .size span.square {
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 .profile-page .listing-card .date {
-    font-size: 10px;
+    font-size: 0.625em;
     color: #000;
 }
 
@@ -934,14 +934,14 @@ Building Page
 */
 
 .building-page h1 {
-    font-size: 41px;
+    font-size: 2.5625em;
     margin: 0px 0px 5px 0px;
     letter-spacing: -1.3px;
     color: #373737;
 }
 
 .building-page h2 {
-    font-size: 15px;
+    font-size: 0.9375em;
     margin: 0px 0px 3px 0px;
     text-transform: uppercase;
     color: #111;
@@ -956,7 +956,7 @@ Building Page
 }
 
 .building-page .age {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     margin: 0px 0px 4px 0px;
     letter-spacing: 0.5px;
     color: #373737;
@@ -970,7 +970,7 @@ Building Page
 }
 
 .building-page .age {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     margin: 0px 0px 4px 0px;
     letter-spacing: 0.5px;
     color: #373737;
@@ -978,12 +978,12 @@ Building Page
 }
 
 .building-page .feature {
-    font-size: 11px;
+    font-size: 0.6875em;
     color: #000;
 }
 
 .building-page .info_nav {
-    font-size: 14.5px;
+    font-size: 0.90625em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1014,7 +1014,7 @@ Building Page
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.6px;
-    font-size: 25px;
+    font-size: 1.5625em;
     margin: 0px 0px;
 }
 
@@ -1030,7 +1030,7 @@ Building Page
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .building-page .bg {
@@ -1065,7 +1065,7 @@ Building Page
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.6px;
-    font-size: 25px;
+    font-size: 1.5625em;
     margin: 0px 0px;
 }
 
@@ -1079,14 +1079,14 @@ Building Page
     color: #333;
     font-weight: 600;
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .building-page .details .content span.features {
     color: #333;
     font-weight: 600;
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .building-page .bdg_listings {
@@ -1105,7 +1105,7 @@ Building Page
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.9px;
-    font-size: 25px;
+    font-size: 1.5625em;
     margin: 0px 0px;
 }
 
@@ -1120,7 +1120,7 @@ Building Page
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    font-size: 16.5px;
+    font-size: 1.03125em;
     padding: 0 10px;
 }
 
@@ -1129,7 +1129,7 @@ Building Page
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    font-size: 16px;
+    font-size: 1em;
     padding: 0 10px;
 }
 
@@ -1137,7 +1137,7 @@ Building Page
     color: #fff;
     font-weight: 300;
     letter-spacing: 0.2px;
-    font-size: 17.5px;
+    font-size: 1.09375em;
     padding: 0 10px;
 }
 
@@ -1155,7 +1155,7 @@ District Page
 }
 
 .district-page .title h1 {
-    font-size: 23px;
+    font-size: 1.4375em;
     letter-spacing: 0.6px;
     position: relative;
     top: 172px;
@@ -1166,7 +1166,7 @@ District Page
 }
 
 .district-page h2 {
-    font-size: 14.5px;
+    font-size: 0.90625em;
     margin: 0px 0px 3px 0px;
     letter-spacing: 0.0px;
     color: #373737;
@@ -1174,7 +1174,7 @@ District Page
 }
 
 .district-page .info_nav {
-    font-size: 14.5px;
+    font-size: 0.90625em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1205,7 +1205,7 @@ District Page
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.6px;
-    font-size: 25px;
+    font-size: 1.5625em;
     margin: 0px 0px;
 }
 
@@ -1221,7 +1221,7 @@ District Page
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .district-page .bg {
@@ -1275,7 +1275,7 @@ District Page
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .district-page .details {
@@ -1304,7 +1304,7 @@ District Page
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.6px;
-    font-size: 25px;
+    font-size: 1.5625em;
     margin: 0px 0px;
 }
 
@@ -1318,14 +1318,14 @@ District Page
     color: #333;
     font-weight: 600;
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .district-page .details .content span.features {
     color: #333;
     font-weight: 600;
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .district-page .district_listings {
@@ -1344,7 +1344,7 @@ District Page
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.9px;
-    font-size: 25px;
+    font-size: 1.5625em;
     margin: 0px 0px;
 }
 
@@ -1359,7 +1359,7 @@ District Page
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    font-size: 16.5px;
+    font-size: 1.03125em;
     padding: 0 10px;
 }
 
@@ -1368,7 +1368,7 @@ District Page
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    font-size: 16px;
+    font-size: 1em;
     padding: 0 10px;
 }
 
@@ -1376,7 +1376,7 @@ District Page
     color: #fff;
     font-weight: 300;
     letter-spacing: 0.2px;
-    font-size: 17.5px;
+    font-size: 1.09375em;
     padding: 0 10px;
 }
 
@@ -1421,14 +1421,14 @@ Profile Page
 
 .profile .input_form .form .content .name {
     letter-spacing: 0.2px;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .profile .input_form .form .content .avatar {
     letter-spacing: 0.2px;
-    font-size: 24.5px;
+    font-size: 1.53125em;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1436,14 +1436,14 @@ Profile Page
 .profile .input_form .form .content span {
     font-weight: 600;
     letter-spacing: 0.9px;
-    font-size: 13px;
+    font-size: 0.8125em;
     margin: 10px 0px 10px 5px;
     text-transform: uppercase;
     display: inline-block;
 }
 
 .profile .input_form .input {
-    font-size: 15px;
+    font-size: 0.9375em;
     width: 502px;
     height: 43px;
     text-align: center;
@@ -1460,7 +1460,7 @@ Profile Page
     text-align: left;
     padding-left: 25px;
     font-weight: 300;
-    font-size: 13.5px;
+    font-size: 0.84375em;
 }
 
 .profile .input_form .input .textarea {
@@ -1474,12 +1474,12 @@ Profile Page
     color: #63697e;
     font-weight: 400;
     letter-spacing: 0.3px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     margin: 10px 0 11px 0px;
 }
 
 .profile .input_form .mobile {
-    font-size: 15px;
+    font-size: 0.9375em;
     width: 500px;
     height: 42px;
     text-align: center;
@@ -1503,7 +1503,7 @@ Profile Page
     color: $verify-color;
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     padding-left: 43px;
     display: inline;
@@ -1513,7 +1513,7 @@ Profile Page
     color: $action-color;
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     padding-left: 43px;
     display: inline;
@@ -1530,7 +1530,7 @@ Profile Page
     border-radius: 42px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     padding-left: 43px;
 }
@@ -1540,7 +1540,7 @@ Profile Page
 }
 
 .profile .input_form .description.textarea {
-    font-size: 15px;
+    font-size: 0.9375em;
     width: 500px;
     height: 160px;
     line-height: 22px;
@@ -1581,7 +1581,7 @@ Profile Page
 }
 
 .profile .side_menu .container span {
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 500;
     letter-spacing: 0.1px;
     color: #333;
@@ -1607,12 +1607,12 @@ Dashboard
 }
 
 .dashboard .name {
-    font-size: 35px;
+    font-size: 2.1875em;
     color: #fff;
 }
 
 .dashboard .edit {
-    font-size: 16px;
+    font-size: 1em;
     color: #fff;
 }
 
@@ -1636,21 +1636,21 @@ Dashboard
 .dashboard .top_cell .count {
     font-weight: 400;
     letter-spacing: 0.4px;
-    font-size: 27px;
+    font-size: 1.6875em;
     color: #5e6477;
 }
 
 .dashboard .top_cell .live {
     font-weight: 600;
     letter-spacing: 0.4px;
-    font-size: 16px;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
 .dashboard .header {
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     display: block;
     border-bottom: solid 1px #e1e5e5;
@@ -1660,7 +1660,7 @@ Dashboard
 .dashboard .tip {
     font-weight: 400;
     letter-spacing: -0.1px;
-    font-size: 14.5px;
+    font-size: 0.90625em;
     width: 80%;
     display: inline-block;
 }
@@ -1671,7 +1671,7 @@ Dashboard
 }
 
 .dashboard .left_cell .item {
-    font-size: 14px;
+    font-size: 0.875em;
     letter-spacing: 0px;
 }
 
@@ -1683,7 +1683,7 @@ Dashboard
 .dashboard .left_cell_photo .change {
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     display: inline-block;
     padding: 13px 10px;
@@ -1692,7 +1692,7 @@ Dashboard
 .dashboard .orange {
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     display: inline-block;
     padding: 13px 10px;
@@ -1712,7 +1712,7 @@ Listing Process
 
 .listing-process .listing-status span {
     letter-spacing: 1.1px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     text-transform: uppercase;
     padding: 0px 3px;
 }
@@ -1753,14 +1753,14 @@ Listing Process
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.8px;
-    font-size: 17px;
+    font-size: 1.0625em;
     margin: 0px 19px;
     display: inline-block;
 }
 
 .listing-process .input_form .form .content .header .step {
     color: #222328;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #3f3f3f;
     font-weight: 600;
     border-radius: 50%;
@@ -1780,7 +1780,7 @@ Listing Process
     color: #63697e;
     font-weight: 400;
     letter-spacing: 0.3px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     margin: 10px 0 11px 0px;
 }
 
@@ -1788,7 +1788,7 @@ Listing Process
     color: $account-font;
     font-weight: 600;
     letter-spacing: 1.3px;
-    font-size: 13px;
+    font-size: 0.8125em;
     margin: 10px 0px 10px 5px;
     text-transform: uppercase;
     display: inline-block;
@@ -1799,7 +1799,7 @@ Listing Process
 }
 
 .listing-process .input_form .input {
-    font-size: 15px;
+    font-size: 0.9375em;
     width: 410px;
     height: 45px;
     text-align: center;
@@ -1816,7 +1816,7 @@ Listing Process
     text-align: left;
     padding-left: 25px;
     font-weight: 300;
-    font-size: 13.5px;
+    font-size: 0.84375em;
 }
 
 .listing-process .input_form .input .text {
@@ -1827,7 +1827,7 @@ Listing Process
 }
 
 .listing-process .input_form .selector {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     width: 257px;
     height: 44px;
     text-align: center;
@@ -1855,7 +1855,7 @@ Listing Process
     color: #404550;
     font-weight: 600;
     letter-spacing: 1px;
-    font-size: 11px;
+    font-size: 0.6875em;
     text-transform: uppercase;
     padding: 0 25px;
     display: inline-block;
@@ -1863,21 +1863,21 @@ Listing Process
 
 .listing-process .input_form .form .content span.checkbox {
     color: #656a76;
-    font-size: 12.5px;
+    font-size: 0.78125em;
 }
 
 .listing-process .input_form .form .content span.addmore {
     color: #ff715a;
-    font-size: 12.5px;
+    font-size: 0.78125em;
 }
 
 .listing-process .input_form .form .content span.tag {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     letter-spacing: 0.7px;
 }
 
 .listing-process .input_form .form .content p.caption {
-    font-size: 11px;
+    font-size: 0.6875em;
     color: #111;
     letter-spacing: 0.3px;
 }
@@ -1903,7 +1903,7 @@ Listing Process
     color: $account-font;
     font-weight: 600;
     letter-spacing: 1.2px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     text-transform: uppercase;
     display: block;
     padding-left: 49px;
@@ -1911,7 +1911,7 @@ Listing Process
 
 .listing-process .side .step {
     color: #222328;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     color: $account-font;
     background-color: #fff;
     font-weight: 700;
@@ -1928,7 +1928,7 @@ Listing Process
     color: $account-font;
     font-weight: 600;
     letter-spacing: 1.2px;
-    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: uppercase;
     display: inline-block;
     padding-left: 19px;
@@ -1938,7 +1938,7 @@ Listing Process
     color: $account-font;
     font-weight: 600;
     letter-spacing: 0.5px;
-    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: uppercase;
     padding-left: 19px;
 }
@@ -1962,7 +1962,7 @@ Listing Process
     color: #4f5a7b;
     font-weight: 600;
     letter-spacing: 0.8px;
-    font-size: 19px;
+    font-size: 1.1875em;
     text-align: center;
 }
 
@@ -1970,7 +1970,7 @@ Listing Process
     color: #808696;
     font-weight: 400;
     letter-spacing: 0.5px;
-    font-size: 13px;
+    font-size: 0.8125em;
     text-align: center;
     padding: 0 33px;
     line-height: 19px;
@@ -1996,12 +1996,12 @@ Listing Management
 }
 
 .listing-manage .side_counts .count {
-    font-size: 24px;
+    font-size: 1.5em;
     letter-spacing: 0.5px;
 }
 
 .listing-manage .side_counts span {
-    font-size: 14.5px;
+    font-size: 0.90625em;
     letter-spacing: 0.5px;
     font-weight: 400;
 }
@@ -2024,7 +2024,7 @@ Listing Management
 
 .listing-manage .topbar span {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.6875em;
     letter-spacing: 0.8px;
     padding: 25px 10px;
     display: inline-block;
@@ -2037,7 +2037,7 @@ Listing Management
 }
 
 .listing-manage .topbar .keywords {
-    font-size: 15px;
+    font-size: 0.9375em;
     width: 200px;
     height: 32px;
     text-align: center;
@@ -2054,7 +2054,7 @@ Listing Management
     color: #919caf;
     text-align: center;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 0.6875em;
 }
 
 .listing-manage .sticky_progress {
@@ -2067,7 +2067,7 @@ Listing Management
 .listing-manage .sticky_progress span.list-progress {
     padding: 15px 0px;
     display: inline-block;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     font-weight: 600;
     letter-spacing: 0.3px;
 }
@@ -2083,7 +2083,7 @@ Listing Management
 }
 
 .listing-manage .listing .name {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
     letter-spacing: -0.3px;
     line-height: 14px;
@@ -2095,12 +2095,12 @@ Listing Management
 }
 
 .listing-manage .listing .sale {
-    font-size: 19px;
+    font-size: 1.1875em;
     letter-spacing: -0.3px;
 }
 
 .listing-manage .listing .rent {
-    font-size: 19px;
+    font-size: 1.1875em;
     letter-spacing: -0.1px;
 }
 
@@ -2110,11 +2110,11 @@ Listing Management
 
 .listing-manage .listing .rent span.per {
     padding-left: 3px;
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .listing-manage .listing .neighbourhood {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     letter-spacing: 0.2px;
 }
 
@@ -2136,20 +2136,20 @@ Listing Management
 }
 
 .listing-manage .listing .size span.feet {
-    font-size: 13px;
+    font-size: 0.85em;
 }
 
 .listing-manage .listing .size span.square {
-    font-size: 16px;
+    font-size: 1.1em;
 }
 
 .listing-manage .listing .details {
-    font-size: 12.5px;
+    font-size: 0.78125em;
     letter-spacing: 0.4px;
 }
 
 .listing-manage .listing .note {
-    font-size: 12.5px;
+    font-size: 0.78125em;
     color: #51b792;
 }
 
@@ -2158,34 +2158,34 @@ Listing Management
 }
 
 .listing-manage .listing .delete {
-    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: uppercase;
     font-weight: 600;
     color: #565e75;
 }
 
 .listing-manage .listing .edit {
-    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: uppercase;
     font-weight: 600;
     color: #565e75;
 }
 
 .listing-manage .listing .button {
-    font-size: 11px;
+    font-size: 0.6875em;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .listing-manage .listing .incomplete {
-    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: uppercase;
     font-weight: 600;
     color: #565e75;
 }
 
 .listing-manage .progress_divide {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.2px;
@@ -2219,15 +2219,15 @@ Chat
     padding-right: 4px;
     font-weight: 400;
     color: #000;
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .chat .menu .box .title {
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .chat .menu .box .new {
-    font-size: 8.5px;
+    font-size: 0.53125em;
     color: #fff;
     border-radius: 50%;
     width: 16px;
@@ -2249,7 +2249,7 @@ Chat
 }
 
 .chat .message .name {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 600;
     color: #373737;
     letter-spacing: -0.3px;
@@ -2257,28 +2257,28 @@ Chat
 }
 
 .chat .message .phone {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: 0.2px;
 }
 
 .chat .message .about {
-    font-size: 12px;
+    font-size: 0.75em;
     letter-spacing: 0.2px;
 }
 
 .chat .message .msg {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: 0px;
 }
 
 .chat .message .listing {
-    font-size: 12.5px;
+    font-size: 0.78125em;
     letter-spacing: 0.2px;
     color: #7d808b;
 }
 
 .chat .message .date {
-    font-size: 12.5px;
+    font-size: 0.78125em;
     letter-spacing: 0.1px;
     color: #7d808b;
 }
@@ -2288,7 +2288,7 @@ Chat
 }
 
 .chat .chat_frame .side .recieved {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: 0.1px;
     font-weight: 600;
 }
@@ -2298,20 +2298,20 @@ Chat
 }
 
 .chat .chat_frame .side .listing_header .listing_name {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
     letter-spacing: -0.3px;
     color: #5c6170;
 }
 
 .chat .chat_frame .side .listing_header .listing_sub {
-    font-size: 11.5px;
+    font-size: 0.71875em;
     font-weight: 600;
     letter-spacing: -0.1px;
 }
 
 .chat .chat_frame .side .listing_type {
-    font-size: 12px;
+    font-size: 0.75em;
     text-transform: uppercase;
     font-weight: 400;
     color: #000;
@@ -2327,12 +2327,12 @@ Chat
 }
 
 .chat .chat_frame .side .price .sale {
-    font-size: 18.5px;
+    font-size: 1.15625em;
     letter-spacing: -0.4px;
 }
 
 .chat .chat_frame .side .price .rent {
-    font-size: 18.5px;
+    font-size: 1.15625em;
     letter-spacing: -0.4px;
 }
 
@@ -2342,11 +2342,11 @@ Chat
 
 .chat .chat_frame .side .price .rent span.per {
     padding-left: 3px;
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .chat .chat_frame .side .date {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: -0.1px;
 }
 
@@ -2355,7 +2355,7 @@ Chat
 }
 
 .chat .chat_frame .side .details {
-    font-size: 17px;
+    font-size: 1.0625em;
     color: #2a2a2a;
     padding: 0px 0px;
     margin: 20px 0px;
@@ -2380,15 +2380,15 @@ Chat
 }
 
 .chat .chat_frame .side .size span.feet {
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .chat .chat_frame .side .size span.square {
-    font-size: 16px;
+    font-size: 1.1em;
 }
 
 .chat .chat_frame .side .appoint_head {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     letter-spacing: 0.1px;
 }
@@ -2399,7 +2399,7 @@ Chat
 
 .chat .chat_frame .side .viewing .sub {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 0.8125rem;
     letter-spacing: -0.1px;
 }
 
@@ -2425,30 +2425,30 @@ Chat
 }
 
 .chat .chat_frame .chatting_to .name {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
     letter-spacing: -0.2px;
 }
 
 .chat .chat_frame .chatting_to .account {
-    font-size: 12px;
+    font-size: 0.75em;
     letter-spacing: -0.1px;
     color: #111;
 }
 
 .chat .chat_frame .chatting_to .account {
-    font-size: 12px;
+    font-size: 0.75em;
     letter-spacing: -0.1px;
 }
 
 .chat .chat_frame .chatting_to .contact {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: -0.2px;
     padding-right: 10px;
 }
 
 .chat .chat_frame .divider {
-    font-size: 13px;
+    font-size: 0.8125em;
 }
 
 .chat .chat_frame .divider .date {
@@ -2475,7 +2475,7 @@ Chat
     padding: 10px 20px;
     display: block;
     color: #111;
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .chat .chat_frame .msg_sent {
@@ -2490,12 +2490,12 @@ Chat
     padding: 10px 20px;
     display: block;
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .chat .chat_frame .speech .date {
     display: block;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     padding: 10px 20px;
     opacity: 0.65;
     font-weight: 600;
@@ -2503,7 +2503,7 @@ Chat
 }
 
 .chat .textarea {
-    font-size: 14px;
+    font-size: 0.875em;
     width: 960px;
     height: 36px;
     line-height: 36px;
@@ -2546,22 +2546,22 @@ Agent Promo
 }
 
 .agent_box .agent {
-    font-size: 13px;
+    font-size: 0.8125em;
     float: right;
 }
 
 .agent_box .name {
-    font-size: 24px;
+    font-size: 1.5em;
     letter-spacing: -0.1px;
 }
 
 .agent_box .lang {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: 0.2px;
 }
 
 .agent_box .details {
-    font-size: 13.5px;
+    font-size: 0.84375em;
     letter-spacing: 0.3px;
     font-weight: 300;
 }
@@ -2582,12 +2582,12 @@ New Msg Notification
 
 .new_msg_box .content {
     padding: 12px 12px 12px 12px;
-    font-size: 13.5px;
+    font-size: 0.84375em;
     font-weight: 300;
 }
 
 .new_msg_box .recieved {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -2621,7 +2621,7 @@ Site Settings
 }
 
 .settings_box span {
-    font-size: 15px;
+    font-size: 0.9375em;
     line-height: 32px;
     opacity: 0.5;
 }
@@ -2674,7 +2674,7 @@ Action Popup
 }
 
 .popup_box .content .title {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
     letter-spacing: -0.1px;
     line-height: 1;
@@ -2682,7 +2682,7 @@ Action Popup
 
 .popup_box .content .action {
     color: #dde0e8;
-    font-size: 15.5px;
+    font-size: 0.96875em;
     padding: 10px 10px 8px 10px;
     display: block;
     line-height: 1.3;

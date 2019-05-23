@@ -4,12 +4,6 @@ Body
 ################
 */
 
-
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 body.en {
     font-size: 1rem;
 }
@@ -170,7 +164,8 @@ body.en .profile-page {
     font-family: $font-secondary;
 }
 
-body.en .profile-page .veri_head {
+body.en .profile-page .veri_head,
+body.en .profile-page .review .date {
     font-family: $font-family-base;
 }
 

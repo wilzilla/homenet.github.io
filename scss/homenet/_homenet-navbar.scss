@@ -2,33 +2,30 @@
   homenet - HTML header navigation menu
 ================================================ */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-Default settings
-Dark version navigation menu
-Header transparent - Maybe for Content Pages
-Hover transitions
-Submenu
-Submenu transitions
-Mega menu
-Menu icons (for later)
-Media queries for responsive design
---------------------------------------------------------------*/
-
 /* =============================================
 Default settings
 ================================================ */
+.homenet-header {
+    position: relative;
+    line-height: 1.5;
+    background-color: #fff;
+    z-index: 99999;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.homenet-header .homenet-menu .nav_main,
+.homenet-header .homenet-menu .info {
+    font-size: 0.875rem;
+}
+
 .homenet-header {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-weight: 400;
-}
-
-.homenet-header .homenet-menu .nav_main,
-.homenet-header .homenet-menu .info {
-    font-size: 0.875em;
 }
 
 .homenet-header:before,
@@ -38,17 +35,6 @@ Default settings
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.homenet-header {
-    position: relative;
-    line-height: 1.42857143;
-    background-color: #fff;
-    z-index: 99999;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
 }
 
 .homenet-header .sticky-bar-bg {
@@ -66,7 +52,7 @@ Default settings
 }
 
 .homenet-header .header-elements {
-margin-left: 0px
+    margin-left: 0px
 }
 
 .homenet-header ul {
@@ -98,18 +84,9 @@ margin-left: 0px
     text-decoration: none;
 }
 
-.homenet-header a:focus,
-.homenet-header a:active {
-    outline: none;
-}
-
 .homenet-header-container {
     position: relative;
     min-height: 76px;
-}
-
-.homenet-header-overlay .homenet-header-container {
-    position: inherit;
 }
 
 .homenet-header .logo {
@@ -144,19 +121,6 @@ margin-left: 0px
     transition: fill 0.3s ease;
 }
 
-/*.homenet-header .logo:hover svg .effect {
-  fill: #fd5721;
-  stroke: #fff;
-  stroke-width: 1px;
-  stroke-dasharray: 125;
-  stroke-dashoffset: -125;
-  stroke-linecap: butt;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-}
-*/
-
 .homenet-header .search {
     display: inline-block;
     padding: 19px;
@@ -176,22 +140,6 @@ margin-left: 0px
     transition: background-color 250ms linear;
 }
 
-/*.homenet-header .search:hover svg .effect {
-  fill: #fd5721;
-  stroke: #fff;
-  stroke-width: 1px;
-  stroke-dasharray: 125;
-  stroke-dashoffset: -125;
-  stroke-linecap: butt;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-}
-*/
-
-
-
-
 .burger-menu {
     position: absolute;
     top: 28px;
@@ -202,7 +150,6 @@ margin-left: 0px
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-
     -webkit-transition: transform 330ms ease-out, background-color 450ms linear;
     ;
     -moz-transition: transform 330ms ease-out, background-color 450ms linear;
@@ -235,7 +182,6 @@ margin-left: 0px
     justify-content: space-between;
     cursor: pointer;
     text-align: center;
-
     -webkit-transition: transform 700ms ease-out;
     -moz-transition: transform 700ms ease-out;
     -o-transition: transform 700ms ease-out;
@@ -255,7 +201,6 @@ margin-left: 0px
     justify-content: space-between;
     cursor: pointer;
     text-align: center;
-
     -webkit-transition: transform 700ms ease-out;
     -moz-transition: transform 700ms ease-out;
     -o-transition: transform 700ms ease-out;
@@ -316,10 +261,7 @@ margin-left: 0px
 
 .homenet-header .avatar:hover img {
     opacity: .8;
-
 }
-
-
 
 .line-menu {
     background-color: #111111;
@@ -336,7 +278,6 @@ margin-left: 0px
     transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57), background-color 450ms linear;
     transform-origin: right;
 }
-
 
 .menu-open .line-menu.first-line {
     -webkit-transform: rotate(-90deg) translateX(3px);
@@ -367,20 +308,16 @@ margin-left: 0px
     position: relative;
 }
 
-
-
 .homenet-menu ul li>a {
     display: block;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.04px;
     color: #212121;
-    padding: 14px 15px;
     text-decoration: none;
-
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s linear;
 }
 
 .homenet-menu ul li>ul a {
@@ -398,7 +335,6 @@ margin-left: 0px
     -o-transform: none;
     transform: none;
 }
-
 
 .homenet-menu ul li.current-menu>a,
 .homenet-menu ul li:hover>a {
@@ -455,32 +391,6 @@ margin-left: 0px
     display: none;
 }
 
-.header-shadow-wrapper {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.header-shadow-wrapper:after {
-    display: block;
-    position: relative;
-    content: "";
-    width: 100%;
-    height: 60px;
-    top: -60px;
-    border-radius: 50%;
-
-    -webkit-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-}
-
-
 /* =============================================
 Dark version navigation menu
 ================================================ */
@@ -504,8 +414,7 @@ Dark version navigation menu
 
 .header-dark .homenet-menu ul li.current-menu>a,
 .header-dark .homenet-menu ul li:hover>a {
-    color: #fd5721;
-    background-color: #313131;
+    color: #f76a3d;
 }
 
 .header-dark .homenet-menu ul ul li>a {
@@ -553,7 +462,6 @@ Mega menu
 .homenet-menu .mega-menu-heading a {
     color: #212121;
     text-decoration: none;
-
     -webkit-transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
     -o-transition: color 0.2s ease-in-out;
@@ -571,10 +479,6 @@ Mega menu
     color: #818181;
 }
 
-.homenet-menu .mega-menu-container li>ul {
-    display: block;
-}
-
 .homenet-menu ul.mega-menu-list li a {
     font-size: 0.875rem;
     font-style: italic;
@@ -585,10 +489,6 @@ Mega menu
 .homenet-menu .mega-menu-heading a:hover,
 .homenet-menu ul.mega-menu-list li a:hover {
     color: #fd5721;
-}
-
-.homenet-menu ul.mega-menu-list ul {
-    padding-left: 15px !important;
 }
 
 .homenet-menu .mega-menu-thumbnail {
@@ -613,7 +513,6 @@ Mega menu
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
-
     -webkit-transition: background-color 0.2s ease-in-out;
     -moz-transition: background-color 0.2s ease-in-out;
     -o-transition: background-color 0.2s ease-in-out;
@@ -624,47 +523,18 @@ Mega menu
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* =============================================
-Menu icons (Maybe Later)
-================================================ */
-.homenet-menu .homenet-menu-icon {
-    margin-right: 5px;
-    color: #a1a1a1;
-}
-
-.homenet-menu ul li>a .homenet-menu-icon,
-.homenet-menu .mega-menu-heading a .homenet-menu-icon {
-    -webkit-transition: color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
-}
-
-.homenet-menu ul li.current-menu>a .homenet-menu-icon,
-.homenet-menu ul li:hover>a .homenet-menu-icon,
-.homenet-menu .mega-menu-heading a:hover .homenet-menu-icon {
-    color: #fd5721 !important;
-}
-
-.header-dark .homenet-menu .homenet-menu-icon {
-    color: #717171;
-}
-
 /* =============================================
 ================================================
 Media queries for responsive design
 ================================================
 ================================================ */
-
 @media (max-width: 550px) {
     .homenet-header .search {
         display: none;
     }
 
-        .homenet-header .header-elements {
-    margin-left: 4%;
+    .homenet-header .header-elements {
+        margin-left: 4%;
     }
 
     .homenet-header .logo {
@@ -681,7 +551,6 @@ Media queries for responsive design
 }
 
 @media (min-width: 768px) {
-
     .homenet-header .logo {
         width: 314px;
         height: 76px;
@@ -702,36 +571,6 @@ Media queries for responsive design
 
     .homenet-menu {
         clear: both;
-    }
-
-    .header-shadow-wrapper:after {
-        -webkit-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-        -o-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-    }
-
-    .submenu-vertical>ul>li ul {
-        right: -60px;
-        padding-right: 60px !important;
-    }
-
-    .submenu-vertical>ul>li>ul li {
-        margin-bottom: 7px;
-    }
-
-    .submenu-vertical>ul>li>ul ul {
-        padding-top: 7px;
-    }
-
-    .submenu-vertical>ul>li>ul li .overlay-dropdown-plus {
-        top: -2px;
-        right: -67px;
-    }
-
-    .menu-social-media {
-        bottom: 34px;
-        padding: 0 110px;
     }
 
     .homenet-menu .mega-menu-media {
@@ -761,22 +600,29 @@ Media queries for responsive design
     .homenet-menu .mega-menu-media-info {
         padding-left: 20px;
     }
-
 }
 
 @media (max-width: 1219px) {
-/* Absolute */
-    .homenet-menu > ul {
+
+    /* Absolute */
+    .homenet-menu>ul {
         position: absolute;
-    width: 100%;
-    padding-left: 4%;
-    padding-right: 4%;
-    background-image: linear-gradient(to bottom right, $ui-color-main, $ui-color-sub);
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-image: linear-gradient(to bottom right, #2d2e33, #2c393c);
     }
+
     .homenet-menu ul li>a {
-    text-transform: uppercase;
+        text-transform: uppercase;
         letter-spacing: 0.8px;
-    font-size: 0.84375rem;
+        font-size: 0.84375rem;
+        padding: 14px 15px;
+    }
+    .header-dark .homenet-menu ul li.current-menu>a,
+    .header-dark .homenet-menu ul li:hover>a {
+        color: #fd5721;
+        background-color: #313131;
     }
 }
 
@@ -787,22 +633,23 @@ Media queries for responsive design
         letter-spacing: -0.1px;
         font-size: 0.875rem;
     }
+
     .homenet-header .logo {
-    min-width: auto;
-    width: 22%;
-}
+        min-width: auto;
+        width: 22%;
+    }
+
     .homenet-menu li.mega-menu.dropdown_menu>ul {
         width: 80%;
         left: 10%;
     }
 }
 
-
 @media (min-width: 1220px) {
 
-    /* =============================================
-  Viewport Breakpoint
-  ================================================ */
+/* =============================================
+Viewport Breakpoint
+================================================ */
     .homenet-header .container {
         max-width: 100%;
         padding-left: 0px;
@@ -815,10 +662,6 @@ Media queries for responsive design
 
     .homenet-header-container {
         height: 76px;
-    }
-
-    .homenet-header-overlay .homenet-header-container {
-        height: auto;
     }
 
     .homenet-header .logo {
@@ -840,8 +683,8 @@ Media queries for responsive design
 
     .homenet-header .avatar {
         position: relative;
-    right: 0px;
-}
+        right: 0px;
+    }
 
     .homenet-header .msg_count {
         font-size: 0.88em;
@@ -914,22 +757,21 @@ Media queries for responsive design
         }
     }
 
-
     .homenet-menu ul li:hover>a .msg_count {
         background-color: #fff;
         color: #fd5721;
     }
 
-
-
     .homenet-menu {
         float: right;
         clear: inherit;
+        height: 100%;
     }
 
     .homenet-menu>ul {
         display: block !important;
         padding: 0;
+        font-size: 0px;
     }
 
     .homenet-menu>ul>li {
@@ -948,26 +790,11 @@ Media queries for responsive design
         white-space: nowrap;
         padding: 0 13px 0 0;
         margin: 0 13px;
+        backface-visibility: hidden;
     }
 
     .homenet-menu>ul>li:last-child>a {
         padding: 0 13px 0 0;
-    }
-
-    .homenet-menu.menu-hover-2>ul>li:last-child>a,
-    .homenet-menu.menu-hover-3>ul>li:last-child>a,
-    .homenet-menu.menu-hover-4>ul>li:last-child>a,
-    .center-menu-1 .homenet-menu>ul>li:last-child>a,
-    .center-menu-2 .homenet-menu>ul>li:last-child>a {
-        padding: 0 20px;
-    }
-
-    .homenet-menu.separate-line.menu-hover-2>ul>li:last-child>a,
-    .homenet-menu.separate-line.menu-hover-3>ul>li:last-child>a,
-    .homenet-menu.separate-line.menu-hover-4>ul>li:last-child>a,
-    .center-menu-1 .homenet-menu.separate-line>ul>li:last-child>a,
-    .center-menu-2 .homenet-menu.separate-line>ul>li:last-child>a {
-        padding: 0 28px;
     }
 
     .homenet-menu ul li.current-menu>a,
@@ -1040,12 +867,11 @@ Media queries for responsive design
     -o-box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
     box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
     */
-
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-
+        backface-visibility: hidden;
     }
 
     .header-dark .homenet-menu li>ul {
@@ -1066,21 +892,6 @@ Media queries for responsive design
     .homenet-menu li>ul ul {
         top: -27px;
         left: 100%;
-    }
-
-    .homenet-menu li.submenu-right>ul ul {
-        left: -100% !important;
-    }
-
-    .homenet-menu ul ul li.dropdown_menu>a>span:before {
-        float: right;
-        top: 7px;
-        right: -10px;
-        margin: 0;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
     }
 
     .homenet-menu ul ul li>a {
@@ -1105,10 +916,6 @@ Media queries for responsive design
         background-color: transparent;
     }
 
-    .header-dark .homenet-menu ul ul li:hover>a .homenet-menu-icon {
-        color: #fff !important;
-    }
-
     .homenet-menu ul ul li:hover>a {
         padding-left: 55px !important;
     }
@@ -1121,7 +928,6 @@ Media queries for responsive design
         width: 0;
         height: 1px;
         background: #a1a1a1;
-
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
@@ -1140,184 +946,7 @@ Media queries for responsive design
         display: block;
     }
 
-    .homenet-menu.menu-caret ul ul li.dropdown_menu>a>span {
-        display: inline;
-    }
-
-    .homenet-menu.separate-line>ul>li>a {
-        position: relative;
-    }
-
-    .homenet-menu.separate-line>ul>li>a:before {
-        position: absolute;
-        content: "";
-        top: 50%;
-        right: 0;
-        width: 1px;
-        height: 20px;
-        background: #eeeeee;
-
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
-    .header-dark .homenet-menu.separate-line>ul>li>a:before {
-        background: #333333;
-    }
-
-    .homenet-menu.separate-line>ul>li:last-child>a:before {
-        display: none;
-    }
-
-    .homenet-menu.separate-line>ul>li>a {
-        padding: 0 28px;
-    }
-
-    .homenet-menu.separate-line>ul>li:last-child>a {
-        padding: 0 0 0 28px;
-    }
-
     .homenet-menu .lang {}
-
-
-    /* =============================================
-  Hover transitions
-  ================================================ */
-    .homenet-menu.menu-hover-2>ul>li.current-menu>a,
-    .homenet-menu.menu-hover-2>ul>li:hover>a {
-        background-color: #f8f8f8;
-        color: #212121;
-    }
-
-    .homenet-menu.menu-hover-2>ul>li>a:after,
-    .homenet-menu.menu-hover-3>ul>li>a:after {
-        position: absolute;
-        content: '';
-        left: 0;
-        bottom: -3px;
-        width: 100%;
-        height: 3px;
-        background: #fd5721;
-        opacity: 0;
-        z-index: 0;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .homenet-menu.menu-hover-2>ul>li.current-menu>a:after,
-    .homenet-menu.menu-hover-2>ul>li:hover>a:after {
-        opacity: 1;
-    }
-
-    .homenet-menu.menu-hover-3>ul>li.current-menu>a,
-    .homenet-menu.menu-hover-3>ul>li:hover>a {
-        color: #212121;
-    }
-
-    .homenet-menu.menu-hover-3>ul>li>a:after {
-        width: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .homenet-menu.menu-hover-3>ul>li.current-menu>a:after,
-    .homenet-menu.menu-hover-3>ul>li:hover>a:after {
-        width: 100%;
-        opacity: 1;
-    }
-
-    .homenet-menu.menu-hover-4>ul>li>a>.hover-transition {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-    .homenet-menu.menu-hover-4>ul>li>a>.hover-transition:after {
-        display: block;
-        position: relative;
-        content: "";
-        width: calc(100% + 2px);
-        height: 0;
-        top: 50%;
-        left: 50%;
-        background: #fd5721;
-        opacity: 0;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .homenet-menu.menu-hover-4>ul>li.current-menu>a>.hover-transition:after,
-    .homenet-menu.menu-hover-4>ul>li:hover>a>.hover-transition:after {
-        opacity: 1;
-        height: 100%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .homenet-menu.menu-hover-4>ul>li>ul {
-        -webkit-transition-delay: 0s;
-        -moz-transition-delay: 0s;
-        -o-transition-delay: 0s;
-        transition-delay: 0s;
-    }
-
-    .homenet-menu.menu-hover-4>ul>li:hover>ul {
-        -webkit-transition-delay: 0.13s;
-        -moz-transition-delay: 0.13s;
-        -o-transition-delay: 0.13s;
-        transition-delay: 0.13s;
-    }
-
-    .homenet-menu.menu-hover-4>ul>li.current-menu>a,
-    .homenet-menu.menu-hover-4>ul>li:hover>a {
-        color: #fff;
-    }
-
-    .homenet-menu.menu-hover-4>ul>li.current-menu.dropdown_menu>a>span:before,
-    .homenet-menu.menu-hover-4>ul>li.dropdown_menu:hover>a>span:before {
-        border-color: #fff;
-    }
-
-    .header-dark .homenet-menu.menu-hover-2>ul>li.current-menu>a,
-    .header-dark .homenet-menu.menu-hover-2>ul>li:hover>a {
-        background-color: #222222;
-        color: #fff;
-    }
-
-    .header-dark .homenet-menu.menu-hover-3>ul>li.current-menu>a,
-    .header-dark .homenet-menu.menu-hover-3>ul>li:hover>a {
-        color: #fff;
-    }
-
-
-    .homenet-menu.menu-hover-4>ul>li.current-menu>a .homenet-menu-icon,
-    .homenet-menu.menu-hover-4>ul>li:hover>a .homenet-menu-icon {
-        color: #fff !important;
-    }
-
 
     /* =============================================
   Submenu
@@ -1330,57 +959,9 @@ Media queries for responsive design
         top: -30px;
     }
 
-    .homenet-menu.submenu-list-border li>ul ul {
-        top: -20px;
-    }
-
-    .homenet-menu.submenu-top-border.submenu-list-border li>ul ul {
-        top: -23px;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li>a {
-        padding: 15px 35px 14px !important;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li:first-child>a {
-        padding: 8px 35px 14px 35px !important;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li:last-child>a {
-        padding: 15px 35px 8px 35px !important;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li:after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 35px;
-        right: 35px;
-        height: 1px;
-        background: #eeeeee;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li:last-child:after {
-        display: none;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li:hover>a {
-        padding-left: 55px !important;
-    }
-
-    .homenet-menu.submenu-list-border ul ul li:nth-child(n+2)>a:before {
-        top: 24px;
-    }
-
-    .header-dark .homenet-menu.submenu-list-border ul ul li:after {
-        background: #333333;
-    }
-
-
     /* =============================================
   Mega menu
   ================================================ */
-
     .homenet-mega-menu .homenet-header-container {
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
@@ -1418,35 +999,10 @@ Media queries for responsive design
         left: 40% !important;
     }
 
-    .homenet-menu li.mega-menu:hover .mega-menu-container li>ul {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .homenet-menu .mega-menu-container li ul,
-    .homenet-menu.submenu-top-border .mega-menu-container li ul,
-    .homenet-menu.submenu-list-border .mega-menu-container li ul {
-        position: relative;
-        top: 0 !important;
-        left: inherit;
-        width: 100%;
-        border-top: none;
-        padding: 0;
-
-        -webkit-box-shadow: inherit;
-        -moz-box-shadow: inherit;
-        -o-box-shadow: inherit;
-        box-shadow: inherit;
-    }
-
     .homenet-menu.menu-caret .mega-menu-container li.dropdown_menu>a>span,
     .homenet-menu .mega-menu-container ul li>a:before,
     .homenet-menu.submenu-list-border .mega-menu-container ul li:after {
         display: none;
-    }
-
-    .homenet-menu li.mega-menu.submenu-right>ul ul {
-        left: inherit !important;
     }
 
     .homenet-menu .mega-menu-container ul li a,

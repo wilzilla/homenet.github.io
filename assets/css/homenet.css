@@ -8595,10 +8595,6 @@ a.text-stumbleupon:hover, a.text-stumbleupon:focus {
 Body
 ################
 */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 body.en {
   font-size: 1rem; }
 
@@ -8725,7 +8721,8 @@ body.en .search-page .neighbourhood {
 body.en .profile-page {
   font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
 
-body.en .profile-page .veri_head {
+body.en .profile-page .veri_head,
+body.en .profile-page .review .date {
   font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif; }
 
 /* Building Pages */
@@ -8935,7 +8932,7 @@ General Styles
   color: #343e5c;
   font-weight: 600;
   letter-spacing: 0.1px;
-  font-size: 0.8125em;
+  font-size: 13px;
   display: inline-block;
   padding: 0px 30px; }
 
@@ -8948,7 +8945,7 @@ Homepage
 ################
 */
 .home-page .search_engine {
-  font-size: 1em; }
+  font-size: 16px; }
 
 .home-page .search_engine .bar .rent {
   background-color: #f74911;
@@ -8957,7 +8954,7 @@ Homepage
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 16px;
   margin: 0 3px 0 0;
   cursor: pointer;
   line-height: 35px;
@@ -8973,7 +8970,7 @@ Homepage
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 16px;
   cursor: pointer;
   line-height: 35px;
   width: 128px;
@@ -8989,7 +8986,7 @@ Homepage
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   line-height: 35px;
@@ -9001,7 +8998,7 @@ Homepage
 
 .home-page .hp_footer_links {
   background-color: rgba(55, 66, 73, 0.66);
-  font-size: 1.0625em;
+  font-size: 17px;
   margin: 0px 0px 10px 0px;
   letter-spacing: 0.1px;
   color: #fff;
@@ -9016,19 +9013,19 @@ Listing Page
   padding: 0px 0 10px 0; }
 
 .listing-page h1 {
-  font-size: 1.9375em;
+  font-size: 31px;
   margin: 0px 0px 10px 0px;
   letter-spacing: -0.5px;
   color: #373737; }
 
 .listing-page h2.location {
-  font-size: 0.9375em;
+  font-size: 15px;
   margin: 0px 0px;
   font-weight: 600;
   color: #373737; }
 
 .listing-page h2.type {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   font-weight: 300;
   line-height: 50px;
   letter-spacing: 0.2px;
@@ -9036,19 +9033,19 @@ Listing Page
   color: white; }
 
 .listing-page h2.location {
-  font-size: 1em;
+  font-size: 16px;
   margin: 0px 0px;
   font-weight: 600;
   color: #373737; }
 
 .listing-page h2.source {
-  font-size: 0.96875em;
+  font-size: 15.5px;
   margin: 0px 0px;
   font-weight: 600;
   color: #222; }
 
 .listing-page h3 {
-  font-size: 1.1875em;
+  font-size: 19px;
   font-weight: 600;
   margin: 0px 0px 0px 0px;
   padding: 10px 0px;
@@ -9063,15 +9060,15 @@ Listing Page
   color: #fff; }
 
 .listing-page .sale .price {
-  font-size: 1.625em;
+  font-size: 26px;
   letter-spacing: -0.3px; }
 
 .listing-page .sale span.cur {
   padding-right: 6px;
-  font-size: 0.9375em; }
+  font-size: 15px; }
 
 .listing-page .rent .price {
-  font-size: 1.4375em;
+  font-size: 23px;
   letter-spacing: -0.1px; }
 
 .listing-page .rent span.cur {
@@ -9093,44 +9090,44 @@ Listing Page
 .save_button span {
   padding-right: 20px;
   letter-spacing: 0.6px;
-  font-size: 0.9375em;
+  font-size: 15px;
   line-height: 40px;
   font-weight: 300; }
 
 .listing-page .details {
   padding: 20px 20px;
-  font-size: 0.9375em;
+  font-size: 15px;
   letter-spacing: -0.1px;
   font-weight: 600;
   color: #414141; }
 
 .listing-page .details .feet {
   padding: 0px 3px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: 0px;
   font-weight: 600;
   color: #414141; }
 
 .listing-page .highlights {
   padding: 20px 20px;
-  font-size: 1em;
+  font-size: 16px;
   letter-spacing: 0px;
   color: #252525; }
 
 .listing-page .listing_info {
   padding: 20px 20px;
-  font-size: 1em;
+  font-size: 16px;
   letter-spacing: 0px;
   color: #252525; }
 
 .listing-page .photo_tag {
   padding: 20px 20px;
-  font-size: 0.9375em;
+  font-size: 15px;
   letter-spacing: 0px;
   color: #252525; }
 
 .listing-breadcrumb {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   padding: 8.5px;
   letter-spacing: -0.2px;
   color: #fff;
@@ -9150,36 +9147,36 @@ Listing Page
   border-radius: 30px;
   border: 1px solid #1b75ad;
   color: #18689a;
-  font-size: 0.875rem;
+  font-size: 14px;
   letter-spacing: -0.4px;
   display: inline-block;
   text-transform: uppercase; }
 
 .listing-page span.name {
-  font-size: 1.15625em;
+  font-size: 18.5px;
   margin: 0px 0px;
   font-weight: 600;
   color: #222;
   letter-spacing: -0.2px; }
 
 .listing-page span.verification {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   margin: 0px 0px;
   color: #111;
   letter-spacing: -0.3px; }
 
 .listing-page span.call {
-  font-size: 0.9375em;
+  font-size: 15px;
   color: #111;
   letter-spacing: 0.1px; }
 
 .listing-page span.join {
-  font-size: 0.75em;
+  font-size: 12px;
   letter-spacing: 0.1px;
   color: #000; }
 
 .listing-page span.ref {
-  font-size: 0.75em;
+  font-size: 12px;
   letter-spacing: 0.2px;
   color: #111; }
 
@@ -9187,20 +9184,20 @@ Listing Page
   padding: 0 0 0 0; }
 
 .listing-page .listing-card-small .building_name {
-  font-size: 1.0625em;
+  font-size: 17px;
   font-weight: 600;
   color: #373737;
   letter-spacing: -0.3px;
   display: block; }
 
 .listing-page .listing-card-small .neighbourhood {
-  font-size: 0.6875em;
+  font-size: 11px;
   color: #000;
   display: block;
   padding: 5px 0px; }
 
 .listing-page .listing-card-small .source {
-  font-size: 0.625em;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: -0.1px;
   padding: 5px 0px;
@@ -9213,17 +9210,17 @@ Listing Page
 
 .listing-page .listing-card-small .sale {
   padding: 0px 20px;
-  font-size: 0.9375em;
+  font-size: 15px;
   color: #fff;
   letter-spacing: 0.0px; }
 
 .listing-page .listing-card-small .sale span.cur {
   padding-right: 4px;
-  font-size: 0.9375em; }
+  font-size: 15px; }
 
 .listing-page .listing-card-small .rent {
   padding: 10px 20px;
-  font-size: 0.9375em;
+  font-size: 15px;
   letter-spacing: -0.1px;
   color: #fff; }
 
@@ -9232,10 +9229,10 @@ Listing Page
 
 .listing-page .listing-card-small .rent span.per {
   padding-left: 3px;
-  font-size: 0.71875em; }
+  font-size: 11.5px; }
 
 .listing-page .listing-card-small .details {
-  font-size: 0.9375em;
+  font-size: 15px;
   color: #2a2a2a;
   padding: 0px 0px;
   letter-spacing: -0.1px; }
@@ -9254,13 +9251,13 @@ Listing Page
   letter-spacing: -0.1px; }
 
 .listing-page .listing-card-small .size span.feet {
-  font-size: 0.9em; }
+  font-size: 12px; }
 
 .listing-page .listing-card-small .size span.square {
-  font-size: 1.1em; }
+  font-size: 16px; }
 
 .listing-page .listing-card-small .date {
-  font-size: 0.625em;
+  font-size: 10px;
   color: #000; }
 
 /*
@@ -9272,7 +9269,7 @@ Search Page
   padding: 0 0 0 0; }
 
 .search-page .filters {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   color: #000;
   letter-spacing: 0.2px; }
 
@@ -9282,7 +9279,7 @@ Search Page
 .search-page .source_filter {
   background-color: rgba(63, 81, 84, 0.95);
   padding: 10px 20px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   color: #fff;
   letter-spacing: 0.3px; }
 
@@ -9291,7 +9288,7 @@ Search Page
   letter-spacing: 0.4px;
   padding: 10px;
   font-weight: 600;
-  font-size: 0.84375em; }
+  font-size: 13.5px; }
 
 .search-page .source_filter span {
   padding: 10px 20px; }
@@ -9302,19 +9299,19 @@ Search Page
   height: 30px; }
 
 .search-page .found span {
-  font-size: 0.875em;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.3px; }
 
 .search-page h1 {
-  font-size: 0.9375em;
+  font-size: 15px;
   color: #fff;
   display: inline;
   font-weight: 500; }
 
 .search-page .listing-card .building_name {
-  font-size: 1.25em;
+  font-size: 20px;
   font-weight: 600;
   color: #373737;
   letter-spacing: -0.3px;
@@ -9323,13 +9320,13 @@ Search Page
   margin: 10px 0; }
 
 .search-page .listing-card .neighbourhood {
-  font-size: 0.75em;
+  font-size: 12px;
   color: #000;
   display: block;
   padding: 5px 0px; }
 
 .search-page .listing-card .source {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: -0.2px;
   padding: 5px 0px;
@@ -9342,7 +9339,7 @@ Search Page
 
 .search-page .sale {
   padding: 0px 20px;
-  font-size: 1.0625em;
+  font-size: 17px;
   color: #fff; }
 
 .search-page .sale span.cur {
@@ -9350,7 +9347,7 @@ Search Page
 
 .search-page .rent {
   padding: 10px 20px;
-  font-size: 1.0625em;
+  font-size: 17px;
   letter-spacing: -0.1px;
   color: #fff; }
 
@@ -9359,10 +9356,10 @@ Search Page
 
 .search-page .rent span.per {
   padding-left: 3px;
-  font-size: 0.875em; }
+  font-size: 14px; }
 
 .search-page .details {
-  font-size: 1.0625em;
+  font-size: 17px;
   color: #2a2a2a;
   padding: 0px 0px;
   margin: 20px 0px;
@@ -9383,13 +9380,13 @@ Search Page
   letter-spacing: -0.1px; }
 
 .search-page .size span.feet {
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .search-page .size span.square {
-  font-size: 1em; }
+  font-size: 16px; }
 
 .search-page .date {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   color: #383838; }
 
 /*
@@ -9401,19 +9398,19 @@ Map Listings
   padding: 0 0 0 0; }
 
 .map-listing-card .building_name {
-  font-size: 1.0625em;
+  font-size: 17px;
   font-weight: 600;
   color: #373737;
   letter-spacing: -0.3px;
   display: block; }
 
 .map-listing-card .neighbourhood {
-  font-size: 0.6875em;
+  font-size: 11px;
   color: #000;
   display: block; }
 
 .map-listing-card .source {
-  font-size: 0.625em;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: -0.2px;
   padding: 10px 0px;
@@ -9426,7 +9423,7 @@ Map Listings
 
 .map-listing-card .sale {
   padding: 0px 20px;
-  font-size: 0.875em;
+  font-size: 14px;
   color: #fff; }
 
 .map-listing-card .sale span.cur {
@@ -9434,7 +9431,7 @@ Map Listings
 
 .map-listing-card .rent {
   padding: 10px 20px;
-  font-size: 0.875em;
+  font-size: 14px;
   letter-spacing: -0.1px;
   color: #fff; }
 
@@ -9443,10 +9440,10 @@ Map Listings
 
 .map-listing-card .rent span.per {
   padding-left: 3px;
-  font-size: 0.75em; }
+  font-size: 12px; }
 
 .map-listing-card .details {
-  font-size: 0.9375em;
+  font-size: 15px;
   color: #2a2a2a;
   padding: 0px 0px;
   margin: 20px 0px;
@@ -9467,13 +9464,13 @@ Map Listings
   letter-spacing: -0.1px; }
 
 .map-listing-card .size span.feet {
-  font-size: 0.9em; }
+  font-size: 12.5px; }
 
 .map-listing-card .size span.square {
-  font-size: 1.2em; }
+  font-size: 16px; }
 
 .map-listing-card .date {
-  font-size: 0.625em;
+  font-size: 10px;
   color: #000; }
 
 /*
@@ -9482,52 +9479,52 @@ Profile Pages
 ################
 */
 .profile-page .name {
-  font-size: 2.6875em;
+  font-size: 43px;
   color: #474747;
   letter-spacing: -0.3px; }
 
 .profile-page h1 {
-  font-size: 1.375em;
+  font-size: 22px;
   color: #fd5721;
   letter-spacing: -0.3px;
   margin: 6px 0px; }
 
 .profile-page h3 {
-  font-size: 1.25em;
+  font-size: 20px;
   color: #3f3f3f;
   letter-spacing: -0.3px;
   font-weight: 600;
   margin: 0px 0px; }
 
 .profile-page h2.district {
-  font-size: 1.1875em;
+  font-size: 19px;
   color: #3f3f3f;
   letter-spacing: 0.1px;
   margin: 0px 0px;
   display: inline; }
 
 .profile-page .since {
-  font-size: 1em;
+  font-size: 16px;
   color: #3f3f3f;
   letter-spacing: -0.1px; }
 
 .profile-page .report {
-  font-size: 1em;
+  font-size: 16px;
   color: #3f3f3f;
   letter-spacing: -0.1px; }
 
 .profile-page .show {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   color: #282828;
   letter-spacing: -0.1px; }
 
 .profile-page .reviews {
-  font-size: 1.125em;
+  font-size: 18px;
   color: #3f3f3f;
   padding-left: 8px; }
 
 .profile-page .count {
-  font-size: 1em;
+  font-size: 16px;
   color: #3f3f3f;
   border-radius: 50%;
   border: 1px solid #f74811;
@@ -9538,65 +9535,65 @@ Profile Pages
   display: inline-block; }
 
 .profile-page .agency {
-  font-size: 1em;
+  font-size: 16px;
   color: #3f3f3f; }
 
 .profile-page .agency .license {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   padding-left: 4px;
   color: #333;
   letter-spacing: -0.1px; }
 
 .profile-page .more {
-  font-size: 0.8125em;
+  font-size: 13px;
   display: block;
   padding-top: 20px;
   color: #4b6970; }
 
 .profile-page .review p {
-  font-size: 1em;
+  font-size: 16px;
   color: #3c3c3c;
   letter-spacing: 0.2px;
   line-height: 24px;
   width: 600px; }
 
 .profile-page .review .name {
-  font-size: 1em;
+  font-size: 16px;
   color: #3a4c4f;
   letter-spacing: 0.2px;
   font-weight: 700; }
 
 .profile-page .review .date {
-  font-size: 0.78125em;
+  font-size: 12.5px;
   color: #a8acb9;
   letter-spacing: 0.2px;
   padding-left: 2px; }
 
 .profile-page .review .load {
-  font-size: 0.90625em;
+  font-size: 14.5px;
   display: block;
   padding-top: 20px;
   color: #373737;
   letter-spacing: 0.1px; }
 
 .profile-page .review .add {
-  font-size: 1.0625em;
+  font-size: 17px;
   display: block;
   color: #3f3f3f;
   letter-spacing: 0.1px; }
 
 .profile-page .veri_head {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   color: #282828;
   letter-spacing: 0.4px; }
 
 .profile-page .veri {
-  font-size: 0.9375em;
+  font-size: 15px;
   color: #3f3f3f;
   letter-spacing: 0.2px; }
 
 .profile-page .button {
-  font-size: 0.9375em;
+  font-size: 15px;
   border-radius: 44px;
   padding-left: 6px;
   width: 242px;
@@ -9621,20 +9618,20 @@ Profile Pages
   padding-left: 5px; }
 
 .profile-page .listing-card .building_name {
-  font-size: 1.0625em;
+  font-size: 17px;
   font-weight: 600;
   color: #373737;
   letter-spacing: -0.3px;
   display: block; }
 
 .profile-page .listing-card .neighbourhood {
-  font-size: 0.6875em;
+  font-size: 11px;
   color: #000;
   padding: 5px 0px;
   display: block; }
 
 .profile-page .listing-card .source {
-  font-size: 0.625em;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: -0.1px;
   padding: 5px 0px;
@@ -9647,7 +9644,7 @@ Profile Pages
 
 .profile-page .listing-card .sale {
   padding: 0px 20px;
-  font-size: 0.78125em;
+  font-size: 12.5px;
   color: #fff; }
 
 .profile-page .listing-card .sale span.cur {
@@ -9655,7 +9652,7 @@ Profile Pages
 
 .profile-page .listing-card .rent {
   padding: 10px 20px;
-  font-size: 0.78125em;
+  font-size: 12.5px;
   letter-spacing: -0.2px;
   color: #fff; }
 
@@ -9664,10 +9661,10 @@ Profile Pages
 
 .profile-page .listing-card .rent span.per {
   padding-left: 2.5px;
-  font-size: 0.9em; }
+  font-size: 11px; }
 
 .profile-page .listing-card .details {
-  font-size: 0.8125em;
+  font-size: 13px;
   color: #2a2a2a;
   padding: 0px 0px;
   margin: 20px 0px;
@@ -9688,13 +9685,13 @@ Profile Pages
   letter-spacing: -0.2px; }
 
 .profile-page .listing-card .size span.feet {
-  font-size: 0.93em; }
+  font-size: 12px; }
 
 .profile-page .listing-card .size span.square {
-  font-size: 1.2em; }
+  font-size: 16px; }
 
 .profile-page .listing-card .date {
-  font-size: 0.625em;
+  font-size: 10px;
   color: #000; }
 
 /*
@@ -9703,13 +9700,13 @@ Building Page
 ################
 */
 .building-page h1 {
-  font-size: 2.5625em;
+  font-size: 41px;
   margin: 0px 0px 5px 0px;
   letter-spacing: -1.3px;
   color: #373737; }
 
 .building-page h2 {
-  font-size: 0.9375em;
+  font-size: 15px;
   margin: 0px 0px 3px 0px;
   text-transform: uppercase;
   color: #111;
@@ -9722,7 +9719,7 @@ Building Page
   margin: 40px 0px; }
 
 .building-page .age {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   margin: 0px 0px 4px 0px;
   letter-spacing: 0.5px;
   color: #373737;
@@ -9734,18 +9731,18 @@ Building Page
   margin: 40px 0px; }
 
 .building-page .age {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   margin: 0px 0px 4px 0px;
   letter-spacing: 0.5px;
   color: #373737;
   text-transform: uppercase; }
 
 .building-page .feature {
-  font-size: 0.6875em;
+  font-size: 11px;
   color: #000; }
 
 .building-page .info_nav {
-  font-size: 0.90625em;
+  font-size: 14.5px;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -9771,7 +9768,7 @@ Building Page
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.6px;
-  font-size: 1.5625em;
+  font-size: 25px;
   margin: 0px 0px; }
 
 .building-page .description .content p {
@@ -9785,7 +9782,7 @@ Building Page
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-size: 1em; }
+  font-size: 16px; }
 
 .building-page .bg {
   background-color: #ebedee;
@@ -9816,7 +9813,7 @@ Building Page
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.6px;
-  font-size: 1.5625em;
+  font-size: 25px;
   margin: 0px 0px; }
 
 .building-page .details .content p {
@@ -9828,13 +9825,13 @@ Building Page
   color: #333;
   font-weight: 600;
   letter-spacing: 0.2px;
-  font-size: 1em; }
+  font-size: 16px; }
 
 .building-page .details .content span.features {
   color: #333;
   font-weight: 600;
   letter-spacing: 0.2px;
-  font-size: 1em; }
+  font-size: 16px; }
 
 .building-page .bdg_listings {
   background-color: #364a4e;
@@ -9850,7 +9847,7 @@ Building Page
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.9px;
-  font-size: 1.5625em;
+  font-size: 25px;
   margin: 0px 0px; }
 
 .building-page .bdg_listings .content p {
@@ -9863,7 +9860,7 @@ Building Page
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-size: 1.03125em;
+  font-size: 16.5px;
   padding: 0 10px; }
 
 .building-page .bdg_listings .content span.all {
@@ -9871,14 +9868,14 @@ Building Page
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-size: 1em;
+  font-size: 16px;
   padding: 0 10px; }
 
 .building-page .bdg_listings .content span.dir_link {
   color: #fff;
   font-weight: 300;
   letter-spacing: 0.2px;
-  font-size: 1.09375em;
+  font-size: 17.5px;
   padding: 0 10px; }
 
 /*
@@ -9893,7 +9890,7 @@ District Page
   border: solid 2px #fff; }
 
 .district-page .title h1 {
-  font-size: 1.4375em;
+  font-size: 23px;
   letter-spacing: 0.6px;
   position: relative;
   top: 172px;
@@ -9903,14 +9900,14 @@ District Page
   font-weight: 300; }
 
 .district-page h2 {
-  font-size: 0.90625em;
+  font-size: 14.5px;
   margin: 0px 0px 3px 0px;
   letter-spacing: 0.0px;
   color: #373737;
   text-transform: uppercase; }
 
 .district-page .info_nav {
-  font-size: 0.90625em;
+  font-size: 14.5px;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -9936,7 +9933,7 @@ District Page
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.6px;
-  font-size: 1.5625em;
+  font-size: 25px;
   margin: 0px 0px; }
 
 .district-page .description .content p {
@@ -9950,7 +9947,7 @@ District Page
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-size: 1em; }
+  font-size: 16px; }
 
 .district-page .bg {
   background-color: #ebedee;
@@ -9998,7 +9995,7 @@ District Page
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-size: 1.25em; }
+  font-size: 20px; }
 
 .district-page .details {
   background-color: #fff;
@@ -10024,7 +10021,7 @@ District Page
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.6px;
-  font-size: 1.5625em;
+  font-size: 25px;
   margin: 0px 0px; }
 
 .district-page .details .content p {
@@ -10036,13 +10033,13 @@ District Page
   color: #333;
   font-weight: 600;
   letter-spacing: 0.2px;
-  font-size: 1em; }
+  font-size: 16px; }
 
 .district-page .details .content span.features {
   color: #333;
   font-weight: 600;
   letter-spacing: 0.2px;
-  font-size: 1em; }
+  font-size: 16px; }
 
 .district-page .district_listings {
   background-color: #364a4e;
@@ -10058,7 +10055,7 @@ District Page
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2.9px;
-  font-size: 1.5625em;
+  font-size: 25px;
   margin: 0px 0px; }
 
 .district-page .district_listings .content p {
@@ -10071,7 +10068,7 @@ District Page
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-size: 1.03125em;
+  font-size: 16.5px;
   padding: 0 10px; }
 
 .district-page .district_listings .content span.all {
@@ -10079,14 +10076,14 @@ District Page
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-size: 1em;
+  font-size: 16px;
   padding: 0 10px; }
 
 .district-page .district_listings .content span.dir_link {
   color: #fff;
   font-weight: 300;
   letter-spacing: 0.2px;
-  font-size: 1.09375em;
+  font-size: 17.5px;
   padding: 0 10px; }
 
 /*
@@ -10121,26 +10118,26 @@ Profile Page
 
 .profile .input_form .form .content .name {
   letter-spacing: 0.2px;
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px; }
 
 .profile .input_form .form .content .avatar {
   letter-spacing: 0.2px;
-  font-size: 1.53125em;
+  font-size: 24.5px;
   font-weight: 600;
   margin-bottom: 20px; }
 
 .profile .input_form .form .content span {
   font-weight: 600;
   letter-spacing: 0.9px;
-  font-size: 0.8125em;
+  font-size: 13px;
   margin: 10px 0px 10px 5px;
   text-transform: uppercase;
   display: inline-block; }
 
 .profile .input_form .input {
-  font-size: 0.9375em;
+  font-size: 15px;
   width: 502px;
   height: 43px;
   text-align: center;
@@ -10156,7 +10153,7 @@ Profile Page
   text-align: left;
   padding-left: 25px;
   font-weight: 300;
-  font-size: 0.84375em; }
+  font-size: 13.5px; }
 
 .profile .input_form .input .textarea {
   color: #2a324b;
@@ -10168,11 +10165,11 @@ Profile Page
   color: #63697e;
   font-weight: 400;
   letter-spacing: 0.3px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   margin: 10px 0 11px 0px; }
 
 .profile .input_form .mobile {
-  font-size: 0.9375em;
+  font-size: 15px;
   width: 500px;
   height: 42px;
   text-align: center;
@@ -10194,7 +10191,7 @@ Profile Page
   color: #4be1ab;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   padding-left: 43px;
   display: inline; }
@@ -10203,7 +10200,7 @@ Profile Page
   color: #ef4f1c;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   padding-left: 43px;
   display: inline; }
@@ -10219,7 +10216,7 @@ Profile Page
   border-radius: 42px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   padding-left: 43px; }
 
@@ -10227,7 +10224,7 @@ Profile Page
   color: #ef4f1c; }
 
 .profile .input_form .description.textarea {
-  font-size: 0.9375em;
+  font-size: 15px;
   width: 500px;
   height: 160px;
   line-height: 22px;
@@ -10263,7 +10260,7 @@ Profile Page
   padding: 44px 13px; }
 
 .profile .side_menu .container span {
-  font-size: 0.875em;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.1px;
   color: #333;
@@ -10284,11 +10281,11 @@ Dashboard
   margin-top: 20px; }
 
 .dashboard .name {
-  font-size: 2.1875em;
+  font-size: 35px;
   color: #fff; }
 
 .dashboard .edit {
-  font-size: 1em;
+  font-size: 16px;
   color: #fff; }
 
 .dashboard .cell {
@@ -10309,19 +10306,19 @@ Dashboard
 .dashboard .top_cell .count {
   font-weight: 400;
   letter-spacing: 0.4px;
-  font-size: 1.6875em;
+  font-size: 27px;
   color: #5e6477; }
 
 .dashboard .top_cell .live {
   font-weight: 600;
   letter-spacing: 0.4px;
-  font-size: 1em;
+  font-size: 16px;
   text-transform: uppercase; }
 
 .dashboard .header {
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   display: block;
   border-bottom: solid 1px #e1e5e5;
@@ -10330,7 +10327,7 @@ Dashboard
 .dashboard .tip {
   font-weight: 400;
   letter-spacing: -0.1px;
-  font-size: 0.90625em;
+  font-size: 14.5px;
   width: 80%;
   display: inline-block; }
 
@@ -10339,7 +10336,7 @@ Dashboard
   height: 265px; }
 
 .dashboard .left_cell .item {
-  font-size: 0.875em;
+  font-size: 14px;
   letter-spacing: 0px; }
 
 .dashboard .left_cell_photo {
@@ -10349,7 +10346,7 @@ Dashboard
 .dashboard .left_cell_photo .change {
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   display: inline-block;
   padding: 13px 10px; }
@@ -10357,7 +10354,7 @@ Dashboard
 .dashboard .orange {
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   display: inline-block;
   padding: 13px 10px;
@@ -10374,7 +10371,7 @@ Listing Process
 */
 .listing-process .listing-status span {
   letter-spacing: 1.1px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   text-transform: uppercase;
   padding: 0px 3px; }
 
@@ -10409,13 +10406,13 @@ Listing Process
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  font-size: 1.0625em;
+  font-size: 17px;
   margin: 0px 19px;
   display: inline-block; }
 
 .listing-process .input_form .form .content .header .step {
   color: #222328;
-  font-size: 0.875em;
+  font-size: 14px;
   color: #3f3f3f;
   font-weight: 600;
   border-radius: 50%;
@@ -10433,14 +10430,14 @@ Listing Process
   color: #63697e;
   font-weight: 400;
   letter-spacing: 0.3px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   margin: 10px 0 11px 0px; }
 
 .listing-process .input_form .form .content span {
   color: #343e5c;
   font-weight: 600;
   letter-spacing: 1.3px;
-  font-size: 0.8125em;
+  font-size: 13px;
   margin: 10px 0px 10px 5px;
   text-transform: uppercase;
   display: inline-block; }
@@ -10449,7 +10446,7 @@ Listing Process
   letter-spacing: 0.5px; }
 
 .listing-process .input_form .input {
-  font-size: 0.9375em;
+  font-size: 15px;
   width: 410px;
   height: 45px;
   text-align: center;
@@ -10465,7 +10462,7 @@ Listing Process
   text-align: left;
   padding-left: 25px;
   font-weight: 300;
-  font-size: 0.84375em; }
+  font-size: 13.5px; }
 
 .listing-process .input_form .input .text {
   color: #2a324b;
@@ -10474,7 +10471,7 @@ Listing Process
   font-weight: 400; }
 
 .listing-process .input_form .selector {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   width: 257px;
   height: 44px;
   text-align: center;
@@ -10501,25 +10498,25 @@ Listing Process
   color: #404550;
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 0.6875em;
+  font-size: 11px;
   text-transform: uppercase;
   padding: 0 25px;
   display: inline-block; }
 
 .listing-process .input_form .form .content span.checkbox {
   color: #656a76;
-  font-size: 0.78125em; }
+  font-size: 12.5px; }
 
 .listing-process .input_form .form .content span.addmore {
   color: #ff715a;
-  font-size: 0.78125em; }
+  font-size: 12.5px; }
 
 .listing-process .input_form .form .content span.tag {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   letter-spacing: 0.7px; }
 
 .listing-process .input_form .form .content p.caption {
-  font-size: 0.6875em;
+  font-size: 11px;
   color: #111;
   letter-spacing: 0.3px; }
 
@@ -10542,14 +10539,14 @@ Listing Process
   color: #343e5c;
   font-weight: 600;
   letter-spacing: 1.2px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   text-transform: uppercase;
   display: block;
   padding-left: 49px; }
 
 .listing-process .side .step {
   color: #222328;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   color: #343e5c;
   background-color: #fff;
   font-weight: 700;
@@ -10565,7 +10562,7 @@ Listing Process
   color: #343e5c;
   font-weight: 600;
   letter-spacing: 1.2px;
-  font-size: 0.8125em;
+  font-size: 13px;
   text-transform: uppercase;
   display: inline-block;
   padding-left: 19px; }
@@ -10574,7 +10571,7 @@ Listing Process
   color: #343e5c;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 0.8125em;
+  font-size: 13px;
   text-transform: uppercase;
   padding-left: 19px; }
 
@@ -10595,14 +10592,14 @@ Listing Process
   color: #4f5a7b;
   font-weight: 600;
   letter-spacing: 0.8px;
-  font-size: 1.1875em;
+  font-size: 19px;
   text-align: center; }
 
 .listing-process .my_note .note_advice {
   color: #808696;
   font-weight: 400;
   letter-spacing: 0.5px;
-  font-size: 0.8125em;
+  font-size: 13px;
   text-align: center;
   padding: 0 33px;
   line-height: 19px; }
@@ -10623,11 +10620,11 @@ Listing Management
   text-align: center; }
 
 .listing-manage .side_counts .count {
-  font-size: 1.5em;
+  font-size: 24px;
   letter-spacing: 0.5px; }
 
 .listing-manage .side_counts span {
-  font-size: 0.90625em;
+  font-size: 14.5px;
   letter-spacing: 0.5px;
   font-weight: 400; }
 
@@ -10647,7 +10644,7 @@ Listing Management
 
 .listing-manage .topbar span {
   text-transform: uppercase;
-  font-size: 0.6875em;
+  font-size: 11px;
   letter-spacing: 0.8px;
   padding: 25px 10px;
   display: inline-block;
@@ -10658,7 +10655,7 @@ Listing Management
   font-weight: 400; }
 
 .listing-manage .topbar .keywords {
-  font-size: 0.9375em;
+  font-size: 15px;
   width: 200px;
   height: 32px;
   text-align: center;
@@ -10674,7 +10671,7 @@ Listing Management
   color: #919caf;
   text-align: center;
   font-weight: 300;
-  font-size: 0.6875em; }
+  font-size: 11px; }
 
 .listing-manage .sticky_progress {
   width: 198px;
@@ -10685,7 +10682,7 @@ Listing Management
 .listing-manage .sticky_progress span.list-progress {
   padding: 15px 0px;
   display: inline-block;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   font-weight: 600;
   letter-spacing: 0.3px; }
 
@@ -10698,7 +10695,7 @@ Listing Management
   color: #252e4c; }
 
 .listing-manage .listing .name {
-  font-size: 1.375em;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.3px;
   line-height: 14px; }
@@ -10708,11 +10705,11 @@ Listing Management
   letter-spacing: -0.2px; }
 
 .listing-manage .listing .sale {
-  font-size: 1.1875em;
+  font-size: 19px;
   letter-spacing: -0.3px; }
 
 .listing-manage .listing .rent {
-  font-size: 1.1875em;
+  font-size: 19px;
   letter-spacing: -0.1px; }
 
 .listing-manage .listing .rent span.cur {
@@ -10720,10 +10717,10 @@ Listing Management
 
 .listing-manage .listing .rent span.per {
   padding-left: 3px;
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .listing-manage .listing .neighbourhood {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   letter-spacing: 0.2px; }
 
 .listing-manage .listing .layout {
@@ -10741,47 +10738,47 @@ Listing Management
   letter-spacing: -0.1px; }
 
 .listing-manage .listing .size span.feet {
-  font-size: 0.85em; }
+  font-size: 13px; }
 
 .listing-manage .listing .size span.square {
-  font-size: 1.1em; }
+  font-size: 16px; }
 
 .listing-manage .listing .details {
-  font-size: 0.78125em;
+  font-size: 12.5px;
   letter-spacing: 0.4px; }
 
 .listing-manage .listing .note {
-  font-size: 0.78125em;
+  font-size: 12.5px;
   color: #51b792; }
 
 .listing-manage .listing .note .bold {
   font-weight: 600; }
 
 .listing-manage .listing .delete {
-  font-size: 0.8125em;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   color: #565e75; }
 
 .listing-manage .listing .edit {
-  font-size: 0.8125em;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   color: #565e75; }
 
 .listing-manage .listing .button {
-  font-size: 0.6875em;
+  font-size: 11px;
   text-transform: uppercase;
   font-weight: 600; }
 
 .listing-manage .listing .incomplete {
-  font-size: 0.8125em;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   color: #565e75; }
 
 .listing-manage .progress_divide {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.2px; }
@@ -10810,13 +10807,13 @@ Chat
   padding-right: 4px;
   font-weight: 400;
   color: #000;
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .chat .menu .box .title {
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .chat .menu .box .new {
-  font-size: 0.53125em;
+  font-size: 8.5px;
   color: #fff;
   border-radius: 50%;
   width: 16px;
@@ -10836,31 +10833,31 @@ Chat
   padding: 20px; }
 
 .chat .message .name {
-  font-size: 1.125em;
+  font-size: 18px;
   font-weight: 600;
   color: #373737;
   letter-spacing: -0.3px;
   line-height: 14px; }
 
 .chat .message .phone {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: 0.2px; }
 
 .chat .message .about {
-  font-size: 0.75em;
+  font-size: 12px;
   letter-spacing: 0.2px; }
 
 .chat .message .msg {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: 0px; }
 
 .chat .message .listing {
-  font-size: 0.78125em;
+  font-size: 12.5px;
   letter-spacing: 0.2px;
   color: #7d808b; }
 
 .chat .message .date {
-  font-size: 0.78125em;
+  font-size: 12.5px;
   letter-spacing: 0.1px;
   color: #7d808b; }
 
@@ -10868,7 +10865,7 @@ Chat
   color: #222a3b; }
 
 .chat .chat_frame .side .recieved {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: 0.1px;
   font-weight: 600; }
 
@@ -10876,18 +10873,18 @@ Chat
   color: #7e879f; }
 
 .chat .chat_frame .side .listing_header .listing_name {
-  font-size: 1.375em;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.3px;
   color: #5c6170; }
 
 .chat .chat_frame .side .listing_header .listing_sub {
-  font-size: 0.71875em;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: -0.1px; }
 
 .chat .chat_frame .side .listing_type {
-  font-size: 0.75em;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 400;
   color: #000; }
@@ -10900,11 +10897,11 @@ Chat
   letter-spacing: -0.2px; }
 
 .chat .chat_frame .side .price .sale {
-  font-size: 1.15625em;
+  font-size: 18.5px;
   letter-spacing: -0.4px; }
 
 .chat .chat_frame .side .price .rent {
-  font-size: 1.15625em;
+  font-size: 18.5px;
   letter-spacing: -0.4px; }
 
 .chat .chat_frame .side .price .rent span.cur {
@@ -10912,17 +10909,17 @@ Chat
 
 .chat .chat_frame .side .price .rent span.per {
   padding-left: 3px;
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .chat .chat_frame .side .date {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: -0.1px; }
 
 .chat .chat_frame .side .date .rec {
   color: #368a9b; }
 
 .chat .chat_frame .side .details {
-  font-size: 1.0625em;
+  font-size: 17px;
   color: #2a2a2a;
   padding: 0px 0px;
   margin: 20px 0px;
@@ -10943,13 +10940,13 @@ Chat
   letter-spacing: -0.1px; }
 
 .chat .chat_frame .side .size span.feet {
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .chat .chat_frame .side .size span.square {
-  font-size: 1.1em; }
+  font-size: 16px; }
 
 .chat .chat_frame .side .appoint_head {
-  font-size: 0.9375rem;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.1px; }
 
@@ -10958,7 +10955,7 @@ Chat
 
 .chat .chat_frame .side .viewing .sub {
   font-weight: 600;
-  font-size: 0.8125rem;
+  font-size: 13px;
   letter-spacing: -0.1px; }
 
 .chat .chat_frame .table {
@@ -10980,26 +10977,26 @@ Chat
   padding: 10px; }
 
 .chat .chat_frame .chatting_to .name {
-  font-size: 1.375em;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.2px; }
 
 .chat .chat_frame .chatting_to .account {
-  font-size: 0.75em;
+  font-size: 12px;
   letter-spacing: -0.1px;
   color: #111; }
 
 .chat .chat_frame .chatting_to .account {
-  font-size: 0.75em;
+  font-size: 12px;
   letter-spacing: -0.1px; }
 
 .chat .chat_frame .chatting_to .contact {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: -0.2px;
   padding-right: 10px; }
 
 .chat .chat_frame .divider {
-  font-size: 0.8125em; }
+  font-size: 13px; }
 
 .chat .chat_frame .divider .date {
   font-weight: 400; }
@@ -11022,7 +11019,7 @@ Chat
   padding: 10px 20px;
   display: block;
   color: #111;
-  font-size: 0.9375em; }
+  font-size: 15px; }
 
 .chat .chat_frame .msg_sent {
   color: #fff;
@@ -11035,18 +11032,18 @@ Chat
   padding: 10px 20px;
   display: block;
   color: #fff;
-  font-size: 0.9375em; }
+  font-size: 15px; }
 
 .chat .chat_frame .speech .date {
   display: block;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   padding: 10px 20px;
   opacity: 0.65;
   font-weight: 600;
   letter-spacing: -0.3px; }
 
 .chat .textarea {
-  font-size: 0.875em;
+  font-size: 14px;
   width: 960px;
   height: 36px;
   line-height: 36px;
@@ -11082,19 +11079,19 @@ Agent Promo
   padding: 12px 12px 12px 231px; }
 
 .agent_box .agent {
-  font-size: 0.8125em;
+  font-size: 13px;
   float: right; }
 
 .agent_box .name {
-  font-size: 1.5em;
+  font-size: 24px;
   letter-spacing: -0.1px; }
 
 .agent_box .lang {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: 0.2px; }
 
 .agent_box .details {
-  font-size: 0.84375em;
+  font-size: 13.5px;
   letter-spacing: 0.3px;
   font-weight: 300; }
 
@@ -11112,11 +11109,11 @@ New Msg Notification
 
 .new_msg_box .content {
   padding: 12px 12px 12px 12px;
-  font-size: 0.84375em;
+  font-size: 13.5px;
   font-weight: 300; }
 
 .new_msg_box .recieved {
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 400; }
 
 .new_msg_box .from {
@@ -11144,7 +11141,7 @@ Site Settings
   padding: 21px 40px; }
 
 .settings_box span {
-  font-size: 0.9375em;
+  font-size: 15px;
   line-height: 32px;
   opacity: 0.5; }
 
@@ -11190,14 +11187,14 @@ Action Popup
   display: block; }
 
 .popup_box .content .title {
-  font-size: 1.375em;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.1px;
   line-height: 1; }
 
 .popup_box .content .action {
   color: #dde0e8;
-  font-size: 0.96875em;
+  font-size: 15.5px;
   padding: 10px 10px 8px 10px;
   display: block;
   line-height: 1.3; }
@@ -11759,31 +11756,28 @@ Action Popup
 /* =============================================
   homenet - HTML header navigation menu
 ================================================ */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-Default settings
-Dark version navigation menu
-Header transparent - Maybe for Content Pages
-Hover transitions
-Submenu
-Submenu transitions
-Mega menu
-Menu icons (for later)
-Media queries for responsive design
---------------------------------------------------------------*/
 /* =============================================
 Default settings
 ================================================ */
+.homenet-header {
+  position: relative;
+  line-height: 1.5;
+  background-color: #fff;
+  z-index: 99999;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+.homenet-header .homenet-menu .nav_main,
+.homenet-header .homenet-menu .info {
+  font-size: 0.875rem; }
+
 .homenet-header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 400; }
-
-.homenet-header .homenet-menu .nav_main,
-.homenet-header .homenet-menu .info {
-  font-size: 0.875em; }
 
 .homenet-header:before,
 .homenet-header:after,
@@ -11792,16 +11786,6 @@ Default settings
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-.homenet-header {
-  position: relative;
-  line-height: 1.42857143;
-  background-color: #fff;
-  z-index: 99999;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
 
 .homenet-header .sticky-bar-bg {
   position: absolute;
@@ -11842,16 +11826,9 @@ Default settings
 .homenet-header a:active {
   text-decoration: none; }
 
-.homenet-header a:focus,
-.homenet-header a:active {
-  outline: none; }
-
 .homenet-header-container {
   position: relative;
   min-height: 76px; }
-
-.homenet-header-overlay .homenet-header-container {
-  position: inherit; }
 
 .homenet-header .logo {
   text-align: center;
@@ -11880,18 +11857,6 @@ Default settings
   fill: #fd5721;
   transition: fill 0.3s ease; }
 
-/*.homenet-header .logo:hover svg .effect {
-  fill: #fd5721;
-  stroke: #fff;
-  stroke-width: 1px;
-  stroke-dasharray: 125;
-  stroke-dashoffset: -125;
-  stroke-linecap: butt;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-}
-*/
 .homenet-header .search {
   display: inline-block;
   padding: 19px;
@@ -11908,18 +11873,6 @@ Default settings
   -ms-transition: background-color 250ms linear;
   transition: background-color 250ms linear; }
 
-/*.homenet-header .search:hover svg .effect {
-  fill: #fd5721;
-  stroke: #fff;
-  stroke-width: 1px;
-  stroke-dasharray: 125;
-  stroke-dashoffset: -125;
-  stroke-linecap: butt;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-}
-*/
 .burger-menu {
   position: absolute;
   top: 28px;
@@ -12063,15 +12016,14 @@ Default settings
 
 .homenet-menu ul li > a {
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04px;
   color: #212121;
-  padding: 14px 15px;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s linear; }
 
 .homenet-menu ul li > ul a {
   -webkit-transform: none !important;
@@ -12134,28 +12086,6 @@ Default settings
 .dropdown-plus.dropdown-open:after {
   display: none; }
 
-.header-shadow-wrapper {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  overflow: hidden;
-  z-index: -1; }
-
-.header-shadow-wrapper:after {
-  display: block;
-  position: relative;
-  content: "";
-  width: 100%;
-  height: 60px;
-  top: -60px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1); }
-
 /* =============================================
 Dark version navigation menu
 ================================================ */
@@ -12175,8 +12105,7 @@ Dark version navigation menu
 
 .header-dark .homenet-menu ul li.current-menu > a,
 .header-dark .homenet-menu ul li:hover > a {
-  color: #fd5721;
-  background-color: #313131; }
+  color: #f76a3d; }
 
 .header-dark .homenet-menu ul ul li > a {
   color: #c1c1c1;
@@ -12229,9 +12158,6 @@ Mega menu
   line-height: 1.42857143;
   color: #818181; }
 
-.homenet-menu .mega-menu-container li > ul {
-  display: block; }
-
 .homenet-menu ul.mega-menu-list li a {
   font-size: 0.875rem;
   font-style: italic;
@@ -12241,9 +12167,6 @@ Mega menu
 .homenet-menu .mega-menu-heading a:hover,
 .homenet-menu ul.mega-menu-list li a:hover {
   color: #fd5721; }
-
-.homenet-menu ul.mega-menu-list ul {
-  padding-left: 15px !important; }
 
 .homenet-menu .mega-menu-thumbnail {
   margin-bottom: 20px; }
@@ -12271,28 +12194,6 @@ Mega menu
 
 .homenet-menu .mega-menu-thumbnail:hover > a:before {
   background-color: rgba(0, 0, 0, 0.2); }
-
-/* =============================================
-Menu icons (Maybe Later)
-================================================ */
-.homenet-menu .homenet-menu-icon {
-  margin-right: 5px;
-  color: #a1a1a1; }
-
-.homenet-menu ul li > a .homenet-menu-icon,
-.homenet-menu .mega-menu-heading a .homenet-menu-icon {
-  -webkit-transition: color 0.2s ease-in-out;
-  -moz-transition: color 0.2s ease-in-out;
-  -o-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out; }
-
-.homenet-menu ul li.current-menu > a .homenet-menu-icon,
-.homenet-menu ul li:hover > a .homenet-menu-icon,
-.homenet-menu .mega-menu-heading a:hover .homenet-menu-icon {
-  color: #fd5721 !important; }
-
-.header-dark .homenet-menu .homenet-menu-icon {
-  color: #717171; }
 
 /* =============================================
 ================================================
@@ -12333,30 +12234,6 @@ Media queries for responsive design
   .homenet-menu {
     clear: both; }
 
-  .header-shadow-wrapper:after {
-    -webkit-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1); }
-
-  .submenu-vertical > ul > li ul {
-    right: -60px;
-    padding-right: 60px !important; }
-
-  .submenu-vertical > ul > li > ul li {
-    margin-bottom: 7px; }
-
-  .submenu-vertical > ul > li > ul ul {
-    padding-top: 7px; }
-
-  .submenu-vertical > ul > li > ul li .overlay-dropdown-plus {
-    top: -2px;
-    right: -67px; }
-
-  .menu-social-media {
-    bottom: 34px;
-    padding: 0 110px; }
-
   .homenet-menu .mega-menu-media {
     display: table;
     width: 100%; }
@@ -12390,7 +12267,13 @@ Media queries for responsive design
   .homenet-menu ul li > a {
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    font-size: 0.84375rem; } }
+    font-size: 0.84375rem;
+    padding: 14px 15px; }
+
+  .header-dark .homenet-menu ul li.current-menu > a,
+  .header-dark .homenet-menu ul li:hover > a {
+    color: #fd5721;
+    background-color: #313131; } }
 @media screen and (min-width: 1220px) and (max-width: 1370px) {
   .homenet-menu > ul > li > a {
     margin: 0 6px !important;
@@ -12406,8 +12289,8 @@ Media queries for responsive design
     left: 10%; } }
 @media (min-width: 1220px) {
   /* =============================================
-Viewport Breakpoint
-================================================ */
+  Viewport Breakpoint
+  ================================================ */
   .homenet-header .container {
     max-width: 100%;
     padding-left: 0px; }
@@ -12418,9 +12301,6 @@ Viewport Breakpoint
 
   .homenet-header-container {
     height: 76px; }
-
-  .homenet-header-overlay .homenet-header-container {
-    height: auto; }
 
   .homenet-header .logo {
     position: absolute;
@@ -12493,11 +12373,13 @@ Viewport Breakpoint
 
   .homenet-menu {
     float: right;
-    clear: inherit; }
+    clear: inherit;
+    height: 100%; }
 
   .homenet-menu > ul {
     display: block !important;
-    padding: 0; }
+    padding: 0;
+    font-size: 0px; }
 
   .homenet-menu > ul > li {
     display: inline-block;
@@ -12512,24 +12394,11 @@ Viewport Breakpoint
     box-sizing: border-box;
     white-space: nowrap;
     padding: 0 13px 0 0;
-    margin: 0 13px; }
+    margin: 0 13px;
+    backface-visibility: hidden; }
 
   .homenet-menu > ul > li:last-child > a {
     padding: 0 13px 0 0; }
-
-  .homenet-menu.menu-hover-2 > ul > li:last-child > a,
-  .homenet-menu.menu-hover-3 > ul > li:last-child > a,
-  .homenet-menu.menu-hover-4 > ul > li:last-child > a,
-  .center-menu-1 .homenet-menu > ul > li:last-child > a,
-  .center-menu-2 .homenet-menu > ul > li:last-child > a {
-    padding: 0 20px; }
-
-  .homenet-menu.separate-line.menu-hover-2 > ul > li:last-child > a,
-  .homenet-menu.separate-line.menu-hover-3 > ul > li:last-child > a,
-  .homenet-menu.separate-line.menu-hover-4 > ul > li:last-child > a,
-  .center-menu-1 .homenet-menu.separate-line > ul > li:last-child > a,
-  .center-menu-2 .homenet-menu.separate-line > ul > li:last-child > a {
-    padding: 0 28px; }
 
   .homenet-menu ul li.current-menu > a,
   .homenet-menu ul li:hover > a,
@@ -12598,7 +12467,8 @@ box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    backface-visibility: hidden; }
 
   .header-dark .homenet-menu li > ul {
     background-color: #111111; }
@@ -12615,19 +12485,6 @@ box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
   .homenet-menu li > ul ul {
     top: -27px;
     left: 100%; }
-
-  .homenet-menu li.submenu-right > ul ul {
-    left: -100% !important; }
-
-  .homenet-menu ul ul li.dropdown_menu > a > span:before {
-    float: right;
-    top: 7px;
-    right: -10px;
-    margin: 0;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
 
   .homenet-menu ul ul li > a {
     position: relative;
@@ -12646,9 +12503,6 @@ box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
   .header-dark .homenet-menu ul ul li:hover > a {
     color: #fff;
     background-color: transparent; }
-
-  .header-dark .homenet-menu ul ul li:hover > a .homenet-menu-icon {
-    color: #fff !important; }
 
   .homenet-menu ul ul li:hover > a {
     padding-left: 55px !important; }
@@ -12675,156 +12529,6 @@ box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
   .homenet-menu.menu-caret ul li.dropdown_menu > a > span {
     display: block; }
 
-  .homenet-menu.menu-caret ul ul li.dropdown_menu > a > span {
-    display: inline; }
-
-  .homenet-menu.separate-line > ul > li > a {
-    position: relative; }
-
-  .homenet-menu.separate-line > ul > li > a:before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 0;
-    width: 1px;
-    height: 20px;
-    background: #eeeeee;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
-
-  .header-dark .homenet-menu.separate-line > ul > li > a:before {
-    background: #333333; }
-
-  .homenet-menu.separate-line > ul > li:last-child > a:before {
-    display: none; }
-
-  .homenet-menu.separate-line > ul > li > a {
-    padding: 0 28px; }
-
-  .homenet-menu.separate-line > ul > li:last-child > a {
-    padding: 0 0 0 28px; }
-
-  /* =============================================
-Hover transitions
-================================================ */
-  .homenet-menu.menu-hover-2 > ul > li.current-menu > a,
-  .homenet-menu.menu-hover-2 > ul > li:hover > a {
-    background-color: #f8f8f8;
-    color: #212121; }
-
-  .homenet-menu.menu-hover-2 > ul > li > a:after,
-  .homenet-menu.menu-hover-3 > ul > li > a:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 3px;
-    background: #fd5721;
-    opacity: 0;
-    z-index: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-
-  .homenet-menu.menu-hover-2 > ul > li.current-menu > a:after,
-  .homenet-menu.menu-hover-2 > ul > li:hover > a:after {
-    opacity: 1; }
-
-  .homenet-menu.menu-hover-3 > ul > li.current-menu > a,
-  .homenet-menu.menu-hover-3 > ul > li:hover > a {
-    color: #212121; }
-
-  .homenet-menu.menu-hover-3 > ul > li > a:after {
-    width: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-
-  .homenet-menu.menu-hover-3 > ul > li.current-menu > a:after,
-  .homenet-menu.menu-hover-3 > ul > li:hover > a:after {
-    width: 100%;
-    opacity: 1; }
-
-  .homenet-menu.menu-hover-4 > ul > li > a > .hover-transition {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; }
-
-  .homenet-menu.menu-hover-4 > ul > li > a > .hover-transition:after {
-    display: block;
-    position: relative;
-    content: "";
-    width: calc(100% + 2px);
-    height: 0;
-    top: 50%;
-    left: 50%;
-    background: #fd5721;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-
-  .homenet-menu.menu-hover-4 > ul > li.current-menu > a > .hover-transition:after,
-  .homenet-menu.menu-hover-4 > ul > li:hover > a > .hover-transition:after {
-    opacity: 1;
-    height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-
-  .homenet-menu.menu-hover-4 > ul > li > ul {
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s; }
-
-  .homenet-menu.menu-hover-4 > ul > li:hover > ul {
-    -webkit-transition-delay: 0.13s;
-    -moz-transition-delay: 0.13s;
-    -o-transition-delay: 0.13s;
-    transition-delay: 0.13s; }
-
-  .homenet-menu.menu-hover-4 > ul > li.current-menu > a,
-  .homenet-menu.menu-hover-4 > ul > li:hover > a {
-    color: #fff; }
-
-  .homenet-menu.menu-hover-4 > ul > li.current-menu.dropdown_menu > a > span:before,
-  .homenet-menu.menu-hover-4 > ul > li.dropdown_menu:hover > a > span:before {
-    border-color: #fff; }
-
-  .header-dark .homenet-menu.menu-hover-2 > ul > li.current-menu > a,
-  .header-dark .homenet-menu.menu-hover-2 > ul > li:hover > a {
-    background-color: #222222;
-    color: #fff; }
-
-  .header-dark .homenet-menu.menu-hover-3 > ul > li.current-menu > a,
-  .header-dark .homenet-menu.menu-hover-3 > ul > li:hover > a {
-    color: #fff; }
-
-  .homenet-menu.menu-hover-4 > ul > li.current-menu > a .homenet-menu-icon,
-  .homenet-menu.menu-hover-4 > ul > li:hover > a .homenet-menu-icon {
-    color: #fff !important; }
-
   /* =============================================
 Submenu
 ================================================ */
@@ -12833,42 +12537,6 @@ Submenu
 
   .homenet-menu.submenu-top-border li > ul ul {
     top: -30px; }
-
-  .homenet-menu.submenu-list-border li > ul ul {
-    top: -20px; }
-
-  .homenet-menu.submenu-top-border.submenu-list-border li > ul ul {
-    top: -23px; }
-
-  .homenet-menu.submenu-list-border ul ul li > a {
-    padding: 15px 35px 14px !important; }
-
-  .homenet-menu.submenu-list-border ul ul li:first-child > a {
-    padding: 8px 35px 14px 35px !important; }
-
-  .homenet-menu.submenu-list-border ul ul li:last-child > a {
-    padding: 15px 35px 8px 35px !important; }
-
-  .homenet-menu.submenu-list-border ul ul li:after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 35px;
-    right: 35px;
-    height: 1px;
-    background: #eeeeee; }
-
-  .homenet-menu.submenu-list-border ul ul li:last-child:after {
-    display: none; }
-
-  .homenet-menu.submenu-list-border ul ul li:hover > a {
-    padding-left: 55px !important; }
-
-  .homenet-menu.submenu-list-border ul ul li:nth-child(n+2) > a:before {
-    top: 24px; }
-
-  .header-dark .homenet-menu.submenu-list-border ul ul li:after {
-    background: #333333; }
 
   /* =============================================
 Mega menu
@@ -12903,31 +12571,10 @@ Mega menu
   .homenet-menu li.mega-menu.mega-menu-right > ul {
     left: 40% !important; }
 
-  .homenet-menu li.mega-menu:hover .mega-menu-container li > ul {
-    visibility: visible;
-    opacity: 1; }
-
-  .homenet-menu .mega-menu-container li ul,
-  .homenet-menu.submenu-top-border .mega-menu-container li ul,
-  .homenet-menu.submenu-list-border .mega-menu-container li ul {
-    position: relative;
-    top: 0 !important;
-    left: inherit;
-    width: 100%;
-    border-top: none;
-    padding: 0;
-    -webkit-box-shadow: inherit;
-    -moz-box-shadow: inherit;
-    -o-box-shadow: inherit;
-    box-shadow: inherit; }
-
   .homenet-menu.menu-caret .mega-menu-container li.dropdown_menu > a > span,
   .homenet-menu .mega-menu-container ul li > a:before,
   .homenet-menu.submenu-list-border .mega-menu-container ul li:after {
     display: none; }
-
-  .homenet-menu li.mega-menu.submenu-right > ul ul {
-    left: inherit !important; }
 
   .homenet-menu .mega-menu-container ul li a,
   .homenet-menu .mega-menu-container ul li:hover a,
