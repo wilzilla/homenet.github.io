@@ -610,15 +610,16 @@ Media queries for responsive design
         width: 100%;
         padding-left: 4%;
         padding-right: 4%;
-        background-image: linear-gradient(to bottom right, #2d2e33, #2c393c);
+        background-image: linear-gradient(to bottom right, $ui-color-sub, $ui-color-main);
     }
 
-    .homenet-menu ul li>a {
+.homenet-header .homenet-menu .nav_main, .homenet-header .homenet-menu .info {
         text-transform: uppercase;
         letter-spacing: 0.8px;
-        font-size: 0.84375rem;
+        font-size: 14.5px;
         padding: 14px 15px;
-    }
+}
+
     .header-dark .homenet-menu ul li.current-menu>a,
     .header-dark .homenet-menu ul li:hover>a {
         color: #fd5721;
