@@ -155,7 +155,12 @@ body.en .search-page {
     font-family: $font-secondary;
 }
 
-body.en .search-page .neighbourhood {
+body.en .listing-card {
+    font-family: $font-secondary;
+}
+
+body.en .listing-card .hood,
+body.en .listing-card .source {    
     font-family: $font-family-base;
 }
 

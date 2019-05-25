@@ -8540,7 +8540,11 @@ body.en .map-listing-card {
 body.en .search-page {
   font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
 
-body.en .search-page .neighbourhood {
+body.en .listing-card {
+  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
+
+body.en .listing-card .hood,
+body.en .listing-card .source {
   font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif; }
 
 /* Profile Pages */
