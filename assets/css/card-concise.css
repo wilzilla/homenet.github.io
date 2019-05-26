@@ -50,6 +50,7 @@
         white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    min-width: 60%;
 }
 .listing-card .hood {
     font-size: 12px;
@@ -57,20 +58,13 @@
     display: block;
     padding: 5px 0px;
 }
-.listing-card .source {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: -0.2px;
-    padding: 5px 0px;
-    color: #373737;
-    display: block;
-    text-transform: uppercase;
-}
+
 .listing-card .layout {
     padding-right: 4px;
     display: inline-block;
     min-width: 50px;
     border-right: solid 1px #000;
+    line-height: 17px;
 }
 .listing-card .size {
     padding: 0px 6px;
@@ -91,3 +85,38 @@
     font-size: 11.5px;
     color: #383838;
 }
+.listing-card .source {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    padding: 0px;
+    color: #373737;
+    display: block;
+    text-transform: uppercase;
+line-height: 17px;
+    padding-top: 6px;
+}
+.listing-card .source object {
+width: 12px;
+    height: 14px;
+    top: 3px;
+    position: relative;
+    padding-left: 0px;
+    margin-left: 6px;
+}
+
+/*
+.listing-card .source.owner::after {
+    background-image: url(../svg/search_page/owner.svg);
+    content: ' ';
+    background-size: 100%;
+    height: 19px;
+    width: 17px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    margin-left: 7px;
+    top: 5px;
+    text-transform: uppercase;
+}
+*/
