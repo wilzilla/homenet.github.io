@@ -495,33 +495,33 @@ Search Page
     display: block;
 }
 
-.search-page .price {
+.search-page .listing-card .price {
     background-color: rgba(44, 46, 47, 0.65);
     padding: 0px 20px;
 }
 
-.search-page .sale {
+.search-page .listing-card .sale {
     padding: 0px 20px;
     font-size: 17px;
     color: #fff;
 }
 
-.search-page .sale span.cur {
+.search-page .listing-card .sale span.cur {
     padding-right: 4px;
 }
 
-.search-page .rent {
+.search-page .listing-card .rent {
     padding: 10px 20px;
     font-size: 17px;
     letter-spacing: -0.1px;
     color: #fff;
 }
 
-.search-page .rent span.cur {
+.search-page .listing-card .rent span.cur {
     padding-right: 3px;
 }
 
-.search-page .rent span.per {
+.search-page .listing-card .rent span.per {
     padding-left: 3px;
     font-size: 14px;
 }
