@@ -139,15 +139,6 @@
     width: 87px;
 }
 
-.listing-card .layout img {
-    position: relative;
-    top: -2px;
-    left: 2px;
-    padding: 0 5px 0 2px;
-    height: 14px;
-    vertical-align: inherit;
-}
-
 .listing-card .layout span.bed {
     margin-right: 34px;
     position: relative;
@@ -190,7 +181,7 @@
     letter-spacing: -0.1px;
 }
 
-.listing-card .size span.ft {
+.listing-card .size .ft {
     font-size: 13px;
 }
 
@@ -208,10 +199,8 @@
     margin-bottom: 5px;
 }
 
-
-
 .listing-card .price {
-    background-color: rgba(44, 46, 47, 0.69);
+    background-color: rgba(44, 46, 47, 0.73);
     display: block;
     text-align: center;
     transform: translateY(-66px);
@@ -245,6 +234,7 @@
     padding-right: 3px;
     font-family: montserrat;
     font-size: 9px;
+    display: none;
 }
 
 .listing-card .rent span.per {
@@ -281,8 +271,36 @@
     height: 33%;
     width: 100%;
     display: block;
-    opacity: 0.90;
+    -webkit-animation: expand 0.5s;
+    animation: expand 0.5s;
 }
+@-webkit-keyframes expand {
+    0% {
+        opacity: 0;
+    background-size: auto 0%;
+    }
+
+    100% {
+
+        opacity: 0.9;
+    background-size: auto 100%;
+    }
+}
+
+@keyframes expand {
+    0% {
+        opacity: 0;
+    background-size: auto 0%;
+    }
+
+    100% {
+
+        opacity: 0.9;
+    background-size: auto 100%;
+    }
+}
+
+
 
 .listing-card .save {
     background: url(../svg/listing/small_icons/save.svg) no-repeat;
@@ -308,7 +326,6 @@
 
 /* Elements Load Smoothing */
 .listing-info,
-.listing-card .listing-img::before,
 .listing-card .price,
 .listing-card .save,
 .listing-card .saved {
@@ -372,40 +389,40 @@
 
 /* Full */
 
-.demo-search-panel.full {
+.demo-search-panel.hide.map {
     padding: 0 10px 0 10px;
-    width: 100%;
+    max-width: 100%;
 }
 
-.demo-search-panel.full .listing-layout {
+.demo-search-panel.hide.map .listing-layout {
     width: 20%;
     padding: 10px 7px;
 }
 
 @media screen and (min-width: 2100px) {
-    .demo-search-panel.full .listing-layout {
+    .demo-search-panel.hide.map .listing-layout {
         width: 16.666666%;
     }
 }
 
 @media screen and (max-width: 1750px) {
-    .demo-search-panel.full .listing-layout {
+    .demo-search-panel.hide.map .listing-layout {
         width: 25%;
     }
 
-    .demo-search-panel.full {
+    .demo-search-panel.hide.map {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 1350px) {
-    .demo-search-panel.full .listing-layout {
+    .demo-search-panel.hide.map .listing-layout {
         width: 33.333333%;
     }
 }
 
 @media screen and (max-width: 920px) {
-    .demo-search-panel.full .listing-layout {
+    .demo-search-panel.hide.map .listing-layout {
         width: 50%;
         padding: 8px 1%;
     }
@@ -417,7 +434,7 @@
 @media screen and (min-width: 450px) and (max-width: 600px) {
 
     .demo-search-panel.map .listing-layout,
-    .demo-search-panel.full .listing-layout {
+    .demo-search-panel.hide.map .listing-layout {
         width: 100%;
         padding: 8px 8.5%;
 
@@ -427,7 +444,7 @@
 @media screen and (max-width: 449px) {
 
     .demo-search-panel.map .listing-layout,
-    .demo-search-panel.full .listing-layout {
+    .demo-search-panel.hide.map .listing-layout {
         width: 100%;
         padding: 8px 2%;
     }
