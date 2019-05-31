@@ -271,36 +271,7 @@
     height: 33%;
     width: 100%;
     display: block;
-    -webkit-animation: expand 0.5s;
-    animation: expand 0.5s;
 }
-@-webkit-keyframes expand {
-    0% {
-        opacity: 0;
-    background-size: auto 0%;
-    }
-
-    100% {
-
-        opacity: 0.9;
-    background-size: auto 100%;
-    }
-}
-
-@keyframes expand {
-    0% {
-        opacity: 0;
-    background-size: auto 0%;
-    }
-
-    100% {
-
-        opacity: 0.9;
-    background-size: auto 100%;
-    }
-}
-
-
 
 .listing-card .save {
     background: url(../svg/listing/small_icons/save.svg) no-repeat;
@@ -316,22 +287,32 @@
     position: absolute;
     top: 9px;
     right: 9px;
-    height: 19px;
-    width: 22px;
+    height: 40px;
+    width: 44px;
     display: block;
-    z-index: 1;
+    z-index: 2;
     background-size: 100% 100%, auto;
+    transform: scale(0.5,0.5);
+    transform-origin: 100% 0;
+}
+
+.listing-card .save:hover,
+.listing-card .saved:hover {
+    transform: scale(0.70,0.70);
+    transition: all 0.2s ease-in-out;
 }
 
 
 /* Elements Load Smoothing */
 .listing-info,
+.listing-card .listing-img::before,
 .listing-card .price,
 .listing-card .save,
 .listing-card .saved {
     animation: fadein 0.4s ease-in-out;
     -moz-animation: fadein 0.4s ease-in-out;
     -webkit-animation: fadein 0.4s ease-in-out;
+    -ms-animation: fadein 0.4s ease-in-out;
     -o-animation: fadein 0.4s ease-in-out;
 }
 
