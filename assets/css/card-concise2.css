@@ -183,6 +183,7 @@
 
 .listing-card .size .ft {
     font-size: 13px;
+    display: inline-block;
 }
 
 .listing-card .size span.sq {
