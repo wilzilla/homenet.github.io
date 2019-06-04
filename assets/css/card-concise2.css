@@ -40,6 +40,7 @@
     line-height: 26px;
     display: block;
     min-width: 222px;
+    margin-bottom: 0px;
 }
 
 .listing-card .bdg-name a {
@@ -221,7 +222,6 @@
 
 .listing-card .sale span.cur {
     padding-right: 4px;
-    font-family: montserrat;
     font-size: 12px;
 }
 
@@ -229,13 +229,6 @@
     font-size: 19px;
     letter-spacing: -0.1px;
     color: #fff;
-}
-
-.listing-card .rent span.cur {
-    padding-right: 3px;
-    font-family: montserrat;
-    font-size: 9px;
-    display: none;
 }
 
 .listing-card .rent span.per {
