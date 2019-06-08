@@ -7,20 +7,9 @@
 // Import Bootstrap
 // 
 // 
-//*
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-//@import "../node_modules/bootstrap/scss/images";
-//@import "../node_modules/bootstrap/scss/code";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/breadcrumb";
-@import "../node_modules/bootstrap/scss/transitions";
-@import "../node_modules/bootstrap/scss/utilities";
-/*
+
+
+
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -39,13 +28,13 @@
 @import "../node_modules/bootstrap/scss/input-group";
 @import "../node_modules/bootstrap/scss/custom-forms";
 @import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/navbar";
-//@import "../node_modules/bootstrap/scss/card";
+//@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/breadcrumb";
 @import "../node_modules/bootstrap/scss/pagination";
 @import "../node_modules/bootstrap/scss/badge";
 @import "../node_modules/bootstrap/scss/jumbotron";
-@import "../node_modules/bootstrap/scss/alert";
+//@import "../node_modules/bootstrap/scss/alert";
 @import "../node_modules/bootstrap/scss/progress";
 @import "../node_modules/bootstrap/scss/media";
 @import "../node_modules/bootstrap/scss/list-group";
@@ -55,10 +44,9 @@
 @import "../node_modules/bootstrap/scss/tooltip";
 @import "../node_modules/bootstrap/scss/popover";
 @import "../node_modules/bootstrap/scss/carousel";
-@import "../node_modules/bootstrap/scss/spinners";
+//@import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/print";
-
+//@import "../node_modules/bootstrap/scss/print";
 
 
 // Homenet Customs
@@ -67,7 +55,7 @@
 @import "homenet/homenet-type";
 @import "homenet/homenet-main";
 @import "homenet/homenet-buttons";
-//@import "homenet/homenet-navbar";
+@import "homenet/homenet-navbar";
 //@import "homenet/homenet-footer";
 
 /*To be futher customized - general pages, elements  & effect*/
@@ -77,12 +65,13 @@
 @import "homenet/homenet-content-pages";
 @import "homenet/homenet-content-sections";
 @import "homenet/homenet-simple_sections";
+
 @import "homenet/homenet-info-pages";
 @import "homenet/homenet-titles";
 @import "homenet/homenet-lists";
 @import "homenet/homenet-flip-cards";
 @import "homenet/homenet-bubble-quote";
-@import "homenet/homenet-avatar-dropdown";
+//@import "homenet/homenet-avatar-dropdown";
 
 // Homenet Elements
 @import "homenet/homenet-portfolio";
@@ -99,7 +88,14 @@
 @import "homenet/homenet-swiper";
 @import "homenet/homenet-counters";
 
+
+// General UI Kit
+@import "mixins";
+@import "partials/list-group";
+@import "partials/breadcrumb";
+
 /*
+
 // General UI Kit
 @import "mixins";
 @import "partials/reboot";
@@ -139,4 +135,5 @@
 @import "extras/hover-transitions";
 @import "extras/testimonial";
 @import "extras/info-box";
+
 */

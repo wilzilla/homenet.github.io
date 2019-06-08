@@ -4,6 +4,7 @@
 .content-page .content-section #content-nav,
 .content-page .content-section .main-content {
     top: $white-overlay-top;
+    z-index: 1;
 }
 
 .content-page .white-section {

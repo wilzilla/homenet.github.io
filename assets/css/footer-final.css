@@ -16,6 +16,10 @@ Collapse Function CSS
 Return to Top
 --------------------------------------------------------------*/
 
+footer {
+    font-family: var(--font-family-base);
+}
+
 footer a {
     color: var(--white);
 }
@@ -26,7 +30,7 @@ footer .footer-inner {
 
 footer .footer-inner {
     color: var(--white);
-    background-image: linear-gradient(to bottom left, $ui-color-main, $ui-color-sub);
+    background-image: linear-gradient(to bottom left, var(--ui-color-main), var(--ui-color-sub));
 }
 
 
@@ -69,13 +73,13 @@ footer .footer-inner .footer-top .footer-top-inner {
     }
 
     footer .footer-inner .footer_bottom .container .row .copyright {
-        font-size: 0.59em;
+        font-size: 9.5px;
     }
 }
 
 /* Breadcrumb */
 footer .footer-inner .footer_breadcrumb .breadcrumb {
-    padding: 0.75rem 0rem;
+    padding: 12px 0px;
     ms-flex-pack: center !important;
     justify-content: center !important;
 
@@ -130,7 +134,7 @@ footer .footer-inner .footer-body {
 /* Links */
 footer .footer-inner .footer-body .footer_header {
     font-weight: 600;
-    font-size: 0.8125rem;
+    font-size: 13px;
     letter-spacing: 1.1px;
     text-transform: uppercase;
 }
@@ -142,15 +146,15 @@ footer .footer-inner .footer-body .foot_link_list .foot_link {
 
 footer .footer-inner .footer-body .foot_link_list {
     padding-bottom: 30px;
-    font-family: $font-secondary;
-    font-size: 0.85em;
+    font-family: var(--font-secondary);
+    font-size: 13.5px;
     letter-spacing: 0.4px;
     font-weight: 300;
 }
-  @media(max-width: $lg) {
+  @media(max-width: 991px) {
 
 footer .footer-inner .footer-body .foot_link_list {
-    font-size: 0.80em;
+    font-size: 13px;
     }
   }
 
@@ -195,23 +199,16 @@ button.footer-btn:not(:disabled):not(.disabled).active:focus,
 }
 
 
-footer img:not(:disabled):not(.disabled):active,
-footer img:not(:disabled):not(.disabled):active:focus,
-footer img:not(:disabled):not(.disabled).active,
-footer img:not(:disabled):not(.disabled).active:focus {
-    opacity: 0.3;
-}
-
 
 /* Footer Bottom */
 footer .footer-inner .footer_bottom {
-    background-color: $ui-color-sub;
+    background-color: var(--ui-color-sub);
     padding: 15px 0;
 }
 
 footer .footer-inner .footer_bottom .copyright {
     text-align: right;
-    font-size: 0.79em;
+    font-size: 12.5px;
 }
 
 @media (max-width: 576px) {
@@ -381,7 +378,7 @@ Return to Top
     margin: 0;
     position: relative;
     left: 16px;
-    top: 9px;
+    top: 14px;
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -ms-transition: all 0.25s ease;
@@ -431,3 +428,5 @@ Return to Top
         padding: 0;
     }
 }
+
+

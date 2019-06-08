@@ -8,11 +8,12 @@
 .listing-card {
     position: relative;
     overflow: hidden;
-    border-radius: 0.3125rem;
-    -webkit-box-shadow: 0 0.42rem 1.22rem rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0 0.42rem 1.22rem rgba(0, 0, 0, 0.12);
-    box-shadow: 0 0.42rem 1.22rem rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.12);
     border: 0;
+    line-height: 1.5;
 }
 
 .listing-img {
@@ -23,8 +24,8 @@
 
 .listing-img-top {
     width: 100%;
-    border-top-left-radius: 0.3125rem;
-    border-top-right-radius: 0.3125rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .listing-info {
@@ -32,7 +33,7 @@
     background-color: #fff;
 }
 
-.listing-card .bdg-name {
+.listing-card h2.bdg-name {
     font-size: 20px;
     font-weight: 600;
     color: #373737;
@@ -40,6 +41,7 @@
     line-height: 26px;
     display: block;
     min-width: 222px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -94,6 +96,7 @@
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
+    position: relative;
 }
 
 .listing-card .owner .source::after,
@@ -288,6 +291,7 @@
     background-size: 100% 100%, auto;
     transform: scale(0.5,0.5);
     transform-origin: 100% 0;
+    cursor: pointer;
 }
 
 .listing-card .save:hover,
@@ -364,40 +368,40 @@
 
 /* Full */
 
-.demo-search-panel.hide.map {
+.demo-search-panel.dont-show.map {
     padding: 0 10px 0 10px;
     max-width: 100%;
 }
 
-.demo-search-panel.hide.map .listing-layout {
+.demo-search-panel.dont-show.map .listing-layout {
     width: 20%;
     padding: 10px 7px;
 }
 
 @media screen and (min-width: 2100px) {
-    .demo-search-panel.hide.map .listing-layout {
+    .demo-search-panel.dont-show.map .listing-layout {
         width: 16.666666%;
     }
 }
 
 @media screen and (max-width: 1750px) {
-    .demo-search-panel.hide.map .listing-layout {
+    .demo-search-panel.dont-show.map .listing-layout {
         width: 25%;
     }
 
-    .demo-search-panel.hide.map {
+    .demo-search-panel.dont-show.map {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 1350px) {
-    .demo-search-panel.hide.map .listing-layout {
+    .demo-search-panel.dont-show.map .listing-layout {
         width: 33.333333%;
     }
 }
 
 @media screen and (max-width: 920px) {
-    .demo-search-panel.hide.map .listing-layout {
+    .demo-search-panel.dont-show.map .listing-layout {
         width: 50%;
         padding: 8px 1%;
     }
@@ -409,7 +413,7 @@
 @media screen and (min-width: 450px) and (max-width: 600px) {
 
     .demo-search-panel.map .listing-layout,
-    .demo-search-panel.hide.map .listing-layout {
+    .demo-search-panel.dont-show.map .listing-layout {
         width: 100%;
         padding: 8px 8.5%;
 
@@ -419,14 +423,14 @@
 @media screen and (max-width: 449px) {
 
     .demo-search-panel.map .listing-layout,
-    .demo-search-panel.hide.map .listing-layout {
+    .demo-search-panel.dont-show.map .listing-layout {
         width: 100%;
         padding: 8px 2%;
     }
 }
 
 @media screen and (min-width: 600px) {
-    .listing-card .bdg-name {
+    .listing-card h2.bdg-name {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -434,8 +438,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .listing-card .bdg-name {
-        flex: 0 0 auto;
+    .listing-card h2.bdg-name {
         width: auto;
         min-width: 0;
     }
@@ -444,248 +447,12 @@
 
 
 
-/* Bootstrap Styles */
-
-:root {
-  /* Common */
-  --primary-color: #fd5721;
-  /* Additional Colors */
-  --white-section: #fff;
-  --gray-section: #f8f8f8;
-  --black-section: #222020;
-  --light-gray-section: #fcfcfc;
-  --viridian: #1b2631;
-  --selection_background: #dcdcdc;
-  --selection_color: #232323;
-  /* Primary Sizes */
-  --hero-header_default_height: 100vh;
-  --hero-header_responsive_height: 600px;
-  --breadcrumbs-height: 450px;
-  --page-header-height: 370px;
-  --engage-header-height: 550px;
-  /* Overlay rgba Colors */
-  --default_overlay: rgba(44, 44, 44, 0.4);
-  --color_overlay: rgba(35, 35, 70, 0.25);
-  --dark_overlay: rgba(20, 20, 20, 0.65);
-  --black_overlay: rgba(33, 33, 33, 0.5);
-  /* Borders Colors */
-  --default-border: rgba(153, 153, 153, 0.2);
-  --card-border: rgba(153, 153, 153, 0.1);
-  --white-border: rgba(236, 236, 236, 0.5);
-  --thin-border: rgba(236, 236, 236, 0.09);
-  --light-border: rgba(236, 236, 236, 0.2);
-  --button-border: rgba(236, 236, 236, 0.4);
-  /* Fonts Colors */
-  --gray-font-color: #dcdcdc;
-  --gray-default-font: #7f7f7f;
-  --light-font-color: #f3f3f3;
-  /* Box Shadow Colors */
-  --box-shadow-dark: rgba(21, 21, 21, 0.2);
-  --box-shadow-medium: rgba(31, 31, 31, 0.1);
-  --box-shadow-light: rgba(31, 31, 31, 0.02);
-  --box-shadow-boxes: rgba(31, 31, 31, 0.02);
-  /* Test Shadow Colors */
-  --text-shadow-dark: rgba(31, 31, 31, 0.5);
-  --text-shadow-medium: rgba(31, 31, 31, 0.2);
-  --text-shadow-light: rgba(31, 31, 31, 0.1);
-  --button-shadow-light: rgba(11, 11, 11, 0.15);
-  /* Functional Colors */
-  --black_default: #232323;
-  /* ## ## ## ## ## ## ## ## ## ## */
-  --ui-color-main: #2d2e33;
-  --ui-color-sub: #2c393c; }
-
-:root {
-  --blue: #3498db;
-  --indigo: #2874a6;
-  --purple: #8e44ad;
-  --pink: #d98880;
-  --red: #e94b35;
-  --orange: #d4ac0d;
-  --yellow: #f1c40f;
-  --green: #2ecc71;
-  --teal: #45b39d;
-  --cyan: #85c1e9;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --light-gray: #f7f9f9;
-  --dark-viridian: #2c3e50;
-  --facebook: #2874a6;
-  --twitter: #5dade2;
-  --pinterest: #b03a2e;
-  --google-plus: #e74c3c;
-  --instagram: #af7ac5;
-  --dribbble: #cd6155;
-  --youtube: #cb4335;
-  --vimeo: #85c1e9;
-  --stumbleupon: #e67e22;
-  --primary: #3498db;
-  --secondary: #45b39d;
-  --success: #2ecc71;
-  --info: #85c1e9;
-  --warning: #f1c40f;
-  --danger: #e94b35;
-  --light: #f7f9f9;
-  --dark: #2c3e50;
-  --facebook: #2874a6;
-  --twitter: #5dade2;
-  --pinterest: #b03a2e;
-  --google-plus: #e74c3c;
-  --instagram: #af7ac5;
-  --dribbble: #cd6155;
-  --youtube: #cb4335;
-  --vimeo: #85c1e9;
-  --stumbleupon: #e67e22;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box; }
-  
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
-  
-  a {
-  color: #85c3ae;
-  text-decoration: none;
-  background-color: transparent; }
-  a:hover {
-    color: #b8dcd0;
-    text-decoration: underline; }
     
-    img {
-  vertical-align: middle;
-  border-style: none; }
-  
-  
-  button {
-  border-radius: 0; }
-  
-  input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit; }
-  
-  button,
-input {
-  overflow: visible; }
 
-button,
-select {
-  text-transform: none; }
-  
-  button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer; }
-
-button:focus, input:focus {
-    outline: none;
-}
-  
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #202020; }
-  
-  h2, .h2 {
-  font-size: 2rem; }
-  
-  .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-  
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
-.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
-.col-xl-auto {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
-
-.col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%; }
-
-.col-auto {
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%; }
-  
-  .col-12 {
-  flex: 0 0 100%;
-  max-width: 100%; }
-  
-  .justify-content-between {
-  justify-content: space-between !important; }
-  
-  .m-0 {
-  margin: 0 !important; }
-  
-  .p-0 {
-  padding: 0 !important; }
-  
-  .pt-5,
-.py-5 {
-  padding-top: 3rem !important; }
-  
-  .pb-5,
-.py-5 {
-  padding-bottom: 3rem !important; }
-  
-  .mr-auto,
-.mx-auto {
-  margin-right: auto !important; }
-  
-  @media (min-width: 576px) {
-  .text-sm-left {
-    text-align: left !important; }
-
-  .text-sm-right {
-    text-align: right !important; }
-
-  .text-sm-center {
-    text-align: center !important; } }
-    
-    h2,
-.h2 {
-  font-size: 1.75rem; }
-  
-    h2,
-  .h2 {
-    font-size: 2rem; }
-    
+/* Buttons & Type NEED TO ADD TO GENERAL CSS */
     
     
     /* Buttons */
@@ -729,7 +496,7 @@ body.en .listing-card .cur {
 
 
   
-/**** Homenet Solid General Styles ****/
+/**** Homenet Solid General Styles to ADD to General CSS ****/
 
 .homenet-btn {
     line-height: 1;
@@ -744,7 +511,7 @@ body.en .listing-card .cur {
 .button-contact {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 0.9375rem;
+    font-size: 15px;
     border-radius: 100px;
     background-color: #85c3ae;
     border: 2px solid #85c3ae;
@@ -762,6 +529,12 @@ body.en .listing-card .cur {
     background-color: #85c3ae;
     color: #fff;
     opacity: 0.7;
+}
+
+
+
+button:focus, input:focus {
+    outline: none;
 }
   
   

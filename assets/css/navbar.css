@@ -14,6 +14,7 @@ Default settings
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    font-family: var(--font-family-base);
 }
 
 .homenet-header .homenet-menu .nav_main,
@@ -127,6 +128,7 @@ Default settings
     display: inline-block;
     padding: 19px;
     fill: #fff;
+    background-color: #364a4e;
 }
 
 .homenet-header .search:hover svg {
@@ -617,9 +619,10 @@ Media queries for responsive design
 
 .homenet-header .homenet-menu .nav_main, .homenet-header .homenet-menu .info {
         text-transform: uppercase;
-        letter-spacing: 0.8px;
-        font-size: 14.5px;
-        padding: 14px 15px;
+    letter-spacing: 1.3px;
+    font-size: 14px;
+    padding: 16px 15px;
+    font-weight: 600;
 }
 
     .header-dark .homenet-menu ul li.current-menu>a,
