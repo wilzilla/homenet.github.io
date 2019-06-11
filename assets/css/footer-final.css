@@ -17,7 +17,7 @@ Return to Top
 --------------------------------------------------------------*/
 
 footer {
-    font-family: var(--font-family-base);
+    font-family: var(--font-secondary);
 }
 
 footer a {
@@ -165,15 +165,20 @@ footer .footer-inner .footer-body .footer_header {
     line-height: 23px;
 }
 
-
 button.footer-btn {
-    min-width: 192px;
+min-width: 192px;
     text-transform: none;
     color: #fff;
-    border-color: #fe3a14;
     letter-spacing: 0.05em;
     border-radius: 50px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    font-weight: 600;
+    border: 2px solid #fe3a14;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 12px;
+    line-height: 1.6;
+    background-color: transparent;
+    padding: 10px 26px;
 }
 
 button.footer-btn:hover,
@@ -198,8 +203,6 @@ button.footer-btn:not(:disabled):not(.disabled).active:focus,
     box-shadow: none;
 }
 
-
-
 /* Footer Bottom */
 footer .footer-inner .footer_bottom {
     background-color: var(--ui-color-sub);
@@ -222,6 +225,7 @@ footer .footer-inner .footer_bottom .container .row {}
 @media (max-width: 767px) {
     footer .footer-inner .footer_bottom .container .row .copyright {
         padding-top: 15px;
+        text-align: center !important;
     }
     footer .footer-inner .footer_bottom {
         background-color: transparent;

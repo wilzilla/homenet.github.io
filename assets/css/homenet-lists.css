@@ -1,0 +1,63 @@
+/* Lists */
+
+.list.list-type-1,
+.list.list-type-2 {
+  padding: 9px 10px 34px 0px;
+}
+
+/* List Type 1 */
+
+.list-type-1 li {
+  display: flex;
+  padding-left: 15px;
+  position: relative; }
+.list-type-1 li span {
+  font-family: $font-secondary;
+  font-weight: 700;
+    color: #2d3131;
+    letter-spacing: 0.01px;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+ }
+.list-type-1 li:not(:last-child) {
+  margin-bottom: 15px; }
+
+.list-type-1 li:before {
+  position: absolute;
+  left: 0;
+  content: ' ';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: var(--black_default);
+  margin-top: 10px;
+  opacity: 0.5; }
+
+
+/* List Type 2 */
+
+.list-type-2 li {
+  display: flex;
+  padding-left: 15px;
+  position: relative; }
+
+.list-type-2 li span {
+  font-family: $font-secondary;
+  font-weight: 700;
+    color: #2d3131;
+    letter-spacing: 0.01px;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+ }
+
+.list-type-2 li:before {
+  content: '\f00c';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--primary-color); }
+
+.list-type-2 li:not(:last-child) {
+  margin-bottom: 15px; }

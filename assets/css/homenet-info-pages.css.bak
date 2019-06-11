@@ -1,0 +1,195 @@
+/*** Info Content Page ***/
+
+/* Content Layout */
+.content-page .content-section #content-nav,
+.content-page .content-section .main-content {
+    top: $white-overlay-top;
+    z-index: 1;
+}
+
+.content-page .white-section {
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.content-page .gray-section {
+    background-color: #f3f3f3;
+}
+
+.content-page .main-content .white-section {
+    padding: 7% 12% 8% 12%;
+}
+
+.content-page .main-content .white-section p {
+    margin-bottom: 1.6rem;
+}
+
+.content-page .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .content-page .container {
+        max-width: 94%;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-page .container {
+        max-width: 860px;
+        padding: 0px 5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-page .container {
+        max-width: 1080px;
+        padding: 0px 15px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .content-page .container {
+        max-width: 1140px;
+    }
+}
+
+.content-section {
+    padding-bottom: 5px;
+}
+
+.column-element {
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* Responsive Content Navigation */
+
+.content-page #content-nav .list-group-item-action:hover {
+    z-index: 1;
+    color: #85c3ae;
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+    .content-page .collapse.dont-collapse-sm {
+        display: block;
+        height: auto !important;
+        visibility: visible;
+        position: sticky;
+        margin-top: $white-overlay-top;
+        margin-bottom: $white-overlay-bottom;
+    }
+    .content-page #content-nav .list-group {
+        padding: 1.25rem 0 0.5rem 0;
+        border-radius: 0.1875rem;
+    }
+
+    .content-page .burger-menu {
+        display: none;
+    }
+
+    .content-page .burger-bg {
+        display: none;
+    }
+    .content-page #content-nav .column-element {
+        position: sticky;
+        top: 25px;
+        z-index: 1020;
+        padding: 12% 0;
+    }
+    .content-page #content-nav .list-group-item {
+        padding: 0.45rem 10% 0.45rem 21%;
+        margin-bottom: 8px;
+        line-height: 21px;
+        letter-spacing: 0.5px;
+        color: #5e6669;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.78125rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .content-page #content-nav .list-group-item {
+        padding: 0.30rem 7%;
+        margin-bottom: 8px;
+        line-height: 1.6;
+        letter-spacing: 0.6px;
+        color: #838d8e;
+        text-transform: uppercase;
+        font-size: 0.84375rem;
+        font-weight: 600;
+    }
+
+    .content-page #content-nav .list-group {
+        padding: 0.6rem 0;
+    }
+}
+
+.content-page #content-nav .list-group-item::before {
+    width: 3px;
+}
+
+.content-page .burger-menu {
+    position: relative;
+    top: 14px;
+    right: -12px;
+    pointer-events: none;
+}
+
+.content-page .burger-bg.collapsed,
+.content-page .burger-bg {
+    background-color: rgba(255, 255, 255, 0.71);
+}
+
+.burger-bg.burgerMenu.menu-open {
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
+.content-page .burger-bg {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content-page .burger-menu .line-menu {
+    background-color: #586b6f;
+}
+
+.content-page .burgerMenu.menu-open .line-menu {
+    background-color: #fd5721;
+}
+
+.collapse {
+    visibility: hidden;
+}
+
+.collapse.show {
+    visibility: visible;
+    display: block;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.collapsing.width {
+    -webkit-transition-property: width, visibility;
+    transition-property: width, visibility;
+    width: 0;
+    height: auto;
+}
+
