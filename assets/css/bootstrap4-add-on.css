@@ -136,7 +136,7 @@ footer .col {
     background-color: transparent;
 }
 
-.bs4 a:hover {
+.bs4 a:hover, .bs4 a:focus {
     color: #b8dcd0;
     text-decoration: none;
 }

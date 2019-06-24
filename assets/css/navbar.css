@@ -108,7 +108,7 @@ Default settings
 .homenet-header .logo svg {
     fill: #fff;
     max-width: 81%;
-        max-height: 26px;
+        max-height: 27px;
     vertical-align: inherit;
 }
 
@@ -122,6 +122,8 @@ Default settings
 .homenet-header .logo:hover svg {
     fill: #fd5721;
     transition: fill 0.3s ease;
+        filter: drop-shadow(2px 1px 7px rgba(217, 95, 56, 0.60));
+    -webkit-filter: drop-shadow(2px 1px 7px rgba(217, 95, 56, 0.60));
 }
 
 .homenet-header .search {
@@ -556,7 +558,7 @@ Media queries for responsive design
 
 @media (min-width: 768px) {
     .homenet-header .logo {
-        width: 314px;
+        width: 313px;
         height: 76px;
         float: left;
         border-left: 3px solid;
