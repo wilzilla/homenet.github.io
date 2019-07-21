@@ -446,12 +446,6 @@
 
 
 
-
-
-
-
-    
-
 /* Buttons & Type NEED TO ADD TO GENERAL CSS */
     
     
@@ -530,8 +524,6 @@ body.en .listing-card .cur {
     color: #fff;
     opacity: 0.7;
 }
-
-
 
 button:focus, input:focus {
     outline: none;
