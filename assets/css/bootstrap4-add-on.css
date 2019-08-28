@@ -279,11 +279,6 @@ svg {
     position: relative;
 }
 
-.col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-}
 
 .bs4.col-auto {
     flex: 0 0 auto;
@@ -291,9 +286,30 @@ svg {
     max-width: 100%;
 }
 
+.bs4.col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+
+.bs4.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.bs4.col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
 .bs4.col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+}
+
+.bs4.col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
 }
 
 .bs4.col-12 {
@@ -318,6 +334,37 @@ svg {
     .text-sm-center {
         text-align: center !important;
     }
+
+.bs4.col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+    .bs4.col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+    .bs4.col-sm-4  {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.bs4.col-sm-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+    .bs4.col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.bs4.col-sm-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
 
     .bs4.col-sm-9 {
         flex: 0 0 75%;

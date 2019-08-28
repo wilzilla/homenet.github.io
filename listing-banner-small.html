@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    /* Reboot Browser Styles - Delete this when applying styles */
+    body {
+        margin: 0px;
+    }
+    /*********************************************/
+
+
+    /* General Listing Banner Styles*/
+    .listing-banner-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .listing-banner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .center-banner {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .main-img {
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    .b-left {
+        margin-left: 1px;
+    }
+    .b-right {
+        margin-right: 1px;
+    }
+    .side-img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .img-frame {
+        height: 100%;
+        max-height: 350px;
+    }
+    .main-img img {
+        min-width: inherit;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .main-img {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    /* Responsive widths */
+
+    @media (max-width: 500px) {
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 120%;
+            max-width: 120%;
+        }
+        .b-two, .b-three, .b-four, .b-five {
+          display: none;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .img-frame {
+            max-height: 500px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+
+    /* Desktop 1080p Default Screens */
+    @media (min-width: 992px) {
+        .listing-banner-container {
+            width: 100%;
+            max-height: 606px;
+            overflow: hidden;
+        }
+        .listing-banner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+        .img-frame {
+            height: 606px;
+            max-height: inherit;
+        }
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 500px;
+            flex: 0 0 500px;
+            max-width: 500px;
+            max-height: 688px
+        }
+        .main-img img {
+            min-width: 500px;
+            object-fit: cover;
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    /* Desktop 1080p and more */
+    @media (min-width: 1930px) {
+        .listing-banner-container {
+            width: 100%;
+            max-height: 688px;
+            overflow: hidden;
+        }
+        .img-frame {
+            height: 688px;
+            max-height: inherit;
+        }
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 516px;
+            flex: 0 0 516px;
+            max-width: 516px;
+            max-height: 688px
+        }
+        .main-img img {
+            min-width: 516px;
+            object-fit: initial;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    /* Mobile Devices */
+    @media only screen and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+        .main-img {
+            -webkit-box-flex: 1;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 120%;
+            max-width: 120%;
+        }
+        .img-frame {
+            max-height: 1000px;
+        }
+        .b-two, .b-three, .b-four, .b-five {
+          display: none;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img b-four">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="b-left side-img b-two">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/1032/688" alt="" /></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/1032/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-three">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/1032/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-five">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/1032/688" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img b-four">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="b-left side-img b-two">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/917/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-three">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/917/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-five">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/917/688" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img b-four">
+                <div class="img-frame">
+                    <div class="img-frame"><img src="https://picsum.photos/id/1068/459/688" alt="" /></div>
+                </div>
+            </div>
+            <div class="b-left side-img b-two">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/459/688" alt="" /></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/459/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-three">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/459/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-five">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/459/688" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img b-four">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="b-left side-img b-two">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-three">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+            <div class="b-right side-img b-five">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/516/688" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>
