@@ -374,3 +374,62 @@ input#price {
   border-radius: 50%;
   background: white;
 }
+
+
+
+.homenet-radio {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0px;
+  cursor: pointer;
+  width: 70px;
+}
+.homenet-radio input {
+  display: none;
+}
+.homenet-radio input + span {
+  line-height: 22px;
+  height: 22px;
+  display: block;
+  position: relative;
+}
+.homenet-radio input + span:not(:empty) {
+  padding-left: 30px;
+}
+.homenet-radio input + span:before, .homenet-radio input + span:after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.homenet-radio input + span:before {
+  background: #d1d7e3;
+  transition: background 0.2s ease, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+.homenet-radio input + span:after {
+  background: #fff;
+  transform: scale(0.78);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+.homenet-radio input:checked + span:before {
+  transform: scale(1.04);
+  background: #5d9bfb;
+}
+.homenet-radio input:checked + span:after {
+  transform: scale(0.4);
+  transition: transform 0.3s ease;
+}
+.homenet-radio:hover input + span:before {
+  transform: scale(0.92);
+}
+.homenet-radio:hover input + span:after {
+  transform: scale(0.74);
+}
+.homenet-radio:hover input:checked + span:after {
+  transform: scale(0.4);
+}
+

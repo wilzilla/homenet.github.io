@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    /* This is to remove Browser Styles - Delete this body style when applying styles */
+    body {
+        margin: 0px;
+    }
+    /*********************************************/
+
+
+    /* General Listing Banner Styles*/
+    .listing-banner-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .listing-banner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .center-banner {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .main-img {
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    .b-left {
+        margin-left: 1px;
+    }
+    .b-right {
+        margin-right: 1px;
+    }
+
+    .img-frame {
+        height: 100%;
+    }
+    
+    .main-img img {
+        min-width: inherit;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 50%;
+    }
+    .main-img {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .side-img {
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    /* Load Responsive Background Images for sides */
+    @media (min-width: 580px) {
+        .side-img.image2 {
+            background-image: url('https://picsum.photos/id/101/592/888');
+        }
+        .side-img.image3 {
+            background-image: url('https://picsum.photos/id/1065/592/888');
+        }
+    }
+    @media (min-width: 992px) {
+        .side-img.image4 {
+            background-image: url('https://picsum.photos/id/1029/592/888');
+        }
+        .side-img.image5 {
+            background-image: url('https://picsum.photos/id/1067/592/888');
+        }
+    }
+
+    /* Responsive widths */
+    @media (max-width: 550px) {
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .img-frame {
+            max-height: 42vh;
+            min-height: 40vh;
+        }
+        .side-img.image2 , .side-img.image3, .side-img.image4, .side-img.image5 {
+            display: none !important;
+            background-image: none !important;
+        }
+    }
+
+    @media (min-width: 551px) {
+        .img-frame {
+            max-height: 550px;
+            min-height: 450px
+        }
+    }
+    @media (min-width: 580px) {
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            min-width: 500px;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            min-width: 500px;
+        }
+    }
+
+    /* Desktop 1080p Default Screens */
+    @media (min-width: 992px) {
+        .listing-banner-container {
+            width: 100%;
+            max-height: 606px;
+            overflow: hidden;
+        }
+        .listing-banner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+        .img-frame {
+            height: 606px;
+            max-height: inherit;
+        }
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 500px;
+            flex: 0 0 500px;
+            max-width: 500px;
+        }
+        .main-img img {
+            min-width: 500px;
+            object-fit: cover;
+            width: auto;
+            height: 100%;
+        }
+    }
+   
+    /* Desktop 1080p and larger */
+    @media (min-width: 1930px) {
+        .listing-banner-container {
+            width: 100%;
+            max-height: 60vh;
+            overflow: hidden;
+        }
+        .img-frame {
+            height: 60vh;
+            max-height: inherit;
+        }
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 516px;
+            flex: 0 0 516px;
+            max-width: 516px;
+            max-height: 60vh;
+        }
+        .main-img img {
+            min-width: 516px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /* Desktop 1440p and larger */
+    @media (min-width: 2570px) {
+        .listing-banner-container {
+            width: 100%;
+            max-height: 65vh;
+            overflow: hidden;
+        }
+        .img-frame {
+            height: 65vh;
+            max-height: inherit;
+        }
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 44%;
+            flex: 0 0 44%;
+            width: 44%;
+            max-width: none;
+        }
+        .side-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 16%;
+            flex: 0 0 16%;
+            max-width: 16%;
+            max-height: 65vh;
+        }
+        .main-img img {
+            min-width: 516px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /* Mobile Devices */
+    @media only screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 2) {
+        .main-img {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .img-frame {
+            max-height: 42vh;
+            min-height: 40vh;
+        }
+        .side-img.image2 , .side-img.image3, .side-img.image4, .side-img.image5 {
+            display: none !important;
+            background-image: none !important;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img image4">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-left side-img image2">
+                <div class="img-frame"></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/1332/888" alt="Listing Name Goes Here!" /></div>
+            </div>
+            <div class="b-right side-img image3">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-right side-img image5">
+                <div class="img-frame"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img image4">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-left side-img image2">
+                <div class="img-frame"></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1068/1578/888" alt="Listing Name Goes Here!" /></div>
+            </div>
+            <div class="b-right side-img image3">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-right side-img image5">
+                <div class="img-frame"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img image4">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-left side-img image2">
+                <div class="img-frame"></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1065/500/888" alt="Listing Name Goes Here!" /></div>
+            </div>
+            <div class="b-right side-img image3">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-right side-img image5">
+                <div class="img-frame"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img image4">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-left side-img image2">
+                <div class="img-frame"></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1065/592/888" alt="Listing Name Goes Here!" /></div>
+            </div>
+            <div class="b-right side-img image3">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-right side-img image5">
+                <div class="img-frame"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="listing-banner-container">
+        <div class="listing-banner center-banner">
+            <div class="b-left side-img image4">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-left side-img image2">
+                <div class="img-frame"></div>
+            </div>
+            <div class="main-img">
+                <div class="img-frame"><img src="https://picsum.photos/id/1065/666/888" alt="Listing Name Goes Here!" /></div>
+            </div>
+            <div class="b-right side-img image3">
+                <div class="img-frame"></div>
+            </div>
+            <div class="b-right side-img image5">
+                <div class="img-frame"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+</body>
+
+</html>
