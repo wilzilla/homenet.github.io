@@ -9,6 +9,17 @@
     color: #000;
 }
 
+/*
+.selected.calc-hidden::after {
+    content: "15% Flat Rate is applied on the consideration or value of the property";
+left: 34px;
+    position: relative;
+width: 90%;
+    display: inline-block;
+}
+*/
+
+
 .column-element.white-section.calc-container {
     padding: 0;
     background-color: transparent;
@@ -63,7 +74,7 @@
     margin-bottom: 15px;
 }
 
-.calc-results a {
+.parts.calc-cell a {
     color: #4c657b;
     text-decoration: none;
 }
@@ -72,10 +83,15 @@
     padding: 0px;
 }
 
+.parts.calc-cell .parts-result {
+    padding: 50px 0;
+    text-align: center;
+}
 
-
-
-
+.calc-input input#price {
+    width: 100%;
+    text-align: center;
+}
 
 .calc-input select {
     width: 100%;
@@ -121,39 +137,209 @@
     justify-content: center !important;
 }
 
-.sales-calc .parts.calc-cell .parts-result {
-    padding: 28px 0;
-    text-align: center;
+
+
+@media (max-width: 550px) {
+    .info-col {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (min-width: 550px) {
+    .perm .bs4.col-auto.info-col {
+        min-width: 307px;
+        text-align: right;
+    }
+
+    .calc-table .updated {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 749px) {
+    .perm .bs4.col-auto.info-col {
+        width: 312px;
+    }
+}
+
+
+@media (min-width: 750px) {
+
+    .total.calc-cell {
+        flex: 0 0 38%;
+        max-width: 38%;
+    }
+
+    .bs4.calc-price-col {
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+
+    .bs4.calc-price-col #price {
+        margin-left: 10px;
+    }
+
+    .bs4.calc-other-col {
+        flex: 0 0 68%;
+        max-width: 68%;
+    }
+
+    .bs4.aquire-col {
+        display: table;
+        min-height: 39px;
+        text-align: right;
+        position: relative;
+        width: 100%;
+        flex: 0 0 60%;
+        max-width: 60%;
+
+    }
+
+    .bs4.aquire-select-col {
+        position: relative;
+        width: 100%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .bs4.info-col {
+        padding-left: 10px;
+    }
+
+    .bs4.action-buttons {
+        order: 13;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+        padding: 0 28px 0 0;
+    }
+
+    span.select-desc {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .calc-other-col .row {
+        -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+        justify-content: flex-end !important;
+    }
+
+    .calc-input {
+        padding: 24px 12px 15px 10px;
+    }
+}
+
+@media (max-width: 749px) {
+
+    .bs4.aquire-col,
+    .bs4.action-buttons {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bs4.action-buttons {
+        padding: 32px 0px 15px 0px;
+    }
+
+    .bs4.col-12.aquire-col {
+        margin-bottom: 15px;
+    }
+
+    .calc-price-col {
+        margin-bottom: 40px;
+    }
+
+    .col-2of10 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .col-6of10 {
+        flex: 0 0 65%;
+        max-width: 65%;
+        text-align: center;
+        margin-left: -24px;
+        margin: auto;
+        padding: 15px 0 10px 0;
+    }
+
+    .calc-table-head .stamp-col {
+        display: none;
+    }
+
+    .row.calc-table-head,
+    .table-content .row {
+        padding-left: 0px !important;
+    }
+
+    .calc-table-head .bs4.col-7,
+    .table-content .bs4.col-7,
+    .table-content .bs4.col-5,
+    .calc-table-head .bs4.col-8,
+    .table-content .bs4.col-8,
+    .table-content .bs4.col-4 {
+        flex: 0 0 90%;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .table-content .bs4.col-5,
+    .table-content .bs4.col-4 {
+        margin: 10px 0 16px 0;
+    }
+
+    #bsd-table .calc-table-head .bs4.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /*
+.selected.calc-hidden::after,
+.col-6of10,
+.table-content .bs4.col-5,
+.table-content .bs4.col-4 {
+    font-weight: 600;
+    font-style: italic;
+    color: #3f454a;
+}
+*/
+
+
+
+
+
+}
+
+
+@media (max-width: 576px) {
+    span.empty.min {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 200%;
+        top: 130%;
+    }
+
+    .parts.calc-cell .parts-result {
+        padding: 28px 0;
+    }
+
 }
 
 span.empty {
     position: absolute;
     left: 0;
     right: 0;
-    width: 200%;
-    top: 130%;
-}
-
-.rent-calc .parts.calc-cell .parts-result {
-    padding: 28px 0;
-    text-align: center;
+    width: 300%;
+    top: 100%;
 }
 
 
-.calc-rent-col.rental-1,
-.calc-rent-col.rental-2 {
-    margin-bottom: 30px;
-}
-
-.rent-row-1 {
-    border-bottom: 1px solid #dadfe5;
-    margin-bottom: 15px;
-    margin-top: 10px;
-}
-
-.rent-row-2 {
-    margin-top: 30px;
-}
 
 /* Element Styles */
 
@@ -182,6 +368,8 @@ div#stamp_duty {
     margin: 0 auto;
     margin-bottom: 18px;
 }
+
+
 
 .parts-result {
     font-size: 22px;
@@ -234,50 +422,11 @@ span.empty {
 .footer-note {
     font-size: 13px;
     color: #fff;
-    padding: 17px 16px 24px 16px;
-}
-
-.calc-input input {
-    text-align: center;
-}
-
-.calc-input input#price {
-    width: 100%;
-}
-
-.calc-rent-col .left-input,
-.calc-rent-col .term {
-    display: inline-block;
-    padding-right: 12px;
-}
-
-.calc-rent-col .left-input {
-    line-height: 39px;
+    padding: 16px 16px;
 }
 
 .calc-input input#rent,
-.calc-input input#start-date {
-    width: 47%;
-    display: inline;
-}
-
-.calc-input input#start-date::placeholder {
-    font-size: 14px;
-    letter-spacing: -0.2px;
-}
-
-.calc-input input#terms,
-.calc-input input#total-rentfree {
-    width: 27%;
-    display: inline;
-    margin-right: 7px
-}
-
-div#ui-datepicker-div {
-    z-index: 999 !important;
-}
-
-.calc-input input {
+    .calc-input input#price {
     font-weight: 500;
     font-size: 16px;
     line-height: 39px;
@@ -286,7 +435,9 @@ div#ui-datepicker-div {
 }
 
 
-.calc-input input {
+
+input#rent:focus,
+    input#price:focus {
     display: block;
     text-align: center;
     width: 100%;
@@ -300,7 +451,8 @@ div#ui-datepicker-div {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.calc-input input:focus {
+input#rent:focus,
+    input#price:focus {
     color: #52595a;
     background-color: transparent;
     border-color: #a0c1c7;
@@ -354,8 +506,7 @@ div#ui-datepicker-div {
 
 /* Tables */
 
-.calc-header,
-#renttable tr.header .head {
+.calc-header {
     font-size: 16px;
     font-weight: 500;
     color: #343638;
@@ -418,8 +569,7 @@ div#ui-datepicker-div {
     font-size: 14.5px;
 }
 
-.calc-table-head,
-#stamp_duty_box.table-content>.calc-table-head {
+.calc-table-head {
     padding-top: 13.5px;
     padding-bottom: 13.5px;
     background-color: #d3dee8;
@@ -434,105 +584,18 @@ div#ui-datepicker-div {
     padding-right: 5%;
 }
 
-.table-content>div,
-#renttable table tr {
+.table-content>div {
     background-color: #efefef;
 }
 
 .calc-table .updated,
-div.table-content>div:nth-of-type(odd),
-#renttable>table tr:nth-of-type(odd) {
+div.table-content>div:nth-of-type(odd) {
     background: #fafafa;
 }
 
 .calc-table .note {
     margin: 27px 0 10px 0;
     font-size: 13.5px;
-}
-
-.calc-table.rent {
-    padding: 0;
-}
-
-#rentstamp .col-two {
-    padding: 0 6px;
-}
-
-
-div#renttable table {
-    width: 100%;
-    padding: 37px 5%;
-    display: block;
-}
-
-
-#renttable>table>tr.header {
-    background-color: transparent;
-    height: 50px;
-    position: relative;
-    display: block;
-}
-
-
-#renttable>table>tr.header .m .head {
-    position: absolute;
-}
-
-#renttable table .headerrow th {
-    padding-top: 13.5px;
-    padding-bottom: 13.5px;
-    background-color: #d3dee8;
-    font-size: 12.5px;
-    font-weight: 500 !important;
-    color: #352d2d;
-}
-
-#renttable .contentrow {
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    line-height: 2.2;
-}
-
-#renttable tr.totals {
-    line-height: 4;
-    font-size: 14.5px;
-    font-weight: 500;
-    color: #1c232a;
-}
-
-#renttable td.dt {
-    font-size: 11px;
-    padding-right: 12px;
-    font-weight: 500;
-}
-
-#renttable th.tt,
-#renttable td.tt {
-    text-align: right;
-    padding-right: 11px;
-}
-
-#renttable th.dt,
-#renttable th.dy {
-    padding: 0 3px;
-}
-
-#renttable th.m,
-#renttable td.m {
-    padding-left: 11px;
-}
-
-#renttable td.m {
-    font-weight: 500;
-    font-size: 13px;
-    color: #3c4546;
-}
-
-#renttable th.dy,
-#renttable td.dy,
-#renttable th.dt,
-#renttable td.dt {
-    text-align: center;
 }
 
 
@@ -547,6 +610,15 @@ button#reset {
     background-color: #84adb5;
     position: relative;
 }
+
+/*
+ button#reset:hover{
+    background-color: #fff;
+ }
+ button#reset:hover svg{
+    fill: #84adb5;
+ }
+ */
 
 button#reset:active svg {
     transform: rotate(180deg);
@@ -692,280 +764,4 @@ button:focus {
 
 .homenet-radio:hover input:checked+span:after {
     transform: scale(0.74);
-}
-
-
-@media (max-width: 430px) {
-
-    #renttable tr.headerrow th,
-    #renttable tr.totals,
-    #renttable tr.contentrow {
-        font-size: 3vw !important;
-    }
-}
-
-@media (max-width: 550px) {
-    .info-col {
-        width: 100% !important;
-        text-align: center;
-    }
-
-    #renttable th.days,
-    #renttable td.days,
-    #renttable th.free,
-    #renttable td.free {
-        display: none;
-    }
-
-    .calc-rent-col {
-        text-align: center;
-    }
-
-    .calc-input input#rent,
-    .calc-input input#start-date {
-        width: 70% !important;
-    }
-
-    .calc-rent-col .left-input,
-    .calc-rent-col .term {
-        padding-right: 5px;
-    }
-}
-
-
-
-@media (min-width: 550px) {
-    .perm .bs4.col-auto.info-col {
-        min-width: 307px;
-        text-align: right;
-    }
-
-    .calc-table .updated {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-}
-
-@media (min-width: 576px) {
-    .sales-calc .parts.calc-cell .parts-result {
-        padding: 50px 0;
-        text-align: center;
-    }
-
-    .rent-calc .parts.calc-cell .parts-result {
-        padding: 59px 0;
-        text-align: center;
-    }
-
-    .rent-calc span.empty {
-        width: 300%;
-        top: 93%;
-    }
-
-    .sales-calc span.empty {
-        width: 300%;
-        top: 110%;
-    }
-}
-
-
-
-@media (min-width: 551px) and (max-width: 749px) {
-    .perm .bs4.col-auto.info-col {
-        width: 312px;
-    }
-}
-
-
-@media (min-width: 750px) {
-
-    .total.calc-cell {
-        flex: 0 0 38%;
-        max-width: 38%;
-    }
-
-    .bs4.calc-price-col {
-        flex: 0 0 32%;
-        max-width: 32%;
-    }
-
-    .bs4.calc-price-col #price {
-        margin-left: 10px;
-    }
-
-    .bs4.calc-other-col {
-        flex: 0 0 68%;
-        max-width: 68%;
-    }
-
-    .bs4.aquire-col {
-        display: table;
-        min-height: 39px;
-        text-align: right;
-        position: relative;
-        width: 100%;
-        flex: 0 0 60%;
-        max-width: 60%;
-    }
-
-    .bs4.aquire-select-col {
-        position: relative;
-        width: 100%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
-
-    .bs4.info-col {
-        padding-left: 10px;
-    }
-
-    .bs4.action-buttons {
-        order: 13;
-        flex: 0 0 auto;
-        width: auto;
-        max-width: 100%;
-        padding: 0 28px 0 0;
-    }
-
-    span.select-desc {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-
-    .calc-other-col .row {
-        -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-        justify-content: flex-end !important;
-    }
-
-    .calc-input {
-        padding: 24px 12px 15px 10px;
-    }
-
-    .rent-calc .calc-input {
-        padding: 30px 4% 44px 4%;
-    }
-
-    .calc-rent-col .term {
-        min-width: 37%;
-    }
-
-    .calc-rent-col .left-input {
-        min-width: 39%;
-    }
-
-    .bs4.calc-rent-col.rental-1 {
-        flex: 0 0 55%;
-        max-width: 55%;
-    }
-
-    .bs4.calc-rent-col.rental-2 {
-        flex: 0 0 45%;
-        max-width: 45%;
-    }
-
-    .calc-input .rent-row-1 {
-        padding-bottom: 25px;
-        margin-bottom: 25px;
-        position: relative;
-    }
-
-    .calc-input .rent-row-1:after {
-        position: relative;
-        border-bottom: 1px solid #dadfe5;
-        width: 92%;
-        content: '';
-        position: relative;
-        bottom: -25px
-    }
-
-    #renttable th.tt,
-    #renttable td.tt {
-        max-width: 125px;
-    }
-}
-
-@media (max-width: 749px) {
-
-    .bs4.aquire-col,
-    .bs4.action-buttons {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .bs4.action-buttons {
-        padding: 32px 0px 15px 0px;
-    }
-
-    .bs4.col-12.aquire-col {
-        margin-bottom: 15px;
-    }
-
-    .calc-price-col {
-        margin-bottom: 40px;
-    }
-
-    .col-2of10 {
-        flex: 0 0 50%;
-        max-width: 50%;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    .col-6of10 {
-        flex: 0 0 65%;
-        max-width: 65%;
-        text-align: center;
-        margin-left: -24px;
-        margin: auto;
-        padding: 15px 0 10px 0;
-    }
-
-    .calc-table-head .stamp-col {
-        display: none;
-    }
-
-    .row.calc-table-head,
-    .table-content .row {
-        padding-left: 0px !important;
-    }
-
-    .calc-table-head .bs4.col-7,
-    .table-content .bs4.col-7,
-    .table-content .bs4.col-5,
-    .calc-table-head .bs4.col-8,
-    .table-content .bs4.col-8,
-    .table-content .bs4.col-4,
-    .table-content .bs4.col-6,
-    .calc-table-head .bs4.col-6 {
-        flex: 0 0 90%;
-        max-width: 90%;
-        text-align: center;
-    }
-
-    .table-content .bs4.col-5,
-    .table-content .bs4.col-4,
-    .table-content .bs4.col-6 {
-        margin: 10px 0 16px 0;
-    }
-
-    #bsd-table .calc-table-head .bs4.col-8 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    #renttable th.end,
-    #renttable td.end {
-        display: none;
-    }
-}
-
-@media (max-width: 650px) {
-
-    #renttable th.dt,
-    #renttable td.dt {
-        display: none;
-    }
 }
