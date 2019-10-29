@@ -65,6 +65,10 @@ position: absolute;
     margin-bottom: 0px;
 }
 
+.listing-card.sole .agent h2.bdg-name {
+    min-width: 201px;
+}
+
 .listing-card .bdg-name a {
     color: #373737;
 }
@@ -94,13 +98,29 @@ position: absolute;
     min-width: 62px;
 }
 
+.listing-card.sole .agent .bdg-name {
+    margin-right: 15px;
+}
+
 .listing-card .agent .bdg-name {
     margin-right: 22px;
 }
 
+
+
 .listing-card .agent .source {
     min-width: 55px;
 }
+
+.listing-card.sole .agent .source {
+    font-size: 10.5px;
+    letter-spacing: -0.25px;
+}
+
+.listing-card.sole .agent .source {
+    min-width: 83px;
+}
+
 
 /* ----- */
 
