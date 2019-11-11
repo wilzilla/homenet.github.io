@@ -1,7 +1,20 @@
 .search {
     background-color: #e2e9ec
 }
+
+.account-demo {
+    background-color: #e9eff0;
+}
+
+.section .favorites{
+    width: 1062px;
+    margin: auto;
+}
+
 .demo-search-panel{
+    font-size: 0px;
+}
+.favorites{
     font-size: 0px;
 }
 
@@ -240,6 +253,14 @@ position: absolute;
     margin: 2px 0 5px 0;
 }
 
+.listing-card .listing-type {
+    font-size: 12px;
+    color: #4d9d83;
+    margin: 6px 0 9px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 .listing-card .button-contact {
     margin-bottom: 5px;
 }
@@ -449,11 +470,37 @@ position: absolute;
     }
 }
 
+/* Favorites */
+
+.favorites {
+    padding: 0 10px 0 10px;
+    max-width: 100%;
+}
+
+.favorites .listing-layout {
+    width: 20%;
+    padding: 10px 7px;
+}
+
+
+@media screen and (min-width: 921px) {
+    .favorites .listing-layout {
+        width: 33.333333%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .favorites .listing-layout {
+        width: 50%;
+        padding: 8px 1%;
+    }
+}
+
 /* General */
 
 
 @media screen and (min-width: 450px) and (max-width: 600px) {
-
+    .favorites .listing-layout,
     .demo-search-panel.map .listing-layout,
     .demo-search-panel.dont-show.map .listing-layout {
         width: 100%;
@@ -469,7 +516,7 @@ position: absolute;
 }
 
 @media screen and (max-width: 449px) {
-
+    .favorites .listing-layout,
     .demo-search-panel.map .listing-layout,
     .demo-search-panel.dont-show.map .listing-layout {
         width: 100%;
@@ -498,56 +545,13 @@ position: absolute;
     }
 }
 
-
-
-/* Buttons & Type NEED TO ADD TO GENERAL CSS */
-    
-/* Buttons */
-body.en .button-submit,
-body.en .button-contact,
-body.en .button-action,
-body.en .button-msg-send,
-body.en .button-popup,
-body.en .button-search,
-body.en .search-btn {
-  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
-  
-  /* Listing Pages */
-body.en .listing-name,
-body.en .location,
-body.en .price-container,
-body.en .listing-info,
-body.en .listing-source-box .source,
-body.en .listing-source-box .name,
-body.en .listing-source-box .call,
-body.en .listing-source-box .enquiry_button {
-  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
-  
-  
-  body.en .listing-card {
-  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
-
-body.en .listing-card .hood,
-body.en .listing-card .source,
-body.en .listing-card .cur {
-  font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif; }
-  
-  
-  a:hover {
-  text-decoration: none; }
-
-::selection {
-  background-color: var(--selection_background);
-  color: var(--selection_color); }
-  
-  
 /**** Homenet Solid General Styles to ADD to General CSS ****/
 
 .homenet-btn {
     line-height: 1;
     text-align: center;
     position: relative;
-    transition: all .2s ease-in-out;
+    /*transition: all .2s ease-in-out;*/
     overflow: hidden;
     z-index: 1;
 }
@@ -579,7 +583,51 @@ body.en .listing-card .cur {
 button:focus, input:focus {
     outline: none;
 }
+
+
+/* Buttons & Type NEED TO ADD TO GENERAL CSS */
+    
+/* Buttons */
+body.en .button-submit,
+body.en .button-contact,
+body.en .button-action,
+body.en .button-msg-send,
+body.en .button-popup,
+body.en .button-search,
+body.en .search-btn {
+  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
   
+  /* Listing Pages */
+body.en .listing-name,
+body.en .location,
+body.en .price-container,
+body.en .listing-info,
+body.en .listing-source-box .source,
+body.en .listing-source-box .name,
+body.en .listing-source-box .call,
+body.en .listing-source-box .enquiry_button {
+  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
+  
+  
+  body.en .listing-card {
+  font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif; }
+
+body.en .listing-card .hood,
+body.en .listing-card .source,
+body.en .listing-card .cur,
+body.en .listing-card .listing-type {
+  font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif; }
+  
+  
+  a:hover {
+  text-decoration: none; }
+
+::selection {
+  background-color: var(--selection_background);
+  color: var(--selection_color); }
+  
+  
+
   
   
   
