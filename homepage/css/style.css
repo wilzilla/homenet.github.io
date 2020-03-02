@@ -433,9 +433,76 @@ a {
 
 /* === Section 5 End Here === */
 
+/* ==== Section 6 Start Here [28 Feb 2020]  === */
+.section6_wrapper .container {
+    padding: 0 4vw;
+}
+.section6_wrapper{padding:80px 0 50px; text-align:center;}
+.section6_wrapper h2{font-size: 3.3vw;
+    margin: 0 0 2.5%;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;;display: inline-block;border-bottom: 1px #88d2df solid;padding-bottom: 10px;}
 
-/* === Section 6 Start Here === */
-.section6_wrapper {
+
+
+
+
+.section6_wrapper h2 span{color:#053d48; font-weight:600;}
+.sec6_main{display:flex; justify-content: center;}
+.sec6_col{width: 30%;
+    text-align: left;
+    padding: 0 2.4vw;
+    margin: 0 0.9vw;}
+
+
+
+
+.sec6_pic{margin:20px 0;padding-right: 13%;}
+.sec6_col h3{font-size: 2.08vw;
+    margin: 0 0 0px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 1px #88d2df solid;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    width: 100%;
+    letter-spacing: 0.3px;}
+
+/*
+.sec6_col p{font-size:22px; line-height:normal; margin:0; min-height:390px;
+}
+*/
+
+.sec6_col p{
+padding: 15px 0;
+    font-size: 1.2vw;
+    font-weight: 200;
+    min-height: 20.5vw;
+}
+
+.sec6_col p strong{font-weight:bold; color:#0f4e5a;letter-spacing: -0.2px;}
+.sec6_col a{text-transform:uppercase; font-size: 1.28vw;
+    color: #0b6874;
+    font-weight: bold;
+    display: inline-block;
+    padding: 22px 35px;
+    background: #50b0c3;
+    border: 3px #0b6874 solid;
+    border-radius: 50px;
+    margin-top: 10px;}
+.sec6_col a:hover{background:#90f0ff;}
+.sec6_toggle{display:none;}
+
+
+
+
+/* ==== Section 6 End Here [28 Feb 2020] === */
+
+
+/* === Section 7 Start Here === */
+.section7_wrapper {
     margin: 50px 0 0 0;
     position: relative;
 }
@@ -476,11 +543,11 @@ a {
     color: #0f4e5a
 }
 
-.section6_wrapper img {
+.section7_wrapper img {
     vertical-align: bottom;
 }
 
-.sec6_bg {
+.sec7_bg {
     padding-top: 30.9%;
     background: url(../images/rocket.png) no-repeat;
     background-size: 100%;
@@ -537,7 +604,7 @@ a {
     }
 
     .sec5_col ul li a {
-        font-size: 1.7vw;
+        font-size: 1.3vw;
     }
 
     .sec5_col ul h3 {
@@ -555,6 +622,15 @@ a {
     .sec5_right {
         width: 46%;
     }
+    .section6_wrapper .container {
+        padding: 0 0;
+    }
+    .sec6_col a {font-size: 1.5vw;}
+    .sec6_col p {
+        font-size: 1.5vw;
+        min-height: 28.5vw;
+    }
+
 
     .app_coming a span {
         font-size: 2.2vw;
@@ -735,6 +811,13 @@ a {
     .sec5_col ul {
         padding: 10px 0 35px;
     }
+    .sec6_col h3{font-size: 2.2vw;}
+    .sec6_col p{min-height: 29.5vw;}
+    .sec6_col a {font-size: 1.6vw;
+    padding: 1.5vw 1.7vw;
+    border: 2px #0b6874 solid;}
+
+
 }
 
 
@@ -835,7 +918,7 @@ a {
 
     .sec4_right p,
     .sec3_left p {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     .section3_wrapper,
@@ -908,6 +991,44 @@ a {
         font-size: 3.4vw;
     }
 
+.section6_wrapper .container {
+    padding: 0 4vw;
+}
+    .section6_wrapper {padding: 11% 0 0;}
+    .section6_wrapper h2 {font-size: 7.2vw;
+    margin: 0 0 4%;
+    /* text-align: justify; */
+    letter-spacing: -0.3px;}
+    .sec6_main {flex-flow: column;}
+    .sec6_col{padding:0; width:100%; text-align:center; padding: 0 2vw 7.5vw;}
+    .sec6_col h3{font-size: 6.5vw;
+    margin-bottom: 0;
+    border: none;
+    padding-bottom: 3.5%;}
+    .sec6_col p{font-size:4.5vw;min-height:auto;padding: 0;margin: 0 0 4%;}
+    .sec6_col a {font-size: 5vw;
+    padding: 3.5vw 5vw;
+    display: inline-block;
+    margin-top: 4.5%;}
+    .sec6_col p span{font-size:0; transition:all ease-in-out 0.3s;}
+    .sec6_col p span br{display:none;}
+    /* ==== Section 6 Read More Toggle code === */
+    .sec6_col label:after{content:'READ MORE..'; display:block; color:#0f4e5a; font-size: 4.4vw;
+    font-weight: 700;
+    padding-top: 2vw;
+    cursor: pointer;}
+    .sec6_toggle:checked ~ p span{font-size:inherit;}
+    .sec6_toggle:checked ~ p span br{display:block; font-size: 6px;}
+    .sec6_col .sec6_toggle:checked ~ label:after{content:'READ LESS..';}
+        .sec6_pic {
+margin: 3% 0;
+    padding-right: 0;
+}
+.sec6_col img {
+    max-width: 93%;
+}
+
+
     .app_coming a span {
         font-size: 4.6vw;
         line-height: normal;
@@ -931,14 +1052,16 @@ a {
         padding: 10px 0;
     }
 
-    .sec6_bg {
+
+
+    .sec7_bg {
         padding-top: 60%;
         background-size: 198%;
         background-position: right;
         margin-top: -9vw;
     }
 
-    .section6_wrapper {
+    .section7_wrapper {
         margin: 20vw 0 0 0;
     }
 }
