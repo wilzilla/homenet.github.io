@@ -121,10 +121,7 @@
     justify-content: center !important;
 }
 
-.sales-calc .parts.calc-cell .parts-result {
-    padding: 28px 0;
-    text-align: center;
-}
+
 
 span.empty {
     position: absolute;
@@ -134,11 +131,12 @@ span.empty {
     top: 130%;
 }
 
+
+/* Rent */
 .rent-calc .parts.calc-cell .parts-result {
     padding: 28px 0;
     text-align: center;
 }
-
 
 .calc-rent-col.rental-1,
 .calc-rent-col.rental-2 {
@@ -155,9 +153,367 @@ span.empty {
     margin-top: 30px;
 }
 
+/* Sale */
+.sales-calc .parts.calc-cell .parts-result {
+    padding: 28px 0;
+    text-align: center;
+}
+
+/* Mortgage */
+.mort-calc .parts.calc-cell .parts-result {
+    padding: 28px 0;
+    text-align: center;
+}
+
+#pietable,
+#piechart {
+    min-height: 0;
+}
+
+#pietable table th>span {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    border-radius: 10px;
+}
+
+#pietable table tr {
+    line-height: 1.95;
+}
+
+#pietable table tr:last-child {
+    line-height: 2.3;
+}
+
+#pietable table tr:last-child td {
+    letter-spacing: 1px;
+}
+
+
+#pietable table {
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+#pietable table th {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+   width: 60%;
+}
+
+#pietable table td {
+    text-align: right;
+    font-size: 16px;
+        width: auto;
+}
+
+#pietable table {
+    margin: 23px 0 15px 9%;
+}
+
+#pietable span {
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+#piechart>div {
+    left: -7px;
+}
+
+.mort-input.row1,
+.mort-input.row2,
+.mort-input.row3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price-hd {
+    padding-left: 15px;
+}
+
+.mort-input.row1 .price {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-bottom: 20px;
+
+}
+
+.mort-input.row1 .percent,
+.mort-input.row1 .term {
+    flex: 0 0 30%;
+    max-width: 30%;
+    text-align: center;
+    padding-left: 3%;
+    margin-bottom: 20px;
+}
+
+.mort-input.row1 .param input#terms,
+.mort-input.row1 .param input#mortgage {
+    width: 33%;
+}
+
+.mort-input.row1 .param input {
+    display: inline-block;
+}
+
+.mort-input.row1 input {
+    margin-top: 5px
+}
+
+.mort-input.row1 {
+    padding-bottom: 14px;
+}
+.mort-input.row2{
+    padding: 24px 0 8px 0;
+    border-top: 1px solid #dadfe5;
+}
+.mort-input .title{
+    width: 100%;
+}
+
+.mort-input.row2 .cslide #cmortgage,
+.mort-input.row3 .aslide #amortgage{
+    margin-top: 16px;
+}
+
+
+.mort-input.row2 input,
+.mort-input.row3 input {
+    display: inline-block;
+    width:62px;
+}
+
+.mort-input.row2 .cslide,
+.mort-input.row3 .aslide {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-bottom: 20px;
+    padding-left: 1.5%;
+}
+
+.mort-input.row2 .cinput,
+.mort-input.row3 .ainput
+ {
+    flex: 0 0 auto;
+    max-width: inherit;
+    text-align: left;
+    padding-left: 2%;
+    margin-bottom: 20px;
+}
+
+.mort-input.row2 .cyears,
+.mort-input.row3 .ayears
+ {
+    flex: 0 0 auto;
+    max-width: inherit;
+    text-align: center;
+    padding-left: 3%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1065px) {
+.mort-input.row2 .cslide,
+.mort-input.row3 .aslide {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+}
+
+@media (max-width: 750px) {
+.mort-input.row2,
+.mort-input.row3 {
+justify-content: center!important;
+text-align: center;
+}
+.mort-input.row2 .cslide,
+.mort-input.row3 .aslide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.mort-input.row2 .cslide #cmortgage,
+.mort-input.row3 .aslide #amortgage{
+    width: 90%;
+    margin: auto;
+}
+}
+
+
+
+
+
+
+
+
+
+/* Slider */
+.noUi-target,
+.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.noUi-target {
+    position: relative;
+    direction: ltr
+}
+
+.noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1
+}
+
+.noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+.noUi-handle {
+    position: relative;
+    z-index: 1
+}
+
+.noUi-stacking .noUi-handle {
+    z-index: 10
+}
+
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: left .3s, top .3s;
+    transition: left .3s, top .3s
+}
+
+.noUi-state-drag * {
+    cursor: inherit !important
+}
+
+.noUi-base {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.noUi-horizontal {
+    height: 10px
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -12px
+}
+
+.noUi-vertical {
+    width: 18px
+}
+
+.noUi-vertical .noUi-handle {
+    width: 28px;
+    height: 34px;
+    left: -6px;
+    top: -17px
+}
+
+.noUi-background {
+    background: #ededed;
+    box-shadow: inset 0 1px 1px #f0f0f0
+}
+
+.noUi-connect {
+    background: #3fb8af;
+    box-shadow: inset 0 0 3px rgba(51, 51, 51, 0.45);
+    -webkit-transition: background 450ms;
+    transition: background 450ms
+}
+
+.noUi-origin {
+    border-radius: 10px;
+    background-color: #fafafa
+}
+
+.noUi-target {
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    box-shadow: inset 0 1px 1px #f0f0f0, 0 3px 6px -5px #BBB
+}
+
+.noUi-target.noUi-connect {
+    box-shadow: inset 0 0 3px rgba(51, 51, 51, 0.45), 0 3px 6px -5px #BBB
+}
+
+.noUi-dragable {
+    cursor: w-resize
+}
+
+.noUi-vertical .noUi-dragable {
+    cursor: n-resize
+}
+
+.noUi-handle {
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: inset 0 0 1px #FFF, inset 0 1px 4px #ebebeb, 0 3px 7px -2px rgba(132, 132, 132, 0.29)
+}
+
+.noUi-active {
+    box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    background: #e8e7e6;
+    left: 14px;
+    top: 6px
+}
+
+.noUi-handle:after {
+    left: 17px
+}
+
+.noUi-vertical .noUi-handle:before,
+.noUi-vertical .noUi-handle:after {
+    width: 14px;
+    height: 1px;
+    left: 6px;
+    top: 14px
+}
+
+.noUi-vertical .noUi-handle:after {
+    top: 17px
+}
+
+[disabled].noUi-connect,
+[disabled] .noUi-connect {
+    background: #b8b8b8
+}
+
+[disabled].noUi-origin,
+[disabled] .noUi-handle {
+    cursor: not-allowed
+}
+
+
+
+
 /* Element Styles */
 
-div#stamp_duty {
+div#stamp_duty,
+.avg-mortgage {
     font-family: var(--font-family-base);
     font-size: 44px;
     color: #fc835c;
@@ -165,6 +521,8 @@ div#stamp_duty {
     letter-spacing: -1.4px;
     line-height: 1.4;
 }
+
+
 
 .total .result-desc {
     font-size: 14px;
@@ -450,7 +808,7 @@ div.table-content>div:nth-of-type(odd),
     font-size: 13.5px;
 }
 
-.calc-table.rent {
+.calc-table.noshow {
     padding: 0;
 }
 
@@ -534,6 +892,9 @@ div#renttable table {
 #renttable td.dt {
     text-align: center;
 }
+
+
+
 
 
 /* Calculator Buttons */
@@ -695,42 +1056,7 @@ button:focus {
 }
 
 
-@media (max-width: 430px) {
 
-    #renttable tr.headerrow th,
-    #renttable tr.totals,
-    #renttable tr.contentrow {
-        font-size: 3vw !important;
-    }
-}
-
-@media (max-width: 550px) {
-    .info-col {
-        width: 100% !important;
-        text-align: center;
-    }
-
-    #renttable th.days,
-    #renttable td.days,
-    #renttable th.free,
-    #renttable td.free {
-        display: none;
-    }
-
-    .calc-rent-col {
-        text-align: center;
-    }
-
-    .calc-input input#rent,
-    .calc-input input#start-date {
-        width: 70% !important;
-    }
-
-    .calc-rent-col .left-input,
-    .calc-rent-col .term {
-        padding-right: 5px;
-    }
-}
 
 
 
@@ -758,6 +1084,12 @@ button:focus {
         text-align: center;
     }
 
+    .mort-calc .parts.calc-cell .parts-result {
+        padding: 59px 0;
+        text-align: center;
+    }
+
+
     .rent-calc span.empty {
         width: 300%;
         top: 93%;
@@ -767,6 +1099,11 @@ button:focus {
         width: 300%;
         top: 110%;
     }
+
+    .mort-calc span.empty {
+        width: 300%;
+        top: 93%;
+    }
 }
 
 
@@ -774,6 +1111,22 @@ button:focus {
 @media (min-width: 551px) and (max-width: 749px) {
     .perm .bs4.col-auto.info-col {
         width: 312px;
+    }
+
+    #piechart>div {
+        left: 11%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 800px) {
+    #pietable table {
+        font-size: 15px;
+    }
+    #pietable table th {
+        width: auto;
+    }
+    #pietable table td {
+        font-size: 15px;
     }
 }
 
@@ -885,6 +1238,19 @@ button:focus {
     #renttable td.tt {
         max-width: 125px;
     }
+
+    .mort-calc .calc-input {
+        padding: 30px 4% 2.8% 4%;
+    }
+
+    .mort-calc .total.calc-cell {
+        flex: 0 0 36%;
+        max-width: 36%;
+    }
+
+
+
+
 }
 
 @media (max-width: 749px) {
@@ -960,6 +1326,50 @@ button:focus {
     #renttable td.end {
         display: none;
     }
+
+    .parts.calc-cell.noshow-mortgage {
+        padding: 0;
+        min-height: 0px;
+    }
+
+
+
+    #piechart>div>div {
+        margin: 0 auto;
+    }
+
+
+    .mort-input.row1 .price {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+
+    }
+
+    .mort-input.row1 .price input {
+        max-width: 85%;
+        margin: 5px auto 0;
+    }
+
+    .mort-input.row1 .percent,
+    .mort-input.row1 .term {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .mort-input.row1 input {
+        margin-top: 5px
+    }
+    .mort-input .title {
+        margin-bottom: 15px;
+    }
+    .mort-input.row3 {
+        border-top: 1px solid #dadfe5;
+        padding-top: 23px;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -967,5 +1377,60 @@ button:focus {
     #renttable th.dt,
     #renttable td.dt {
         display: none;
+    }
+}
+
+@media (max-width: 575px) {
+
+    #pietable>table {
+        margin: 0 auto 5%;
+    }
+
+    #piechart>div {
+        left: 0px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .info-col {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #renttable th.days,
+    #renttable td.days,
+    #renttable th.free,
+    #renttable td.free {
+        display: none;
+    }
+
+    .calc-rent-col {
+        text-align: center;
+    }
+
+    .calc-input input#rent,
+    .calc-input input#start-date {
+        width: 70% !important;
+    }
+
+    .calc-rent-col .left-input,
+    .calc-rent-col .term {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    #renttable tr.headerrow th,
+    #renttable tr.totals,
+    #renttable tr.contentrow {
+        font-size: 3vw !important;
+    }
+
+    .mort-input.row1 .percent,
+    .mort-input.row1 .term {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }

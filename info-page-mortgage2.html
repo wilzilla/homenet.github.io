@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="assets/css/homenet-footer.css">
     <link rel="stylesheet" href="assets/css/content-pg-bs4-big.css">
     <link rel="stylesheet" href="assets/css/all-title-big.css">
-
     <link rel="stylesheet" href="assets/css/calculator.css">
     <link rel="stylesheet" type="text/css" href="jquery-ui.css" media="all" />
-
     <!-- Page effects CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Swiper CSS -->
@@ -454,7 +452,7 @@
         <header class="page-header parallax-window bg_img dark_overlay" data-src="assets/images/content/content.jpg">
             <div class="bs4 container pg-header-wrapper d-flex flex-column justify-content-end">
                 <div class="pg-header-elements text-left">
-                    <h1 class="content-page-title text-left">Rental Stamp Duty Calculator<span class="highlight">.</span></h1>
+                    <h1 class="content-page-title text-left">Mortgage Calculator<span class="highlight">.</span></h1>
                     <nav class="title-breadcrumb" aria-label="bs4 breadcrumb">
                         <ol class="bs4 breadcrumb breadcrumb-small justify-content-start mb-0 px-0">
                             <li class="breadcrumb-item text-uppercase"><a href="#">Home</a></li>
@@ -495,40 +493,60 @@
                         </div>
                     </div>
                     <div class="bs4 col-lg-9 order-lg-1 pr-lg-3 main-content">
-                        <div class="column-element white-section calc-container rent-calc">
+                        <div class="column-element white-section calc-container mort-calc">
                             <div class="all">
                                 <div class="bs4 row no-gutters rent calc-results">
                                     <div class="bs4 col-12 total calc-cell">
                                         <div class="total-figures">
-                                            <div id="stamp_duty">
+                                            <div id="monthly_payment">
                                                 <div class="empty-total"></div>
                                             </div>
-                                            <div class="result-desc"><a href="#rentstamp">Payable by each party*</a></div>
                                         </div>
                                     </div>
-                                    <div class="bs4 col-12 col-sm parts calc-cell">
+                                    <div class="bs4 col-12 col-sm parts calc-cell noshow-mortgage">
                                         <div class="bs4 row no-gutters">
-                                            <div class="bs4 col-6 col-sm parts-result" id="average_annual"><span class="empty min">Fill in the details below to start calculating</span></div>
-                                            <div class="bs4 col-6 col-sm parts-result" id="at_rate"></div>
-                                            <div class="bs4 col-12 col-sm parts-result" id="total_stamp_duty"></div>
+                                            <div id="piechart" class="bs4 col-12 col-sm-4"></div>
+                                            <div id="pietable" class="bs4 col-12 col-sm-8"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="calc-input calc-cell">
-                                    <div class="bs4 row no-gutters rent-row-1">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">Monthly rent HKD$</div><input id="rent" type="text" value=",000" />
+                                    <div class="mort-input row1">
+                                        <div class="price">
+                                            <div class="price-hd">Property Price $</div><input id="price" type="text" value="10,000,000" />
                                         </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">Tenancy Term</div><input id="terms" type="text" value="24"/>months 
+                                        <div class="percent">
+                                            Mortgage amount 
+<div class="param">
+                                            <input id="mortgage" type="text" value="70" /> %</div>
+                                        </div>
+                                        <div class="term">
+                                            Mortgage Term
+                                            <div class="param"><input id="terms" type="text" value="30" />yrs</div>
                                         </div>
                                     </div>
-                                    <div class="bs4 row no-gutters rent-row-2">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">Tenancy start date</div><input id="start-date" type="text" placeholder="enter if any rent free" value=""/>
+                                    <div class="mort-input row2">
+                                        <div class="title">Current Interest rate</div>
+                                        <div class="cslide">
+                                            <div id="cmortgage"></div>
                                         </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">Rent free term</div><input id="total-rentfree" type="text"/>days
+                                        <div class="cinput">
+                                            <input id="cmortgage_input" type="text" /> %
+                                        </div>
+                                        <div class="cyears">
+                                            fixed for <input id="fix_years" type="text" /> yrs
+                                        </div>
+                                    </div>
+                                    <div class="mort-input row3">
+                                        <div class="title">Assumed Interest rate</div>
+                                        <div class="aslide">
+                                            <div id="amortgage"></div>
+                                        </div>
+                                        <div class="ainput">
+                                            <input id="amortgage_input" type="text" /> %
+                                        </div>
+                                        <div class="ayears">
+                                            After yr <input id="after_years" type="text" />
                                         </div>
                                     </div>
                                 </div>
@@ -545,53 +563,18 @@
                                         <span>Calculate</span></button>
                                     </div>
                                     <div class="bs4 col footer-note">
-                                        Tip: Simply enter the "Monthly rental" and "Tenancy term" to calculate the stamp duty. For any "Rent free term" the "Tenancy start date" is necessary. Cheques should be made payable to "The Government of the HKSAR".
+                                        Assumptions: Interest is applied to each calendar month, difference between the "assumed" and "current" interest rate is adjusted at a constant rate of increase or decrease at the end of each calendar year.
                                     </div>
                                 </div>
-                                <div class="calc-table" id="rentstamp">
-                                    <div class="calc-header">Rental Stamp duty schedule</div>
-
-
-                                    <div id="stamp_duty_box" class="table-content">
-                                        <div class="bs4 row calc-table-head justify-content-center">
-                                            <div class="bs4 col-6 p-0">Term of tenancy</div>
-                                            <div class="bs4 col-6 stamp-col col-two">Stamp Duty Rate</div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">Less than or equal to 1yr</div>
-                                                <div class="bs4 col-6 col-two">0.25% of the annual or average annual rent</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">Exceeding 1 year but not exceeding 3 years</div>
-                                                <div class="bs4 col-6 col-two">0.5% of the annual or average annual rent</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">Exceeding 3 years</div>
-                                                <div class="bs4 col-6 col-two">1% of the annual or average annual rent</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="note">
-                                        *Charge for a $5 duplication fee added to the total (Total + $5 is divided between 2 parties).<br>
-                                        **Annual rent, average annual rent & total rent to be rounded-up to the nearest HKD$100.
-                                    </div>
+                                <div class="calc-table noshow">
+                                    <div id="chart_div"></div>
                                 </div>
-
-
-<div class="calc-table noshow">
-    <div id="renttable">
-    </div>
-</div>
-
-
+                                <div class="calc-table noshow">
+                                    <div id="chart_table"></div>
+                                </div>
                                 <div class="footnote">
                                     <b>Information and disclaimer:</b>
-                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the Leasing Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though upmost care and diligence was taken in the formulation and coding of this Rental Stamp Duty Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
+                                    The results generated by this mortgage calculator are intended for reference only and should not be construed as financial advice. Although we have taken utmost care and diligence in the formulation and coding of this Mortgage Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. For projections of Mortgage Payments, assumptions have been made in which interest is applied at the end of each calendar month and changes between the initial interest rate and the assumed future interest rate are to be at a constant rate of increase or decrease at the end of each calendar year. Note that these hypothetical illustrations and calculations of future projections may not be applicable to each and every Mortgage Plan in Hong Kong and is intended for reference only, for more information on Mortgage Plans and Structures you should obtain advice from qualified professionals.
                                 </div>
                             </div>
                         </div>
@@ -733,24 +716,14 @@
     <script src="assets/js/homenet.menu.js"></script>
     <!-- homenet return top js -->
     <script src="assets/js/returntop.js"></script>
-    <!-- AOS -->
-    <script src="assets/js/aos.js"></script>
-    <!-- ImageLoaded -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <!-- Isotope -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- homenet Content JS-file -->
-    <script src="assets/js/main.js"></script>
-    <!-- CONTENT PAGES -->
-    <!-- Parallax -->
-    <script src="assets/js/parallax.js"></script>
-    <!-- Waypoints -->
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <!-- Calculator script -->
+    <!-- MORTGAGE -->
     <script type="text/javascript" src="jquery-ui.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rentInfo-new-min.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rentInfo-page-min.js"></script>
-    <!-- Calculator script -->
+    <script type="text/javascript" src="uislider/nouislider.js"></script>
+    <script type="text/javascript" src="mortgage.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="mortgage-page.js"></script>
+    <!-- MORTGAGE -->
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 	(function( $ ) {
     $.fn.mortgage = function(options) {
-    	var dText={type:'Type',monthyPayments:'Monthly Payment',interestColor:'#d4d0cc',mortgageColor:'#4f7a9f',cashColor:'#aaced4',cashOnly:'Cash Outlay',totalCost:'Total Cost at yr. end',loadBalance:'Loan Balance at yr. end',interestPaidMonth:'Avg. Interest Paid per month',annualInterestRate:'Annual Interest Rate',cash:'Cash',amount:'Amount)',interest:'Interest Amount',mortgage:'Mortgage Amount',cash:'Cash Outlay',total:'Total Cost',year:'Year',monthlyPayment:'Monthly Payment',interestRate:'Interest Rate'};
+    	var dText={type:'Type',monthyPayments:'Monthly Payment',interestColor:'#d4d0cc',mortgageColor:'#4f7a9f',cashColor:'#aaced4',cashOnly:'Cash Outlay',totalCost:'Total Cost at yr. end',loadBalance:'Loan Balance at yr. end',interestPaidMonth:'Avg. Interest Paid per month',annualInterestRate:'Annual Interest Rate',cash:'Cash',amount:'Amount)',interest:'Total Interest',mortgage:'Mortgage',cash:'Cash Outlay',total:'Total Cost',year:'Year',monthlyPayment:'Monthly Payment',interestRate:'Interest Rate'};
     	$.extend(dText, options.dutyText);
     	var fadeBox=$(options.fadeBox);
     	var priceele=$(options.price);
@@ -48,7 +48,7 @@
 			colors: ['#95B3D7', '#7F7F7F'],
 			animation:{duration: 700, easing: 'out', startup: true},
 			// For graph size and placement adjust values here
-			chartArea:{left: 77, width: 603, height: 290}
+			//chartArea:{left: 77, width: 603, height: 290}
 			};
 		
 		$.extend(chartoptions, options.chartoptions);
@@ -60,14 +60,17 @@
 		var barformatter = new google.visualization.NumberFormat({pattern: '$#,###'});
 		var bardata=google.visualization.arrayToDataTable([ ['Label', dText.amount], [dText.cash, 0]]);
 		barformatter.format(bardata, 1);
-		var baroptions={pieHole: 0.4, height:200, width:200, legend: 'none', slices:{0:{color: dText.mortgageColor}, 1:{color: dText.cashColor}, 2:{color: dText.interestColor}},chartArea:{width: 140, height: 140}};
+		var baroptions={pieHole: 0.4, height:170, width:170, legend: 'none', slices:{0:{color: dText.mortgageColor}, 1:{color: dText.cashColor}, 2:{color: dText.interestColor}},chartArea:{width: 140, height: 140}};
 		$.extend(baroptions, options.pieoptions);
 		var barchart=new google.visualization.PieChart(document.getElementById(options.piechart));
+
 		//
 		//Calculate function
 		
-		//Remove if no need show all at page load ie. auto runs script
-		$(window).load(function() {calculate(); calculate();});  //Calculate twice to remove vertical axis bug
+
+		//Remove comment below if want to on page load auto runs script
+		/*$(window).load(function() {calculate(); calculate();});*/
+		//Calculate twice to remove vertical axis bug
 		
 		
 		//Calculate button
@@ -82,15 +85,18 @@
 		function reset(){
 			$(cmortgage).val('');
 			$(amortgage).val('');
+			priceele.val(',000,000');
 			termsele.val(30);
 			fix_yearsele.val('');
 			after_yearsele.val('');
-			mortgage_valueele.val('');
+			mortgage_valueele.val(70);
 			future_mortgageele.val('');
-			curent_mortgageele.val(2.5);
+			curent_mortgageele.val(2.15);
+
 			defaultView=true;
-z
-			calculate();z
+
+			//Remove comment below if want to on page load auto runs script
+			/*calculate();*/
 		}
 		function calculate(){
 			if(!validateOptions(options)){
@@ -198,9 +204,11 @@ z
 			var averagepayment=Math.round(totalpayment).toFixed().replace(/./g, function(c, i, a) {
 				 return i && c !== "." && !((a.length - i) % 3) ? ',' + c : c;
 			});
-			monthly_payment.html('<tr><td>$'+averagepayment+'<br>Average monthly payments</td></tr>');
+			monthly_payment.html('<div class="avg-mortgage">$'+averagepayment+'</div><div class="result-desc">Average Monthly Payments</div>');
+
 			
-			var tbl = $("<table></table>");
+			
+			var tbl = $('<table></table>');
 			totalRent=0;
 			var totalcost=mort_amount+totalcash+totalinterest;
 			if(defaultView){
