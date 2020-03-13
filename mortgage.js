@@ -84,7 +84,7 @@
 
 		// make chart responsive
 		    window.addEventListener('resize', function () {
-		      drawChart();
+		      drawChart1();
 		    }, false);
 
 
@@ -252,13 +252,15 @@
 			pietable.html(tbl);
 			fadeBox.fadeIn(4000);
 			chart_table.html(bigtbl);
-			drawChart();
+			drawChart1();
+			drawChart2();
 		}
-		function drawChart() {
+		function drawChart1() {
 			chartchart.draw(chartdata, chartoptions); 
+		}
+		function drawChart2() {
 			barchart.draw(bardata, baroptions); 
 		}
-		
         return this;
  		function validateOptions(){
  			price=Number(priceele.val().replace(/[^0-9\.]+/g,""));
