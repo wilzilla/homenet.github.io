@@ -313,6 +313,15 @@ span.empty {
     margin-bottom: 20px;
 }
 
+#chart_div {
+    border-radius: 4px;
+}
+#chart_div.chart{
+  width: 100%; 
+  height: 100%;
+}
+
+
 @media (max-width: 1065px) {
 .mort-input.row2 .cslide,
 .mort-input.row3 .aslide {
@@ -713,7 +722,8 @@ div#ui-datepicker-div {
 /* Tables */
 
 .calc-header,
-#renttable tr.header .head {
+#renttable tr.header .head,
+#morttable tr.header .head {
     font-size: 16px;
     font-weight: 500;
     color: #343638;
@@ -793,13 +803,15 @@ div#ui-datepicker-div {
 }
 
 .table-content>div,
-#renttable table tr {
+#renttable table tr,
+#morttable table tr {
     background-color: #efefef;
 }
 
 .calc-table .updated,
 div.table-content>div:nth-of-type(odd),
-#renttable>table tr:nth-of-type(odd) {
+#renttable>table tr:nth-of-type(odd),
+#morttable>table tr:nth-of-type(odd) {
     background: #fafafa;
 }
 
@@ -816,15 +828,17 @@ div.table-content>div:nth-of-type(odd),
     padding: 0 6px;
 }
 
-
-div#renttable table {
+/* Tables */
+div#renttable table,
+div#morttable table {
     width: 100%;
     padding: 37px 5%;
     display: block;
 }
 
 
-#renttable>table>tr.header {
+#renttable>table>tr.header,
+#morttable>table>tr.header {
     background-color: transparent;
     height: 50px;
     position: relative;
@@ -832,11 +846,13 @@ div#renttable table {
 }
 
 
-#renttable>table>tr.header .m .head {
+#renttable>table>tr.header .head,
+#morttable>table>tr.header .head {
     position: absolute;
 }
 
-#renttable table .headerrow th {
+table .headerrow th,
+table .headerrow th {
     padding-top: 13.5px;
     padding-bottom: 13.5px;
     background-color: #d3dee8;
@@ -845,10 +861,20 @@ div#renttable table {
     color: #352d2d;
 }
 
+#morttable table .headerrow th {
+    padding: 14.5px 1px;
+    font-size: 12.5px;
+}
+
 #renttable .contentrow {
     font-size: 14px;
     letter-spacing: 0.4px;
     line-height: 2.2;
+}
+#morttable .contentrow {
+    font-size: 15.5px;
+    letter-spacing: 0.3px;
+    line-height: 2.5;
 }
 
 #renttable tr.totals {
@@ -864,8 +890,22 @@ div#renttable table {
     font-weight: 500;
 }
 
+#morttable th,
+#morttable td {
+    text-align: center;
+}
+
+#morttable td.yr{
+    text-align: left;
+    padding-left: 18px;
+    font-weight: 500;
+    color: #2a3845;
+}
+
 #renttable th.tt,
-#renttable td.tt {
+#renttable td.tt,
+#morttable td.ttl
+ {
     text-align: right;
     padding-right: 11px;
 }
@@ -892,6 +932,18 @@ div#renttable table {
 #renttable td.dt {
     text-align: center;
 }
+
+
+td.rate {
+    width: 12%;
+}
+td.pay, td.inpay {
+    width: 21%;
+}
+td.bal, td.ttl {
+    width: 20.5%;
+}
+
 
 
 
@@ -1370,6 +1422,7 @@ button:focus {
         padding-top: 23px;
     }
 
+
 }
 
 @media (max-width: 650px) {
@@ -1378,6 +1431,23 @@ button:focus {
     #renttable td.dt {
         display: none;
     }
+    #morttable .pay, #morttable .rate {
+        display:none;
+    }
+    td.inpay {
+    width: 25%;
+}
+td.bal, td.ttl {
+    width: 30%;
+}
+#morttable .contentrow {
+    font-size: 3.4vw;
+}
+#morttable table .headerrow th {
+    font-size: 2.8vw;
+}
+
+
 }
 
 @media (max-width: 575px) {

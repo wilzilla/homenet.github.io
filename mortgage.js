@@ -1,6 +1,6 @@
 	(function( $ ) {
     $.fn.mortgage = function(options) {
-    	var dText={type:'Type',monthyPayments:'Monthly Payment',interestColor:'#d4d0cc',mortgageColor:'#4f7a9f',cashColor:'#aaced4',cashOnly:'Cash Outlay',totalCost:'Total Cost at yr. end',loadBalance:'Loan Balance at yr. end',interestPaidMonth:'Avg. Interest Paid per month',annualInterestRate:'Annual Interest Rate',cash:'Cash',amount:'Amount)',interest:'Total Interest',mortgage:'Mortgage',cash:'Cash Outlay',total:'Total Cost',year:'Year',monthlyPayment:'Monthly Payment',interestRate:'Interest Rate'};
+    	var dText={header:'Mortgage Summary',type:'Type',monthyPayments:'Monthly Payment',interestColor:'#d4d0cc',mortgageColor:'#4f7a9f',cashColor:'#aaced4',cashOnly:'Cash Outlay',totalCost:'Total Cost at yr. end',loadBalance:'Loan Balance at yr. end',interestPaidMonth:'Avg. Interest Paid per month',annualInterestRate:'Annual Interest Rate',cash:'Cash',amount:'Amount)',interest:'Total Interest',mortgage:'Mortgage',cash:'Cash Outlay',total:'Total Cost',year:'Year',monthlyPayment:'Monthly Payment',interestRate:'Interest Rate'};
     	$.extend(dText, options.dutyText);
     	var fadeBox=$(options.fadeBox);
     	var priceele=$(options.price);
@@ -33,7 +33,9 @@
         //google.setOnLoadCallback(drawChart);
 		var chartdata=google.visualization.arrayToDataTable(chartVisual);
 		var chartoptions=
-			{vAxis:{
+			{
+
+				vAxis:{
 				baselineColor: '#747474',
 				textStyle:{fontSize: 11, color: '#747474'},},
 			legend:{position: 'in', alignment: 'start',
@@ -48,7 +50,14 @@
 			colors: ['#95B3D7', '#7F7F7F'],
 			animation:{duration: 700, easing: 'out', startup: true},
 			// For graph size and placement adjust values here
-			//chartArea:{left: 77, width: 603, height: 290}
+			//chartArea:{width: '100%', height: '100%'},
+        height: 440,
+        chartArea: {
+        	top: "9%",
+            height: "75%",
+            width: "75%"
+        },
+
 			};
 		
 		$.extend(chartoptions, options.chartoptions);
@@ -72,7 +81,13 @@
 		/*$(window).load(function() {calculate(); calculate();});*/
 		//Calculate twice to remove vertical axis bug
 		
-		
+
+		// make chart responsive
+		    window.addEventListener('resize', function () {
+		      drawChart();
+		    }, false);
+
+
 		//Calculate button
 		this.click(function(){
 				calculate(); calculate();  //Calculate twice to remove vertical axis bug
@@ -139,7 +154,7 @@
 			var totalinterest=0;
 			//
 			var bigtbl = $("<table></table>");
-			bigtbl.append('<tr><th>'+dText.year+'</th><th>'+dText.monthlyPayment+'</th><th>'+dText.interestPaidMonth+'</th><th>'+dText.annualInterestRate+'</th><th>'+dText.loadBalance+'</th><th>'+dText.totalCost+'</th></tr>');
+			bigtbl.append('<tr class="header"><th><div class="head">'+dText.header+'</div></th><th class="m"></th><th></th><th></th><th></th><th></th></tr><tr class="headerrow"><th class="yr">'+dText.year+'</th><th class="pay">'+dText.monthlyPayment+'</th><th class="inpay">'+dText.interestPaidMonth+'</th><th class="rate">'+dText.annualInterestRate+'</th><th class="bal">'+dText.loadBalance+'</th><th class="ttl">'+dText.totalCost+'</th></tr>');
 			var prevousinterestmonth=0;
 			var prevouspayment=0;
 			for(var i=0;i<terms_month;i++){
@@ -186,7 +201,7 @@
 					var displaycurbalance=(curbalance).toFixed(0).replace(/./g, function(c, i, a) {
 						 return i && c !== "." && !((a.length - i) % 3) ? ',' + c : c;
 					});
-					bigtbl.append('<tr><td>'+((i+1)/12)+'</td><td>$'+averagepay+'</td><td>$'+displayinterest+'</td><td>'+displayinterstmonth+'%</td><td>$'+displaycurbalance+'</td><td>$'+total_cost+'</td></tr>');
+					bigtbl.append('<tr class="contentrow"><td class="yr">'+((i+1)/12)+'</td><td class="pay">$'+averagepay+'</td><td class="inpay">$'+displayinterest+'</td><td class="rate">'+displayinterstmonth+'%</td><td class="bal">$'+displaycurbalance+'</td><td class="ttl">$'+total_cost+'</td></tr>');
 					yearpayment=0;
 					yearinterest=0;
 				}

@@ -89,7 +89,7 @@ $(document).ready(function(){
 			reset: '#reset',
 			fadeBox: '.all',
 			chart_div: 'chart_div',
-			chart_table: '#chart_table',
+			chart_table: '#morttable',
 			piechart: 'piechart',
 			pietable:'#pietable',
 			pieoptions:{pieHole: 0.4, height:170, width:170, fontSize: 10.5, tooltip:{textStyle:{fontSize: 12}}, legend: 'none', slices:{ 0:{color: dText.mortgageColor}, 1:{color: dText.cashColor}, 2:{color: dText.interestColor}},chartArea:{width: 140, height: 140}},
