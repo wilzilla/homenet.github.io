@@ -335,29 +335,18 @@ span.empty {
 .mort-input.row3 {
 justify-content: center!important;
 text-align: center;
-max-width: 100%;
 }
-
 .mort-input.row2 .cslide,
-.mort-input.row3 .aslide,
-.mort-input.row2 .cslide #cmortgage,
-.mort-input.row3 .aslide #amortgage{
-display: none;
-}
-.calc-input {
-    padding: 29px 0% 15px 0%;
+.mort-input.row3 .aslide {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
-/*
-
-  display no dlier in mobile
 .mort-input.row2 .cslide #cmortgage,
 .mort-input.row3 .aslide #amortgage{
     width: 90%;
     margin: auto;
 }
-*/
-
 }
 
 
@@ -1470,6 +1459,9 @@ td.bal, td.ttl {
 
     #piechart>div {
         left: 0px;
+    }
+    .calc-table.graph.noshow {
+        display: none;
     }
 
 }
