@@ -199,13 +199,13 @@ span.empty {
 #pietable table th {
     font-weight: 600;
     letter-spacing: -0.5px;
-   width: 60%;
+    width: 60%;
 }
 
 #pietable table td {
     text-align: right;
     font-size: 16px;
-        width: auto;
+    width: auto;
 }
 
 #pietable table {
@@ -265,16 +265,18 @@ span.empty {
 .mort-input.row1 {
     padding-bottom: 14px;
 }
-.mort-input.row2{
+
+.mort-input.row2 {
     padding: 24px 0 8px 0;
     border-top: 1px solid #dadfe5;
 }
-.mort-input .title{
+
+.mort-input .title {
     width: 100%;
 }
 
 .mort-input.row2 .cslide #cmortgage,
-.mort-input.row3 .aslide #amortgage{
+.mort-input.row3 .aslide #amortgage {
     margin-top: 16px;
 }
 
@@ -282,7 +284,7 @@ span.empty {
 .mort-input.row2 input,
 .mort-input.row3 input {
     display: inline-block;
-    width:62px;
+    width: 63px;
 }
 
 .mort-input.row2 .cslide,
@@ -294,8 +296,7 @@ span.empty {
 }
 
 .mort-input.row2 .cinput,
-.mort-input.row3 .ainput
- {
+.mort-input.row3 .ainput {
     flex: 0 0 auto;
     max-width: inherit;
     text-align: left;
@@ -304,8 +305,7 @@ span.empty {
 }
 
 .mort-input.row2 .cyears,
-.mort-input.row3 .ayears
- {
+.mort-input.row3 .ayears {
     flex: 0 0 auto;
     max-width: inherit;
     text-align: center;
@@ -316,38 +316,54 @@ span.empty {
 #chart_div {
     border-radius: 4px;
 }
-#chart_div.chart{
-  width: 100%; 
-  height: 100%;
+
+#chart_div.chart {
+    width: 100%;
+    height: 100%;
 }
 
 
 @media (max-width: 1065px) {
-.mort-input.row2 .cslide,
-.mort-input.row3 .aslide {
-    flex: 0 0 55%;
-    max-width: 55%;
-}
+
+    .mort-input.row2 .cslide,
+    .mort-input.row3 .aslide {
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
 }
 
 @media (max-width: 750px) {
-.mort-input.row2,
-.mort-input.row3 {
-justify-content: center!important;
-text-align: center;
-}
-.mort-input.row2 .cslide,
-.mort-input.row3 .aslide {
-    flex: 0 0 100%;
-    max-width: 100%;
+    .mort-calc .calc-input {
+        padding: 29px 0 15px 0;
+    }
+
+    .mort-input.row2,
+    .mort-input.row3 {
+
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .mort-input.row2 .cyears,
+    .mort-input.row3 .ayears {
+        display: inline-block;
+    }
+
+    .mort-input.row2 .cinput,
+    .mort-input.row3 .ainput {
+        display: inline-block;
+    }
+
+    .mort-input.row2 .cslide,
+    .mort-input.row3 .aslide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: none;
+    }
 }
 
-.mort-input.row2 .cslide #cmortgage,
-.mort-input.row3 .aslide #amortgage{
-    width: 90%;
-    margin: auto;
-}
-}
+
 
 
 
@@ -872,6 +888,7 @@ table .headerrow th {
     letter-spacing: 0.4px;
     line-height: 2.2;
 }
+
 #morttable .contentrow {
     font-size: 15.5px;
     letter-spacing: 0.3px;
@@ -896,7 +913,7 @@ table .headerrow th {
     text-align: center;
 }
 
-#morttable td.yr{
+#morttable td.yr {
     text-align: left;
     padding-left: 18px;
     font-weight: 500;
@@ -905,8 +922,7 @@ table .headerrow th {
 
 #renttable th.tt,
 #renttable td.tt,
-#morttable td.ttl
- {
+#morttable td.ttl {
     text-align: right;
     padding-right: 11px;
 }
@@ -938,10 +954,14 @@ table .headerrow th {
 td.rate {
     width: 12%;
 }
-td.pay, td.inpay {
+
+td.pay,
+td.inpay {
     width: 21%;
 }
-td.bal, td.ttl {
+
+td.bal,
+td.ttl {
     width: 20.5%;
 }
 
@@ -1175,9 +1195,11 @@ button:focus {
     #pietable table {
         font-size: 15px;
     }
+
     #pietable table th {
         width: auto;
     }
+
     #pietable table td {
         font-size: 15px;
     }
@@ -1415,9 +1437,11 @@ button:focus {
     .mort-input.row1 input {
         margin-top: 5px
     }
+
     .mort-input .title {
         margin-bottom: 15px;
     }
+
     .mort-input.row3 {
         border-top: 1px solid #dadfe5;
         padding-top: 23px;
@@ -1432,21 +1456,28 @@ button:focus {
     #renttable td.dt {
         display: none;
     }
-    #morttable .pay, #morttable .rate {
-        display:none;
+
+    #morttable .pay,
+    #morttable .rate {
+        display: none;
     }
+
     td.inpay {
-    width: 25%;
-}
-td.bal, td.ttl {
-    width: 30%;
-}
-#morttable .contentrow {
-    font-size: 3.4vw;
-}
-#morttable table .headerrow th {
-    font-size: 2.8vw;
-}
+        width: 25%;
+    }
+
+    td.bal,
+    td.ttl {
+        width: 30%;
+    }
+
+    #morttable .contentrow {
+        font-size: 3.4vw;
+    }
+
+    #morttable table .headerrow th {
+        font-size: 2.8vw;
+    }
 
 
 }
@@ -1460,6 +1491,7 @@ td.bal, td.ttl {
     #piechart>div {
         left: 0px;
     }
+
     .calc-table.graph.noshow {
         display: none;
     }
