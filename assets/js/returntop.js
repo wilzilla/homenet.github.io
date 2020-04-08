@@ -1,5 +1,4 @@
     // ===== Return to Top ==== 
-    document.getElementsByTagName("html")[0].className += " js";
 
     // Utility function
     function Util() {};
@@ -86,8 +85,8 @@
 
         function checkBackToTop() {
             var windowTop = window.scrollY || document.documentElement.scrollTop;
-            (windowTop > offset) ? Util.addClass(backTop, 'pg-top--is-visible'): Util.removeClass(backTop, 'pg-top--is-visible pg-top--fade-out');
-            (windowTop > offsetOpacity) && Util.addClass(backTop, 'pg-top--fade-out');
+            (windowTop > offset) ? Util.addClass(backTop, 'pg-top-is-visible'): Util.removeClass(backTop, 'pg-top-is-visible pg-top-fade-out');
+            (windowTop > offsetOpacity) && Util.addClass(backTop, 'pg-top-fade-out');
             scrolling = false;
         }
     })();

@@ -5,8 +5,6 @@
 @import "theming";
 
 // Import Bootstrap
-// 
-
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -71,19 +69,19 @@
 @import "homenet/homenet-avatar-dropdown";
 
 // Homenet Elements
-//@import "homenet/homenet-portfolio";
-//@import "homenet/homenet-tabs";
-//@import "homenet/homenet-icon_boxes";
-//@import "homenet/homenet-services-items";
-//@import "homenet/homenet-members-sliders";
-//@import "homenet/homenet-clients";
+@import "homenet/homenet-portfolio";
+@import "homenet/homenet-tabs";
+@import "homenet/homenet-icon_boxes";
+@import "homenet/homenet-services-items";
+@import "homenet/homenet-members-sliders";
+@import "homenet/homenet-clients";
 
 // Homenet Animations
-//@import "homenet/homenet-agent-pop-effect";
+@import "homenet/homenet-agent-pop-effect";
 
 // Homenet Effects
-//@import "homenet/homenet-swiper";
-//@import "homenet/homenet-counters";
+@import "homenet/homenet-swiper";
+@import "homenet/homenet-counters";
 
 
 // General UI Kit

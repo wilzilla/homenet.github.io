@@ -398,7 +398,7 @@ Back to Top Button
     cursor: pointer;
 }
 
-.js .pg-top {
+.pg-top {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s, visibility .3s, background-color .3s;
@@ -407,12 +407,12 @@ Back to Top Button
     transition: opacity .3s, visibility .3s, background-color .3s;
 }
 
-.js .pg-top--is-visible {
+.pg-top-is-visible {
     visibility: visible;
     opacity: 1;
 }
 
-.js .pg-top--fade-out {
+.pg-top-fade-out {
     background-color: rgba(79, 98, 101, 0.36);
     -webkit-transition: background 0.9s ease-in-out;
     -moz-transition: background 0.9s ease-in-out;
@@ -420,7 +420,7 @@ Back to Top Button
     transition: background 0.9s ease-in-out;
 }
 
-.js .pg-top:hover {
+.pg-top:hover {
     opacity: 1;
     background-color: rgb(78, 96, 100);
     -webkit-transition: background 0.25s ease-in-out;
@@ -429,7 +429,7 @@ Back to Top Button
     transition: background 0.25s ease-in-out;
 }
 
-.js .pg-top:focus {
+.pg-top:focus {
     background: url(../svg/caret-up-white.svg) no-repeat 50% 8px;
     background-color: rgba(78, 96, 100, 0.15);
     -webkit-transition: background 0.4s linear;

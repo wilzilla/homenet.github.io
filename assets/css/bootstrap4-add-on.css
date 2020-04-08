@@ -51,9 +51,7 @@
     --font-family-base: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-secondary: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ;
-}
 
-:root {
     --blue: #3498db;
     --indigo: #2874a6;
     --purple: #8e44ad;
@@ -104,11 +102,43 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* Base Font */
+body {
+    font-family: var(--font-family-base);
+}
+/* Base Font End */
+
 /* Reboot */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 a:focus,
 a:hover {
     outline: none !important;
     text-decoration: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input:-internal-autofill-selected {
+    background-color: inherit !important;
+    background-image: none !important;
+    color: inherit !important;
 }
 
 .bs4.container:after,
@@ -130,6 +160,7 @@ footer .col {
 }
 
 /* Reboot End*/
+
 
 .bs4 a {
     text-decoration: none;
@@ -468,6 +499,13 @@ svg {
 
     }
 
+    .bs4.col-lg-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
     .bs4.col-lg-9 {
         flex: 0 0 75%;
         max-width: 75%;
@@ -498,6 +536,15 @@ svg {
     .pl-lg-2 {
         padding-left: 8px !important;
     }
+
+}
+
+@media (min-width: 1201px) {
+    .bs4.col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
 
 }
 
@@ -586,6 +633,14 @@ svg {
     color: #6c757d;
 }
 
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .d-block {
     display: block !important;
 }
@@ -617,6 +672,8 @@ svg {
 .align-items-center {
     align-items: center !important;
 }
+
+
 
 
 

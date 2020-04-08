@@ -1,0 +1,58 @@
+
+/* Buttons reboot */
+
+/* add "hand" cursor to non-disabled button elements.*/
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+/* Remove Focus Borders */
+button:focus, input:focus {
+    outline: none;
+}
+
+/* Language Fonts */
+body.en-US button.button-submit {
+	font-family: var(--font-secondary);
+}
+
+
+
+.button-style1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 100px;
+    background-color: #85c3ae;
+    border: 2px solid #85c3ae;
+    letter-spacing: 0.5px;
+    min-width: 126px;
+    min-height: 41px;
+    color: #fff;
+}
+
+.button-style1:hover {
+    background-color: transparent;
+    color: #53a88b;
+}
+
+.button-style1:active {
+    background-color: rgba(133, 195, 174, 0.6);
+    color: #fff;
+}
+
+.homenet-btn {
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    transition: all .1s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button-submit {
+	padding: 18px 40px;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+}

@@ -164,6 +164,16 @@ span.empty {
     padding: 28px 0;
     text-align: center;
 }
+.mort-calc .empty-total {
+    height: 64px;
+    background-image: url(../svg/info_page/calculator/mort-icon.svg);
+}
+
+.mort-calc span.empty {
+    left: 60%;
+    top: 75px;
+    width: 300%;
+}
 
 #pietable,
 #piechart {
@@ -313,13 +323,15 @@ span.empty {
     margin-bottom: 20px;
 }
 
-#chart_div {
-    border-radius: 4px;
-}
 
 #chart_div.chart {
     width: 100%;
     height: 100%;
+}
+
+#chart_div>div>div,
+#chart_div g {
+    font-family: var(--font-secondary);
 }
 
 
@@ -333,8 +345,13 @@ span.empty {
 }
 
 @media (max-width: 750px) {
+
+
     .mort-calc .calc-input {
         padding: 29px 0 15px 0;
+    }
+    .mort-calc span.empty {
+        display: none;
     }
 
     .mort-input.row2,
@@ -1173,10 +1190,7 @@ button:focus {
         top: 110%;
     }
 
-    .mort-calc span.empty {
-        width: 300%;
-        top: 93%;
-    }
+
 }
 
 
@@ -1202,6 +1216,9 @@ button:focus {
 
     #pietable table td {
         font-size: 15px;
+    }
+    .mort-calc span.empty {
+        left: 41%;
     }
 }
 

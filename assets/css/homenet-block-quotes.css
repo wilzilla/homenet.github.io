@@ -1,0 +1,163 @@
+/***** Block Quote Simple Text *****/
+
+blockquote.type1 {
+    border-left: 4px solid var(--primary-color);
+}
+
+.content-page .main-content blockquote.blockquote-text p {
+    margin-bottom: 5px;
+}
+
+blockquote.blockquote-text {
+  position: relative;
+}
+
+blockquote.blockquote-text.type2 {
+border-left: none;
+}
+
+blockquote.blockquote-text.type2 svg.quote{
+    fill: #31535a;
+    position: relative;
+    width: 100%;
+}
+
+
+
+blockquote.blockquote-text.type2 p:after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: -8px;
+    width: 50%;
+    margin-top: 19px;
+    border-bottom: 2px solid #31535a;
+    display: block;
+}
+
+blockquote.blockquote-text.type2.left svg.quote{
+    width: inherit;
+}
+blockquote.blockquote-text.type2.left p:after{
+    left: 20px;
+}
+
+
+
+
+/***** Block Quote Fancy *****/
+
+
+/* Content Page style */
+.content-background.blockquote-img{
+  height: 41vh;
+  overflow: hidden;
+}
+.content-background img {
+    object-fit: cover;
+    width: 100%;
+}
+.content-page .main-content svg.quote {
+    background-size: 80px 70px;
+    width: 100%;
+    position: absolute;
+    top: -18px;
+    left: 0;
+}
+.main-content .content-background {
+  margin: 0 -13.3% 30px;
+}
+
+/* CSS Image bg style 1*/
+
+.blockquote-img.css-bg1 .blockquote-wrapper {
+    background-color: var(--gray-section);
+    background-image: url("../images/bg/axiom-pattern.png");
+}
+
+.content-page .main-content .blockquote-img.css-bg1 svg.quote {
+    fill: var(--primary-color);
+}
+
+.content-page .main-content .blockquote-img.css-bg1 .blockquote-wrapper .row .blockquote-col blockquote h4 {
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Content Page style end*/
+
+
+
+/***** Block Quote Fancy General *****/
+
+
+.blockquote-img blockquote {
+    border-left: 0;
+    margin: 0 0 0px;
+}
+
+.blockquote-img .blockquote-wrapper {
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    display: block;
+    top: 0;
+    background-color: var(--dark_overlay);
+}
+
+.blockquote-img .blockquote-wrapper .row {
+    width: 100%;
+}
+
+.blockquote-img .blockquote-wrapper {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.blockquote-img .blockquote-wrapper .row .blockquote-col {
+    padding: 0;
+}
+
+.blockquote-img .blockquote-wrapper .row .blockquote-col blockquote {
+    -webkit-box-shadow: 0 4px 8px var(--box-shadow-boxes);
+    box-shadow: 0 4px 8px var(--box-shadow-boxes);
+    width: 500px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #30535a;
+    padding: 75px 65px 65px 65px;
+    opacity: 0.97;
+}
+
+
+
+
+
+.blockquote-img .blockquote-wrapper .row .blockquote-col blockquote h4 {
+    font-family: var(--font-secondary);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24.5px;
+    line-height: 1.25;
+    letter-spacing: -0.1px;
+    border-left: 3px solid #ffffff;
+    padding: 0 14px;
+}
+
+@media (max-width: 767px) {
+    .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote h4 {
+        font-size: 20px;
+    }
+    .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote {
+        padding: 60px 50px 50px 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote {
+        padding: 50px 40px 40px 40px;
+    }
+    .content-background.blockquote-img {
+        height: 50vh;
+    }
+}

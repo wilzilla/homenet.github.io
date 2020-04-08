@@ -505,7 +505,9 @@
                                     </div>
                                     <div class="bs4 col-12 col-sm parts calc-cell noshow-mortgage">
                                         <div class="bs4 row no-gutters">
-                                            <div id="piechart" class="bs4 col-12 col-sm-4"></div>
+                                            <div id="piechart" class="bs4 col-12 col-sm-4">
+                                                <span class="empty min">Fill in the details below to start calculating</span>
+                                            </div>
                                             <div id="pietable" class="bs4 col-12 col-sm-8"></div>
                                         </div>
                                     </div>
@@ -513,10 +515,10 @@
                                 <div class="calc-input calc-cell">
                                     <div class="mort-input row1">
                                         <div class="price">
-                                            <div class="price-hd">Property Price $</div><input id="price" type="text" value="10,000,000" />
+                                            <div class="price-hd">Property Price $</div><input id="price" type="text" value="0,000,000" />
                                         </div>
                                         <div class="percent">
-                                            Mortgage amount
+                                            Mortgage Amount
                                             <div class="param">
                                                 <input id="mortgage" type="text" value="70" /> %</div>
                                         </div>
@@ -526,7 +528,7 @@
                                         </div>
                                     </div>
                                     <div class="mort-input row2">
-                                        <div class="title">Current Interest rate</div>
+                                        <div class="title">Current Interest Rate</div>
                                         <div class="cslide">
                                             <div id="cmortgage"></div>
                                         </div>
@@ -538,7 +540,7 @@
                                         </div>
                                     </div>
                                     <div class="mort-input row3">
-                                        <div class="title">Assumed Interest rate</div>
+                                        <div class="title">Assumed Interest Rate</div>
                                         <div class="aslide">
                                             <div id="amortgage"></div>
                                         </div>
@@ -546,7 +548,7 @@
                                             <input id="amortgage_input" type="text" /> %
                                         </div>
                                         <div class="ayears">
-                                            After yr <input id="after_years" type="text" />
+                                            after yr <input id="after_years" type="text" />
                                         </div>
                                     </div>
                                 </div>
@@ -723,6 +725,18 @@
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="mortgage-page.js"></script>
     <!-- MORTGAGE -->
+
+
+    <!-- ImageLoaded -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!-- homenet Content JS-file -->
+    <script src="assets/js/main.js"></script>
+    <!-- CONTENT PAGES -->
+    <!-- Parallax -->
+    <script src="assets/js/parallax.js"></script>
+    <!-- Waypoints -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
 </body>
 
 </html>
