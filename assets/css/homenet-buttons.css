@@ -1,19 +1,27 @@
-
 /* Buttons reboot */
 
 /* add "hand" cursor to non-disabled button elements.*/
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
     cursor: pointer;
 }
 
 /* Remove Focus Borders */
-button:focus, input:focus {
+button:focus,
+input:focus {
     outline: none;
 }
 
+.bs4 a {
+    text-decoration: none;
+    /*  background-color: transparent; */
+}
+
 /* Language Fonts */
-body.en-US button.button-submit {
-	font-family: var(--font-secondary);
+body.en-US .homenet-btn {
+    font-family: var(--font-secondary);
 }
 
 
@@ -41,6 +49,9 @@ body.en-US button.button-submit {
     color: #fff;
 }
 
+
+/* General Button Styles - Links and button */
+
 .homenet-btn {
     line-height: 1;
     text-align: center;
@@ -50,9 +61,129 @@ body.en-US button.button-submit {
     z-index: 1;
 }
 
+
+/*****/
+
 .button-submit {
-	padding: 18px 40px;
-	font-weight: 600;
-	font-size: 12px;
-	letter-spacing: 1.8px;
+    padding: 18px 40px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.8px;
 }
+
+
+a.button-default-color:focus,
+a.button-round:focus {
+ color: #fff;
+}
+
+
+.button-default-color,
+.button-default-white,
+.button-default-white-2,
+.button-round {
+    font-weight: 500;
+    display: flex;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 17px 27px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 767px) {
+
+    .button-default-color,
+    .button-default-white,
+    .button-default-white-2,
+    .button-round {
+        padding: 13px 17px;
+    }
+}
+
+.button-default-color i,
+.button-default-white i,
+.button-default-white-2 i,
+.button-round i {
+    margin-right: 10px;
+}
+
+
+.button-round {
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.button-round i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+a.button-round:hover {
+    color: #fff;
+    background-color: #85c3ae;
+}
+
+.button-default-color {
+    border: 1px solid var(--default-border);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #85c3ae;
+}
+
+.button-default-color:after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(33, 33, 33, 0.07);
+    position: absolute;
+    top: 100%;
+	left: 0px;
+    border-radius: 100%;
+    transition: all .2s ease-in-out;
+}
+
+a.button-default-color:hover {
+    color: #fff;
+	font-weight: 500;
+}
+
+.button-default-color:hover:after {
+    top: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+.button-default-white {
+    border: 1px solid var(--default-border);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+}
+
+a.button-default-white:hover {
+    color: #000;
+}
+
+.button-default-white-2 {
+    border: 1px solid var(--default-border);
+    color: #000;
+    background-color: #fff;
+}
+
+a.button-default-white-2:hover {
+    color: #fff;
+    background-color: var(--dark);
+}
+

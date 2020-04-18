@@ -1,5 +1,5 @@
 
-  .default_overlay:after, .color_overlay:after, .dark_overlay:after {
+  .default_overlay:after, .color_overlay:after, .dark_overlay:after, .black_overlay:after {
   content: ' ';
   display: block;
   width: 100%;
@@ -11,8 +11,17 @@
   right: 0;
   z-index: 1; }
   
-  .dark_overlay:after {
+  .default_overlay:after {
+  background-color: var(--default_overlay); }
+
+    .color_overlay:after {
+  background-color: var(--color_overlay); }
+
+    .dark_overlay:after {
   background-color: var(--dark_overlay); }
+
+      .black_overlay:after {
+  background-color: var(--black_overlay); }
   
   .parallax-window {
   background-color: transparent; }
@@ -45,9 +54,7 @@
       z-index: 2;
       height: 100%;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: left; }
+}
 	  
 	  
  

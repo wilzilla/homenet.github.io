@@ -48,22 +48,39 @@ blockquote.blockquote-text.type2.left p:after{
 /***** Block Quote Fancy *****/
 
 
-/* Content Page style */
+/* Content Page Full Width  */
+
 .content-background.blockquote-img{
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* Content Page style */
+.main-content .content-background.blockquote-img{
   height: 41vh;
   overflow: hidden;
 }
 .content-background img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
 }
-.content-page .main-content svg.quote {
-    background-size: 80px 70px;
-    width: 100%;
+
+.content-page svg.quote {
+    width: 73px;
     position: absolute;
-    top: -18px;
-    left: 0;
+    transform: 50% 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -10px;
 }
+
+.main-content svg.quote {
+    width: 63px;
+}
+
+
 .main-content .content-background {
   margin: 0 -13.3% 30px;
 }
@@ -101,7 +118,7 @@ blockquote.blockquote-text.type2.left p:after{
     position: absolute;
     display: block;
     top: 0;
-    background-color: var(--dark_overlay);
+
 }
 
 .blockquote-img .blockquote-wrapper .row {
@@ -117,32 +134,48 @@ blockquote.blockquote-text.type2.left p:after{
     padding: 0;
 }
 
+
+
 .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote {
-    -webkit-box-shadow: 0 4px 8px var(--box-shadow-boxes);
+-webkit-box-shadow: 0 4px 8px var(--box-shadow-boxes);
     box-shadow: 0 4px 8px var(--box-shadow-boxes);
-    width: 500px;
-    border-radius: 5px;
+    width: 530px;
+    border-radius: 7px;
     position: relative;
     background-color: #30535a;
-    padding: 75px 65px 65px 65px;
+    padding: 75px 35px 65px;
     opacity: 0.97;
 }
 
-
+.main-content .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote {
+    width: 500px;
+    padding: 75px 65px 65px 65px;
+}
 
 
 
 .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote h4 {
-    font-family: var(--font-secondary);
+
+font-family: var(--font-secondary);
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    font-size: 24.5px;
-    line-height: 1.25;
+    font-size: 27px;
+    line-height: 1.45;
     letter-spacing: -0.1px;
-    border-left: 3px solid #ffffff;
     padding: 0 14px;
 }
+
+.main-content .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote h4 {
+    font-weight: 500;
+    font-size: 24.5px;
+    line-height: 1.25;
+    border-left: 3px solid #ffffff;
+}
+
+
+
+
 
 @media (max-width: 767px) {
     .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote h4 {

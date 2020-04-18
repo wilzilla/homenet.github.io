@@ -2,8 +2,11 @@
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.8));
 }
 
+.mood_overlay_gradient:before {
+background: linear-gradient(rgba(35, 35, 35, 0.30), rgba(35, 35, 35, 0.45));
+}
 
-.black_overlay:after, .dark_overlay_gradient:before, .color_overlay_gradient:before {
+.black_overlay:after, .dark_overlay_gradient:before, .color_overlay_gradient:before, .mood_overlay_gradient:before {
     content: ' ';
     display: block;
     width: 100%;
@@ -25,9 +28,24 @@ section {
     z-index: 100;
 }
 
+.small-section {
+  padding: 80px 0; }
+  @media (max-width: 1199px) {
+    .small-section {
+      padding: 50px 0; } }
+
+
 .large-section {
-    padding: 140px 0;
-}
+  padding: 140px 0; }
+  @media (max-width: 1199px) {
+    .large-section {
+      padding: 100px 0; } }
+  @media (max-width: 991px) {
+    .large-section {
+      padding: 80px 0; } }
+  @media (max-width: 767px) {
+    .large-section {
+      padding: 50px 0; } }
 
 .contact-form-section {
     padding: 150px 15px;
@@ -400,3 +418,6 @@ section {
         margin-right: 15px;
     }
 }
+
+
+
