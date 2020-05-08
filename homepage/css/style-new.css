@@ -64,7 +64,7 @@ h2, h3 {
     line-height: 4vw;
     font-weight: 600;
     margin: 0;
-    letter-spacing: -1.2px;
+    letter-spacing: -0.1px;
 }
 
 
@@ -152,18 +152,17 @@ h2, h3 {
 }
 
 .sec2_right h2 {
-    font-size: 53.5px;
+    font-size: 54px;
     font-weight: 400;
     position: relative;
     margin: 0;
-    padding: 0px;
-    letter-spacing: -1px;
+    padding: 0 0 60px;
+    letter-spacing: -0.3px;
 }
 
 .sec2_right h2 span {
     display: block;
     font-weight: 600;
-    letter-spacing: -0.3px;
 }
 
 .search_icon {
@@ -174,8 +173,8 @@ opacity: 0.45;
     height: 99px;
     display: inline-block !important;
     background-position-x: 0px;
-margin-left: -25px;
-    margin-right: -35px;
+margin-left: -15px;
+    margin-right: -25px;
 }
 
 
@@ -570,11 +569,12 @@ padding: 15px 0;
 
     .sec2_right h2 {
         font-size: 3vw;
+        padding: 0 0 3vw;
     }
 
     .sec2_right {
         width: 46vw;
-        padding: 4vw 0 0 0;
+        padding: 3vw 0 0 0;
     }
 
 
@@ -696,7 +696,7 @@ padding: 15px 0;
     .sec2_right {
         width: 100%;
         float: none;
-        padding: 8vw 0 0 0;
+        padding: 5.5vw 0 0 0;
     }
 
     .section2_wrapper {
@@ -719,7 +719,7 @@ padding: 15px 0;
 
     .sec2_right h3 {
         font-size: 2.6vw;
-        padding: 0 0 1vw 0;
+        padding: 5vw 0 1vw 0;
     }
 
     .sec2_right h3 strong {
@@ -750,12 +750,6 @@ padding: 15px 0;
         font-size: 1.9vw;
     }
 
-    #section3 h2,
-    #section4 h2 {
-        font-size: 3.8vw;
-        letter-spacing: -0.5px;
-    }
-
     .section3_wrapper,
     .section4_wrapper {
         padding: 3vw 0;
@@ -772,7 +766,7 @@ padding: 15px 0;
     }
 
     .sec4_right {
-padding: 0 1vw 0 2.5vw;
+        padding: 0 2vw 0 2vw;
     }
 
     .sec4_right p {
@@ -867,8 +861,8 @@ padding: 0 1vw 0 2.5vw;
     .search_icon {
         width: 16.8vw;
         height: 12.9vw;
-        margin-left: -3.2%;
-        margin-right: -4.5%;
+        margin-left: -2%;
+        margin-right: -4%;
     }
 
     .sec2_right h3 {
@@ -909,16 +903,9 @@ padding: 0 1vw 0 2.5vw;
         padding-right: 5%;
     }
 
-    #section3 h2,
-    #section4 h2 {
-        font-size: 7.5vw;
-        letter-spacing: -0.5px;
-        line-height: 9.5vw;
-    }
-
     .sec3_left,
     .sec4_right {
-padding: 3% 2% 4vw 3%;
+        padding: 0 0 4vw 0;
     }
 
     .sec3_right,
