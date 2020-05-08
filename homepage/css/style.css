@@ -53,7 +53,7 @@ h2, h3 {
 }
 
 .text_container {
-    width: 85%;
+    width: 88%;
 }
 
 /* === General Text Styles for Headers === */
@@ -67,12 +67,41 @@ h2, h3 {
     letter-spacing: -1.2px;
 }
 
+#section5 h2 {
+    font-size: 3.1vw;
+    line-height: 4vw;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -1.4px;
+    text-align: center;
+    padding-bottom: 35px;
+    word-spacing: 1.2px;
+}
+
+#section6 h2 {
+    font-size: 3.1vw;
+    margin: 0 0 2.5%;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: 1px #88d2df solid;
+    padding-bottom: 10px;
+    letter-spacing: -1.4px;
+    text-align: center;
+    word-spacing: 1.2px;
+}
+
 
 #section3 h2 span,
-#section4 h2 span {
+#section4 h2 span,
+#section5 h2 span,
+#section6 h2 span
+ {
     color: #05404c;
     font-weight: 800;
 }
+
+
 
 /* === General Text Styles for Headers End Here === */
 
@@ -152,18 +181,18 @@ h2, h3 {
 }
 
 .sec2_right h2 {
-    font-size: 53.5px;
-    font-weight: 400;
+    font-size: 40px;
+font-weight: 600;
     position: relative;
     margin: 0;
     padding: 0px;
-    letter-spacing: -1px;
+    letter-spacing: -0.8px;
 }
 
 .sec2_right h2 span {
     display: block;
-    font-weight: 600;
     letter-spacing: -0.3px;
+    font-size: 53.5px;
 }
 
 .search_icon {
@@ -174,7 +203,7 @@ opacity: 0.45;
     height: 99px;
     display: inline-block !important;
     background-position-x: 0px;
-margin-left: -25px;
+margin-left: -26px;
     margin-right: -35px;
 }
 
@@ -215,20 +244,20 @@ margin-left: -25px;
 /* === Section 3 Start Here === */
 .section3_wrapper {
     display: block;
-    padding: 70px 0;
+    padding: 90px 0;
     position: relative;
 }
 
 .section3_wrapper::after {
-    content: '';
-    width: 40vw;
-    height: 138vw;
+content: '';
+    width: 37vw;
+    height: 129vw;
     background: #4ca8ba;
     position: absolute;
     left: 8vw;
-    top: -40vw;
+    top: -36vw;
     border-radius: 0 0 100px 100px;
-    transform: rotate(-54deg);
+    transform: rotate(-50deg);
     z-index: -1;
     pointer-events: none;
 }
@@ -253,7 +282,7 @@ margin-left: -25px;
 
 .sec3_left {
     width: 50%;
-    padding: 0 0 0 5vw;
+    padding: 0 0 0 8vw;
 }
 
 .sec3_right {
@@ -261,7 +290,7 @@ margin-left: -25px;
 }
 
 .sec3_right img {
-    width: 85%;
+    width: 76%;
 }
 
 .separator {
@@ -298,7 +327,7 @@ margin-left: -25px;
 /* === Section 4 Start Here === */
 .section4_wrapper {
     display: block;
-    padding: 1vw 0 100px;
+    padding: 3vw 0 100px;
 }
 
 .section4_wrapper .container {
@@ -314,7 +343,7 @@ margin-left: -25px;
 }
 
 .sec4_left img {
-    width: 92%;
+    width: 85%;
 }
 
 .sec4_right {
@@ -343,18 +372,6 @@ margin-left: -25px;
     position: relative;
 }
 
-.section5_wrapper h2 {
-    font-size: 3.3vw;
-    margin: 0 0 2.5%;
-    text-align: center;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-.section5_wrapper h2 span {
-    color: #053d48;
-    font-weight: 600;
-}
 
 .section5_wrapper .container {
     padding: 0 8.5vw;
@@ -437,48 +454,39 @@ margin-left: -25px;
     padding: 0 4vw;
 }
 .section6_wrapper{padding:80px 0 50px; text-align:center;}
-.section6_wrapper h2{font-size: 3.3vw;
-    margin: 0 0 2.5%;
-    text-align: center;
-    font-weight: 100;
-    text-transform: uppercase;;display: inline-block;border-bottom: 1px #88d2df solid;padding-bottom: 10px;}
 
-
-
-
-
-.section6_wrapper h2 span{color:#053d48; font-weight:600;}
 .sec6_main{display:flex; justify-content: center;}
 .sec6_col{width: 30%;
     text-align: left;
-    padding: 0 2.4vw;
-    margin: 0 0.9vw;}
+    padding: 0 3vw;
+    margin: 0 0.9vw;
+position: relative;
+
+}
 
 
 
 
 .sec6_pic{margin:20px 0;padding-right: 13%;}
-.sec6_col h3{font-size: 2.08vw;
+.sec6_col h3{
+    font-size: 2.06vw;
     margin: 0 0 0px;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: 600;
     display: inline-block;
     border-bottom: 1px #88d2df solid;
     padding-bottom: 10px;
-    padding-left: 2px;
+    padding-left: 9px;
     width: 100%;
-    letter-spacing: 0.3px;}
-
-/*
-.sec6_col p{font-size:22px; line-height:normal; margin:0; min-height:390px;
+    letter-spacing: -0.5px;
+    word-spacing: 0.8px;
 }
-*/
+
 
 .sec6_col p{
 padding: 15px 0;
     font-size: 1.2vw;
     font-weight: 200;
-    min-height: 20.5vw;
+    margin-bottom: 120px;
 }
 
 .sec6_col p strong{font-weight:bold; color:#0f4e5a;letter-spacing: -0.2px;}
@@ -490,7 +498,11 @@ padding: 15px 0;
     background: #50b0c3;
     border: 3px #0b6874 solid;
     border-radius: 50px;
-    margin-top: 10px;}
+    margin-top: 10px;
+position: absolute;
+    bottom: 0px;
+
+}
 .sec6_col a:hover{background:#90f0ff;}
 .sec6_toggle{display:none;}
 
@@ -569,7 +581,7 @@ padding: 15px 0;
     }
 
     .sec2_right h2 {
-        font-size: 3vw;
+        font-size: 2.3vw;
     }
 
     .sec2_right {
@@ -577,11 +589,15 @@ padding: 15px 0;
         padding: 4vw 0 0 0;
     }
 
+    .sec2_right h2 span {
+            font-size: 3vw;
+    }
+
 
 .search_icon {
     width: 7.2vw;
     height: 5.5vw;
-    margin-left: -2%;
+    margin-left: -3%;
     margin-right: -4%;
 }
 
@@ -706,8 +722,12 @@ padding: 15px 0;
     }
 
     .sec2_right h2 {
-        font-size: 47px;
+        font-size: 45px;
         padding: 0 0 2vw;
+    }
+
+    .sec2_right h2 span {
+        font-size: 47px;
     }
 
         .search_icon {
@@ -779,6 +799,11 @@ padding: 0 1vw 0 2.5vw;
         font-size: 1.8vw;
     }
 
+    #section5 h2 {
+    font-size: 4vw;
+    padding-bottom: 30px;
+}
+
     .sec5_content {
         padding: 30px;
         height: 40vw;
@@ -816,7 +841,7 @@ padding: 0 1vw 0 2.5vw;
         padding: 10px 0 35px;
     }
     .sec6_col h3{font-size: 2.2vw;}
-    .sec6_col p{min-height: 29.5vw;}
+    .sec6_col p{margin-bottom: 7vw;}
     .sec6_col a {font-size: 1.6vw;
     padding: 1.5vw 1.7vw;
     border: 2px #0b6874 solid;}
@@ -860,8 +885,12 @@ padding: 0 1vw 0 2.5vw;
     }
 
     .sec2_right h2 {
-        font-size: 7.4vw;
+        font-size: 7.2vw;
         padding: 0 0 2vw;
+    }
+
+    .sec2_right h2 span {
+        font-size: 7.4vw;
     }
 
     .search_icon {
@@ -962,9 +991,10 @@ padding: 3% 2% 4vw 3%;
         width: 13%;
     }
 
-    .section5_wrapper h2 {
-        font-size: 8vw;
-        margin: 0 0 5%;
+#section5 h2 {
+padding-bottom: 20px;
+font-size: 7.5vw;
+    line-height: initial;
     }
 
     .sec5_content {
@@ -1005,12 +1035,20 @@ padding: 3% 2% 4vw 3%;
     padding: 0 4vw;
 }
     .section6_wrapper {padding: 11% 0 0;}
-    .section6_wrapper h2 {font-size: 7.2vw;
+
+
+
+#section6 h2 {font-size: 7.2vw;
     margin: 0 0 4%;
-    /* text-align: justify; */
-    letter-spacing: -0.3px;}
+    letter-spacing: -1px;}
+
+
+
+
+
     .sec6_main {flex-flow: column;}
     .sec6_col{padding:0; width:100%; text-align:center; padding: 0 2vw 7.5vw;}
+    
     .sec6_col h3{font-size: 6.5vw;
     margin-bottom: 0;
     border: none;
@@ -1019,7 +1057,9 @@ padding: 3% 2% 4vw 3%;
     .sec6_col a {font-size: 5vw;
     padding: 3.5vw 5vw;
     display: inline-block;
-    margin-top: 4.5%;}
+    margin-top: 4.5%;
+position: relative;
+}
     .sec6_col p span{font-size:0; transition:all ease-in-out 0.3s;}
     .sec6_col p span br{display:none;}
     /* ==== Section 6 Read More Toggle code === */
