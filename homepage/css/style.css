@@ -1087,7 +1087,7 @@ position: relative;
     cursor: pointer;}
     .sec6_toggle:checked ~ p span{font-size:inherit;}
     .sec6_toggle:checked ~ p span br{display:block; font-size: 6px;}
-    .sec6_col .sec6_toggle:checked ~ label:after{content:'READ LESS..';}
+    .sec6_col .sec6_toggle:checked ~ label:after{content:'READ LESS';}
         .sec6_pic {
 margin: 3% 0;
     padding-right: 0;
