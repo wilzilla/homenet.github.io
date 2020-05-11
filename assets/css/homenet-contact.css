@@ -163,7 +163,7 @@ section {
     margin-bottom: 15px;
     font-size: 34.5px;
     font-family: var(--font-secondary);
-    color: #394649;
+    color: var(--header-color);
 }
 
 .contacts-grid .grid-item .content .contact {

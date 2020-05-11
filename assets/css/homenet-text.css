@@ -1,5 +1,5 @@
 .section-title {
-    color: #394649;
+    color: var(--header-color);
     font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -28,7 +28,7 @@ h4.section-title {
     display: block;
     width: 55px;
     height: 1px;
-    background-color: #394649;
+    background-color: var(--header-color);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -50,7 +50,7 @@ h4.section-title {
 }
 
 .element-title {
-color: #394649;
+color: var(--header-color);
 font-family: var(--font-secondary);
     font-size: 22px;
 	font-weight: 700;
@@ -86,7 +86,7 @@ margin-bottom: 8vw;
     width: 80px;
     height: 1px;
     background-color: var(--default-border);
-    background-color:  #394649;
+    background-color:  var(--header-color);
 }
 
 .element-title:before {

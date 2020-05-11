@@ -319,7 +319,21 @@ width: 41vw;
     margin-top: 7px;
     font-size: 23px;
     font-family: var(--font-secondary);
-    color: #394649;
+    color: var(--header-color);
+}
+
+.service-item-type-2 .service-text {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+    font-size: 17px;
+    color: #000;
+    word-spacing: 0.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 @media (max-width: 767px) {
@@ -1124,7 +1138,7 @@ padding: 10vw 0;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1;
-    color: #394649;
+    color: var(--header-color);
     font-family: var(--font-secondary);
 }
 

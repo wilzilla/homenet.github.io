@@ -33,6 +33,9 @@
     --gray-font-color: #dcdcdc;
     --gray-default-font: #7f7f7f;
     --light-font-color: #f3f3f3;
+
+    /* Homenet Fonts Colors */
+    --header-color: #394649;
     /* Box Shadow Colors */
     --box-shadow-dark: rgba(21, 21, 21, 0.2);
     --box-shadow-medium: rgba(31, 31, 31, 0.1);
@@ -89,10 +92,10 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --breakpoint-sm-max: 576px;
-    --breakpoint-md-max: 768px;
-    --breakpoint-lg-max: 992px;
-    --breakpoint-xl-max: 1200px;
+    --breakpoint-sm-max: 575.98px;
+    --breakpoint-md-max: 767.98px;
+    --breakpoint-lg-max: 991.98px;
+    --breakpoint-xl-max: 1199.98px;
 }
 
 /* Base Font */
