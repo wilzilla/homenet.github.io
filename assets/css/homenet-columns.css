@@ -136,11 +136,13 @@ max-width: 92vw;
 }
 
 .digital-services .content .content-wrapper .subtitle {
-    font-size: 16.5px;
-    letter-spacing: 0.2px;
+font-size: 17px;
+    letter-spacing: -0.1px;
     position: relative;
     margin-bottom: 50px;
     line-height: 1;
+    font-family: var(--font-secondary);
+    font-weight: 400;
 }
 
 @media (max-width: 1199px) {
@@ -317,7 +319,7 @@ width: 41vw;
     margin-top: 7px;
     font-size: 23px;
     font-family: var(--font-secondary);
-    color: #606060;
+    color: #394649;
 }
 
 @media (max-width: 767px) {
@@ -1122,7 +1124,7 @@ padding: 10vw 0;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1;
-    color: var(--heading-color);
+    color: #394649;
     font-family: var(--font-secondary);
 }
 
