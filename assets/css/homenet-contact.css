@@ -172,17 +172,12 @@ section {
     color: var(--black_default);
     line-height: 1;
     font-size: inherit;
+font-family: var(--font-secondary);
 }
 
 @media (max-width: 991px) {
     .contacts-grid .grid-item .content .contact {
-        font-size: 0.8125rem;
-    }
-}
-
-@media (max-width: 767px) {
-    .contacts-grid .grid-item .content .contact {
-        font-size: 0.75rem;
+        font-size: 13px;
     }
 }
 

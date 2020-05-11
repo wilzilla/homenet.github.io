@@ -14,6 +14,7 @@ blockquote.blockquote-text {
 
 blockquote.blockquote-text.type2 {
 border-left: none;
+margin-top: 40px;
 }
 
 blockquote.blockquote-text.type2 svg.quote{
@@ -191,6 +192,6 @@ font-family: var(--font-secondary);
         padding: 50px 40px 40px 40px;
     }
     .content-background.blockquote-img {
-        height: 50vh;
+        height: 60vh;
     }
 }

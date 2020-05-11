@@ -1,7 +1,7 @@
 .section-title {
     color: #394649;
     font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     letter-spacing: -0.7px;
     margin: 3px 0 30px 0;
@@ -68,9 +68,17 @@ text-align: center;
 
 
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-left: auto;
 }
+
+@media (max-width: 991px) {
+.element-title {
+margin-bottom: 8vw;
+    }
+}
+
+
 
 .element-title:before,
 .element-title:after {

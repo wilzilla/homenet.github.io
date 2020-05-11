@@ -104,16 +104,15 @@
 
 .digital-services .content .content-wrapper {
     padding: 130px 0 80px 0;
-    width: 70%;
+width: 33vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 @media (max-width: 1440px) {
     .digital-services .content .content-wrapper {
-        width: 550px;
-        margin-left: auto;
-        margin-right: auto;
+    width: 41vw;
+
         padding: 100px 0 50px 0;
     }
 }
@@ -127,18 +126,8 @@
 
 @media (max-width: 991px) {
     .digital-services .content .content-wrapper {
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 50px 15px 20px 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .digital-services .content .content-wrapper {
-        max-width: 510px;
-        margin-left: auto;
-        margin-right: auto;
+max-width: 92vw;
+        padding: 10vw 15px 5vw 15px;
     }
 }
 
@@ -191,36 +180,24 @@
 
 @media (max-width: 1440px) {
     .digital-services .content-about .content-wrapper {
-        width: 550px;
-        margin-left: auto;
-        margin-right: auto;
+width: 41vw;
         padding: 100px 0;
     }
 }
 
 @media (max-width: 1199px) {
     .digital-services .content-about .content-wrapper {
-        width: 100%;
+        width: 89vw;
         padding: 60px 40px;
     }
 }
 
 @media (max-width: 991px) {
     .digital-services .content-about .content-wrapper {
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 50px 15px;
+        padding: 6vw 15px;
     }
 }
 
-@media (max-width: 767px) {
-    .digital-services .content-about .content-wrapper {
-        max-width: 510px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 
 .digital-services .content-about .content-wrapper .section-title {
     margin-bottom: 20px;
@@ -295,11 +272,7 @@
     display: flex;
 }
 
-@media (max-width: 1199px) {
-    .service-item-type-2 {
-        max-width: 350px;
-    }
-}
+
 
 @media (max-width: 991px) {
     .service-item-type-2 {
@@ -337,7 +310,8 @@
 }
 
 .service-item-type-2 .title-service {
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.2px;
     line-height: 1;
     margin-bottom: 12px;
     margin-top: 7px;
@@ -348,8 +322,8 @@
 
 @media (max-width: 767px) {
     .service-item-type-2 .title-service {
-        font-size: 0.875rem;
-        margin-bottom: 0;
+        font-size: 21px;
+        margin-bottom: 8px;
     }
 }
 
@@ -370,8 +344,6 @@
 @media (max-width: 1440px) {
     .about-two-side-content .content-side .content-wrapper {
         width: 550px;
-        margin-left: auto;
-        margin-right: auto;
         padding: 100px 0 70px 0;
     }
 }
@@ -385,10 +357,8 @@
 
 @media (max-width: 991px) {
     .about-two-side-content .content-side .content-wrapper {
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 50px 15px 20px 15px;
+        max-width: 73vw;
+padding: 5vw 15px 3vw 15px;
     }
 }
 
@@ -404,7 +374,7 @@
 
 @media (max-width: 575px) {
     .about-two-side-content .content-side .content-wrapper {
-        max-width: 100%;
+max-width: 81vw;
     }
 }
 
@@ -501,15 +471,15 @@
 
 @media (max-width: 991px) {
     .services-grid .content .content-wrapper {
-        max-width: 690px;
+max-width: 72vw;
         padding: 60px 0;
     }
 }
 
 @media (max-width: 767px) {
     .services-grid .content .content-wrapper {
-        padding: 50px 0;
-        max-width: 510px;
+padding: 10vw 0;
+    max-width: 81vw;
     }
 }
 
@@ -705,13 +675,13 @@
 @media (max-width: 991px) {
     .testimonials .testimonials-wrapper .swiper-container .swiper-wrapper .swiper-slide .review-wrapper .client {
         margin-bottom: 5px;
-        font-size: 1.125rem;
+        font-size: 22px;
     }
 }
 
 @media (max-width: 767px) {
     .testimonials .testimonials-wrapper .swiper-container .swiper-wrapper .swiper-slide .review-wrapper .client {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
 
@@ -735,7 +705,7 @@
 
 @media (max-width: 767px) {
     .testimonials .testimonials-wrapper .swiper-container .swiper-wrapper .swiper-slide .review-wrapper .position {
-        font-size: 0.6875rem;
+        font-size: 11px;
     }
 }
 
@@ -1192,7 +1162,7 @@
     }
 
     .steps-wrapper .step-wrapper .step-body h3 {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .steps-wrapper .step-wrapper {
@@ -1220,10 +1190,10 @@
 border-radius: 5px;
     overflow: hidden;
     padding: 30px;
-    min-width: 30px;
-    max-width: 30px;
-    min-height: 30px;
-    max-height: 30px;
+min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
     position: relative;
     border: 2px solid var(--card-border);
     margin-right: 30px;
@@ -1269,13 +1239,21 @@ border-radius: 5px;
     .content-section-type-2 .services-wrapper .service-wrapper .content-wrapper {
         order: 2;
     }
+.content-section-type-2 .services-wrapper .service-wrapper .content-wrapper h3 {
+    font-size: 19px;
+}
 }
 
-.content-section-type-2 .services-wrapper .service-wrapper .content-wrapper h5 {
-    margin-bottom: 5px;
+.content-section-type-2 .services-wrapper .service-wrapper .content-wrapper h3 {
+margin-bottom: 9px;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    font-size: 22px;
+letter-spacing: -0.3px;
 }
+
+
 
 .content-section-type-2 .services-wrapper .service-wrapper:not(:last-child) {
     margin-bottom: 30px;

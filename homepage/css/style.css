@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Muli';
+    font-family: 'Muli'; /* Remove later is default font */
     margin: 0;
     padding: 0;
     font-weight: 300;
@@ -33,7 +33,8 @@ a {
     -moz-transition: all ease-in-out 0.3s;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
 }
 
@@ -52,8 +53,6 @@ h2, h3 {
     padding: 0 50px;
 }
 
-
-
 /* === General Text Styles for Headers === */
 
 #section3 h2,
@@ -68,6 +67,7 @@ h2, h3 {
 #section3 .text_container {
     width: 90%;
 }
+
 #section4 .text_container {
     width: 80%;
 }
@@ -96,15 +96,14 @@ h2, h3 {
     word-spacing: 1.2px;
 }
 
-
 #section3 h2 span,
 #section4 h2 span,
 #section5 h2 span,
-#section6 h2 span
- {
+#section6 h2 span {
     color: #05404c;
     font-weight: 800;
 }
+
 .sec3_left p,
 .sec4_right p {
     margin: 0;
@@ -125,9 +124,11 @@ h2, h3 {
 .header_wrapper {
     position: relative;
 }
+
 .header_wrapper img {
     display: block;
 }
+
 .header_content {
     position: absolute;
     top: 48%;
@@ -136,13 +137,15 @@ h2, h3 {
     z-index: 50;
     text-align: center;
 }
+
 .logo {
     margin: 0;
     padding: 0;
     max-width: 500px;
 }
+
 .header_content h1 {
-margin: 0;
+    margin: 0;
     padding-top: 2.3%;
     font-size: 28px;
     font-family: 'Montserrat';
@@ -152,6 +155,7 @@ margin: 0;
     letter-spacing: -0.5px;
     word-spacing: 4px;
 }
+
 .findoutmore {
     position: absolute;
     bottom: 4%;
@@ -165,6 +169,7 @@ margin: 0;
     font-weight: 400;
     letter-spacing: -0.2px;
 }
+
 .findoutmore:after {
     content: "";
     background: url(../images/find-out-more.svg) no-repeat;
@@ -177,6 +182,7 @@ margin: 0;
     width: 19%;
     height: 100%;
 }
+
 /* === Header End Here === */
 
 /* === Section 2 Start Here === */
@@ -203,7 +209,7 @@ margin: 0;
 
 .sec2_right h2 {
     font-size: 40px;
-font-weight: 600;
+    font-weight: 600;
     position: relative;
     margin: 0;
     padding: 0px;
@@ -217,18 +223,16 @@ font-weight: 600;
 }
 
 .search_icon {
-opacity: 0.45;
+    opacity: 0.45;
     background: url(../images/mag-glass.svg) no-repeat;
     background-size: contain;
     width: 131px;
     height: 99px;
     display: inline-block !important;
     background-position-x: 0px;
-margin-left: -26px;
+    margin-left: -26px;
     margin-right: -35px;
 }
-
-
 
 .sec2_right h3 {
     margin: 0;
@@ -270,7 +274,7 @@ margin-left: -26px;
 }
 
 .section3_wrapper::after {
-content: '';
+    content: '';
     width: 37vw;
     height: 129vw;
     background: #4ca8ba;
@@ -330,9 +334,7 @@ content: '';
     transform: translateY(-50%);
 }
 
-
 /* === Section 3 End Here === */
-
 
 /* === Section 4 Start Here === */
 .section4_wrapper {
@@ -361,16 +363,13 @@ content: '';
     padding: 0 1vw 0 2vw;
 }
 
-
 /* === Section 4 End Here === */
-
 
 /* === Section 5 Start Here === */
 .section5_wrapper {
     padding: 6vw 0 3vw 0;
     position: relative;
 }
-
 
 .section5_wrapper .container {
     padding: 0 11vw;
@@ -426,7 +425,7 @@ content: '';
 }
 
 .sec5_col ul li a {
-color: #25899d;
+    color: #25899d;
     font-size: 18px;
     display: block;
     padding: 3px 0;
@@ -434,7 +433,7 @@ color: #25899d;
 }
 
 .section5_wrapper::after {
-content: '';
+    content: '';
     width: 33vw;
     height: 130vw;
     background: #4ca8ba;
@@ -448,26 +447,36 @@ content: '';
 
 /* === Section 5 End Here === */
 
-/* ==== Section 6 Start Here [28 Feb 2020]  === */
+/* ==== Section 6 Start Here  === */
 .section6_wrapper .container {
     padding: 0 4vw;
 }
-.section6_wrapper{padding:80px 0 50px; text-align:center;}
 
-.sec6_main{display:flex; justify-content: center;}
-.sec6_col{width: 30%;
+.section6_wrapper {
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+.sec6_main {
+    display: flex;
+    justify-content: center;
+}
+
+.sec6_col {
+    width: 30%;
     text-align: left;
     padding: 0 3.4vw;
     margin: 0 0.9vw;
-position: relative;
+    position: relative;
 
 }
 
+.sec6_pic {
+    margin: 23px 0;
+    padding-right: 13%;
+}
 
-
-
-.sec6_pic{margin:23px 0;padding-right: 13%;}
-.sec6_col h3{
+.sec6_col h3 {
     font-size: 2.06vw;
     margin: 0 0 0px;
     font-weight: 600;
@@ -480,9 +489,8 @@ position: relative;
     word-spacing: 0.8px;
 }
 
-
-.sec6_col p{
-padding: 15px 0;
+.sec6_col p {
+    padding: 15px 0;
     font-size: 1.10vw;
     font-weight: 300;
     margin: 5px 0 105px 0;
@@ -490,9 +498,16 @@ padding: 15px 0;
     word-spacing: 0.8px;
 }
 
-.sec6_col p strong{font-weight:bold; color:#0f4e5a;letter-spacing: -0.2px;}
-.sec6_col a{text-transform:uppercase; font-size: 1.28vw;
-font-size: 1.2vw;
+.sec6_col p strong {
+    font-weight: bold;
+    color: #0f4e5a;
+    letter-spacing: -0.2px;
+}
+
+.sec6_col a {
+    text-transform: uppercase;
+    font-size: 1.28vw;
+    font-size: 1.2vw;
     color: #0b6874;
     font-weight: 600;
     display: inline-block;
@@ -501,21 +516,22 @@ font-size: 1.2vw;
     border: 3px #0b6874 solid;
     border-radius: 50px;
     margin-top: 10px;
-
     font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     letter-spacing: -0.3px;
     position: absolute;
     bottom: 0px;
 
 }
-.sec6_col a:hover{background:#90f0ff;}
-.sec6_toggle{display:none;}
 
+.sec6_col a:hover {
+    background: #90f0ff;
+}
 
+.sec6_toggle {
+    display: none;
+}
 
-
-/* ==== Section 6 End Here [28 Feb 2020] === */
-
+/* ==== Section 6 End Here === */
 
 /* === Section 7 Start Here === */
 .section7_wrapper {
@@ -545,7 +561,7 @@ font-size: 1.2vw;
 }
 
 .app_coming a span {
-display: inline-block;
+    display: inline-block;
     color: #fff;
     font-size: 43px;
     text-transform: uppercase;
@@ -573,9 +589,6 @@ display: inline-block;
 
 /* === Section 6 End Here === */
 
-
-
-
 /* == Responsive Css Start ===== */
 @media(max-width:1500px) {
     .container {
@@ -584,8 +597,7 @@ display: inline-block;
     }
 
     #section3 .text_container,
-    #section4 .text_container
-     {
+    #section4 .text_container {
         width: 90%;
     }
 
@@ -599,16 +611,16 @@ display: inline-block;
     }
 
     .sec2_right h2 span {
-            font-size: 3vw;
+        font-size: 3vw;
     }
 
 
-.search_icon {
-    width: 7.2vw;
-    height: 5.5vw;
-    margin-left: -3%;
-    margin-right: -4%;
-}
+    .search_icon {
+        width: 7.2vw;
+        height: 5.5vw;
+        margin-left: -3%;
+        margin-right: -4%;
+    }
 
     .sec2_right h3 {
         padding: 15px 0 0;
@@ -649,10 +661,15 @@ display: inline-block;
     .sec5_right {
         width: 46%;
     }
+
     .section6_wrapper .container {
         padding: 0 0;
     }
-    .sec6_col a {font-size: 1.5vw;}
+
+    .sec6_col a {
+        font-size: 1.5vw;
+    }
+
     .sec6_col p {
         font-size: 1.5vw;
         min-height: 28.5vw;
@@ -739,12 +756,12 @@ display: inline-block;
         font-size: 47px;
     }
 
-        .search_icon {
-            width: 110px;
-            height: 84px;
-            margin-left: -22px;
-            margin-right: -29px;
-        }
+    .search_icon {
+        width: 110px;
+        height: 84px;
+        margin-left: -22px;
+        margin-right: -29px;
+    }
 
     .sec2_right h3 {
         font-size: 2.6vw;
@@ -753,11 +770,6 @@ display: inline-block;
 
     .sec2_right h3 strong {
         color: #05404c;
-    }
-
-    .sec2_right .mobile_only {
-        position: relative;
-        bottom: -2px;
     }
 
     .sec2_bg {
@@ -782,6 +794,7 @@ display: inline-block;
     .sec3_right img {
         width: 89%;
     }
+
     .sec4_left img {
         width: 95%;
     }
@@ -808,7 +821,7 @@ display: inline-block;
     }
 
     .sec4_right {
-padding: 0 1vw 0 2.5vw;
+        padding: 0 1vw 0 2.5vw;
     }
 
     .sec4_right p {
@@ -816,9 +829,9 @@ padding: 0 1vw 0 2.5vw;
     }
 
     #section5 h2 {
-    font-size: 4vw;
-    padding-bottom: 30px;
-}
+        font-size: 4vw;
+        padding-bottom: 30px;
+    }
 
     .sec5_content {
         padding: 30px;
@@ -856,13 +869,20 @@ padding: 0 1vw 0 2.5vw;
     .sec5_col ul {
         padding: 10px 0 35px;
     }
-    .sec6_col h3{font-size: 2.2vw;}
-    .sec6_col p{margin-bottom: 7vw;}
-    .sec6_col a {font-size: 1.6vw;
-    padding: 1.5vw 1.7vw;
-    border: 2px #0b6874 solid;}
 
+    .sec6_col h3 {
+        font-size: 2.2vw;
+    }
 
+    .sec6_col p {
+        margin-bottom: 7vw;
+    }
+
+    .sec6_col a {
+        font-size: 1.6vw;
+        padding: 1.5vw 1.7vw;
+        border: 2px #0b6874 solid;
+    }
 }
 
 
@@ -921,8 +941,7 @@ padding: 0 1vw 0 2.5vw;
     }
 
     #section3 .text_container,
-    #section4 .text_container
-     {
+    #section4 .text_container {
         width: 100%;
     }
 
@@ -944,7 +963,6 @@ padding: 0 1vw 0 2.5vw;
         line-height: 10vw;
     }
 
-
     .sec3_right img,
     .sec4_left img {
         width: 100%;
@@ -965,7 +983,7 @@ padding: 0 1vw 0 2.5vw;
 
     .sec3_left,
     .sec4_right {
-padding: 3% 2% 4vw 3%;
+        padding: 3% 2% 4vw 3%;
     }
 
     .sec3_right,
@@ -1009,10 +1027,10 @@ padding: 3% 2% 4vw 3%;
         width: 13%;
     }
 
-#section5 h2 {
-padding-bottom: 20px;
-font-size: 7.5vw;
-    line-height: initial;
+    #section5 h2 {
+        padding-bottom: 20px;
+        font-size: 7.5vw;
+        line-height: initial;
     }
 
     .sec5_content {
@@ -1049,52 +1067,95 @@ font-size: 7.5vw;
         font-size: 3.4vw;
     }
 
-.section6_wrapper .container {
-    padding: 0 4vw;
-}
-    .section6_wrapper {padding: 11% 0 0;}
+    .section6_wrapper .container {
+        padding: 0 4vw;
+    }
 
+    .section6_wrapper {
+        padding: 11% 0 0;
+    }
 
+    #section6 h2 {
+        font-size: 7.2vw;
+        margin: 0 0 4%;
+        letter-spacing: -1px;
+    }
 
-#section6 h2 {font-size: 7.2vw;
-    margin: 0 0 4%;
-    letter-spacing: -1px;}
+    .sec6_main {
+        flex-flow: column;
+    }
 
+    .sec6_col {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 2vw 7.5vw;
+    }
 
+    .sec6_col h3 {
+        font-size: 6.5vw;
+        margin-bottom: 0;
+        border: none;
+        padding-bottom: 3.5%;
+    }
 
+    .sec6_col p {
+        font-size: 4.5vw;
+        min-height: auto;
+        padding: 0;
+        margin: 0 0 4%;
+    }
 
+    .sec6_col a {
+        font-size: 5vw;
+        padding: 3.5vw 5vw;
+        display: inline-block;
+        margin-top: 4.5%;
+        position: relative;
+    }
 
-    .sec6_main {flex-flow: column;}
-    .sec6_col{padding:0; width:100%; text-align:center; padding: 0 2vw 7.5vw;}
-    
-    .sec6_col h3{font-size: 6.5vw;
-    margin-bottom: 0;
-    border: none;
-    padding-bottom: 3.5%;}
-    .sec6_col p{font-size:4.5vw;min-height:auto;padding: 0;margin: 0 0 4%;}
-    .sec6_col a {font-size: 5vw;
-    padding: 3.5vw 5vw;
-    display: inline-block;
-    margin-top: 4.5%;
-position: relative;
-}
-    .sec6_col p span{font-size:0; transition:all ease-in-out 0.3s;}
-    .sec6_col p span br{display:none;}
+    .sec6_col p span {
+        font-size: 0;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .sec6_col p span br {
+        display: none;
+    }
+
     /* ==== Section 6 Read More Toggle code === */
-    .sec6_col label:after{content:'READ MORE'; display:block; color:#0f4e5a; font-size: 4.4vw;
-    font-weight: 700;
-    padding-top: 2vw;
-    cursor: pointer;}
-    .sec6_toggle:checked ~ p span{font-size:inherit;}
-    .sec6_toggle:checked ~ p span br{display:block; font-size: 6px;}
-    .sec6_col .sec6_toggle:checked ~ label:after{content:'READ LESS';}
-        .sec6_pic {
-margin: 3% 0;
-    padding-right: 0;
-}
-.sec6_col img {
-    max-width: 93%;
-}
+    .sec6_col label:after {
+        content: 'READ MORE';
+        display: block;
+        color: #0f4e5a;
+        font-size: 4.4vw;
+        font-weight: 700;
+        padding-top: 2vw;
+        cursor: pointer;
+    }
+
+    .sec6_toggle:checked~p span {
+        font-size: inherit;
+    }
+
+    .sec6_toggle:checked~p span br {
+        display: block;
+        font-size: 6px;
+    }
+
+    .sec6_col .sec6_toggle:checked~label:after {
+        content: 'READ LESS';
+    }
+
+    /* ==== Section 6 Read More Toggle code ends here === */
+    .sec6_pic {
+        margin: 3% 0;
+        padding-right: 0;
+    }
+
+    .sec6_col img {
+        max-width: 93%;
+    }
 
 
     .app_coming a span {
@@ -1119,8 +1180,6 @@ margin: 3% 0;
     .section5_wrapper {
         padding: 10px 0;
     }
-
-
 
     .sec7_bg {
         padding-top: 60%;

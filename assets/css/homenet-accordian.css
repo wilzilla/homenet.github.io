@@ -1,5 +1,5 @@
 p.accordion-header {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 
 .content-page .main-content .white-section .accordion-type-1,

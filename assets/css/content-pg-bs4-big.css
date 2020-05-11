@@ -426,7 +426,7 @@ section {
     padding: 0px 5%; } }
 @media (min-width: 992px) {
   .content-page .bs4.container {
-    max-width: 1080px;
+    max-width: 93vw;
     padding: 0px 11.5px; } }
 @media (min-width: 1200px) {
   .content-page .bs4.container {
