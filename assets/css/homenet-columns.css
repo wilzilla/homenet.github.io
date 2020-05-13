@@ -266,7 +266,7 @@ width: 41vw;
 
 .service-item-type-1 .service-wrapper:hover i {
     opacity: 1;
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .service-item-type-2 {
@@ -286,7 +286,7 @@ width: 41vw;
     min-width: 50px;
     max-height: 50px;
     border-radius: 100%;
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
     border: 4px solid var(--button-border);
     margin-right: 18px;
 }
@@ -436,7 +436,7 @@ max-width: 81vw;
 
 .about-two-side-content .content-side .content-wrapper .content h3 i {
     margin-right: 10px;
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .about-two-side-content .content-side .content-wrapper .content p {
@@ -816,7 +816,7 @@ padding: 10vw 0;
 }
 
 .swiper-pagination-bullets-default .swiper-pagination-bullet-active {
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
     width: 19px;
 
 }
@@ -857,7 +857,7 @@ padding: 10vw 0;
 }
 
 .swiper-pagination-bullets-vertical .swiper-pagination-bullet-active {
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
 }
 
 .swiper-pagination-bullets-common {
@@ -884,7 +884,7 @@ padding: 10vw 0;
 }
 
 .swiper-pagination-bullets-common .swiper-pagination-bullet-active {
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
     transform: scale(1);
 }
 
@@ -924,7 +924,7 @@ padding: 10vw 0;
 
 .swiper-button-prev-default:hover i,
 .swiper-button-next-default:hover i {
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .swiper-button-prev-default {
@@ -1066,7 +1066,7 @@ padding: 10vw 0;
 
 .swiper-button-prev-vertical:hover i,
 .swiper-button-next-vertical:hover i {
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .swiper-button-prev-vertical {
@@ -1123,7 +1123,7 @@ padding: 10vw 0;
 }
 
 .steps-wrapper .step-wrapper .num {
-    color: var(--primary-color);
+    color: var(--homenet-orange);
     font-weight: 600;
     line-height: 1;
     margin-right: 20px;
@@ -1229,7 +1229,7 @@ min-width: 80px;
 
 .content-section-type-2 .services-wrapper .service-wrapper .icon-wrapper i {
     transition: all .3s ease-in-out;
-    color: #fd5721;
+    color: var(--homenet-orange);
     font-size: 1.875rem;
     position: relative;
     z-index: 10;
@@ -1240,7 +1240,7 @@ min-width: 80px;
     display: block;
     border-radius: 5px;
     position: absolute;
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
     width: 100%;
     height: 100%;
     left: 0;

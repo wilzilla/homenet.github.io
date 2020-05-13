@@ -448,7 +448,7 @@
 
 :root {
   /* Common */
-  --primary-color: #fd5721;
+  --homenet-orange: var(--homenet-orange);
   /* Additional Colors */
   --white-section: #fff;
   --gray-section: #f8f8f8;
@@ -492,8 +492,8 @@
   /* Functional Colors */
   --black_default: #232323;
   /* ## ## ## ## ## ## ## ## ## ## */
-  --ui-color-main: #2d2e33;
-  --ui-color-sub: #2c393c; }
+  --footer-color-main: #2d2e33;
+  --footer-color-sub: #2c393c; }
 
 :root {
   --blue: #3498db;
@@ -557,11 +557,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; }
   
   a {
-  color: #85c3ae;
+  color: var(--homenet-teal);
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #b8dcd0;
+    color: var(--homenet-light-teal);
     text-decoration: underline; }
     
     img {
@@ -746,8 +746,8 @@ body.en .listing-card .cur {
     font-weight: 400;
     font-size: 0.9375rem;
     border-radius: 100px;
-    background-color: #85c3ae;
-    border: 2px solid #85c3ae;
+    background-color: var(--homenet-teal);
+    border: 2px solid var(--homenet-teal);
     letter-spacing: 0.5px;
     min-width: 126px;
     min-height: 41px;
@@ -755,11 +755,11 @@ body.en .listing-card .cur {
 }
 .button-contact:hover {
   background-color: transparent;
-  color: #85c3ae;
+  color: var(--homenet-teal);
 }
 
 .button-contact:active {
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
     color: #fff;
     opacity: 0.7;
 }

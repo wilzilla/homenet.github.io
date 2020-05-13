@@ -31,7 +31,7 @@ footer .footer-inner {
 
 footer .footer-inner {
     color: var(--white);
-    background-image: linear-gradient(to bottom left, var(--ui-color-main), var(--ui-color-sub));
+    background-image: linear-gradient(to bottom left, var(--footer-color-main), var(--footer-color-sub));
 }
 
 
@@ -48,7 +48,7 @@ footer .footer-inner .footer-top .footer_logo {
 }
 
 footer .footer-inner .footer-top .footer_logo:hover svg {
-    fill: #fe3a14;
+    fill: var(--homenet-bright-orange);
     transition: fill 0.3s ease;
 }
 
@@ -171,7 +171,7 @@ button.footer-btn {
     min-width: 192px;
     text-transform: none;
     color: #fff;
-    border-color: #fe3a14;
+    border-color: var(--homenet-bright-orange);
     letter-spacing: 0.05em;
     border-radius: 50px;
     margin-bottom: 15px
@@ -181,8 +181,8 @@ button.footer-btn:hover,
 button.footer-btn:focus,
 button.footer-btn.focus {
     color: #fff;
-    background-color: #fe3a14;
-    border-color: #fe3a14;
+    background-color: var(--homenet-bright-orange);
+    border-color: var(--homenet-bright-orange);
     box-shadow: 0 1px 9px 0 rgba(254, 58, 50, 0.5);
 }
 
@@ -194,7 +194,7 @@ button.footer-btn:not(:disabled):not(.disabled).active:focus,
 .show>button.footer-btn.dropdown-toggle:focus {
     opacity: 0.6;
     color: #fff;
-    background-color: #fe3a14;
+    background-color: var(--homenet-bright-orange);
     border-color: rgb(254, 58, 20);
     box-shadow: none;
 }
@@ -203,7 +203,7 @@ button.footer-btn:not(:disabled):not(.disabled).active:focus,
 
 /* Footer Bottom */
 footer .footer-inner .footer_bottom {
-    background-color: var(--ui-color-sub);
+    background-color: var(--footer-color-sub);
     padding: 15px 0;
 }
 
@@ -437,7 +437,7 @@ Return to Top
 
 :root {
   /* Common */
-  --primary-color: #fd5721;
+  --homenet-orange: var(--homenet-orange);
   /* Additional Colors */
   --white-section: #fff;
   --gray-section: #f8f8f8;
@@ -481,8 +481,8 @@ Return to Top
   /* Functional Colors */
   --black_default: #232323;
   /* ## ## ## ## ## ## ## ## ## ## */
-  --ui-color-main: #2d2e33;
-  --ui-color-sub: #2c393c;
+  --footer-color-main: #2d2e33;
+  --footer-color-sub: #2c393c;
   --font-family-base: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
   --font-secondary: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
   --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ; }
@@ -568,11 +568,11 @@ dl {
   margin-bottom: 1rem; }
   
   a {
-  color: #85c3ae;
+  color: var(--homenet-teal);
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #b8dcd0;
+    color: var(--homenet-light-teal);
     text-decoration: underline; }
     
     img {
@@ -862,7 +862,7 @@ button:not(:disabled),
     text-decoration: none;
     transition: all 0.2s ease-in-out; }
     .breadcrumb-item a:hover {
-      color: #85c3ae; }
+      color: var(--homenet-teal); }
   .breadcrumb-item.active {
     color: #a1a1a1; }
   .breadcrumb-item + .breadcrumb-item {

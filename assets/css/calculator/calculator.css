@@ -455,9 +455,9 @@ input#rent:focus,
     input#price:focus {
     color: #52595a;
     background-color: transparent;
-    border-color: #a0c1c7;
+    border-color: var(--white-form-border);
     outline: 0;
-    box-shadow: 0 0 8px 0 rgba(190, 229, 236, 0.9);
+    box-shadow: var(--white-form-box-shadow);
 }
 
 
@@ -483,9 +483,9 @@ input#rent:focus,
 .custom-select:focus {
     color: #1d1d1d;
     background-color: transparent;
-    border-color: #a0c1c7;
+    border-color: var(--white-form-border);
     outline: 0;
-    box-shadow: 0 0 8px 0 rgba(190, 229, 236, 0.9);
+    box-shadow: var(--white-form-box-shadow);
 }
 
 .full-width {

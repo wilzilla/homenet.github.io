@@ -1,19 +1,4 @@
-.card-title {
-    margin-bottom: 16px;
-}
 
-.card-text:last-child {
-    margin-bottom: 0;
-}
-
-.card-img-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 30px;
-}
 
 .btn {
     display: inline-block;
@@ -96,7 +81,7 @@ font-family: "Muli", sans-serif;
     letter-spacing: 0.08px;
     line-height: 1.5;
     font-size: 18.5px;
-    color: #000;
+    color: var(--thin-font-color);
     word-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -130,6 +115,7 @@ section {
     background-color: var(--white-section);
 }
 
+/* SIDE NAV */
 
 .list-group {
     display: flex;
@@ -180,8 +166,8 @@ section {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #85c3ae;
-    border-color: #85c3ae;
+    background-color: var(--homenet-teal);
+    border-color: var(--homenet-teal);
 }
 
 .list-group-flush .list-group-item {
@@ -235,7 +221,7 @@ section {
     width: 4px;
     height: 100%;
     content: "";
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
@@ -252,15 +238,7 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-/*** Info Content Page ***/
+/*** INFO CONTENT PAGE ***/
 /* Content Layout */
 
 .content-page .content-section #content-nav,
@@ -275,7 +253,7 @@ section {
 }
 
 .content-page .gray-section {
-    background-color: #f0f0f0;
+    background-color: var(--dark-gray-section);
 }
 
 .content-page .main-content .white-section {
@@ -314,7 +292,7 @@ section {
 
 .content-page #content-nav .list-group-item-action:hover {
     z-index: 1;
-    color: #85c3ae;
+    color: var(--homenet-teal);
     text-decoration: none;
 }
 
@@ -469,10 +447,13 @@ section {
   background-color: #3f7563; }
 
 .content-page .burgerMenu.menu-open .line-menu {
-  background-color: #fd5721; }
+  background-color: var(--homenet-orange); }
 
 
-/* Content Page - Content Section headers */
+
+
+/* CONTENT PAGE - SECTION HEADERS */
+
 .page-section-title {
     color: #51595b;
     font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
@@ -489,7 +470,7 @@ section {
     content: ".";
     font-size: 0.9em;
     margin-left: 2px;
-    color: #fd5721;  
+    color: var(--homenet-orange);  
 }
 
 .page-section-title .highlight {
@@ -506,7 +487,8 @@ color: #566c71;
         -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.3);
 }
 
-/* Content Page Header Decorations */
+/* CONTENT PAGE - SECTION SUB HEADERS WITH WINGS */
+
 .wing-line-left::before {
     margin-right: 6.5px;
 }
@@ -534,7 +516,8 @@ color: #566c71;
     background-color: rgba(0, 0, 0, 0.24);
 }
 
-/* Lists */
+/* LISTS */
+
 .list.list-type-1,
 .list.list-type-2 {
     padding: 9px 10px 34px 9px;
@@ -594,12 +577,14 @@ font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-    color: var(--primary-color);
+    color: var(--homenet-orange);
 }
 
 .list-type-2 li:not(:last-child) {
     margin-bottom: 15px;
 }
+
+/* FLIP CARDS */
 
 /* Flip Container Default */
 .flip-container {
@@ -660,22 +645,7 @@ font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
 @media (max-width: 767px) {
     .flip-container .img-wrapper .back .content-wrapper h4 {
         font-size: 20px;
-    }
-    .content-page p {
-        font-weight: 400;
-        letter-spacing: -0.02px;
-        word-spacing: 0.4px;
-        line-height: 1.5;
-        font-size: 17px;
-        color: #1f2323;
-        -webkit-text-stroke: initial;
-    }
-    .page-section-title {
-        font-size: 20px;
-    }
-    .page-sub-title {
-        font-size: 18px;
-    }
+}
 }
 
 @media (max-width: 575px) {
@@ -775,6 +745,24 @@ a.focus-flip:focus {
     width: 100%;
 }
 
+
+.card-title {
+    margin-bottom: 16px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+}
+
 .card-img-overlay .overlay-elements {
     width: 100%;
 }
@@ -832,6 +820,8 @@ a.focus-flip:focus {
     width: 100%;
     margin: auto;
 }
+
+/* BUBBLE QUOTE SECTION */
 
 /* center the bubblequote in the page for small width*/
 .bubblequote-wrapper {
@@ -929,6 +919,10 @@ a.focus-flip:focus {
         left: 15%;
     }
 }
+
+
+
+
 
 .text-white-75 {
     color: rgba(255, 255, 255, 0.75) !important;

@@ -1,7 +1,7 @@
 /***** Block Quote Simple Text *****/
 
 blockquote.type1 {
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--homenet-orange);
 }
 
 .content-page .main-content blockquote.blockquote-text p {
@@ -94,11 +94,11 @@ blockquote.blockquote-text.type2.left p:after{
 }
 
 .content-page .main-content .blockquote-img.css-bg1 svg.quote {
-    fill: var(--primary-color);
+    fill: var(--homenet-orange);
 }
 
 .content-page .main-content .blockquote-img.css-bg1 .blockquote-wrapper .row .blockquote-col blockquote h4 {
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid var(--homenet-orange);
 }
 
 /* Content Page style end*/
@@ -143,7 +143,7 @@ blockquote.blockquote-text.type2.left p:after{
     width: 530px;
     border-radius: 7px;
     position: relative;
-    background-color: #30535a;
+    background-color: var(--homenet-jade);
     padding: 75px 35px 65px;
     opacity: 0.97;
 }
@@ -171,7 +171,7 @@ font-family: var(--font-secondary);
     font-weight: 500;
     font-size: 24.5px;
     line-height: 1.25;
-    border-left: 3px solid #ffffff;
+    border-left: 3px solid #fff;
 }
 
 

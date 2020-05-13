@@ -12,7 +12,7 @@ footer .footer-inner {
 
 footer .footer-inner {
     color: var(--white);
-    background-image: linear-gradient(to bottom left, var(--ui-color-main), var(--ui-color-sub));
+    background-image: linear-gradient(to bottom left, var(--footer-color-main), var(--footer-color-sub));
 }
 
 /* Footer Top */
@@ -100,7 +100,7 @@ button.footer-btn {
     border-radius: 50px;
     font-weight: 500;
     font-family: var(--font-secondary);
-    border: 2px solid #fe3a14;
+    border: 2px solid var(--homenet-bright-orange);
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     font-size: 12px;
     line-height: 1.6;
@@ -113,8 +113,8 @@ button.footer-btn:hover,
 button.footer-btn:focus,
 button.footer-btn.focus {
     color: #fff;
-    background-color: #fe3a14;
-    border-color: #fe3a14;
+    background-color: var(--homenet-bright-orange);
+    border-color: var(--homenet-bright-orange);
     box-shadow: 0 1px 9px 0 rgba(254, 58, 50, 0.5);
     outline: none;
 }
@@ -123,7 +123,7 @@ button.footer-btn:active,
 button.footer-btn:active:focus {
     opacity: 0.6;
     color: #fff;
-    background-color: #fe3a14;
+    background-color: var(--homenet-bright-orange);
     border-color: rgb(254, 58, 20);
     box-shadow: none;
     outline: none;
@@ -131,7 +131,7 @@ button.footer-btn:active:focus {
 
 /* Footer Bottom */
 footer .footer-inner .footer_bottom {
-    background-color: var(--ui-color-sub);
+    background-color: var(--footer-color-sub);
     padding: 15px 0;
 }
 

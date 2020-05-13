@@ -57,7 +57,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
-  color: var(--primary-color); }
+  color: var(--homenet-orange); }
 
 .list-type-2 li:not(:last-child) {
   margin-bottom: 15px; }

@@ -565,8 +565,8 @@ position: absolute;
     font-weight: 400;
     font-size: 15px;
     border-radius: 100px;
-    background-color: #85c3ae;
-    border: 2px solid #85c3ae;
+    background-color: var(--homenet-teal);
+    border: 2px solid var(--homenet-teal);
     letter-spacing: 0.5px;
     min-width: 126px;
     min-height: 41px;
@@ -574,11 +574,11 @@ position: absolute;
 }
 .button-contact:hover {
   background-color: transparent;
-  color: #85c3ae;
+  color: var(--homenet-teal);
 }
 
 .button-contact:active {
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
     color: #fff;
     opacity: 0.7;
 }

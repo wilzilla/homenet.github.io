@@ -152,8 +152,8 @@ section {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #85c3ae;
-    border-color: #85c3ae;
+    background-color: var(--homenet-teal);
+    border-color: var(--homenet-teal);
 }
 
 .list-group-flush .list-group-item {
@@ -207,7 +207,7 @@ section {
     width: 4px;
     height: 100%;
     content: "";
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
@@ -286,7 +286,7 @@ section {
 
 .content-page #content-nav .list-group-item-action:hover {
     z-index: 1;
-    color: #85c3ae;
+    color: var(--homenet-teal);
     text-decoration: none;
 }
 
@@ -393,7 +393,7 @@ section {
 }
 
 .page-section-title .highlight {
-    color: #fd5721;
+    color: var(--homenet-orange);
     margin-left: 2px;
     font-size: 0.9em;
 }
@@ -496,7 +496,7 @@ section {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-    color: var(--primary-color);
+    color: var(--homenet-orange);
 }
 
 .list-type-2 li:not(:last-child) {

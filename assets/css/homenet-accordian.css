@@ -64,7 +64,7 @@ p.accordion-header {
 
 .accordion-type-1 .active-accordion .accordion-header {
     color: #fff;
-    background-color: #38626a;
+    background-color: var(--homenet-jade);
 }
 
 .accordion-type-1 .active-accordion .accordion-header span {
@@ -75,7 +75,7 @@ p.accordion-header {
 
 .accordion-type-1.dark .accordion .accordion-header {
     color: #fff;
-    background-color: #38626a;
+    background-color: var(--homenet-jade);
 }
 
 .accordion-type-1.dark .accordion-body {
@@ -107,7 +107,7 @@ p.accordion-header {
 }
 
 .accordion-type-2 .accordion .accordion-header span {
-    color: var(--primary-color);
+    color: var(--homenet-orange);
     margin-right: 15px;
     letter-spacing: 1px;
     font-weight: 600;
@@ -119,7 +119,7 @@ p.accordion-header {
 }
 
 .accordion-type-2 .active-accordion .accordion-header {
-    color: var(--primary-color);
+    color: var(--homenet-orange);
 }
 
 .accordion-type-2 .accordion:not(:last-child) {

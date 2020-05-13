@@ -192,7 +192,7 @@ font-family: var(--font-secondary);
 }
 
 .contacts-grid .grid-item .content a:hover {
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .contacts-grid .grid-item .white h3 {

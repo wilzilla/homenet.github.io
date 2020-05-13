@@ -36,8 +36,8 @@ body.en-US .homenet-btn {
     font-weight: 400;
     font-size: 15px;
     border-radius: 100px;
-    background-color: #85c3ae;
-    border: 2px solid #85c3ae;
+    background-color: var(--homenet-teal);
+    border: 2px solid var(--homenet-teal);
     letter-spacing: 0.5px;
     min-width: 126px;
     min-height: 41px;
@@ -117,7 +117,7 @@ a.button-round:focus {
 
 
 .button-round {
-    background-color: var(--dark);
+    background-color: var(--homenet-dark-blue);
     color: #fff;
     border-radius: 25px;
     align-items: center;
@@ -130,13 +130,13 @@ a.button-round:focus {
 
 a.button-round:hover {
     color: #fff;
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
 }
 
 .button-default-color {
     border: 1px solid var(--default-border);
     color: rgba(255, 255, 255, 0.9);
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
 }
 
 .button-default-color:after {
@@ -179,7 +179,7 @@ a.button-default-color:hover {
 
 a.button-default-white:hover {
     color: #fff;
-    background-color: #7eb7a4;
+    background-color: var(--homenet-dark-teal);
 }
 
 .button-default-white-2 {
@@ -190,6 +190,6 @@ a.button-default-white:hover {
 
 a.button-default-white-2:hover {
     color: #fff;
-    background-color: var(--dark);
+    background-color: var(--homenet-dark-blue);
 }
 

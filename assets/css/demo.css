@@ -41,7 +41,7 @@ Default settings
     position: absolute;
     width: 100%;
     height: 76px;
-    background-color: #364a4e;
+    background-color: var(--homenet-dark-jade);
 }
 
 .homenet-header .container {
@@ -93,7 +93,7 @@ Default settings
     text-align: center;
     display: inline-block;
     padding: 22px 0px 28px 0px;
-    background: #fd5721;
+    background: var(--homenet-orange);
     width: 45%;
     position: relative;
     height: 76px;
@@ -119,7 +119,7 @@ Default settings
 }
 
 .homenet-header .logo:hover svg {
-    fill: #fd5721;
+    fill: var(--homenet-orange);
     transition: fill 0.3s ease;
 }
 
@@ -130,12 +130,12 @@ Default settings
 }
 
 .homenet-header .search:hover svg {
-    fill: #fd5721;
+    fill: var(--homenet-orange);
     transition: fill 0.3s ease;
 }
 
 .homenet-header .search:hover {
-    fill: #fd5721;
+    fill: var(--homenet-orange);
     background: #f7f7f7;
     -webkit-transition: background-color 250ms linear;
     -ms-transition: background-color 250ms linear;
@@ -227,7 +227,7 @@ Default settings
     letter-spacing: -1px;
     font-weight: 600;
     font-size: 14.5px;
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .homenet-header .homenet-menu ul li>a {
@@ -340,7 +340,7 @@ Default settings
 
 .homenet-menu ul li.current-menu>a,
 .homenet-menu ul li:hover>a {
-    color: #fd5721;
+    color: var(--homenet-orange);
     background-color: #f6f6f6;
 }
 
@@ -407,7 +407,7 @@ Dark version navigation menu
 }
 
 .homenet-header.header-dark .burger-menu.menu-open .line-menu {
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
 }
 
 .header-dark .homenet-menu ul li>a {
@@ -490,7 +490,7 @@ Mega menu
 
 .homenet-menu .mega-menu-heading a:hover,
 .homenet-menu ul.mega-menu-list li a:hover {
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 .homenet-menu .mega-menu-thumbnail {
@@ -559,8 +559,8 @@ Media queries for responsive design
         float: left;
         border-left: 3px solid;
         border-right: 3px solid;
-        border-color: #fd5721;
-        background: #fd5721;
+        border-color: var(--homenet-orange);
+        background: var(--homenet-orange);
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -624,7 +624,7 @@ Media queries for responsive design
 
     .header-dark .homenet-menu ul li.current-menu>a,
     .header-dark .homenet-menu ul li:hover>a {
-        color: #fd5721;
+        color: var(--homenet-orange);
         background-color: #313131;
     }
 }
@@ -698,7 +698,7 @@ Viewport Breakpoint
         text-align: center;
         line-height: 29px;
         display: block;
-        background-color: #fd5721;
+        background-color: var(--homenet-orange);
         font-weight: 600;
         float: left;
         top: -5px;
@@ -762,7 +762,7 @@ Viewport Breakpoint
 
     .homenet-menu ul li:hover>a .msg_count {
         background-color: #fff;
-        color: #fd5721;
+        color: var(--homenet-orange);
     }
 
     .homenet-menu {
@@ -955,7 +955,7 @@ Viewport Breakpoint
   Submenu
   ================================================ */
     .homenet-menu.submenu-top-border li>ul {
-        border-top: 2px solid #fd5721;
+        border-top: 2px solid var(--homenet-orange);
     }
 
     .homenet-menu.submenu-top-border li>ul ul {

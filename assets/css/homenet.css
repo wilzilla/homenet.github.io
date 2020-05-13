@@ -203,7 +203,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #b8dcd0;
+    color: var(--homenet-light-teal);
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -2722,7 +2722,7 @@ fieldset:disabled a.btn {
   color: #85c3ae;
   text-decoration: none; }
   .btn-link:hover {
-    color: #b8dcd0;
+    color: var(--homenet-light-teal);
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline;
@@ -10745,7 +10745,7 @@ Action Popup
   display: block;
   width: 100%;
   height: 100%;
-  background-color: var(--dark);
+  background-color: var(--homenet-dark-blue);
   position: absolute;
   top: 0;
   z-index: -1;
@@ -10759,7 +10759,7 @@ Action Popup
   color: #fff; }
 
 .button-default-black-2 {
-  background-color: var(--dark);
+  background-color: var(--homenet-dark-blue);
   color: #fff;
   border-radius: 25px;
   align-items: center; }
@@ -10835,7 +10835,7 @@ Action Popup
 
 .button-default-white-2:hover {
   color: #fff;
-  background-color: var(--dark); }
+  background-color: var(--homenet-dark-blue); }
 
 .button-default-white-3 {
   border: 1px solid var(--default-border);
@@ -12121,7 +12121,7 @@ footer .footer-inner .footer-top .footer_logo {
   padding: 6px 0; }
 
 footer .footer-inner .footer-top .footer_logo:hover svg {
-  fill: #fe3a14;
+  fill: var(--homenet-bright-orange);
   transition: fill 0.3s ease; }
 
 @media (max-width: 991px) {
@@ -12206,7 +12206,7 @@ button.footer-btn {
   min-width: 192px;
   text-transform: none;
   color: #fff;
-  border-color: #fe3a14;
+  border-color: var(--homenet-bright-orange);
   letter-spacing: 0.05em;
   border-radius: 50px;
   margin-bottom: 15px; }
@@ -12215,8 +12215,8 @@ button.footer-btn:hover,
 button.footer-btn:focus,
 button.footer-btn.focus {
   color: #fff;
-  background-color: #fe3a14;
-  border-color: #fe3a14;
+  background-color: var(--homenet-bright-orange);
+  border-color: var(--homenet-bright-orange);
   box-shadow: 0 1px 9px 0 rgba(254, 58, 50, 0.5); }
 
 button.footer-btn:not(:disabled):not(.disabled):active,
@@ -12227,8 +12227,8 @@ button.footer-btn:not(:disabled):not(.disabled).active:focus,
 .show > button.footer-btn.dropdown-toggle:focus {
   opacity: 0.6;
   color: #fff;
-  background-color: #fe3a14;
-  border-color: #fe3a14;
+  background-color: var(--homenet-bright-orange);
+  border-color: var(--homenet-bright-orange);
   box-shadow: none; }
 
 footer img:not(:disabled):not(.disabled):active,

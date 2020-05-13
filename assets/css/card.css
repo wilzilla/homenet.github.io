@@ -190,7 +190,7 @@ content: ' ';
   color: #202020;
   transition: all 0.2s ease-in-out; }
   .card-title a:hover {
-    color: #85c3ae;
+    color: var(--homenet-teal);
     text-decoration: none; }
 
 .card-title-light-1 a {
@@ -339,7 +339,7 @@ content: ' ';
     font-size: 3.75rem;
     font-weight: 700;
     line-height: 1;
-    color: #85c3ae; }
+    color: var(--homenet-teal); }
   .card-price .term {
     position: relative;
     top: -3px; }
@@ -351,7 +351,7 @@ content: ' ';
   .card-price-title i {
     margin-right: 0.5rem;
     font-size: 1.125rem;
-    color: #85c3ae; }
+    color: var(--homenet-teal); }
 
 .card-price-list {
   padding: 0;
@@ -399,7 +399,7 @@ content: ' ';
     color: #414141;
     transition: color 0.2s ease-in-out; }
     .card-feed-name a:hover {
-      color: #85c3ae;
+      color: var(--homenet-teal);
       text-decoration: none; }
 
 .card-feed-date {

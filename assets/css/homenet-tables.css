@@ -15,7 +15,7 @@ thead th:last-child {
 }
 
 .table .thead-dark th {
-    background-color: #38626a;
+    background-color: var(--homenet-jade);
 }
 
 .table .thead-dark th {

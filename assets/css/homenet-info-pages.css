@@ -71,7 +71,7 @@
 
 .content-page #content-nav .list-group-item-action:hover {
     z-index: 1;
-    color: #85c3ae;
+    color: var(--homenet-teal);
     text-decoration: none;
 }
 @media (min-width: 992px) {
@@ -144,7 +144,7 @@
 }
 
 .content-page .burgerMenu.menu-open .line-menu {
-    background-color: #fd5721;
+    background-color: var(--homenet-orange);
 }
 
 .collapse {

@@ -51,7 +51,7 @@
 }
 
 .tabs-section-type-1 .tabs-wrapper .tabs-header .tab-trigger-wrapper .active {
-    color: #fd5721;
+    color: var(--homenet-orange);
     border-bottom: 1px solid transparent;
 }
 
@@ -164,7 +164,7 @@
     .tabs-section-type-1 .tabs-wrapper .tabs-header .tab-trigger-wrapper .active {
         border-bottom: 1px solid var(--default-border);
         color: #fff;
-        background-color: #38626a;
+        background-color: var(--homenet-jade);
     }
     .tabs-section-type-1 .tabs-wrapper .tabs-header {
         margin-bottom: 15px;
@@ -322,12 +322,12 @@
 }
 
 .tabs-section-type-2 .tabs-wrapper .tabs-header .tab-trigger-wrapper .active i {
-    color: #fd5721;
+    color: var(--homenet-orange);
     opacity: 1;
 }
 
 .tabs-section-type-2 .tabs-wrapper .tabs-header .tab-trigger-wrapper .active h6 {
-    color: #fd5721;
+    color: var(--homenet-orange);
     opacity: 1;
 }
 

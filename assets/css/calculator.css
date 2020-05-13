@@ -469,7 +469,7 @@ span.empty {
 
 .noUi-background {
     background: #ededed;
-    box-shadow: inset 0 1px 1px #f0f0f0
+    box-shadow: inset 0 1px 1px var(--dark-gray-section)
 }
 
 .noUi-connect {
@@ -487,7 +487,7 @@ span.empty {
 .noUi-target {
     border-radius: 10px;
     border: 1px solid #d3d3d3;
-    box-shadow: inset 0 1px 1px #f0f0f0, 0 3px 6px -5px #BBB
+    box-shadow: inset 0 1px 1px var(--dark-gray-section), 0 3px 6px -5px #BBB
 }
 
 .noUi-target.noUi-connect {
@@ -704,9 +704,9 @@ div#ui-datepicker-div {
 .calc-input input:focus {
     color: #52595a;
     background-color: transparent;
-    border-color: #a0c1c7;
+    border-color: var(--white-form-border);
     outline: 0;
-    box-shadow: 0 0 8px 0 rgba(190, 229, 236, 0.9);
+    box-shadow: var(--white-form-box-shadow);
 }
 
 
@@ -732,9 +732,9 @@ div#ui-datepicker-div {
 .custom-select:focus {
     color: #1d1d1d;
     background-color: transparent;
-    border-color: #a0c1c7;
+    border-color: var(--white-form-border);
     outline: 0;
-    box-shadow: 0 0 8px 0 rgba(190, 229, 236, 0.9);
+    box-shadow: var(--white-form-box-shadow);
 }
 
 .full-width {
@@ -1011,13 +1011,13 @@ button#calculate {
     width: 165px;
     height: 41px;
     border-width: 0px;
-    background-color: #f87939;
+    background-color: var(--homenet-flat-orange);
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     font-weight: 500;
     font-size: 14px;
-    border: solid 1px #f87939;
+    border: solid 1px var(--homenet-flat-orange);
     position: relative;
     text-align: center;
 }
@@ -1038,12 +1038,12 @@ button#calculate svg {
 
 button#calculate:hover {
     background-color: #fff;
-    color: #f87939;
+    color: var(--homenet-flat-orange);
     font-weight: 600;
 }
 
 button#calculate:hover svg {
-    fill: #f87939;
+    fill: var(--homenet-flat-orange);
 }
 
 button#calculate:active svg {

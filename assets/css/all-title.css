@@ -98,7 +98,7 @@
   background-color: #586b6f; }
 
 .content-page .burgerMenu.menu-open .line-menu {
-  background-color: #fd5721; }
+  background-color: var(--homenet-orange); }
  
  /* Content Page titles */
 .content-page-title {
@@ -141,7 +141,7 @@
   .pg-header-elements {
     padding: 90px 6%; } }
 .content-page-title .highlight {
-  color: #fd5721;
+  color: var(--homenet-orange);
   margin-left: 1px;
   font-size: 0.8em; }
   

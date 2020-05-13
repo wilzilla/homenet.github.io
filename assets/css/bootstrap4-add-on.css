@@ -2,21 +2,37 @@
 
 :root {
     /* Common */
-    --primary-color: #fd5721;
+    --homenet-orange: #fd5721;
+    --homenet-flat-orange: #ff784d;
+    --homenet-bright-orange: #fe3a14;
+    --homenet-light-orange: #f76a3d;
+    --homenet-dark-jade: #364a4e;
+    --homenet-jade: #38626a;
+    --homenet-teal: #85c3ae;
+    --homenet-dark-teal: #7eb7a4;
+    --homenet-light-teal: #b8dcd0;
+    --homenet-dark-blue: #2c3e50;
+    --footer-color-main: #2d2e33;
+    --footer-color-sub: #2c393c;
+
+    /* Homenet White BG form field teal focus borders and highlights */
+    --white-form-box-shadow: 0 0 8px 0 rgba(190, 229, 236, 0.9);
+    --white-form-border: #a0c1c7;
+
     /* Additional Colors */
     --white-section: #fff;
-    --gray-section: #f8f8f8;
-    --black-section: #222020;
     --light-gray-section: #fcfcfc;
+    --gray-section: #f8f8f8;
+    --dark-gray-section: #f0f0f0;
+    --black-section: #222020;
     --viridian: #1b2631;
     --selection_background: #dcdcdc;
     --selection_color: #232323;
-    /* Primary Sizes */
-    --hero-header_default_height: 100vh;
-    --hero-header_responsive_height: 600px;
-    --breadcrumbs-height: 450px;
+
+    /* Homenet Content Page Sections */
     --page-header-height: 370px;
     --engage-header-height: 550px;
+
     /* Overlay rgba Colors */
     --default_overlay: rgba(44, 44, 44, 0.4);
     --color_overlay: rgba(35, 35, 70, 0.25);
@@ -36,21 +52,25 @@
 
     /* Homenet Fonts Colors */
     --header-color: #394649;
+    --thin-font-color: #000;
+    --default-font-color: #333;
+
     /* Box Shadow Colors */
     --box-shadow-dark: rgba(21, 21, 21, 0.2);
     --box-shadow-medium: rgba(31, 31, 31, 0.1);
     --box-shadow-light: rgba(31, 31, 31, 0.02);
     --box-shadow-boxes: rgba(31, 31, 31, 0.02);
-    /* Test Shadow Colors */
+
+    /* Text Shadow Colors */
     --text-shadow-dark: rgba(31, 31, 31, 0.5);
     --text-shadow-medium: rgba(31, 31, 31, 0.2);
     --text-shadow-light: rgba(31, 31, 31, 0.1);
     --button-shadow-light: rgba(11, 11, 11, 0.15);
+
     /* Functional Colors */
     --black_default: #232323;
     /* ## ## ## ## ## ## ## ## ## ## */
-    --ui-color-main: #2d2e33;
-    --ui-color-sub: #2c393c;
+
     --font-family-base: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-secondary: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ;
@@ -101,6 +121,7 @@
 /* Base Font */
 body {
     font-family: var(--font-family-base);
+    color: var(--default-font-color);
 }
 /* Base Font End */
 
@@ -163,7 +184,7 @@ footer .col {
 }
 
 .bs4 a:hover, .bs4 a:focus {
-    color: #b8dcd0;
+    color: var(--homenet-light-teal);
     text-decoration: none;
 }
 
@@ -746,7 +767,7 @@ svg {
 }
 
 .breadcrumb-item a:hover {
-    color: #85c3ae;
+    color: var(--homenet-teal);
 }
 
 .breadcrumb-item.active {

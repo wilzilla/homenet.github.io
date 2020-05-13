@@ -200,8 +200,8 @@
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #85c3ae;
-    border-color: #85c3ae; }
+    background-color: var(--homenet-teal);
+    border-color: var(--homenet-teal); }
 
 .list-group-flush .list-group-item {
   border-right: 0;
@@ -236,7 +236,7 @@
     width: 4px;
     height: 100%;
     content: "";
-    background-color: #85c3ae;
+    background-color: var(--homenet-teal);
     opacity: 0;
     transition: all 0.2s ease-in-out; }
   .list-group-item.disabled, .list-group-item:disabled {
@@ -320,7 +320,7 @@ font-family: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
 
 .content-page #content-nav .list-group-item-action:hover {
   z-index: 1;
-  color: #85c3ae;
+  color: var(--homenet-teal);
   text-decoration: none; }
 
 .content-page .list-group-item.active:focus, .content-page .list-group-item.active:hover {
@@ -402,7 +402,7 @@ background-color: transparent;
   background-color: #586b6f; }
 
 .content-page .burgerMenu.menu-open .line-menu {
-  background-color: #fd5721; }
+  background-color: var(--homenet-orange); }
 
 .collapse {
   visibility: hidden; }
@@ -436,7 +436,7 @@ background-color: transparent;
   font-size: 46px; }
 
 .section-title .highlight {
-  color: #fd5721; }
+  color: var(--homenet-orange); }
 
 .section-title:hover:after {
   width: 80px; }
@@ -491,7 +491,7 @@ background-color: transparent;
   .pg-header-elements {
     padding: 90px 6%; } }
 .content-page-title .highlight {
-  color: #fd5721;
+  color: var(--homenet-orange);
   margin-left: 1px;
   font-size: 13px; }
 
@@ -571,7 +571,7 @@ nav.title-breadcrumb ol.breadcrumb li.breadcrumb-item {
   line-height: 22.5px; }
 
 .page-section-title .highlight {
-  color: #fd5721;
+  color: var(--homenet-orange);
   margin-left: 2px;
   font-size: 0.9em; }
 
@@ -661,7 +661,7 @@ nav.title-breadcrumb ol.breadcrumb li.breadcrumb-item {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
-  color: var(--primary-color); }
+  color: var(--homenet-orange); }
 
 .list-type-2 li:not(:last-child) {
   margin-bottom: 15px; }

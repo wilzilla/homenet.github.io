@@ -10,7 +10,7 @@
 }
 
 .section-title .highlight {
-    color: #fd5721;
+    color: var(--homenet-orange);
 }
 
 h2.section-title {
@@ -95,6 +95,24 @@ margin-bottom: 8vw;
 
 .element-title:after {
     margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .content-page p {
+        font-weight: 400;
+        letter-spacing: -0.02px;
+        word-spacing: 0.4px;
+        line-height: 1.5;
+        font-size: 17px;
+        color: #1f2323;
+        -webkit-text-stroke: initial;
+    }
+    .page-section-title {
+        font-size: 20px;
+    }
+    .page-sub-title {
+        font-size: 18px;
+    }
 }
 
 

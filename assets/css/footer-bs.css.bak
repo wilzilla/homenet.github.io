@@ -2,7 +2,7 @@
 
 :root {
   /* Common */
-  --primary-color: #fd5721;
+  --homenet-orange: var(--homenet-orange);
   /* Additional Colors */
   --white-section: #fff;
   --gray-section: #f8f8f8;
@@ -46,8 +46,8 @@
   /* Functional Colors */
   --black_default: #232323;
   /* ## ## ## ## ## ## ## ## ## ## */
-  --ui-color-main: #2d2e33;
-  --ui-color-sub: #2c393c;
+  --footer-color-main: #2d2e33;
+  --footer-color-sub: #2c393c;
   --font-family-base: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
   --font-secondary: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
   --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ; }
@@ -159,11 +159,11 @@ ul ol {
   margin-bottom: 0; }
   
   a {
-  color: #85c3ae;
+  color: var(--homenet-teal);
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #b8dcd0;
+    color: var(--homenet-light-teal);
     text-decoration: underline; }
     
     img {
@@ -473,7 +473,7 @@ button:not(:disabled),
     text-decoration: none;
     transition: all 0.2s ease-in-out; }
     .breadcrumb-item a:hover {
-      color: #85c3ae; }
+      color: var(--homenet-teal); }
   .breadcrumb-item.active {
     color: #a1a1a1; }
   .breadcrumb-item + .breadcrumb-item {
