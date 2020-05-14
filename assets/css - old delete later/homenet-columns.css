@@ -141,7 +141,7 @@ font-size: 17px;
     position: relative;
     margin-bottom: 50px;
     line-height: 1;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-weight: 400;
 }
 
@@ -318,12 +318,12 @@ width: 41vw;
     margin-bottom: 12px;
     margin-top: 7px;
     font-size: 23px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     color: var(--header-color);
 }
 
 .service-item-type-2 .service-text {
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-weight: 400;
     letter-spacing: -0.1px;
     line-height: 1.5;
@@ -429,7 +429,7 @@ max-width: 81vw;
     color: #fff;
     opacity: 0.9;
     letter-spacing: 0.2px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-size: 21.5px;
     font-weight: 600;
 }
@@ -685,7 +685,7 @@ padding: 10vw 0;
     margin-top: 5px;
     margin-bottom: 5px;
     line-height: 1;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 @media (max-width: 991px) {
@@ -710,7 +710,7 @@ padding: 10vw 0;
     margin-bottom: 20px;
     line-height: 1;
     opacity: 0.7;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 @media (max-width: 991px) {
@@ -1130,7 +1130,7 @@ padding: 10vw 0;
     font-size: 48px;
     margin-bottom: 10px;
     text-align: left;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 .steps-wrapper .step-wrapper .step-body h3 {
@@ -1139,7 +1139,7 @@ padding: 10vw 0;
     margin-bottom: 10px;
     line-height: 1;
     color: var(--header-color);
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 .steps-wrapper .step-wrapper .step-body {
@@ -1264,7 +1264,7 @@ min-width: 80px;
 margin-bottom: 9px;
     line-height: 1;
     font-weight: 700;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-size: 22px;
 letter-spacing: -0.3px;
 }

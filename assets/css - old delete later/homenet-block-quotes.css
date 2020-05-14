@@ -157,7 +157,7 @@ blockquote.blockquote-text.type2.left p:after{
 
 .blockquote-img .blockquote-wrapper .row .blockquote-col blockquote h4 {
 
-font-family: var(--font-secondary);
+font-family: var(--font-second);
     color: #fff;
     font-weight: 600;
     text-align: center;

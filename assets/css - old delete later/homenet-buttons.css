@@ -26,7 +26,7 @@ a.homenet-btn:focus {
 
 /* Language Fonts */
 body.en-US .homenet-btn {
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 

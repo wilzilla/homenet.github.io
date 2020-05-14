@@ -17,7 +17,7 @@ Return to Top
 --------------------------------------------------------------*/
 
 footer {
-font-style: var(--font-family-base)
+font-style: var(--font-main)
 
 }
 
@@ -147,7 +147,7 @@ footer .footer-inner .footer-body .foot_link_list .foot_link {
 
 footer .footer-inner .footer-body .foot_link_list {
     padding-bottom: 30px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-size: 0.85em;
     letter-spacing: 0.4px;
     font-weight: 300;
@@ -483,8 +483,8 @@ Return to Top
   /* ## ## ## ## ## ## ## ## ## ## */
   --footer-color-main: #2d2e33;
   --footer-color-sub: #2c393c;
-  --font-family-base: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
-  --font-secondary: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
+  --font-main: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
+  --font-second: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
   --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ; }
 
 :root {

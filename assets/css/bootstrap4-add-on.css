@@ -6,6 +6,7 @@
     --homenet-flat-orange: #ff784d;
     --homenet-bright-orange: #fe3a14;
     --homenet-light-orange: #f76a3d;
+    --homenet-bg-orange: #ee5231;
     --homenet-dark-jade: #364a4e;
     --homenet-jade: #38626a;
     --homenet-teal: #85c3ae;
@@ -54,6 +55,7 @@
     --header-color: #394649;
     --thin-font-color: #000;
     --default-font-color: #333;
+    --input-font-color: #717171;
 
     /* Box Shadow Colors */
     --box-shadow-dark: rgba(21, 21, 21, 0.2);
@@ -68,13 +70,15 @@
     --button-shadow-light: rgba(11, 11, 11, 0.15);
 
     /* Functional Colors */
-    --black_default: #232323;
+    --yes-flat-green: #c6eace;
+    --no-flat-red: #ffc8b6;
     /* ## ## ## ## ## ## ## ## ## ## */
 
-    --font-family-base: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
-    --font-secondary: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
+    --font-main: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
+    --font-second: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ;
 
+    --black_default: #232323;
     --blue: #3498db;
     --indigo: #2874a6;
     --purple: #8e44ad;
@@ -120,7 +124,7 @@
 
 /* Base Font */
 body {
-    font-family: var(--font-family-base);
+    font-family: var(--font-main);
     color: var(--default-font-color);
 }
 /* Base Font End */
@@ -704,11 +708,6 @@ svg {
     -ms-flex-align: center !important;
     align-items: center !important;
 }
-}
-
-
-
-
 
 
 .p-0 {
@@ -801,3 +800,32 @@ svg {
     color: rgba(255, 255, 255, 0.85) !important;
     opacity: 0.8;
 }
+
+ /* General Overlays */
+
+  .default_overlay:after, .color_overlay:after, .dark_overlay:after, .black_overlay:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
+  
+  .default_overlay:after {
+  background-color: var(--default_overlay); }
+
+    .color_overlay:after {
+  background-color: var(--color_overlay); }
+
+    .dark_overlay:after {
+  background-color: var(--dark_overlay); }
+
+      .black_overlay:after {
+  background-color: var(--black_overlay); }
+  
+  .parallax-window {
+  background-color: transparent; }

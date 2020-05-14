@@ -29,7 +29,7 @@ p.accordion-header {
     padding: 14px 25px;
     cursor: pointer;
     letter-spacing: 0.7px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
@@ -97,7 +97,7 @@ p.accordion-header {
     padding-bottom: 15px;
     cursor: pointer;
     letter-spacing: 0.5px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     border-bottom: 1px solid var(--default-border);

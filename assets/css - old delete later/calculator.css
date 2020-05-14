@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:300);
 
 .calc-container {
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-weight: 400;
     letter-spacing: 0.07px;
     line-height: 1.5;
@@ -331,7 +331,7 @@ span.empty {
 
 #chart_div>div>div,
 #chart_div g {
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 
@@ -557,7 +557,7 @@ span.empty {
 
 div#stamp_duty,
 .avg-mortgage {
-    font-family: var(--font-family-base);
+    font-family: var(--font-main);
     font-size: 44px;
     color: #fc835c;
     font-weight: 200;

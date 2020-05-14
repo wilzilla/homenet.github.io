@@ -1,3 +1,6 @@
+
+/***** BUTTONS *****/ 
+
 /* Buttons reboot */
 
 /* add "hand" cursor to non-disabled button elements.*/
@@ -26,7 +29,7 @@ a.homenet-btn:focus {
 
 /* Language Fonts */
 body.en-US .homenet-btn {
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 
@@ -193,3 +196,69 @@ a.button-default-white-2:hover {
     background-color: var(--homenet-dark-blue);
 }
 
+
+/* Other General Styles */
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #1f2323;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 0.625rem 1.625rem;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #45b39d;
+    border-color: #45b39d;
+}
+
+.btn {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    padding: 0.625rem 1.625rem;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    border-radius: 0.1875rem;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    background-color: #bdc3c7;
+}
+
+.btn>i {
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #45b39d;
+    box-shadow: 0 12px 35px -10px rgba(189, 195, 199, 0.55), 0 8px 10px -5px rgba(0, 0, 0, 0.09), 0 4px 25px -2px rgba(0, 0, 0, 0.14);
+}
+
+.btn-round {
+    border-radius: 1.3125rem;
+}
+
+.btn-icon-only {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    line-height: 40px;
+}
+
+.btn-icon-only>i {
+    margin: 0;
+}
+
+.btn-icon-only.btn-round {
+    border-radius: 50%;
+}

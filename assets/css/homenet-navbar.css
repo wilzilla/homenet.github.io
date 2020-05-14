@@ -14,7 +14,7 @@ Default settings
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 .homenet-header .homenet-menu .nav_main,

@@ -49,8 +49,8 @@
   /* ## ## ## ## ## ## ## ## ## ## */
   --ui-color-main: #2d2e33;
   --ui-color-sub: #2c393c;
-  --font-family-base: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
-  --font-secondary: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
+  --font-main: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
+  --font-second: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
   --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Serif SC", Õ«ïõ¢ô, SimSun, ; }
 
 :root {

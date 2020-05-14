@@ -1,5 +1,5 @@
 footer {
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 footer a {
@@ -75,7 +75,7 @@ footer .footer-inner .footer-body .foot_link_list .foot_link {
 
 footer .footer-inner .footer-body .foot_link_list {
     padding-bottom: 30px;
-    font-family: var(--font-family-base);
+    font-family: var(--font-main);
     font-size: 13.5px;
     letter-spacing: 0.5px;
     font-weight: 300;
@@ -99,7 +99,7 @@ button.footer-btn {
     letter-spacing: 0.05em;
     border-radius: 50px;
     font-weight: 500;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     border: 2px solid #fe3a14;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     font-size: 12px;

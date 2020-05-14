@@ -162,7 +162,7 @@ section {
     line-height: 1;
     margin-bottom: 15px;
     font-size: 34.5px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     color: var(--header-color);
 }
 
@@ -172,7 +172,7 @@ section {
     color: var(--black_default);
     line-height: 1;
     font-size: inherit;
-font-family: var(--font-secondary);
+font-family: var(--font-second);
 }
 
 @media (max-width: 991px) {

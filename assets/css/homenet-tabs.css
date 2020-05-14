@@ -14,7 +14,6 @@
 }
 
 
-
 /* General Tabs */
 
 /* Tab Type1 */
@@ -47,7 +46,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-size: 13.5px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
 }
 
 .tabs-section-type-1 .tabs-wrapper .tabs-header .tab-trigger-wrapper .active {
@@ -317,7 +316,7 @@
     opacity: 0.7;
     letter-spacing: 0.5px;
     transition: all .2s ease-in-out;
-    font-family: var(--font-secondary);
+    font-family: var(--font-second);
     font-weight: 600;
 }
 
