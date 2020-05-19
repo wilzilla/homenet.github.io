@@ -1633,6 +1633,11 @@ a.button-default-white-2:hover {
 
 /******** INFO CONTENT PAGE ********/
 
+/* Overflow correction for animations */
+.content-page {
+    overflow-x: hidden;
+}
+
 /* General Style for List group Side Nav for Info Content Pages */
 
 .list-group {
