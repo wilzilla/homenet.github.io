@@ -8,12 +8,10 @@
     <link rel="icon" href="assets/favicon.ico">
     <title>Homenet Info Page - Elements</title>
     <!-- Homenet CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap4-add-on.css">
     <link rel="stylesheet" href="assets/css/rentall-bootstrap.css">
+    <link rel="stylesheet" href="assets/css/homenet-bootstrap4.css">
     <link rel="stylesheet" href="assets/css/homenet-navbar.css">
     <link rel="stylesheet" href="assets/css/homenet-footer.css">
-    <link rel="stylesheet" href="assets/css/content-pg-bs4-big.css">
-
     <link rel="stylesheet" href="assets/css/calculator.css">
     <!-- Page effects CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
@@ -23,55 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Montserrat:300,400,500,600,700" rel="stylesheet">
     <!-- Chinese Google Font load for zh only -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700" rel="stylesheet">
-
-
-
 </head>
-
- <!-- MORTGAGE -->
-
-<div style="padding:20px;" class="all">
-<table style="width:700px;">
-    <tr><td><div id="monthly_payment">---</div></td>
-    <td><div id="piechart" style="height:250px; width:250px;"></div></td>
-    <td><div id="pietable" style="height:250px; width:250px;"></div></td></tr>
-</table>
-<table style="width:800px;">
-<tr>
-<td>Property Price $ <input id="price" type="text" value="10,000,000" /></td>
-<td>Mortgage amount <input id="mortgage" type="text" value="70" /> %</td>
-<td>Mortgage Term <input id="terms" type="text" value="30" /> yrs</td>
-</tr>
-<tr>
-<td style="width:300px;">Current Interest rate <div id="cmortgage"></div> </td>
-<td style="width:200px;text-align:center;"><input id="cmortgage_input" type="text" /> % </td>
-<td>fixed for <input id="fix_years" type="text" /> yrs </td>
-</tr>
-<tr>
-<td>Assumed Interest rate <div id="amortgage"></div></td>
-<td style="text-align:center;"><input id="amortgage_input" type="text" /> % </td>
-<td>After yr <input id="after_years" type="text" /></td>
-</tr>
-<tr>
-<td><br /><br /> </td>
-<td> </td>
-</tr>
-<tr>
-<td> </td>
-<td><input type="submit" id="reset" value="Reset" /> <input type="submit" id="calculate" value="Calculate" /></td>
-</tr>
-</table>
-<br /><br />
-Monthly payment vs Interest rate
-<div id="chart_div" style="width: 740px; height: 385px;"></div>
-</div>
-
-<div id="chart_table" style="width: 740px;"></div>
-</div>
-
-
-   
-
 
 <body>
     <!-- Header -->
@@ -499,7 +449,7 @@ Monthly payment vs Interest rate
         <header class="page-header parallax-window bg_img dark_overlay" data-src="assets/images/content/content.jpg">
             <div class="bs4 container pg-header-wrapper d-flex flex-column justify-content-end">
                 <div class="pg-header-elements text-left">
-                    <h1 class="content-page-title text-left">Sales Stamp Duty Calculator<span class="highlight dot">.</span></h1>
+                    <h1 class="content-page-title text-left">Mortgage Calculator</h1>
                     <nav class="title-breadcrumb" aria-label="bs4 breadcrumb">
                         <ol class="bs4 breadcrumb breadcrumb-small justify-content-start mb-0 px-0">
                             <li class="breadcrumb-item text-uppercase"><a href="#">Home</a></li>
@@ -519,7 +469,7 @@ Monthly payment vs Interest rate
                 </div>
             </div>
         </header>
-        <section class="content-section gray-section">
+        <section class="content-section dark-gray-section">
             <div class="bs4 container">
                 <div class="bs4 row no-gutters">
                     <div class="bs4 col-lg-3 order-lg-2 pl-lg-2 collapse dont-collapse-sm" id="content-nav">
@@ -540,69 +490,62 @@ Monthly payment vs Interest rate
                         </div>
                     </div>
                     <div class="bs4 col-lg-9 order-lg-1 pr-lg-3 main-content">
-                        <div class="column-element white-section calc-container sales-calc">
+                        <div class="column-element white-section calc-container mort-calc">
                             <div class="all">
-                                <div class="bs4 row no-gutters calc-results">
+                                <div class="bs4 row no-gutters rent calc-results">
                                     <div class="bs4 col-12 total calc-cell">
                                         <div class="total-figures">
-                                            <div id="monthly_payment">---</div>
+                                            <div id="monthly_payment">
+                                                <div class="empty-total"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="bs4 col-12 col-sm parts calc-cell">
+                                    <div class="bs4 col-12 col-sm parts calc-cell noshow-mortgage">
                                         <div class="bs4 row no-gutters">
-                   <div id="pietable" style="height:250px; width:250px;"></div>
+                                            <div id="piechart" class="bs4 col-12 col-sm-4">
+                                                <span class="empty min">Fill in the details below to start calculating</span>
+                                            </div>
+                                            <div id="pietable" class="bs4 col-12 col-sm-8"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="calc-input calc-cell">
-                                    <div class="bs4 row no-gutters">
-                                        <div class="bs4 col-12 calc-price-col p-0">
-                                            <div class="calc-price">Purchase Price $</div><input id="price" type="text" value=",000,000" />
+                                    <div class="mort-input row1">
+                                        <div class="price">
+                                            <div class="price-hd">Property Price $</div><input id="price" type="text" value="0,000,000" />
                                         </div>
-                                        <div class="bs4 col-12 calc-other-col p-0">
-                                            <div class="bs4 row no-gutters perm">
-                                                <div class="bs4 col-auto info-col">
-                                                    Buyer is a HK Permanent Resident
-                                                </div>
-                                                <div class="bs4 col-auto radio-col p-0">
-                                                    <label class="homenet-radio">
-                                                        <input class="yes" type="radio" checked="checked" name="hkid" value="1">
-                                                        <span class="checkmark">Yes</span>
-                                                    </label>
-                                                    <label class="homenet-radio">
-                                                        <input class="no" type="radio" name="hkid" value="0">
-                                                        <span class="checkmark">No</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-auto info-col">
-                                                    Buyer owns a HK Residential Property
-                                                </div>
-                                                <div class="bs4 col-auto radio-col p-0">
-                                                    <label class="homenet-radio">
-                                                        <input class="yes" type="radio" name="property" value="1">
-                                                        <span class="checkmark">Yes</span>
-                                                    </label>
-                                                    <label class="homenet-radio">
-                                                        <input class="no" type="radio" checked="checked" name="property" value="0">
-                                                        <span class="checkmark">No</span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                        <div class="percent">
+                                            Mortgage Amount
+                                            <div class="param">
+                                                <input id="mortgage" type="text" value="70" /> %</div>
                                         </div>
-                                        <div class="bs4 row no-gutters aquire justify-content-end full-width">
-                                            <div class="bs4 col-12 aquire-col"><span class="select-desc">Months since the property was last aquired</span></div>
-                                            <div class="bs4 col-12 aquire-select-col">
-                                                <select name="months" class="custom-select">
-                                                    <option value=""></option>
-                                                    <option value="20">6 months or less</option>
-                                                    <option value="15">6 months + but for 12 months or less</option>
-                                                    <option value="10">12 months + but for 24 months or less</option>
-                                                    <option value="10">24 months + but for 36 months or less</option>
-                                                    <option value="0">More than 36 months</option>
-                                                </select>
-                                            </div>
+                                        <div class="term">
+                                            Mortgage Term
+                                            <div class="param"><input id="terms" type="text" value="30" />yrs</div>
+                                        </div>
+                                    </div>
+                                    <div class="mort-input row2">
+                                        <div class="title">Current Interest Rate</div>
+                                        <div class="cslide">
+                                            <div id="cmortgage"></div>
+                                        </div>
+                                        <div class="cinput">
+                                            <input id="cmortgage_input" type="text" /> %
+                                        </div>
+                                        <div class="cyears">
+                                            fixed for <input id="fix_years" type="text" /> yrs
+                                        </div>
+                                    </div>
+                                    <div class="mort-input row3">
+                                        <div class="title">Assumed Interest Rate</div>
+                                        <div class="aslide">
+                                            <div id="amortgage"></div>
+                                        </div>
+                                        <div class="ainput">
+                                            <input id="amortgage_input" type="text" /> %
+                                        </div>
+                                        <div class="ayears">
+                                            after yr <input id="after_years" type="text" />
                                         </div>
                                     </div>
                                 </div>
@@ -619,206 +562,18 @@ Monthly payment vs Interest rate
                                         <span>Calculate</span></button>
                                     </div>
                                     <div class="bs4 col footer-note">
-                                        Note: *Both the buyer and seller are jointly and severally liable for the AVD at the same extent irrespective of any agreement to the contrary, the buyer is solely liable for any BSD, and for any SSD it is up to the discretion of both the buyer and seller which party(s) is liable and to what extent.
+                                        Assumptions: Interest is applied to each calendar month, difference between the "assumed" and "current" interest rate is adjusted at a constant rate of increase or decrease at the end of each calendar year.
                                     </div>
                                 </div>
-                                <div class="calc-table" id="avd-part-1">
-                                    <div class="calc-header">Stamp duty - Part 1 of Ad Valorem (AVD) Scale 1</div>
-                                    <div class="calc-table-head">
-                                        Implemented on 5 November 2016 onwards for Residential Property
-                                    </div>
-                                    <div id="stamp_duty_scale1" class="table-content">
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                        <div class="calc-hidden">
-                                        </div>
-                                    </div>
-                                    <div class="updated">
-                                        15% flat rate of the consideration or value of the property (whichever is the higher)
-                                    </div>
-                                    <div class="note">
-                                        Note: Both the buyer and the seller is jointly and severally liable to pay AVD Stamp Duty
-                                        at same extent, under the law, irrespective of any agreement to the contrary
-                                    </div>
+                                <div class="calc-table graph noshow">
+                                    <div id="chart_div" class="chart"></div>
                                 </div>
-                                <div class="calc-table" id="avd-scale-2">
-                                    <div class="calc-header">Stamp duty - Ad Valorem (AVD) Scale 2</div>
-                                    <div class="calc-header2">
-                                        Scale 2 applicable only if the buyer is a Hong Kong permanent resident and does not own any other residential property in Hong Kong.
-                                    </div>
-                                    <div class="bs4 row calc-table-head">
-                                        <div class="bs4 col-2of10">Price exceeds</div>
-                                        <div class="bs4 col-2of10">Does not exceed</div>
-                                        <div class="bs4 col-6of10 stamp-col">Stamp Duty Rate</div>
-                                    </div>
-                                    <div id="stamp_duty_scale2" class="table-content">
-                                        <div>
-                                            <div class="bs4 row no-gutters ">
-                                                <div class="bs4 col-2of10">0 </div>
-                                                <div class="bs4 col-2of10">$2,000,000 </div>
-                                                <div class="bs4 col-6of10">$100 </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$2,000,000 </div>
-                                                <div class="bs4 col-2of10">$2,351,760 </div>
-                                                <div class="bs4 col-6of10">$100 + 10% of excess over $2,000,000</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$2,351,760 </div>
-                                                <div class="bs4 col-2of10">$3,000,000 </div>
-                                                <div class="bs4 col-6of10">1.50%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$3,000,000 </div>
-                                                <div class="bs4 col-2of10">$3,290,320 </div>
-                                                <div class="bs4 col-6of10">$45,000 + 10% of excess over $3,000,000</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$3,290,320 </div>
-                                                <div class="bs4 col-2of10">$4,000,000 </div>
-                                                <div class="bs4 col-6of10">2.25%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$4,000,000 </div>
-                                                <div class="bs4 col-2of10">$4,428,570 </div>
-                                                <div class="bs4 col-6of10">$90,000 + 10% of excess over $4,000,000</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$4,428,570 </div>
-                                                <div class="bs4 col-2of10">$6,000,000 </div>
-                                                <div class="bs4 col-6of10">3%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$6,000,000 </div>
-                                                <div class="bs4 col-2of10">$6,720,000 </div>
-                                                <div class="bs4 col-6of10">$180,000 + 10% of excess over $6,000,000</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$6,720,000 </div>
-                                                <div class="bs4 col-2of10">$20,000,000 </div>
-                                                <div class="bs4 col-6of10">3.75%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$20,000,000 </div>
-                                                <div class="bs4 col-2of10">$21,739,120 </div>
-                                                <div class="bs4 col-6of10">$750,000 + 10% of excess over $20,000,000</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters">
-                                                <div class="bs4 col-2of10">$21,739,120 </div>
-                                                <div class="bs4 col-2of10">-</div>
-                                                <div class="bs4 col-6of10"> 4.25%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="note"><span>
-                                            Note: Both the buyer and the seller is jointly and severally liable to pay AVD Stamp Duty
-                                            at same extent, under the law, irrespective of any agreement to the contrary</span>
-                                    </div>
-                                </div>
-                                <div class="calc-table" id="bsd-table">
-                                    <div class="calc-header">Buyer’s Stamp Duty - BSD</div>
-                                    <div class="bs4 row calc-table-head">
-                                        <div class="bs4 col-8 p-0">Nature and residency status of the buyer</div>
-                                        <div class="bs4 col-4 stamp-col p-0">Buyers Stamp Duty Rate</div>
-                                    </div>
-                                    <div id="residency_table" class="table-content">
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-8 p-0">Buyer is a Company or is not a HK permanent resident</div>
-                                                <div class="bs4 col-4 p-0">15%</div>
-                                            </div>
-                                        </div>
-                                        <div class="no-icon">
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-8 p-0">Buyer is not a Company and is a HK permanent resident</div>
-                                                <div class="bs4 col-4 p-0">-</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="note">
-                                        Note: The buyer or the transferee is soley liable to pay the Buyer’s Stamp Duty.
-                                    </div>
-                                </div>
-                                <div class="calc-table" id="ssd-table">
-                                    <div class="calc-header">Special Stamp Duty - SSD</div>
-                                    <div class="calc-header2">
-                                        Applicable for properties with a previous aquisition date on or after 27 October 2012.
-                                    </div>
-                                    <div class="bs4 row calc-table-head justify-content-center">
-                                        <div class="bs4 col-7 p-0">Period since the property's last acquisition</div>
-                                        <div class="bs4 col-5 p-0 stamp-col">Special Stamp Duty Rate</div>
-                                    </div>
-                                    <div id="aquisition_table" class="table-content">
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-7 p-0">6 months or less </div>
-                                                <div class="bs4 col-5 p-0">20%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-7 p-0">More than 6 months but for 12 months or less </div>
-                                                <div class="bs4 col-5 p-0">15%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-7 p-0">More than 12 months but for 24 months or less </div>
-                                                <div class="bs4 col-5 p-0">10%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-7 p-0">More than 24 months but for 36 months or less </div>
-                                                <div class="bs4 col-5 p-0">10%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="note">
-                                        Note: It is up to the discretion of both the buyer and the seller which party(s) are liable for SSD and to what extent
-                                    </div>
+                                <div class="calc-table noshow">
+                                    <div id="morttable"></div>
                                 </div>
                                 <div class="footnote">
                                     <b>Information and disclaimer:</b>
-                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the “Sale or Transfer of Immovable Property” Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though utmost care and diligence was taken in the formulation and coding of this Stamp Duty Calculator for Residential Property Sales, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
+                                    The results generated by this mortgage calculator are intended for reference only and should not be construed as financial advice. Although we have taken utmost care and diligence in the formulation and coding of this Mortgage Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. For projections of Mortgage Payments, assumptions have been made in which interest is applied at the end of each calendar month and changes between the initial interest rate and the assumed future interest rate are to be at a constant rate of increase or decrease at the end of each calendar year. Note that these hypothetical illustrations and calculations of future projections may not be applicable to each and every Mortgage Plan in Hong Kong and is intended for reference only, for more information on Mortgage Plans and Structures you should obtain advice from qualified professionals.
                                 </div>
                             </div>
                         </div>
@@ -952,40 +707,32 @@ Monthly payment vs Interest rate
             </div>
         </footer>
     </div>
-
     <!-- jQuery -->
-
-    <!-- Bootstrap js -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Parallax -->
+    <script src="assets/js/parallax.js"></script>
     <!-- homenet navigation js -->
     <script src="assets/js/homenet.menu.js"></script>
     <!-- homenet return top js -->
     <script src="assets/js/returntop.js"></script>
-    <!-- AOS -->
-    <script src="assets/js/aos.js"></script>
-    <!-- ImageLoaded -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <!-- Isotope -->
     <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- homenet Content JS-file -->
-    <script src="assets/js/main.js"></script>
-    <!-- CONTENT PAGES -->
-    <!-- Parallax -->
-    <script src="assets/js/parallax.js"></script>
+    <!-- ImageLoaded -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <!-- Waypoints -->
     <script src="assets/js/jquery.waypoints.min.js"></script>
-
-    <!-- MORTGAGE -->
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery-ui.js"></script>
-<script type="text/javascript" src="uislider/nouislider.js"></script>
-<script type="text/javascript" src="mortgage.js"></script>
-<link rel="stylesheet" type="text/css" href="uislider/nouislider.css" />
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="mortgage-page.js"></script>
-    <!-- MORTGAGE -->
-
-
+    <!-- Swiper -->
+    <script src="assets/js/swiper.min.js"></script>
+    <!-- homenet Content JS-file -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Mortgage Calculator Script -->
+    <script type="text/javascript" src="assets/js/uislider/nouislider.js"></script>
+    <script type="text/javascript" src="assets/js/calculator/mortgage.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="assets/js/calculator/mortgage-page.js"></script>
 
 </body>
 

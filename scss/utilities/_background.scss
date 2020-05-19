@@ -1,5 +1,0 @@
-// Background color dark viridians
-
-@each $color, $value in $viridians {
-  @include bg-variant(".bg-#{$color}", $value);
-}

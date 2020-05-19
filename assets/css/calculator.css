@@ -204,6 +204,8 @@ span.empty {
 #pietable table {
     font-size: 15px;
     letter-spacing: 0px;
+    table-layout: auto;
+    width: auto;
 }
 
 #pietable table th {

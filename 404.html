@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="assets/favicon.ico">
-    <title>Homenet Content Page - 404</title>
+    <title>Homenet Info Page - Elements</title>
+
+    <!-- Google Fonts -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+    <!-- Chinese Google Font load for zh only -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700" rel="stylesheet">
     <!-- Homenet CSS -->
-    <link rel="stylesheet" href="assets/css/homenet.css">
+    <link rel="stylesheet" href="assets/css/rentall-bootstrap.css">
+    <link rel="stylesheet" href="assets/css/homenet-bootstrap4.css">
+    <link rel="stylesheet" href="assets/css/homenet-navbar.css">
+    <link rel="stylesheet" href="assets/css/homenet-footer.css">
+
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Page effects CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700|Montserrat:300,400,500,600,700" rel="stylesheet">
-    <!-- Chinese Google Font load for zh only -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
 </head>
 
 <body>
-
     <!-- Header -->
     <div class="homenet-header header-shadow header-dark homenet-mega-menu no-sticky">
         <div class="sticky-bar-bg">
         </div>
-        <div class="container">
+        <div class="bs4 container">
             <!-- homenet header -->
             <div class="homenet-header-container">
                 <div class="header-elements">
@@ -39,7 +48,7 @@
                     <!--Logo-->
                     <a href="#">
                         <div class="logo">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="164" height="26" viewBox="333.27 52.27 164 26" fill="#fff">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="27" viewBox="333.27 52.27 164 26" fill="#fff">
                                 <path class="effect" d="M350.66 78.27h-3.73V67c0-1.38-.5-2.56-1.46-3.54s-2.14-1.47-3.5-1.47-2.54.5-3.5 1.47S337 65.6 337 67v11.28h-3.73v-26H337v7.52c1.5-1.04 3.15-1.57 4.97-1.57 2.4 0 4.45.86 6.15 2.57s2.55 3.78 2.55 6.2v11.28zm23.78-10.02c0 2.76-.97 5.12-2.9 7.08-1.94 1.96-4.28 2.94-7.03 2.94-2.73 0-5.07-.98-7.02-2.94s-2.92-4.32-2.92-7.08.97-5.12 2.92-7.08 4.3-2.95 7.02-2.95c2.75 0 5.1.98 7.03 2.95 1.93 1.96 2.9 4.32 2.9 7.08zm-3.73 0c0-1.73-.6-3.2-1.82-4.43S366.2 62 364.5 62a5.98 5.98 0 0 0-4.4 1.83c-1.22 1.23-1.82 2.7-1.82 4.43s.6 3.2 1.82 4.43 2.68 1.83 4.4 1.83 3.18-.6 4.4-1.83c1.22-1.22 1.82-2.7 1.82-4.43zm36.2 10.02h-3.73v-11.9a4.24 4.24 0 0 0-1.27-3.1c-.85-.86-1.87-1.3-3.07-1.3a4.11 4.11 0 0 0-3.07 1.3 4.24 4.24 0 0 0-1.27 3.1v11.9h-3.73v-11.9a4.24 4.24 0 0 0-1.27-3.1c-.85-.86-1.87-1.3-3.07-1.3s-2.22.43-3.07 1.3a4.24 4.24 0 0 0-1.27 3.1v11.9h-3.73V58.53h3.73v1.2c1.22-1 2.73-1.5 4.53-1.5 2.63 0 4.64 1.1 6.02 3.3 1.5-2.2 3.7-3.3 6.52-3.3 2.17 0 4 .8 5.5 2.43s2.25 3.52 2.25 5.72v11.9zm23.8-10.02c0 .54-.06 1.17-.2 1.88h-15.68c.4 1.27 1.17 2.32 2.25 3.15 1.1.82 2.3 1.24 3.68 1.24 2.46 0 4.32-1.15 5.56-3.45h3.97c-.72 2.2-1.95 3.94-3.68 5.25s-3.68 1.96-5.86 1.96c-2.73 0-5.07-.98-7.02-2.94s-2.92-4.32-2.92-7.08.97-5.12 2.92-7.08 4.3-2.95 7.02-2.95c2.75 0 5.1.98 7.04 2.95 1.94 1.95 2.9 4.3 2.9 7.07zm-4-1.88a6.3 6.3 0 0 0-2.25-3.16c-1.1-.82-2.3-1.22-3.68-1.22a5.9 5.9 0 0 0-3.68 1.24c-1.1.83-1.84 1.88-2.25 3.15l11.86-.01zm35.3 11.9h-3.73V67c0-1.38-.5-2.56-1.46-3.54A4.73 4.73 0 0 0 453.3 62c-1.37 0-2.54.5-3.5 1.47s-1.46 2.16-1.46 3.54v11.3h-3.73V58.53h3.73v1.25c1.5-1.04 3.15-1.57 4.97-1.57 2.4 0 4.45.86 6.15 2.57s2.55 3.78 2.55 6.2v11.3zm23.77-10.02c0 .54-.06 1.17-.2 1.88H469.9c.4 1.27 1.16 2.32 2.25 3.15 1.1.82 2.3 1.24 3.68 1.24 2.46 0 4.32-1.15 5.56-3.45h3.97c-.72 2.2-1.95 3.94-3.68 5.25s-3.68 1.96-5.86 1.96c-2.73 0-5.07-.98-7.02-2.94s-2.92-4.32-2.92-7.08.97-5.12 2.92-7.08 4.3-2.95 7.02-2.95c2.75 0 5.1.98 7.03 2.95 1.95 1.95 2.92 4.3 2.92 7.07zm-4-1.88a6.3 6.3 0 0 0-2.25-3.16c-1.1-.82-2.3-1.22-3.68-1.22a5.9 5.9 0 0 0-3.68 1.24c-1.1.83-1.84 1.88-2.25 3.15l11.86-.01zm15.5-4.07h-3.1v15.98h-3.73V62.3h-3.1v-3.76h3.1v-6.26h3.73v6.26h3.1v3.76z" /></svg>
                         </div>
                     </a>
@@ -68,9 +77,9 @@
                                 <li>
                                     <!-- Mega menu container -->
                                     <div class="mega-menu-container">
-                                        <div class="row">
+                                        <div class="row bs4">
                                             <!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <h4 class="mega-menu-heading"><a href="#">Aliquam metus vitae</a></h4>
                                                     <ul class="mega-menu-list">
@@ -112,7 +121,7 @@
                                                     </ul>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <h4 class="mega-menu-heading"><a href="#">Lobortis sem mauris</a></h4>
                                                     <ul class="mega-menu-list">
@@ -154,7 +163,7 @@
                                                     </ul>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <h4 class="mega-menu-heading"><a href="#">Gravida mauris congue</a></h4>
                                                     <ul class="mega-menu-list">
@@ -196,7 +205,7 @@
                                                     </ul>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-12.png"></div>
                                                 </div>
@@ -215,9 +224,9 @@
                                 <li>
                                     <!-- Mega menu container -->
                                     <div class="mega-menu-container">
-                                        <div class="row">
+                                        <div class="row bs4">
                                             <!-- Column -->
-                                            <div class="col-md-6 col-lg-12">
+                                            <div class="bs4 col-md-6 bs4 col-lg-12">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail">
                                                         <a href="#"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-05.jpg"></a>
@@ -239,9 +248,9 @@
                                 <li>
                                     <!-- Mega menu container -->
                                     <div class="mega-menu-container">
-                                        <div class="row">
+                                        <div class="row bs4">
                                             <!-- Column -->
-                                            <div class="col-lg-4">
+                                            <div class="bs4 col-lg-4">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-media">
                                                         <div class="mega-menu-media-img">
@@ -288,7 +297,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-lg-4">
+                                            <div class="bs4 col-lg-4">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-media">
                                                         <div class="mega-menu-media-img">
@@ -335,7 +344,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-lg-4">
+                                            <div class="bs4 col-lg-4">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail">
                                                         <a href="#"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-11.jpg"></a>
@@ -362,9 +371,9 @@
                                 <li>
                                     <!-- Mega menu container -->
                                     <div class="mega-menu-container">
-                                        <div class="row">
+                                        <div class="row bs4">
                                             <!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail">
                                                         <a href="#"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-05.jpg"></a>
@@ -375,7 +384,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail">
                                                         <a href="#"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-02.jpg"></a>
@@ -386,7 +395,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail">
                                                         <a href="#"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-10.jpg"></a>
@@ -397,7 +406,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- Column -->
-                                            <div class="col-md-6 col-lg-3">
+                                            <div class="bs4 col-md-6 bs4 col-lg-3">
                                                 <div class="mega-menu-box">
                                                     <div class="mega-menu-thumbnail">
                                                         <a href="#"><img alt="thumbnail" src="demo/images/mega-menu-thumbnail-04.jpg"></a>
@@ -439,110 +448,57 @@
             </div>
         </div>
     </div>
-
-    <!-- [3] 404-Header -->
+    <!-- 404-Header -->
     <header class="header-404 color_overlay d-flex align-items-center"
-            style="background-image: url('http://via.placeholder.com/1920x1280')">
-        <div class="container">
+    style="background-image: url('assets/images/404.jpg')">
+        <div class="bs4 container">
             <div class="wrapper-404-alert"
                  data-aos="flip-right"
                  data-aos-delay="700"
                  data-aos-easing="ease-in"
                  data-aos-duration="600">
                 <div class="content">
-                    <h2 class="display-2">404!</h2>
+                    <h1>404!</h1>
                     <h2>Page not found</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa eaque nam natus
                         possim.</p>
+                    <!-- Search Form Add Later -->
+                    <!--
                     <form class="search-form-404 d-flex">
                         <input type="text" placeholder="Enter your keywords...">
                         <button type="submit">
                             <i class="fa fa-search"></i>
                         </button>
-                    </form>
+                    </form>-->
+
                     <div class="d-flex justify-content-center">
-                        <a href="home-default.html" class="button-back"><i class="fa fa-angle-left"></i>Back to homepage</a>
+                        <a href="/" class="button-back"><i class="fa fa-angle-left"></i>Back to homepage</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <!-- jQuery -->
     <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap js -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- homenet navigation js -->
-    <script src="assets/js/homenet.menu.js"></script> 
+    <script src="assets/js/homenet.menu.js"></script>
     <!-- homenet return top js -->
-    <script src="assets/js/return.top.js"></script>
-
-        <!-- AOS -->
-        <script src="assets/js/aos.js"></script>
-
-        <!-- ImageLoaded -->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-
-        <!-- Isotope -->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-
-                <!-- Carousel Swipe -->
-        <script src="assets/js/jquery.bcSwipe.min.js"></script>
-
-        <!-- homenet Content JS-file -->
-        <script src="assets/js/main.js"></script>
-
-
-
-
-<!-- Parallax -->
-<script src="assets/js/parallax.js"></script>
-<!-- Google Map API -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA78PKMUtuLeCo-8LtsHSL2zX3SRBq-HWk&callback=initMap" async
-        defer></script>
-
-
-<!-- Waypoints -->
-<script src="assets/js/jquery.waypoints.min.js"></script>
-
-
-
-    <script>
-
-        // Modal settings
-        $('#exampleModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var recipient = button.data('whatever') // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-            var modal = $(this)
-            modal.find('.modal-title').text('New message to ' + recipient)
-            modal.find('.modal-body input').val(recipient)
-        })
-
-        // Popover and Tooltip settings
-        $(function () {
-
-            $('.popover-btn').popover()
-
-            $('.popover-btn-dark').popover({
-                template: '<div class="popover popover-dark" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
-            })
-
-            $('.toast').toast('show')
-
-            $('.tooltip-btn').tooltip()
-
-            $('.tooltip-btn-light').tooltip({
-                template: '<div class="tooltip tooltip-light" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
-            })
-
-        })
-
-    </script>
-
-
-    
+    <script src="assets/js/returntop.js"></script>
+    <!-- AOS -->
+    <script src="assets/js/aos.js"></script>
+    <!-- ImageLoaded -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- homenet Content JS-file -->
+    <script src="assets/js/main.js"></script>
+    <!-- CONTENT PAGES -->
+    <!-- Parallax -->
+    <script src="assets/js/parallax.js"></script>
+    <!-- Waypoints -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
 </body>
 
 </html>
