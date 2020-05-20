@@ -132,22 +132,13 @@ body {
     color: var(--default-font-color);
 }
 
-body.zh-hk div *,
-body.zh-cn div * {  
-    font-family: "Montserrat", sans-serif; 
-    font-family: "Nunito", 'Verdana', 'Avenir', "Noto Serif SC", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif; 
-    letter-spacing: initial !important;
+body.zh-hk,
+body.zh-cn
+ {
+    font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif !important;
 }
 
-body.zh-hk h1, body.zh-cn h1 {  
-font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif !important;
-}
-
-html:lang(zh-hk),
-html:lang(zh-cn)
-{font-size: 11px !important; }
-
-
+body.zh-hk div * {font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif !important; }
 
 /* Base Font End */
 
@@ -772,7 +763,7 @@ svg {
 }
 
 .breadcrumb-item {
-    font-size: 1.1rem;
+    font-size: 11px;
     font-weight: 400;
 }
 
@@ -1082,7 +1073,7 @@ section {
 }
 
 .content-page {
-    font-size: 1.6rem;
+    font-size: 16px;
     /* Default Font Size*/
 }
 
@@ -1091,7 +1082,7 @@ section {
     font-family: var(--font-main);
     font-weight: 300;
     line-height: 1.5;
-    font-size: 1.85rem;
+    font-size: 18.5px;
     color: var(--thin-font-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1105,7 +1096,7 @@ section {
     .content-page p {
         font-weight: 400;
         line-height: 1.5;
-        font-size: 1.7rem;
+        font-size: 17px;
         color: #1f2323;
         -webkit-text-stroke: initial;
         letter-spacing: -0.02px;
@@ -1118,7 +1109,7 @@ section {
     font-family: var(--font-main);
     font-weight: 300;
     line-height: 1.5;
-    font-size: 1.8rem;
+    font-size: 18px;
     color: #000;
     -webkit-text-stroke: 0.38px rgba(0, 0, 0, 0.3);
     -webkit-font-smoothing: antialiased;
@@ -1138,7 +1129,7 @@ section {
     color: var(--header-color);
     font-family: var(--font-second);
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 40px;
     letter-spacing: -0.7px;
     margin: 3px 0 27px 0;
     display: inline-block;
@@ -1174,15 +1165,15 @@ h6 .dot {
 }
 
 .section-title {
-    font-size: 4rem;
+    font-size: 40px;
 }
 
 h3.section-title {
-    font-size: 3.3rem;
+    font-size: 33px;
 }
 
 h4.section-title {
-    font-size: 3.2rem;
+    font-size: 32px;
 }
 
 .title-divider:after {
@@ -1214,7 +1205,7 @@ h4.section-title {
 .element-title {
     color: var(--header-color);
     font-family: var(--font-second);
-    font-size: 2.2rem;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     -webkit-box-pack: center;
@@ -1258,12 +1249,12 @@ h4.section-title {
     color: #fff;
     font-weight: 500;
     position: relative;
-    font-size: 4.4rem;
+    font-size: 44px;
     letter-spacing: -0.15px;
 }
 
 .engage.content-page-title {
-    font-size: 4.8rem;
+    font-size: 48px;
     font-weight: 600;
 }
 
@@ -1275,7 +1266,7 @@ h4.section-title {
 
     .section-title,
     .content-page-title {
-        font-size: 4.2rem;
+        font-size: 42px;
     }
 
     .pg-header-elements {
@@ -1287,11 +1278,11 @@ h4.section-title {
 
     .section-title,
     .content-page-title {
-        font-size: 3.9rem;
+        font-size: 39px;
     }
 
     .engage.content-page-title {
-        font-size: 4rem;
+        font-size: 40px;
         font-weight: 600;
     }
 
@@ -1304,7 +1295,7 @@ h4.section-title {
 
     .section-title,
     .content-page-title {
-        font-size: 3.65rem;
+        font-size: 36.5px;
     }
 
     .pg-header-elements {
@@ -1358,7 +1349,7 @@ h4.section-title {
 
 
 .title-breadcrumb .breadcrumb-item {
-    font-size: 1.25rem;
+    font-size: 12.5px;
 }
 
 .title-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
@@ -1428,7 +1419,7 @@ body.en-US .homenet-btn {
 .button-style1 {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 15px;
     border-radius: 100px;
     background-color: var(--homenet-teal);
     border: 2px solid var(--homenet-teal);
@@ -1465,7 +1456,7 @@ body.en-US .homenet-btn {
 .button-submit {
     padding: 18px 40px;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 12px;
     letter-spacing: 1.8px;
 }
 
@@ -1487,7 +1478,7 @@ a.button-round:focus {
     text-transform: uppercase;
     padding: 17px 27px;
     border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 12px;
     margin-bottom: 1em;
 }
 
@@ -1875,7 +1866,7 @@ a.button-default-white-2:hover {
         color: #5e6669;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 1.35rem;
+        font-size: 13.5px;
     }
 }
 
@@ -1887,7 +1878,7 @@ a.button-default-white-2:hover {
         letter-spacing: 0.6px;
         color: #5e6669;
         text-transform: uppercase;
-        font-size: 1.35rem;
+        font-size: 13.5px;
         font-weight: 600;
     }
 
@@ -2002,7 +1993,7 @@ a.button-default-white-2:hover {
     color: var(--header-color);
     font-family: var(--font-second);
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 22.5px;
     letter-spacing: -0.7px;
     margin: 3px 0 28px 0;
     display: inline-block;
@@ -2014,7 +2005,7 @@ a.button-default-white-2:hover {
     color: var(--homenet-dark-jade);
     font-family: var(--font-second);
     font-weight: 600;
-    font-size: 1.9rem;
+    font-size: 19px;
     letter-spacing: -0.15px;
     margin-bottom: 9.5px;
     -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.3);
@@ -2022,11 +2013,11 @@ a.button-default-white-2:hover {
 
 @media (max-width: 767px) {
     .page-section-title {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .page-sub-title {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 }
 
@@ -2080,7 +2071,7 @@ a.button-default-white-2:hover {
     font-weight: 600;
     color: #2d3131;
     letter-spacing: -0.05px;
-    font-size: 1.6rem;
+    font-size: 16px;
     margin-bottom: 8px;
 }
 
@@ -2112,7 +2103,7 @@ a.button-default-white-2:hover {
     font-weight: 700;
     color: #2d3131;
     letter-spacing: 0.01px;
-    font-size: 1.6rem;
+    font-size: 16px;
     margin-bottom: 8px;
 }
 
@@ -2194,13 +2185,13 @@ a.button-default-white-2:hover {
 
 @media (max-width: 767px) {
     .flip-container .img-wrapper .back .content-wrapper h4 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 575px) {
     .flip-container .img-wrapper .back .content-wrapper h4 {
-        font-size: 1.8rem;
+        font-size: 18px;
         margin-bottom: 5px;
     }
 }
@@ -2420,7 +2411,7 @@ a.focus-flip:focus {
     font-weight: 700;
     position: relative;
     color: #434c4e;
-    font-size: 2.4rem;
+    font-size: 24px;
     line-height: 1.5;
     margin: 0;
     border: 2px solid;
@@ -2457,7 +2448,7 @@ a.focus-flip:focus {
 /* increase header size after 700px */
 @media all and (min-width: 700px) {
     .bubblequote h3 {
-        font-size: 2.1rem;
+        font-size: 21px;
         line-height: 1.4;
         letter-spacing: 0.1px;
     }
@@ -2510,7 +2501,7 @@ a.focus-flip:focus {
 }
 
 .two-grid-info .subtitle {
-    font-size: 1.7rem;
+    font-size: 17px;
     letter-spacing: -0.1px;
     position: relative;
     margin-bottom: 50px;
@@ -2649,7 +2640,7 @@ a.focus-flip:focus {
 }
 
 .icon-paragraph .icon-wrapper i {
-    font-size: 1.6rem;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -2659,7 +2650,7 @@ a.focus-flip:focus {
     line-height: 1;
     margin-bottom: 12px;
     margin-top: 7px;
-    font-size: 2.3rem;
+    font-size: 23px;
     font-family: var(--font-second);
     color: var(--header-color);
 }
@@ -2685,7 +2676,7 @@ a.focus-flip:focus {
 
 @media (max-width: 767px) {
     .icon-paragraph .title-service {
-        font-size: 2.1rem;
+        font-size: 21px;
         margin-bottom: 8px;
     }
 }
@@ -2717,7 +2708,7 @@ a.focus-flip:focus {
     opacity: 0.9;
     letter-spacing: 0.2px;
     font-family: var(--font-second);
-    font-size: 2.15rem;
+    font-size: 21.5px;
     font-weight: 600;
 }
 
@@ -2767,7 +2758,7 @@ a.focus-flip:focus {
 
     .two-grid-info-dark h2.title {
         margin-bottom: 30px;
-        font-size: 2.9rem;
+        font-size: 29px;
     }
 
     .two-grid-info-dark .content {
@@ -2939,7 +2930,7 @@ a.focus-flip:focus {
     line-height: 1;
     font-weight: 700;
     font-family: var(--font-second);
-    font-size: 2.2rem;
+    font-size: 22px;
     letter-spacing: -0.3px;
 }
 
@@ -2966,7 +2957,7 @@ a.focus-flip:focus {
     }
 
     .content-full-width-style .content-wrapper h3 {
-        font-size: 1.9rem;
+        font-size: 19px;
     }
 
     .content-full-width-style .service-wrapper:not(:last-child) {
@@ -2997,14 +2988,14 @@ a.focus-flip:focus {
     font-weight: 600;
     line-height: 1;
     margin-right: 20px;
-    font-size: 4.8rem;
+    font-size: 48px;
     margin-bottom: 10px;
     text-align: left;
     font-family: var(--font-second);
 }
 
 .steps-wrapper .step-body h3 {
-    font-size: 2.1rem;
+    font-size: 21px;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1;
@@ -3031,7 +3022,7 @@ a.focus-flip:focus {
     }
 
     .steps-wrapper .num {
-        font-size: 5.4rem;
+        font-size: 54px;
     }
 }
 
@@ -3039,11 +3030,11 @@ a.focus-flip:focus {
     .steps-wrapper .num {
         min-width: 75px;
         margin-right: 10px;
-        font-size: 4.8rem;
+        font-size: 48px;
     }
 
     .steps-wrapper .step-body h3 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 }
 
@@ -3077,7 +3068,7 @@ a.focus-flip:focus {
 
 .icon-boxes .icon {
     margin-bottom: 25px;
-    font-size: 4.5rem;
+    font-size: 45px;
     text-shadow: 1px 2px 5px var(--text-shadow-dark);
 }
 
@@ -3144,7 +3135,7 @@ a.focus-flip:focus {
     text-align: center;
     letter-spacing: 0.1px;
     font-weight: 600;
-    font-size: 2.55rem;
+    font-size: 25.5px;
     margin-top: 5px;
     margin-bottom: 5px;
     line-height: 1;
@@ -3153,7 +3144,7 @@ a.focus-flip:focus {
 
 .testimonials .swiper-slide .review-wrapper .position {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 13px;
     color: var(--black_defaultr);
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -3196,7 +3187,7 @@ a.focus-flip:focus {
 .testimonials .nav .swiper-button-prev-testimonials i,
 .testimonials .nav .swiper-button-next-testimonials i {
     transition: all .3s ease;
-    font-size: 4rem;
+    font-size: 40px;
     color: #fff;
 }
 
@@ -3218,7 +3209,7 @@ a.focus-flip:focus {
 
     .testimonials .swiper-slide .review-wrapper .client {
         margin-bottom: 5px;
-        font-size: 2.2rem;
+        font-size: 22px;
     }
 
     .testimonials .swiper-slide .review-wrapper .position {
@@ -3241,11 +3232,11 @@ a.focus-flip:focus {
     }
 
     .testimonials .swiper-slide .review-wrapper .client {
-        font-size: 1.6rem;
+        font-size: 16px;
     }
 
     .testimonials .swiper-slide .review-wrapper .position {
-        font-size: 1.1rem;
+        font-size: 11px;
     }
 
     .testimonials .swiper-container .nav {
@@ -3452,7 +3443,7 @@ blockquote.blockquote-text.type2.left p:after {
     color: #fff;
     font-weight: 600;
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 27px;
     line-height: 1.45;
     letter-spacing: -0.1px;
     padding: 0 14px;
@@ -3460,14 +3451,14 @@ blockquote.blockquote-text.type2.left p:after {
 
 .main-content .blockquote-img blockquote h4 {
     font-weight: 500;
-    font-size: 2.45rem;
+    font-size: 24.5px;
     line-height: 1.25;
     border-left: 3px solid #fff;
 }
 
 @media (max-width: 767px) {
     .blockquote-img blockquote h4 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .blockquote-img blockquote {
@@ -3513,7 +3504,7 @@ p.accordion-header {
 
 .accordion-type-1 .accordion .accordion-header {
     color: #4c5356;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 600;
     padding: 14px 25px;
     cursor: pointer;
@@ -3592,7 +3583,7 @@ p.accordion-header {
     transition: all .3s ease-in-out;
     border-bottom: 1px solid var(--default-border);
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 2;
 }
 
@@ -3664,7 +3655,7 @@ p.accordion-header {
     border: 1px solid var(--default-border);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-size: 1.35rem;
+    font-size: 13.5px;
     font-family: var(--font-second);
 }
 
@@ -3748,7 +3739,7 @@ p.accordion-header {
 
 @media (max-width: 1199px) {
     .tabs-section-type-1 .tab-trigger {
-        font-size: 1.3rem;
+        font-size: 13px;
         padding: 17px 15px;
     }
 
@@ -3838,11 +3829,11 @@ p.accordion-header {
 
 @media (max-width: 767px) {
     .tabs-section-type-1 .tab-trigger {
-        font-size: 1.3rem;
+        font-size: 13px;
     }
 
     .tabs-section-type-1 .tab-side .page-section-title {
-        font-size: 2rem;
+        font-size: 20px;
         margin-bottom: 5px;
     }
 
@@ -3896,14 +3887,14 @@ p.accordion-header {
     color: var(--black_default);
     opacity: 0.5;
     text-align: center;
-    font-size: 3rem;
+    font-size: 30px;
     margin-bottom: 16px;
     transition: all .2s ease-in-out;
 }
 
 .tabs-section-type-2 .tab-trigger h6 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 13px;
     text-transform: uppercase;
     color: #5a6163;
     opacity: 0.7;
@@ -3977,7 +3968,7 @@ p.accordion-header {
     }
 
     .tabs-section-type-2 .tab-trigger i {
-        font-size: 2.5rem;
+        font-size: 25px;
         margin-bottom: 20px;
         margin-top: 15px;
     }
@@ -4070,7 +4061,7 @@ table th {
     font-weight: 700;
     line-height: 1;
     margin-bottom: 15px;
-    font-size: 3.45rem;
+    font-size: 34.5px;
     font-family: var(--font-second);
     color: var(--header-color);
 }
@@ -4086,7 +4077,7 @@ table th {
 
 @media (max-width: 991px) {
     .contacts-grid .grid-item .content .contact {
-        font-size: 1.3rem;
+        font-size: 13px;
     }
 }
 
@@ -4286,7 +4277,7 @@ table th {
 }
 
 .follow-us-section .social-box i {
-    font-size: 1.5rem;
+    font-size: 15px;
 }
 
 @media (max-width: 991px) {
@@ -4353,7 +4344,7 @@ table th {
     font-weight: 700;
     margin: 0px;
     color: var(--homenet-orange);
-    font-size: 10rem;
+    font-size: 100px;
     line-height: 1;
 }
 
@@ -4362,7 +4353,7 @@ table th {
     font-weight: 600;
     margin: 6px 0 15px;
     color: var(--homenet-orange);
-    font-size: 3rem;
+    font-size: 30px;
     letter-spacing: -0.2px;
     line-height: 1.5;
 }
@@ -4372,7 +4363,7 @@ table th {
     color: rgba(255, 255, 255, 0.7);
     margin: 0 0 30px 0;
     padding: 0 35px;
-    font-size: 1.4rem;
+    font-size: 14px;
 }
 
 .header-404 .wrapper-404-alert .search-form-404 {
@@ -4408,7 +4399,7 @@ table th {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 16px;
     border-radius: 5px;
     transition: all .2s ease-in-out;
     font-weight: 500;
@@ -4435,11 +4426,11 @@ table th {
         width: 355px;
     }
     .header-404 .wrapper-404-alert h1 {
-        font-size: 8.5rem;
+        font-size: 85px;
         margin-bottom: 10px;
     }
     .header-404 .wrapper-404-alert h2 {
-        font-size: 2.5rem;
+        font-size: 25px;
     }
     .header-404 .wrapper-404-alert p {
         margin-bottom: 35px;
@@ -4455,10 +4446,10 @@ table th {
 
 @media (max-width: 767px) {
     .header-404 .wrapper-404-alert h1 {
-        font-size: 8rem;
+        font-size: 80px;
     }
     .header-404 .wrapper-404-alert h2 {
-        font-size: 2.2rem;
+        font-size: 22px;
     }
     .header-404 .wrapper-404-alert p {
         margin-bottom: 20px;
@@ -4473,6 +4464,6 @@ table th {
         width: 90%;
     }
     .header-404 .wrapper-404-alert .button-back {
-        font-size: 1.4rem;
+        font-size: 14px;
     }
 }
