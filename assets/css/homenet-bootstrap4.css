@@ -134,7 +134,7 @@ body {
 
 body.zh-cn div * {  
     font-family: "Montserrat", sans-serif; 
-    font-family: "Nunito", sans-serif; 
+    font-family: "Nunito", "Muli", sans-serif; 
     letter-spacing: initial !important;
 }
 
