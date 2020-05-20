@@ -132,7 +132,13 @@ body {
     color: var(--default-font-color);
 }
 
-body.zh-hk div *,
+body.zh-cn div * {  
+    font-family: "Montserrat", sans-serif; 
+    font-family: "Nunito", sans-serif; 
+    letter-spacing: initial !important;
+}
+
+
 body.zh-cn div * {  
     font-family: "Montserrat", sans-serif; 
     font-family: "Nunito", 'Verdana', 'Avenir', "Noto Serif SC", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif; 
