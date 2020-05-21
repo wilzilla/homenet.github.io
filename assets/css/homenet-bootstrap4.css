@@ -143,6 +143,7 @@ body.zh-hk div * {
     font-family: "Montserrat", sans-serif; 
     font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif; 
     letter-spacing: initial !important;
+    font-weight: 300;
 }
 
 body.zh-hk h1, body.zh-cn h1 {  
