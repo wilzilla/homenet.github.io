@@ -141,12 +141,16 @@ body.zh-cn div * {
 
 body.zh-hk div * {  
     font-family: "Montserrat", sans-serif; 
-    font-family: "Nunito", 'Verdana', 'Avenir', "Noto Serif SC", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif; 
+    font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif; 
     letter-spacing: initial !important;
 }
 
 body.zh-hk h1, body.zh-cn h1 {  
-font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif !important;
+font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif;
+font-family: "Montserrat", sans-serif; 
+font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif; 
+font-family: "Microsoft Yahei", sans-serif;
+font-weight: 600;
 }
 
 html:lang(zh-hk),
