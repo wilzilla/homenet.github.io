@@ -141,7 +141,7 @@ body.zh-cn div * {
 
 body.zh-hk div * {  
     font-family: "Montserrat", sans-serif; 
-    font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", "Noto Sans CJK {JP, KR, SC, TC}", sans-serif; 
+    font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif; 
     letter-spacing: initial !important;
     font-weight: 300;
 }
@@ -149,7 +149,7 @@ body.zh-hk div * {
 body.zh-hk h1, body.zh-cn h1 {  
 font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif;
 font-family: "Montserrat", sans-serif; 
-font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", "Noto Sans", "Noto Sans CJK {JP, KR, SC, TC}", sans-serif; 
+font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", "Noto Sans", "Noto Sans CJK SC", sans-serif; 
 font-family: "Microsoft Yahei", sans-serif;
 font-weight: 600;
 }
