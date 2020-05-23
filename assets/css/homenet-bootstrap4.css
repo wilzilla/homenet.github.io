@@ -130,36 +130,33 @@
 body {
     font-family: var(--font-main);
     color: var(--default-font-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.zh-cn div * {  
-    font-family: "Montserrat", sans-serif; 
-    font-family: sans-serif; 
+    font-family: "Nunito", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     letter-spacing: initial !important;
     font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
 body.zh-hk div * {  
-    font-family: "Montserrat", sans-serif; 
-    font-family: sans-serif; 
+    font-family: "Nunito", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     letter-spacing: initial !important;
     font-weight: 300;
-}
-
-body * {  
-    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.zh-hk h1, body.zh-cn h1 {  
-font-family: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif;
-font-family: "Nunito", 'Verdana', 'Avenir', "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", "Noto Sans", sans-serif;
-font-family: "Montserrat", sans-serif; 
+font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 font-weight: 600;
 }
 
-html:lang(zh-hk),
-html
+html:lang(zh)
 {font-size: 11px !important; }
 
 
@@ -1116,6 +1113,14 @@ section {
     word-spacing: 0.5px;
 }
 
+.content-page p.thicc {
+    font-weight: 400;
+    color: #333;
+    -webkit-text-stroke: 0.35px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.03px;
+    word-spacing: 1.3px;
+}
+
 @media (max-width: 767px) {
     .content-page p {
         font-weight: 400;
@@ -1135,13 +1140,21 @@ section {
     line-height: 1.5;
     font-size: 1.8rem;
     color: #000;
-    -webkit-text-stroke: 0.38px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.3);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.06px;
     word-spacing: 0.4px;
+}
+
+/* Thicc */
+.smaller-font.thicc p {
+    font-weight: 400;
+    color: #333;
+    -webkit-text-stroke: 0.35px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.05px;
 }
 
 
