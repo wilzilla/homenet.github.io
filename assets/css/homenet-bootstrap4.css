@@ -21,7 +21,7 @@
     /* Homenet Font Family */
     --font-main: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-second: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
-    --font-zh: "Montserrat", 'Verdana', 'Avenir', "Noto Sans SC", sans-serif;
+    --font-zh: "Montserrat", 'Verdana', 'Avenir', sans-serif;
     /* Homenet Fonts Colors */
     --header-color: #394649;
     --thin-font-color: #000;
