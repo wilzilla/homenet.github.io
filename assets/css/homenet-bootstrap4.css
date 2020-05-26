@@ -4450,12 +4450,13 @@ table th {
 }
 
 .header-404 .wrapper-404-alert .button-back:hover {
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: var(--homenet-orange);
+    border: 1px solid var(--homenet-orange);
 }
 
 .header-404 .wrapper-404-alert .button-back:hover i {
-    color: #000;
+    color: #fff;
 }
 
 @media (max-width: 991px) {
