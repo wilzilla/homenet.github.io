@@ -134,7 +134,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body.zh-cn div * {  
+body.zh-Hans-CN div * {  
     font-family: "Nunito", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     letter-spacing: initial !important;
     font-weight: 300;
@@ -143,7 +143,7 @@ body.zh-cn div * {
 }
 
 
-body.zh-hk div * {  
+body.zh-Hant-HK div * {  
     font-family: "Nunito", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     letter-spacing: initial !important;
     font-weight: 300;
@@ -151,12 +151,13 @@ body.zh-hk div * {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body.zh-hk h1, body.zh-cn h1 {  
+body.zh-Hant-HK h1, body.zh-Hans-CN h1 {  
 font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 font-weight: 600;
 }
 
-html:lang(zh)
+html:lang(zh-Hant-HK),
+html:lang(zh-Hans-CN)
 {font-size: 11px !important; }
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-HK">
+<html lang="zh-Hans-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -13,17 +13,24 @@
     <link rel="stylesheet" href="assets/css/homenet-navbar.css">
     <link rel="stylesheet" href="assets/css/homenet-footer.css">
     <link rel="stylesheet" href="assets/css/calculator.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-
     <!-- Page effects CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Muli:wght@200;300;400;500;600;700&display=swap" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Muli:wght@200;300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+
 </head>
 
-<body class="zh-Hant-HK">
+<body class="zh-Hans-CN">
     <!-- Header -->
     <div class="homenet-header header-shadow header-dark homenet-mega-menu no-sticky">
         <div class="sticky-bar-bg">
@@ -449,11 +456,11 @@
         <header class="page-header parallax-window bg_img dark_overlay" data-src="assets/images/content/content.jpg">
             <div class="bs4 container pg-header-wrapper d-flex flex-column justify-content-end">
                 <div class="pg-header-elements text-left">
-                    <h1 class="content-page-title text-left">香港租務印花稅計算器</h1>
+                    <h1 class="content-page-title text-left">物业按揭计算器(可调整利率)</h1>
                     <nav class="title-breadcrumb" aria-label="bs4 breadcrumb">
                         <ol class="bs4 breadcrumb breadcrumb-small justify-content-start mb-0 px-0">
-                            <li class="breadcrumb-item text-uppercase"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item text-uppercase active" aria-current="page">香港租務印花稅計算器</li>
+                            <li class="breadcrumb-item text-uppercase"><a href="#">首页</a></li>
+                            <li class="breadcrumb-item text-uppercase active" aria-current="page">物业按揭计算器</li>
                         </ol>
                     </nav>
                     <div class="burger-container">
@@ -478,53 +485,73 @@
                                     <img src="assets/images/features-icon-02.png" alt="features" width="80" height="80"></div>
                                 <div class="text-center text-md-left bs4 col-sm-9 col-md-6 col-lg-12">
                                     <div class="list-group list-group-flush">
-                                        <a href="#" class="list-group-item list-group-item-action active">
-                                            香港租務印花稅計算器
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            香港租务印花税计算器
                                         </a>
-                                        <a href="#" class="list-group-item list-group-item-action">香港買賣印花稅計算器</a>
-                                        <a href="#" class="list-group-item list-group-item-action">物業按揭計算器(可調整利率)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">香港买卖印花税计算器</a>
+                                        <a href="#" class="list-group-item list-group-item-action active">物业按揭计算器(可调整利率)</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="bs4 col-lg-9 order-lg-1 pr-lg-3 main-content">
-                        <div class="column-element white-section calc-container rent-calc">
+                        <div class="column-element white-section calc-container mort-calc">
                             <div class="all">
                                 <div class="bs4 row no-gutters rent calc-results">
                                     <div class="bs4 col-12 total calc-cell">
                                         <div class="total-figures">
-                                            <div id="stamp_duty">
+                                            <div id="monthly_payment">
                                                 <div class="empty-total"></div>
                                             </div>
-                                            <div class="result-desc"><a href="#rentstamp">各方須付之印花稅*</a></div>
                                         </div>
                                     </div>
-                                    <div class="bs4 col-12 col-sm parts calc-cell">
+                                    <div class="bs4 col-12 col-sm parts calc-cell noshow-mortgage">
                                         <div class="bs4 row no-gutters">
-                                            <div class="bs4 col-6 col-sm parts-result" id="average_annual">
-                                                <span class="empty min">請填寫以下計算所需資料</span>
+                                            <div id="piechart" class="bs4 col-12 col-sm-4">
+                                                <span class="empty min">Fill in the details below to start calculating</span>
                                             </div>
-                                            <div class="bs4 col-6 col-sm parts-result" id="at_rate"></div>
-                                            <div class="bs4 col-12 col-sm parts-result" id="total_stamp_duty"></div>
+                                            <div id="pietable" class="bs4 col-12 col-sm-8"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="calc-input calc-cell">
-                                    <div class="bs4 row no-gutters rent-row-1">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">月租 HKD$</div><input id="rent" type="text" value=",000" />
+                                    <div class="mort-input row1">
+                                        <div class="price">
+                                            <div class="price-hd">物业价钱 $</div><input id="price" type="text" value="0,000,000" />
                                         </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">租期</div><input id="terms" type="text" value="24"/>個月
+                                        <div class="percent">
+                                            按揭成数
+                                            <div class="param">
+                                                <input id="mortgage" type="text" value="70" /> %</div>
+                                        </div>
+                                        <div class="term">
+                                            供款年期
+                                            <div class="param"><input id="terms" type="text" value="30" />年</div>
                                         </div>
                                     </div>
-                                    <div class="bs4 row no-gutters rent-row-2">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">起租日期</div><input id="start-date" type="text" placeholder="如有，請提供" value=""/>
+                                    <div class="mort-input row2">
+                                        <div class="title">现时利率</div>
+                                        <div class="cslide">
+                                            <div id="cmortgage"></div>
                                         </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">免租期</div><input id="total-rentfree" type="text"/>日
+                                        <div class="cinput">
+                                            <input id="cmortgage_input" type="text" /> %
+                                        </div>
+                                        <div class="cyears">
+                                            固定为 <input id="fix_years" type="text" /> 年
+                                        </div>
+                                    </div>
+                                    <div class="mort-input row3">
+                                        <div class="title">预计利率</div>
+                                        <div class="aslide">
+                                            <div id="amortgage"></div>
+                                        </div>
+                                        <div class="ainput">
+                                            <input id="amortgage_input" type="text" /> %
+                                        </div>
+                                        <div class="ayears">
+                                            于 <input id="after_years" type="text" /> 年后
                                         </div>
                                     </div>
                                 </div>
@@ -538,56 +565,21 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px" fill="#fff" viewBox="0 446.57 1530.71 1530.54">
                                             <path d="M765.38 446.57C342.62 446.57 0 789.07 0 1211.84c0 422.65 342.62 765.27 765.38 765.27 422.48 0 765.33-342.62 765.33-765.27.06-422.77-342.84-765.27-765.33-765.27zm505.05 865.58l-343.2 343.14c-44.6 44.7-114.54 46.82-156.34 5.08-41.7-41.75-39.53-111.68 5.08-156.24l164.17-164.28h-607.7c-59.24 0-107.04-47.96-107.14-106.98 0-59.08 47.9-106.93 107.14-106.93h610.84L778.24 961.02c-43.85-43.96-45.74-113.57-3.78-155.26 41.75-41.7 111.14-40.02 155.05 3.94l338.66 338.5c1.46 1.46 2.54 3.35 3.78 4.75 1.24 1.08 2.54 1.78 3.56 2.92 41.8 41.52 39.58 111.57-5.08 156.28z"></path>
                                         </svg>
-                                        <span>計算</span></button>
+                                        <span>计算</span></button>
                                     </div>
                                     <div class="bs4 col footer-note">
-                                        提示: 只需輸入“月租”和“租期”來計算印花稅。若計算任何“免租期”, 必須填寫"起租日期"。支票抬頭為“香港特別行政區政府”。
+                                        设定：每月包含贷款利息，预计利率与现时利率之差距于每年以一个稳定增长率或下降率调整。
                                     </div>
                                 </div>
-                                <div class="calc-table" id="rentstamp">
-                                    <div class="calc-header">印花税計算表</div>
-
-
-                                    <div id="stamp_duty_box" class="table-content">
-                                        <div class="bs4 row calc-table-head justify-content-center">
-                                            <div class="bs4 col-6 p-0">年期</div>
-                                            <div class="bs4 col-6 stamp-col col-two">收費</div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">少於1年或1年</div>
-                                                <div class="bs4 col-6 col-two"> 租期內須繳租金總額的 0.25%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">超逾1年但不超逾3年</div>
-                                                <div class="bs4 col-6 col-two">年租或平均年租的 0.5%</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">超逾3年</div>
-                                                <div class="bs4 col-6 col-two">年租或平均年租的 1%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="note">
-                                        *每份副本加$ 5之重複費於用印花稅總額。<br>
-                                        **將年租／平均年租／租金總值調高至最接近的$100計算。
-                                    </div>
+                                <div class="calc-table graph noshow">
+                                    <div id="chart_div" class="chart"></div>
                                 </div>
-
-
-<div class="calc-table noshow">
-    <div id="renttable">
-    </div>
-</div>
-
-
+                                <div class="calc-table noshow">
+                                    <div id="morttable"></div>
+                                </div>
                                 <div class="footnote">
                                     <b>Information and disclaimer:</b>
-                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the Leasing Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though upmost care and diligence was taken in the formulation and coding of this Rental Stamp Duty Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
+                                    The results generated by this mortgage calculator are intended for reference only and should not be construed as financial advice. Although we have taken utmost care and diligence in the formulation and coding of this Mortgage Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. For projections of Mortgage Payments, assumptions have been made in which interest is applied at the end of each calendar month and changes between the initial interest rate and the assumed future interest rate are to be at a constant rate of increase or decrease at the end of each calendar year. Note that these hypothetical illustrations and calculations of future projections may not be applicable to each and every Mortgage Plan in Hong Kong and is intended for reference only, for more information on Mortgage Plans and Structures you should obtain advice from qualified professionals.
                                 </div>
                             </div>
                         </div>
@@ -744,9 +736,12 @@
     <!-- homenet Content JS-file -->
     <script src="assets/js/main.js"></script>
     
-    <!-- Rental Calculator Script -->
-    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rent-calc-hk.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rent-calc-page-hk.js"></script>
+    <!-- Mortgage Calculator Script -->
+    <script type="text/javascript" src="assets/js/uislider/nouislider.js"></script>
+    <script type="text/javascript" src="assets/js/calculator/mortgage-cn.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="assets/js/calculator/mortgage-page-cn.js"></script>
+
 </body>
+
 </html>

@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="assets/css/homenet-navbar.css">
     <link rel="stylesheet" href="assets/css/homenet-footer.css">
     <link rel="stylesheet" href="assets/css/calculator.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-
     <!-- Page effects CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+    <!-- Chinese Google Font load for zh only -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700" rel="stylesheet">
 </head>
 
 <body class="zh-Hant-HK">
@@ -449,7 +449,7 @@
         <header class="page-header parallax-window bg_img dark_overlay" data-src="assets/images/content/content.jpg">
             <div class="bs4 container pg-header-wrapper d-flex flex-column justify-content-end">
                 <div class="pg-header-elements text-left">
-                    <h1 class="content-page-title text-left">香港租務印花稅計算器</h1>
+                    <h1 class="content-page-title text-left">香港買賣印花稅計算器</h1>
                     <nav class="title-breadcrumb" aria-label="bs4 breadcrumb">
                         <ol class="bs4 breadcrumb breadcrumb-small justify-content-start mb-0 px-0">
                             <li class="breadcrumb-item text-uppercase"><a href="#">首頁</a></li>
@@ -478,10 +478,10 @@
                                     <img src="assets/images/features-icon-02.png" alt="features" width="80" height="80"></div>
                                 <div class="text-center text-md-left bs4 col-sm-9 col-md-6 col-lg-12">
                                     <div class="list-group list-group-flush">
-                                        <a href="#" class="list-group-item list-group-item-action active">
+                                        <a href="#" class="list-group-item list-group-item-action">
                                             香港租務印花稅計算器
                                         </a>
-                                        <a href="#" class="list-group-item list-group-item-action">香港買賣印花稅計算器</a>
+                                        <a href="#" class="list-group-item list-group-item-action active">香港買賣印花稅計算器</a>
                                         <a href="#" class="list-group-item list-group-item-action">物業按揭計算器(可調整利率)</a>
                                     </div>
                                 </div>
@@ -489,42 +489,74 @@
                         </div>
                     </div>
                     <div class="bs4 col-lg-9 order-lg-1 pr-lg-3 main-content">
-                        <div class="column-element white-section calc-container rent-calc">
+                        <div class="column-element white-section calc-container sales-calc">
                             <div class="all">
-                                <div class="bs4 row no-gutters rent calc-results">
+                                <div class="bs4 row no-gutters calc-results">
                                     <div class="bs4 col-12 total calc-cell">
                                         <div class="total-figures">
                                             <div id="stamp_duty">
                                                 <div class="empty-total"></div>
                                             </div>
-                                            <div class="result-desc"><a href="#rentstamp">各方須付之印花稅*</a></div>
+                                            <div class="result-desc">須付之印花稅總數*</div>
                                         </div>
                                     </div>
                                     <div class="bs4 col-12 col-sm parts calc-cell">
                                         <div class="bs4 row no-gutters">
-                                            <div class="bs4 col-6 col-sm parts-result" id="average_annual">
-                                                <span class="empty min">請填寫以下計算所需資料</span>
-                                            </div>
-                                            <div class="bs4 col-6 col-sm parts-result" id="at_rate"></div>
-                                            <div class="bs4 col-12 col-sm parts-result" id="total_stamp_duty"></div>
+                                            <div class="bs4 col-6 col-sm parts-result" id="avd"><span class="empty min">請填寫以下計算所需資料</span></div>
+                                            <div class="bs4 col-6 col-sm parts-result" id="bsd"></div>
+                                            <div class="bs4 col-12 col-sm parts-result" id="ssd"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="calc-input calc-cell">
-                                    <div class="bs4 row no-gutters rent-row-1">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">月租 HKD$</div><input id="rent" type="text" value=",000" />
+                                    <div class="bs4 row no-gutters">
+                                        <div class="bs4 col-12 calc-price-col p-0">
+                                            <div class="calc-price">物業成交價 $HKD</div><input id="price" type="text" value=",000,000" />
                                         </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">租期</div><input id="terms" type="text" value="24"/>個月
+                                        <div class="bs4 col-12 calc-other-col p-0">
+                                            <div class="bs4 row no-gutters perm">
+                                                <div class="bs4 col-auto info-col">
+                                                    買方或承讓人是香港永久居民
+                                                </div>
+                                                <div class="bs4 col-auto radio-col p-0">
+                                                    <label class="homenet-radio">
+                                                        <input class="yes" type="radio" checked="checked" name="hkid" value="1">
+                                                        <span class="checkmark">是</span>
+                                                    </label>
+                                                    <label class="homenet-radio">
+                                                        <input class="no" type="radio" name="hkid" value="0">
+                                                        <span class="checkmark">否</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-auto info-col">
+                                                    買方或承讓人目前擁有香港物業
+                                                </div>
+                                                <div class="bs4 col-auto radio-col p-0">
+                                                    <label class="homenet-radio">
+                                                        <input class="yes" type="radio" name="property" value="1">
+                                                        <span class="checkmark">是</span>
+                                                    </label>
+                                                    <label class="homenet-radio">
+                                                        <input class="no" type="radio" checked="checked" name="property" value="0">
+                                                        <span class="checkmark">否</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="bs4 row no-gutters rent-row-2">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">起租日期</div><input id="start-date" type="text" placeholder="如有，請提供" value=""/>
-                                        </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">免租期</div><input id="total-rentfree" type="text"/>日
+                                        <div class="bs4 row no-gutters aquire justify-content-end full-width">
+                                            <div class="bs4 col-12 aquire-col"><span class="select-desc">賣方之物業持有期 : </span></div>
+                                            <div class="bs4 col-12 aquire-select-col">
+                                                <select name="months" class="custom-select">
+                                                    <option value=""></option>
+                                                    <option value="20">6個月或以內</option>
+                                                    <option value="15">超過6個月但在12個月或以內</option>
+                                                    <option value="10">超過12個月但在24個月或以內</option>
+                                                    <option value="10">超過24個月但在36個月或以內</option>
+                                                    <option value="0">超過36個月</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -541,53 +573,204 @@
                                         <span>計算</span></button>
                                     </div>
                                     <div class="bs4 col footer-note">
-                                        提示: 只需輸入“月租”和“租期”來計算印花稅。若計算任何“免租期”, 必須填寫"起租日期"。支票抬頭為“香港特別行政區政府”。
+                                        附注:*不論買賣雙方是否另訂不同的協議，買賣雙方須共同及個別負上繳納「從價印花稅」的法律責任; 買方或承讓人須獨自負上繳納「買家印花稅」的責任; 買賣雙方可自由裁量由哪一方承擔繳付「額外印花稅」的責任。
                                     </div>
                                 </div>
-                                <div class="calc-table" id="rentstamp">
-                                    <div class="calc-header">印花税計算表</div>
-
-
-                                    <div id="stamp_duty_box" class="table-content">
-                                        <div class="bs4 row calc-table-head justify-content-center">
-                                            <div class="bs4 col-6 p-0">年期</div>
-                                            <div class="bs4 col-6 stamp-col col-two">收費</div>
+                                <div class="calc-table" id="avd-part-1">
+                                    <div class="calc-header">從價印花稅 - AVD 第 1 標準第 1 部稅率</div>
+                                    <div class="calc-table-head">
+                                        適用於在2016年11月5日或之後就取得住宅物業所簽立的文書
+                                    </div>
+                                    <div id="stamp_duty_scale1" class="table-content">
+                                        <div class="calc-hidden">
                                         </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                    </div>
+                                    <div class="updated">
+                                        稅率劃一為物業售價或價值〔以較高者為準〕的 15%
+                                    </div>
+                                    <div class="note">
+                                        附注: 不論買賣雙方是否另訂不同的協議，買賣雙方須共同及個別負上繳納「從價印花稅」的法律責任。
+                                    </div>
+                                </div>
+                                <div class="calc-table" id="avd-scale-2">
+                                    <div class="calc-header">從價印花稅 - AVD 第 2 標準稅率</div>
+                                    <div class="calc-header2">
+                                        第2標準只適用於買方是香港永久性居民, 以及不擁有任何其他住宅物業在香港。
+                                    </div>
+                                    <div class="bs4 row calc-table-head">
+                                        <div class="bs4 col-2of10">價值超過</div>
+                                        <div class="bs4 col-2of10">不超過</div>
+                                        <div class="bs4 col-6of10 stamp-col">印花稅稅率</div>
+                                    </div>
+                                    <div id="stamp_duty_scale2" class="table-content">
                                         <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">少於1年或1年</div>
-                                                <div class="bs4 col-6 col-two"> 租期內須繳租金總額的 0.25%</div>
+                                            <div class="bs4 row no-gutters ">
+                                                <div class="bs4 col-2of10">0 </div>
+                                                <div class="bs4 col-2of10">$2,000,000 </div>
+                                                <div class="bs4 col-6of10">$100 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">超逾1年但不超逾3年</div>
-                                                <div class="bs4 col-6 col-two">年租或平均年租的 0.5%</div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$2,000,000 </div>
+                                                <div class="bs4 col-2of10">$2,351,760 </div>
+                                                <div class="bs4 col-6of10">$100＋超逾$2,000,000 的款額的 10%</div>
                                             </div>
                                         </div>
                                         <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$2,351,760 </div>
+                                                <div class="bs4 col-2of10">$3,000,000 </div>
+                                                <div class="bs4 col-6of10">1.50%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$3,000,000 </div>
+                                                <div class="bs4 col-2of10">$3,290,320 </div>
+                                                <div class="bs4 col-6of10">$45,000＋超逾$3,000,000 的款額的 10%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$3,290,320 </div>
+                                                <div class="bs4 col-2of10">$4,000,000 </div>
+                                                <div class="bs4 col-6of10">2.25%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$4,000,000 </div>
+                                                <div class="bs4 col-2of10">$4,428,570 </div>
+                                                <div class="bs4 col-6of10">$90,000＋超逾$4,000,000 的款額的 10%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$4,428,570 </div>
+                                                <div class="bs4 col-2of10">$6,000,000 </div>
+                                                <div class="bs4 col-6of10">3%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$6,000,000 </div>
+                                                <div class="bs4 col-2of10">$6,720,000 </div>
+                                                <div class="bs4 col-6of10">$180,000＋超逾$6,000,000 的款額的 10%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$6,720,000 </div>
+                                                <div class="bs4 col-2of10">$20,000,000 </div>
+                                                <div class="bs4 col-6of10">3.75%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$20,000,000 </div>
+                                                <div class="bs4 col-2of10">$21,739,120 </div>
+                                                <div class="bs4 col-6of10"> $750,000＋超逾$20,000,000 的款額的 10%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$21,739,120 </div>
+                                                <div class="bs4 col-2of10">-</div>
+                                                <div class="bs4 col-6of10"> 4.25%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="note"><span>
+                                            附注: 不論買賣雙方是否另訂不同的協議，買賣雙方須共同及個別負上繳納「從價印花稅」的法律責任。</span>
+                                    </div>
+                                </div>
+                                <div class="calc-table" id="bsd-table">
+                                    <div class="calc-header">買家印花稅 - BSD</div>
+                                    <div class="bs4 row calc-table-head">
+                                        <div class="bs4 col-8 p-0">買方的性質和居留身份</div>
+                                        <div class="bs4 col-4 stamp-col p-0">買家印花稅稅率</div>
+                                    </div>
+                                    <div id="residency_table" class="table-content">
+                                        <div>
                                             <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">超逾3年</div>
-                                                <div class="bs4 col-6 col-two">年租或平均年租的 1%</div>
+                                                <div class="bs4 col-8 p-0">買方是一間公司或不是香港永久性居民</div>
+                                                <div class="bs4 col-4 p-0">15%</div>
+                                            </div>
+                                        </div>
+                                        <div class="no-icon">
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-8 p-0">買方不是一間公司或是香港永久性居民</div>
+                                                <div class="bs4 col-4 p-0">-</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="note">
-                                        *每份副本加$ 5之重複費於用印花稅總額。<br>
-                                        **將年租／平均年租／租金總值調高至最接近的$100計算。
+                                        注釋: 買方或承讓人須獨自負上繳納「買家印花稅」的法律責任。
                                     </div>
                                 </div>
-
-
-<div class="calc-table noshow">
-    <div id="renttable">
-    </div>
-</div>
-
-
+                                <div class="calc-table" id="ssd-table">
+                                    <div class="calc-header">額外印花稅 - SSD</div>
+                                    <div class="calc-header2">
+                                        只適用於在2012年10月27日或之後取得的住宅物業。
+                                    </div>
+                                    <div class="bs4 row calc-table-head justify-content-center">
+                                        <div class="bs4 col-7 p-0">賣方之物業持有期</div>
+                                        <div class="bs4 col-5 p-0 stamp-col">   額外印花稅稅率</div>
+                                    </div>
+                                    <div id="aquisition_table" class="table-content">
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">6個月或以內</div>
+                                                <div class="bs4 col-5 p-0">20%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">超過6個月但在12個月或以內</div>
+                                                <div class="bs4 col-5 p-0">15%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">超過12個月但在24個月或以內</div>
+                                                <div class="bs4 col-5 p-0">10%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">超過24個月但在36個月或以內</div>
+                                                <div class="bs4 col-5 p-0">10%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="note">
+                                        附注:買賣雙方可自由裁量由哪一方承擔繳付「額外印花稅」的責任。
+                                    </div>
+                                </div>
                                 <div class="footnote">
                                     <b>Information and disclaimer:</b>
-                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the Leasing Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though upmost care and diligence was taken in the formulation and coding of this Rental Stamp Duty Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
+                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the “Sale or Transfer of Immovable Property” Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though utmost care and diligence was taken in the formulation and coding of this Stamp Duty Calculator for Residential Property Sales, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
                                 </div>
                             </div>
                         </div>
@@ -744,9 +927,9 @@
     <!-- homenet Content JS-file -->
     <script src="assets/js/main.js"></script>
     
-    <!-- Rental Calculator Script -->
-    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rent-calc-hk.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rent-calc-page-hk.js"></script>
+    <!-- Sales Calculator Script -->
+    <script type="text/javascript" src="assets/js/calculator/sales-calc-hk.js"></script>
+    <script type="text/javascript" src="assets/js/calculator/sales-calc-page-hk.js"></script>
 </body>
+
 </html>

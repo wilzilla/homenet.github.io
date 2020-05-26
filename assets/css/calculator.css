@@ -38,6 +38,7 @@
     border-radius: 4px;
     margin-bottom: 20px;
     padding: 25px;
+    overflow: hidden;
 }
 
 
@@ -561,7 +562,7 @@ div#stamp_duty,
     font-size: 4.4rem;
     color: var(--homenet-flat-orange);
     font-weight: 300;
-    letter-spacing: -1.4px;
+    letter-spacing: -1.2px;
     line-height: 1.4;
 }
 

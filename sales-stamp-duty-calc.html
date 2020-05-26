@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-HK">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="assets/css/homenet-navbar.css">
     <link rel="stylesheet" href="assets/css/homenet-footer.css">
     <link rel="stylesheet" href="assets/css/calculator.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-
     <!-- Page effects CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+    <!-- Chinese Google Font load for zh only -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700" rel="stylesheet">
 </head>
 
-<body class="zh-Hant-HK">
+<body>
     <!-- Header -->
     <div class="homenet-header header-shadow header-dark homenet-mega-menu no-sticky">
         <div class="sticky-bar-bg">
@@ -449,11 +449,12 @@
         <header class="page-header parallax-window bg_img dark_overlay" data-src="assets/images/content/content.jpg">
             <div class="bs4 container pg-header-wrapper d-flex flex-column justify-content-end">
                 <div class="pg-header-elements text-left">
-                    <h1 class="content-page-title text-left">香港租務印花稅計算器</h1>
+                    <h1 class="content-page-title text-left">Sales Stamp Duty Calculator</h1>
                     <nav class="title-breadcrumb" aria-label="bs4 breadcrumb">
                         <ol class="bs4 breadcrumb breadcrumb-small justify-content-start mb-0 px-0">
-                            <li class="breadcrumb-item text-uppercase"><a href="#">首頁</a></li>
-                            <li class="breadcrumb-item text-uppercase active" aria-current="page">香港租務印花稅計算器</li>
+                            <li class="breadcrumb-item text-uppercase"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item text-uppercase"><a href="#">Category</a></li>
+                            <li class="breadcrumb-item text-uppercase active" aria-current="page">Page single</li>
                         </ol>
                     </nav>
                     <div class="burger-container">
@@ -479,52 +480,84 @@
                                 <div class="text-center text-md-left bs4 col-sm-9 col-md-6 col-lg-12">
                                     <div class="list-group list-group-flush">
                                         <a href="#" class="list-group-item list-group-item-action active">
-                                            香港租務印花稅計算器
+                                            HK Property Buying Guide
                                         </a>
-                                        <a href="#" class="list-group-item list-group-item-action">香港買賣印花稅計算器</a>
-                                        <a href="#" class="list-group-item list-group-item-action">物業按揭計算器(可調整利率)</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Types of Property in Hong Kong</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Most Expensive Apartments</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="bs4 col-lg-9 order-lg-1 pr-lg-3 main-content">
-                        <div class="column-element white-section calc-container rent-calc">
+                        <div class="column-element white-section calc-container sales-calc">
                             <div class="all">
-                                <div class="bs4 row no-gutters rent calc-results">
+                                <div class="bs4 row no-gutters calc-results">
                                     <div class="bs4 col-12 total calc-cell">
                                         <div class="total-figures">
                                             <div id="stamp_duty">
                                                 <div class="empty-total"></div>
                                             </div>
-                                            <div class="result-desc"><a href="#rentstamp">各方須付之印花稅*</a></div>
+                                            <div class="result-desc">Total Stamp Duty Payable*</div>
                                         </div>
                                     </div>
                                     <div class="bs4 col-12 col-sm parts calc-cell">
                                         <div class="bs4 row no-gutters">
-                                            <div class="bs4 col-6 col-sm parts-result" id="average_annual">
-                                                <span class="empty min">請填寫以下計算所需資料</span>
-                                            </div>
-                                            <div class="bs4 col-6 col-sm parts-result" id="at_rate"></div>
-                                            <div class="bs4 col-12 col-sm parts-result" id="total_stamp_duty"></div>
+                                            <div class="bs4 col-6 col-sm parts-result" id="avd"><span class="empty min">Fill in the details below to start calculating</span></div>
+                                            <div class="bs4 col-6 col-sm parts-result" id="bsd"></div>
+                                            <div class="bs4 col-12 col-sm parts-result" id="ssd"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="calc-input calc-cell">
-                                    <div class="bs4 row no-gutters rent-row-1">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">月租 HKD$</div><input id="rent" type="text" value=",000" />
+                                    <div class="bs4 row no-gutters">
+                                        <div class="bs4 col-12 calc-price-col p-0">
+                                            <div class="calc-price">Purchase Price $</div><input id="price" type="text" value=",000,000" />
                                         </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">租期</div><input id="terms" type="text" value="24"/>個月
+                                        <div class="bs4 col-12 calc-other-col p-0">
+                                            <div class="bs4 row no-gutters perm">
+                                                <div class="bs4 col-auto info-col">
+                                                    Buyer is a HK Permanent Resident
+                                                </div>
+                                                <div class="bs4 col-auto radio-col p-0">
+                                                    <label class="homenet-radio">
+                                                        <input class="yes" type="radio" checked="checked" name="hkid" value="1">
+                                                        <span class="checkmark">Yes</span>
+                                                    </label>
+                                                    <label class="homenet-radio">
+                                                        <input class="no" type="radio" name="hkid" value="0">
+                                                        <span class="checkmark">No</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-auto info-col">
+                                                    Buyer owns a HK Residential Property
+                                                </div>
+                                                <div class="bs4 col-auto radio-col p-0">
+                                                    <label class="homenet-radio">
+                                                        <input class="yes" type="radio" name="property" value="1">
+                                                        <span class="checkmark">Yes</span>
+                                                    </label>
+                                                    <label class="homenet-radio">
+                                                        <input class="no" type="radio" checked="checked" name="property" value="0">
+                                                        <span class="checkmark">No</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="bs4 row no-gutters rent-row-2">
-                                        <div class="bs4 col-12 calc-rent-col rental-1 p-0">
-                                            <div class="left-input">起租日期</div><input id="start-date" type="text" placeholder="如有，請提供" value=""/>
-                                        </div>
-                                        <div class="bs4 col-12 calc-rent-col rental-2 p-0">
-                                                <div class="term">免租期</div><input id="total-rentfree" type="text"/>日
+                                        <div class="bs4 row no-gutters aquire justify-content-end full-width">
+                                            <div class="bs4 col-12 aquire-col"><span class="select-desc">Months since the property was last aquired</span></div>
+                                            <div class="bs4 col-12 aquire-select-col">
+                                                <select name="months" class="custom-select">
+                                                    <option value=""></option>
+                                                    <option value="20">6 months or less</option>
+                                                    <option value="15">6 months + but for 12 months or less</option>
+                                                    <option value="10">12 months + but for 24 months or less</option>
+                                                    <option value="10">24 months + but for 36 months or less</option>
+                                                    <option value="0">More than 36 months</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -538,56 +571,209 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px" fill="#fff" viewBox="0 446.57 1530.71 1530.54">
                                             <path d="M765.38 446.57C342.62 446.57 0 789.07 0 1211.84c0 422.65 342.62 765.27 765.38 765.27 422.48 0 765.33-342.62 765.33-765.27.06-422.77-342.84-765.27-765.33-765.27zm505.05 865.58l-343.2 343.14c-44.6 44.7-114.54 46.82-156.34 5.08-41.7-41.75-39.53-111.68 5.08-156.24l164.17-164.28h-607.7c-59.24 0-107.04-47.96-107.14-106.98 0-59.08 47.9-106.93 107.14-106.93h610.84L778.24 961.02c-43.85-43.96-45.74-113.57-3.78-155.26 41.75-41.7 111.14-40.02 155.05 3.94l338.66 338.5c1.46 1.46 2.54 3.35 3.78 4.75 1.24 1.08 2.54 1.78 3.56 2.92 41.8 41.52 39.58 111.57-5.08 156.28z"></path>
                                         </svg>
-                                        <span>計算</span></button>
+                                        <span>Calculate</span></button>
                                     </div>
                                     <div class="bs4 col footer-note">
-                                        提示: 只需輸入“月租”和“租期”來計算印花稅。若計算任何“免租期”, 必須填寫"起租日期"。支票抬頭為“香港特別行政區政府”。
+                                        Note: *Both the buyer and seller are jointly and severally liable for the AVD at the same extent irrespective of any agreement to the contrary, the buyer is solely liable for any BSD, and for any SSD it is up to the discretion of both the buyer and seller which party(s) is liable and to what extent.
                                     </div>
                                 </div>
-                                <div class="calc-table" id="rentstamp">
-                                    <div class="calc-header">印花税計算表</div>
-
-
-                                    <div id="stamp_duty_box" class="table-content">
-                                        <div class="bs4 row calc-table-head justify-content-center">
-                                            <div class="bs4 col-6 p-0">年期</div>
-                                            <div class="bs4 col-6 stamp-col col-two">收費</div>
+                                <div class="calc-table" id="avd-part-1">
+                                    <div class="calc-header">Stamp duty - Part 1 of Ad Valorem (AVD) Scale 1</div>
+                                    <div class="calc-table-head">
+                                        Implemented on 5 November 2016 onwards for Residential Property
+                                    </div>
+                                    <div id="stamp_duty_scale1" class="table-content">
+                                        <div class="calc-hidden">
                                         </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                        <div class="calc-hidden">
+                                        </div>
+                                    </div>
+                                    <div class="updated">
+                                        15% flat rate of the consideration or value of the property (whichever is the higher)
+                                    </div>
+                                    <div class="note">
+                                        Note: Both the buyer and the seller is jointly and severally liable to pay AVD Stamp Duty
+                                        at same extent, under the law, irrespective of any agreement to the contrary
+                                    </div>
+                                </div>
+                                <div class="calc-table" id="avd-scale-2">
+                                    <div class="calc-header">Stamp duty - Ad Valorem (AVD) Scale 2</div>
+                                    <div class="calc-header2">
+                                        Scale 2 applicable only if the buyer is a Hong Kong permanent resident and does not own any other residential property in Hong Kong.
+                                    </div>
+                                    <div class="bs4 row calc-table-head">
+                                        <div class="bs4 col-2of10">Price exceeds</div>
+                                        <div class="bs4 col-2of10">Does not exceed</div>
+                                        <div class="bs4 col-6of10 stamp-col">Stamp Duty Rate</div>
+                                    </div>
+                                    <div id="stamp_duty_scale2" class="table-content">
                                         <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">少於1年或1年</div>
-                                                <div class="bs4 col-6 col-two"> 租期內須繳租金總額的 0.25%</div>
+                                            <div class="bs4 row no-gutters ">
+                                                <div class="bs4 col-2of10">0 </div>
+                                                <div class="bs4 col-2of10">$2,000,000 </div>
+                                                <div class="bs4 col-6of10">$100 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">超逾1年但不超逾3年</div>
-                                                <div class="bs4 col-6 col-two">年租或平均年租的 0.5%</div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$2,000,000 </div>
+                                                <div class="bs4 col-2of10">$2,351,760 </div>
+                                                <div class="bs4 col-6of10">$100 + 10% of excess over $2,000,000</div>
                                             </div>
                                         </div>
                                         <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$2,351,760 </div>
+                                                <div class="bs4 col-2of10">$3,000,000 </div>
+                                                <div class="bs4 col-6of10">1.50%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$3,000,000 </div>
+                                                <div class="bs4 col-2of10">$3,290,320 </div>
+                                                <div class="bs4 col-6of10">$45,000 + 10% of excess over $3,000,000</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$3,290,320 </div>
+                                                <div class="bs4 col-2of10">$4,000,000 </div>
+                                                <div class="bs4 col-6of10">2.25%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$4,000,000 </div>
+                                                <div class="bs4 col-2of10">$4,428,570 </div>
+                                                <div class="bs4 col-6of10">$90,000 + 10% of excess over $4,000,000</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$4,428,570 </div>
+                                                <div class="bs4 col-2of10">$6,000,000 </div>
+                                                <div class="bs4 col-6of10">3%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$6,000,000 </div>
+                                                <div class="bs4 col-2of10">$6,720,000 </div>
+                                                <div class="bs4 col-6of10">$180,000 + 10% of excess over $6,000,000</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$6,720,000 </div>
+                                                <div class="bs4 col-2of10">$20,000,000 </div>
+                                                <div class="bs4 col-6of10">3.75%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$20,000,000 </div>
+                                                <div class="bs4 col-2of10">$21,739,120 </div>
+                                                <div class="bs4 col-6of10">$750,000 + 10% of excess over $20,000,000</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters">
+                                                <div class="bs4 col-2of10">$21,739,120 </div>
+                                                <div class="bs4 col-2of10">-</div>
+                                                <div class="bs4 col-6of10"> 4.25%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="note"><span>
+                                            Note: Both the buyer and the seller is jointly and severally liable to pay AVD Stamp Duty
+                                            at same extent, under the law, irrespective of any agreement to the contrary</span>
+                                    </div>
+                                </div>
+                                <div class="calc-table" id="bsd-table">
+                                    <div class="calc-header">Buyer’s Stamp Duty - BSD</div>
+                                    <div class="bs4 row calc-table-head">
+                                        <div class="bs4 col-8 p-0">Nature and residency status of the buyer</div>
+                                        <div class="bs4 col-4 stamp-col p-0">Buyers Stamp Duty Rate</div>
+                                    </div>
+                                    <div id="residency_table" class="table-content">
+                                        <div>
                                             <div class="bs4 row no-gutters justify-content-center">
-                                                <div class="bs4 col-6 p-0">超逾3年</div>
-                                                <div class="bs4 col-6 col-two">年租或平均年租的 1%</div>
+                                                <div class="bs4 col-8 p-0">Buyer is a Company or is not a HK permanent resident</div>
+                                                <div class="bs4 col-4 p-0">15%</div>
+                                            </div>
+                                        </div>
+                                        <div class="no-icon">
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-8 p-0">Buyer is not a Company and is a HK permanent resident</div>
+                                                <div class="bs4 col-4 p-0">-</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="note">
-                                        *每份副本加$ 5之重複費於用印花稅總額。<br>
-                                        **將年租／平均年租／租金總值調高至最接近的$100計算。
+                                        Note: The buyer or the transferee is soley liable to pay the Buyer’s Stamp Duty.
                                     </div>
                                 </div>
-
-
-<div class="calc-table noshow">
-    <div id="renttable">
-    </div>
-</div>
-
-
+                                <div class="calc-table" id="ssd-table">
+                                    <div class="calc-header">Special Stamp Duty - SSD</div>
+                                    <div class="calc-header2">
+                                        Applicable for properties with a previous aquisition date on or after 27 October 2012.
+                                    </div>
+                                    <div class="bs4 row calc-table-head justify-content-center">
+                                        <div class="bs4 col-7 p-0">Period since the property's last acquisition</div>
+                                        <div class="bs4 col-5 p-0 stamp-col">Special Stamp Duty Rate</div>
+                                    </div>
+                                    <div id="aquisition_table" class="table-content">
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">6 months or less </div>
+                                                <div class="bs4 col-5 p-0">20%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">More than 6 months but for 12 months or less </div>
+                                                <div class="bs4 col-5 p-0">15%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">More than 12 months but for 24 months or less </div>
+                                                <div class="bs4 col-5 p-0">10%</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bs4 row no-gutters justify-content-center">
+                                                <div class="bs4 col-7 p-0">More than 24 months but for 36 months or less </div>
+                                                <div class="bs4 col-5 p-0">10%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="note">
+                                        Note: It is up to the discretion of both the buyer and the seller which party(s) are liable for SSD and to what extent
+                                    </div>
+                                </div>
                                 <div class="footnote">
                                     <b>Information and disclaimer:</b>
-                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the Leasing Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though upmost care and diligence was taken in the formulation and coding of this Rental Stamp Duty Calculator, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
+                                    We have thoroughly tested the accuracy and verified the applicable rates in accordance and in reference to the “Sale or Transfer of Immovable Property” Stamp Duty Rate Tables provided by the Inland Revenue Department Stamp Office of Hong Kong. Though utmost care and diligence was taken in the formulation and coding of this Stamp Duty Calculator for Residential Property Sales, its accuracy and applicability to your individual circumstances are not guaranteed. Users should use this calculator at their own risk, Stamp Duty Tables and Rates are subject to change, and the information provided and results generated by this Stamp Duty calculator are intended for reference only and should not be construed as financial, legal or tax advice.
                                 </div>
                             </div>
                         </div>
@@ -744,9 +930,9 @@
     <!-- homenet Content JS-file -->
     <script src="assets/js/main.js"></script>
     
-    <!-- Rental Calculator Script -->
-    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rent-calc-hk.js"></script>
-    <script type="text/javascript" src="assets/js/calculator/rent-calc-page-hk.js"></script>
+    <!-- Sales Calculator Script -->
+    <script type="text/javascript" src="assets/js/calculator/sales-calc.js"></script>
+    <script type="text/javascript" src="assets/js/calculator/sales-calc-page.js"></script>
 </body>
+
 </html>
