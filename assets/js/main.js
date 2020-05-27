@@ -125,6 +125,29 @@
             });
         }
 
+        /* (1.6) Gallery */
+        function gallery_init(gallery) {
+            gallery.magnificPopup({
+                delegate: '.image-item',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                removalDelay: 300,
+                mainClass: 'mfp-fade',
+                fixedContentPos: false,
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+            });
+        }
+
         /* (1.7) Parallax */
         function parallax_init(container) {
             for (let i = 0; i < container.length; i++) {
@@ -135,6 +158,20 @@
                     speed: speed
                 });
             }
+        }
+
+        /* (1.8) Image modal */
+        function image_modal_init(modal) {
+            modal.magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-fade',
+                image: {
+                    verticalFit: true
+                },
+            });
         }
 
         /* (2) Sizes for flip cards */
@@ -207,19 +244,34 @@
                 }
             });
 
-            // Swiper portfolio
-            let swiper_portfolio = new Swiper('.swiper-portfolio', {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
+            // Swiper Gallery 1 image
+            let swiper_gallery = new Swiper('.swiper-gallery', {
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination-bullets-default',
+                    type: 'bullets',
+                    clickable: true,
                 },
+                spaceBetween: 0,
+                loop: false,
+                navigation: {
+                    nextEl: '.swiper-button-next-portfolio',
+                    prevEl: '.swiper-button-prev-portfolio',
+                }
+            });
+
+            // Swiper Showcase 3 image
+            let swiper_showcase = new Swiper('.swiper-showcase', {
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination-bullets-default',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                spaceBetween: 10,
+                loop: false,
                 breakpoints: {
-                    1199: {
-                        slidesPerView: 3,
-                    },
-                    767: {
+                    1250: {
                         slidesPerView: 2,
                     },
                     575: {
@@ -352,6 +404,9 @@
         // Parallax background
         let parallax_background = $('.parallax-window');
 
+        // Image modal
+        let image_modal = $('.image-popup');
+
         // Progress bar
         let progress_bar = '.progress-bar-line';
 
@@ -366,6 +421,9 @@
 
         // Isotope grid
         let isotope_grid = $('.grid');
+
+        // Gallery
+        let gallery = $('.popup-gallery');
 
         // Isotope button group
         let button_group = $('.button-group-default');
@@ -426,6 +484,12 @@
 
         /* [16] Parallax init */
         parallax_init(parallax_background);
+
+        /* [17] Gallery init */
+        gallery_init(gallery);
+
+        /* [18] Image modal init */
+        image_modal_init(image_modal);
 
         /* [20] Swiper init */
         swiper_init();
