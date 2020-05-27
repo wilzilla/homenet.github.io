@@ -1679,8 +1679,8 @@ a.button-default-white-2:hover {
 
 /******** INFO CONTENT PAGE ********/
 
-/* Overflow correction for animations */
-.content-page {
+/* Overflow correction for animations in full page width */
+.content-page.full {
     overflow-x: hidden;
 }
 
@@ -1865,6 +1865,17 @@ a.button-default-white-2:hover {
     border-color: transparent;
 }
 
+.side-nav-icon {
+    display: flex;
+    justify-content: center;
+}
+.side-nav-icon img {
+    vertical-align: middle;
+    margin: 4px 0 3px;
+    height: 70px;
+    opacity: 0.95;
+}
+
 @media (min-width: 992px) {
     .content-page .collapse.dont-collapse-sm#content-nav {
         display: block;
@@ -1923,7 +1934,18 @@ a.button-default-white-2:hover {
     .content-page #content-nav .list-group {
         padding: 9.5px 0;
     }
+
+    .side-nav-icon img {
+        margin: auto;
+    }
 }
+
+@media (max-width: 767px) {
+        .side-nav-icon img {
+            height: 62px;
+            margin-bottom: 8px;
+        }
+    }
 
 .content-page #content-nav .list-group-item::before {
     width: 3px;
@@ -1968,7 +1990,7 @@ a.button-default-white-2:hover {
 @media (min-width: 992px) {
     .content-page .bs4.container {
         max-width: 93vw;
-        padding: 0px 11.5px;
+        padding: 0px 11px;
     }
 }
 

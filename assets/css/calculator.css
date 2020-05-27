@@ -1,3 +1,7 @@
+.content-page .calculator.content-section .bs4.container {
+        padding: 0px 11.5px;
+}
+
 .calc-container {
     font-family: var(--font-second);
     font-weight: 400;
@@ -70,11 +74,6 @@
 .parts.calc-cell {
     padding: 0px;
 }
-
-
-
-
-
 
 .calc-input select {
     width: 100%;
@@ -747,6 +746,11 @@ div#ui-datepicker-div {
     letter-spacing: 0.1px;
     text-align: justify;
     padding: 14px 5px 0px 5px;
+}
+
+.mort-calc .footnote,
+.rent-calc .footnote {
+    padding: 0px 5px 0px 5px;
 }
 
 .footnote b {
