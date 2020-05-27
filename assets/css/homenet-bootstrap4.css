@@ -3185,6 +3185,50 @@ cursor: default !important;
     right: 0;
 }
 
+/* Swiper bullets */
+
+.swiper-pagination-bullets-default {
+    position: absolute;
+    bottom: 30px !important;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-showcase .swiper-pagination-bullets-default {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .swiper-pagination-bullets-default {
+        bottom: 15px !important;
+    }
+}
+
+.swiper-pagination-bullets-default .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 0 6px !important;
+    webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 10px !important;
+}
+
+.swiper-pagination-bullets-default .swiper-pagination-bullet-active {
+    background-color: var(--homenet-light-orange);
+    width: 19px;
+
+}
+
+/* Swiper other */
+
+.swiper-container .nav:before,
+.swiper-container .nav:after {
+    display: none;
+}
+
 /*** TESTIMONIALS SECTION ***/
 .testimonials {
     position: relative;
@@ -3268,11 +3312,6 @@ cursor: default !important;
     flex-wrap: wrap;
 }
 
-.swiper-container .nav:before,
-.swiper-container .nav:after {
-    display: none;
-}
-
 .testimonials .nav .swiper-button-prev-testimonials,
 .testimonials .nav .swiper-button-next-testimonials {
     width: 35px;
@@ -3353,39 +3392,6 @@ cursor: default !important;
     .testimonials .nav .swiper-button-next-testimonials {
         display: none;
     }
-}
-
-/* Swiper */
-
-.swiper-pagination-bullets-default {
-    position: absolute;
-    bottom: 30px !important;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 767px) {
-    .swiper-pagination-bullets-default {
-        bottom: 15px !important;
-    }
-}
-
-.swiper-pagination-bullets-default .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 0 6px !important;
-    webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border-radius: 10px !important;
-}
-
-.swiper-pagination-bullets-default .swiper-pagination-bullet-active {
-    background-color: var(--homenet-light-orange);
-    width: 19px;
-
 }
 
 

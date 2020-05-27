@@ -263,15 +263,36 @@
             // Swiper Showcase 3 image
             let swiper_showcase = new Swiper('.swiper-showcase', {
                 slidesPerView: 3,
-                pagination: {
-                    el: '.swiper-pagination-bullets-default',
-                    type: 'bullets',
-                    clickable: true,
-                },
                 spaceBetween: 10,
                 loop: false,
                 breakpoints: {
                     1250: {
+                        slidesPerView: 2,
+                    },
+                    575: {
+                        slidesPerView: 1,
+                    }
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-portfolio',
+                    prevEl: '.swiper-button-prev-portfolio',
+                }
+            });
+
+            // Swiper Links
+            let swiper_links = new Swiper('.swiper-links', {
+                slidesPerView: 4,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: true,
+                },
+                spaceBetween: 10,
+                loop: true,
+                breakpoints: {
+                    1199: {
+                        slidesPerView: 3,
+                    },
+                    767: {
                         slidesPerView: 2,
                     },
                     575: {
