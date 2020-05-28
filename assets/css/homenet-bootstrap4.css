@@ -160,7 +160,9 @@ html:lang(zh-Hant-HK),
 html:lang(zh-Hans-CN)
 {font-size: 11px !important; }
 
-
+html {
+    font-size: 10px;
+}
 
 /* Base Font End */
 
