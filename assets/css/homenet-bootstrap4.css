@@ -1680,7 +1680,7 @@ a.button-default-white-2:hover {
 /******** INFO CONTENT PAGE ********/
 
 /* Overflow correction for animations in full page width */
-.content-page.full section .row {
+.content-page.full section {
     overflow: hidden;
 }
 
