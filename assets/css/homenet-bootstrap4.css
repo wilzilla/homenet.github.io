@@ -102,15 +102,13 @@
     --danger: #e94b35;
     --light: #f7f9f9;
     --dark: #2c3e50;
-    --facebook: #2874a6;
-    --twitter: #5dade2;
-    --pinterest: #b03a2e;
-    --google-plus: #e74c3c;
-    --instagram: #af7ac5;
-    --dribbble: #cd6155;
-    --youtube: #cb4335;
-    --vimeo: #85c1e9;
-    --stumbleupon: #e67e22;
+    --facebook: #4267b2;
+    --twitter: #38a1f3;
+    --instagram: #C13584;
+    --linkedin: #0077b5;
+    --whatsapp: #25d366;
+    --link-share: #dd4b39;
+    --email: #007fb1;
 
     /*** BREAKPOINTS ***/
     --breakpoint-xs: 0;
