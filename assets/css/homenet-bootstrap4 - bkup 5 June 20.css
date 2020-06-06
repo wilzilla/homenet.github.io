@@ -4442,8 +4442,6 @@ table th {
     -ms-flex-align: center;
     align-items: center;
     color: #fff;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
     margin: 5px;
 }
 
@@ -4480,6 +4478,8 @@ table th {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     filter: brightness(92%);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .social-box:not(:last-child) {
