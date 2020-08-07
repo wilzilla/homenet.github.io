@@ -21,7 +21,7 @@
     /* Homenet Font Family */
     --font-main: "Muli", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
     --font-second: "Montserrat", 'Verdana', 'Avenir', 'Tahoma', sans-serif;
-    --font-zh: "Montserrat", 'Verdana', 'Avenir', sans-serif;
+    --font-zh: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     /* Homenet Fonts Colors */
     --header-color: #394649;
     --thin-font-color: #000;
@@ -133,7 +133,7 @@ body {
 }
 
 body.zh-Hans-CN div * {  
-    font-family: "Nunito", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     letter-spacing: initial !important;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -142,7 +142,7 @@ body.zh-Hans-CN div * {
 
 
 body.zh-Hant-HK div * {  
-    font-family: "Nunito", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
     letter-spacing: initial !important;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
