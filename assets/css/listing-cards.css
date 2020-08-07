@@ -95,11 +95,11 @@ position: absolute;
 }
 
 /* Responsive Header */
-.listing-card.verified .owner .bdg-name {
+.listing-card.premium .owner .bdg-name {
     margin-right: 8px;
 }
 
-.listing-card.verified .owner .source {
+.listing-card.premium .owner .source {
     min-width: 69px;
 }
 
@@ -305,22 +305,22 @@ position: absolute;
     background: url(../svg/listing/featured.svg);
 }
 
-.listing-card.verified .listing-img::before {
-    background: url(../svg/listing/verified.svg);
+.listing-card.premium .listing-img::before {
+    background: url(../svg/listing/premium.svg);
 }
 
 .listing-card.recommended .listing-img::before {
     background: url(../svg/listing/recommended.svg);
 }
 
-.listing-card.featured.verified .listing-img::before {
-    background: url(../svg/listing/featured-verified.svg);
+.listing-card.featured.premium .listing-img::before {
+    background: url(../svg/listing/featured-premium.svg);
 }
 
 .listing-card.featured .listing-img::before,
-.listing-card.verified .listing-img::before,
+.listing-card.premium .listing-img::before,
 .listing-card.recommended .listing-img::before,
-.listing-card.featured.verified .listing-img::before {
+.listing-card.featured.premium .listing-img::before {
     position: absolute;
     top: 0px;
     left: 0px;
