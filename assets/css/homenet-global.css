@@ -87,6 +87,7 @@ button {
     font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif;
 }
 
+:lang(zh),
 body:lang(zh-Hant-HK),
 body:lang(zh-Hans-CN) {
     font-size: 17px;
