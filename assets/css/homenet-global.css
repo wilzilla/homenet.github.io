@@ -49,6 +49,7 @@ button {
         max-width: 1140px;
     }
 }
+
 /*** DO NOT COPY ABOVE ***/
 
 
@@ -65,20 +66,20 @@ body {
     color: #1f2323;
     text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
     -webkit-font-smoothing: antialiased;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     text-rendering: optimizeLegibility;
-    letter-spacing: -0.01px;
-    word-spacing: 0.4px;
+    letter-spacing: 0.15px;
+    word-spacing: 0.5px;
     line-height: 1.5;
 }
 
 body.en {
-    font-size: 16px;
+    font-size: 16.5px;
 }
 
 body.en .font-second {
-      font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif !important;
+    font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif !important;
 }
 
 body.en .zh {
@@ -86,8 +87,7 @@ body.en .zh {
 }
 
 body.zh-hk,
-body.zh-cn
- {
+body.zh-cn {
     font-size: 17px;
     font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
 }
@@ -110,6 +110,7 @@ Typeface for Secondary Font-Family
 body.en .listing-card-small {
     font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif;
 }
+
 body.en .listing-card .hood,
 body.en .listing-card .source,
 body.en .listing-card .cur {
@@ -136,11 +137,12 @@ body.en .account .profile .lang .zh {
 }
 
 body.en .account .dashboard .verifications,
-body.en .account .dashboard, .left_cell_photo,
+body.en .account .dashboard,
+.left_cell_photo,
 body.en .account .listing-process .form,
 body.en .account .listing-process .status_header,
 body.en .account .listing-process .my_note .note_head {
-font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif;
+    font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif;
 }
 
 body.en .account .listing-process .form h1,
@@ -162,8 +164,7 @@ body.en .account .chat .chatting_to .divider,
 body.en .profile .input_form .form .fields,
 body.en .profile .input_form .form .selector.mobile,
 body.en .profile .input_form .form .cancel,
-body.en .profile .side_menu .content
-{
+body.en .profile .side_menu .content {
     font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif;
 }
 
@@ -174,8 +175,7 @@ body.en .agent_box .agent,
 body.en .listing-page .listing-breadcrumb,
 body.en .listing-page .join,
 body.en .listing-page .listing-source-box .about-account,
-body.en .listing-page .ref
-{
+body.en .listing-page .ref {
     font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif;
 }
 
@@ -449,7 +449,7 @@ Listing Page
     letter-spacing: -0.2px;
 }
 
-.listing-page .listing-source-box .about-account{
+.listing-page .listing-source-box .about-account {
     font-size: 13.5px;
     margin: 0px 0px;
     color: #111;
@@ -2995,4 +2995,3 @@ Action Popup
     letter-spacing: 0.3px;
     font-weight: 600;
 }
-
