@@ -66,6 +66,7 @@ body {
     color: #1f2323;
     text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     text-rendering: optimizeLegibility;
