@@ -75,31 +75,33 @@ body {
     line-height: 1.5;
 }
 
-body.en {
+body {
     font-size: 16.5px;
 }
 
-body.en .font-second {
+body .font-second {
     font-family: "Montserrat", "Verdana", "Avenir", "Tahoma", sans-serif !important;
-}
-
-body.en .zh {
-    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif !important;
-}
-
-body.zh-hk,
-body.zh-cn {
-    font-size: 17px;
-    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
-}
-
-body.zh p {
-    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif !important;
 }
 
 button {
     font-family: "Muli", "Verdana", "Avenir", "Tahoma", sans-serif;
 }
+
+body:lang(zh-Hant-HK),
+body:lang(zh-Hans-CN) {
+    font-size: 17px;
+    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
+
+p:lang(zh-Hant-HK),
+p:lang(zh-Hans-CN) {
+    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif !important;
+}
+
+button:lang(zh-Hant-HK),
+button:lang(zh-Hans-CN) {
+    font-family: "Montserrat", 'Avenir', "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif !important;
+}   
 
 
 /*
