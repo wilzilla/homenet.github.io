@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <style>
     /* This is to remove Browser Styles - Delete this body style when applying styles */
     body {
         margin: 0px;
@@ -24,6 +19,7 @@
         display: flex;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        position: relative;
     }
 
     .center-banner {
@@ -32,14 +28,16 @@
         justify-content: center !important;
     }
 
-.listing-banner-container .side-img img {
+.listing-banner-container .side-img img,
+.listing-banner-container *:before {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
 }
-.listing-banner-container .main-img img {
+.listing-banner-container .main-img
+ {
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2.5s; /* Firefox < 16 */
         -ms-animation: fadein 2.5s; /* Internet Explorer */
@@ -76,19 +74,6 @@
     to   { opacity: 1; }
 }
 
-    .main-img {
-        margin-right: 1px;
-        margin-left: 1px;
-    }
-
-    .b-left {
-        margin-left: 1px;
-    }
-
-    .b-right {
-        margin-right: 1px;
-    }
-
     .img-frame {
         height: 100%;
     }
@@ -114,7 +99,49 @@
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+        position: relative;
     }
+
+    .vr-button {
+height: 11vw;
+    width: 11vw;
+    max-width: 82px;
+    max-height: 82px;
+    background-color: rgb(255 255 255 / 0.75);
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+      transition: 0.25s;
+cursor: pointer;
+z-index: 10;
+}
+
+    .vr-button .vr-icon {
+    position: relative;
+top: 27%;
+    left: 17%;
+    width: 68%;
+      transition: 0.20s;
+}
+.vr-button:active .vr-icon {
+width: 46%;
+    top: 35%;
+    left: 28%;
+    opacity: 0.7;
+}
+    .vr-button:active {
+height: 300px;
+    width: 300px;
+    max-width: 50vw;
+    max-height: 50vw;
+    background-color: rgb(255 255 255 / 0);
+    opacity: 0;
+}
 
     /* Responsive widths */
     @media (max-width: 550px) {
@@ -123,22 +150,63 @@
             -ms-flex: 0 0 100%;
             flex: 0 0 100%;
             max-width: 100%;
+            order: 1;
         }
 
-        .img-frame {
+        .main-img .img-frame {
             max-height: 42vh;
             min-height: 40vh;
         }
 
-        .side-img {
-            display: none !important;
+        .side-img .img-frame {
+            padding-top: 1px;
         }
+
+        .listing-banner {
+            flex-wrap: wrap;
+        }
+
+        .side-img.image2{
+            order:2;
+            flex-basis: 50%;
+            height: 40vw;
+        }
+        .side-img.image3{
+            order:3;
+            flex-basis: 50%;
+            height: 40vw;
+        }
+        .side-img.image2 .img-frame{
+            padding-right: 1px;
+        }
+
+        .side-img.image4,
+        .side-img.image5 {
+            display: none !important;
+            background-image: none !important;
+        }
+            .vr-button:hover {
+        height: 11vw;
+            width: 11vw;
+        }
+
     }
 
     @media (min-width: 551px) {
         .img-frame {
             max-height: 550px;
             min-height: 450px
+        }
+        .main-img {
+            margin: 0 1px;
+        }
+
+        .b-left {
+            margin-left: 1px;
+        }
+
+        .b-right {
+            margin-right: 1px;
         }
     }
 
@@ -196,73 +264,35 @@
         }
     }
 
+    .listing-banner.featured::before {
+    background: url(../svg/listing/featured.svg);
+}
+    .listing-banner.recommended::before {
+    background: url(../svg/listing/recommended.svg);
+}
+
+.listing-banner.featured::before,
+.listing-banner.recommended::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: ' ';
+    background-size: contain;
+    background-repeat: no-repeat;
+height: 18%;
+    width: 150px;
+    min-height: 92px;
+    z-index: 2;
+}
 
 
-    /* Mobile Devices */
-    @media only screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 2) {
-        .main-img {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-        .img-frame {
-            max-height: 42vh;
-            min-height: 40vh;
-        }
-        .side-img {
-            display: none !important;
-            background-image: none !important;
-        }
-    }
 
-    </style>
-</head>
+.dIPnSz.active svg {
+    animation: 0.4s cubic-bezier(0.38, 0.7, 0.6, 0.29) 0s 1 normal none running gcegeJ;
+}
 
-<body>
-    <div class="listing-banner-container">
-        <div class="listing-banner center-banner">
-            <div class="b-left side-img image4">
-                <div class="img-frame">
-                    <picture>
-                        <source media="(min-width:992px)" srcset="https://picsum.photos/id/1081/592/888" alt="Listing Name Goes Here!">
-                        <img src="assets/svg/listing_page/nothing.png">
-                    </picture>
-                </div>
-            </div>
-            <div class="b-left side-img image2">
-                <div class="img-frame">
-                    <picture>
-                        <source media="(min-width:580px)" srcset="https://picsum.photos/id/1050/592/888" alt="Listing Name Goes Here!">
-                        <img src="assets/svg/listing_page/nothing.png">
-                    </picture>
-                </div>
-            </div>
-            <div class="main-img">
-                <div class="img-frame"><img src="https://picsum.photos/id/1068/1184/888" alt="Listing Name Goes Here!" /></div>
-            </div>
-            <div class="b-right side-img image3">
-                <div class="img-frame">
-                    <picture>
-                        <source media="(min-width:580px)" srcset="https://picsum.photos/id/1050/1184/888" alt="Listing Name Goes Here!">
-                        <img src="assets/svg/listing_page/nothing.png">
-                    </picture>
-                </div>
-            </div>
-            <div class="b-right side-img image5">
-                <div class="img-frame">
-                    <picture>
-                        <source media="(min-width:992px)" srcset="https://picsum.photos/id/1081/592/888" alt="Listing Name Goes Here!">
-                        <img src="assets/svg/listing_page/nothing.png">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <br>
-    <br>
-</body>
-
-</html>
+.dIPnSz svg {
+    width: 20px;
+    height: 20px;
+    animation: 0.55s cubic-bezier(0.38, 0.7, 0.6, 0.29) 0s 1 normal none running leKisK;
+}

@@ -1,3 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
 .search {
     background-color: #e2e9ec
 }
@@ -64,7 +82,6 @@ position: absolute;
 .listing-info {
     padding: 2% 4% 3% 4%;
     background-color: #fff;
-    color: #292929;
 }
 
 .listing-card h2.bdg-name {
@@ -74,9 +91,16 @@ position: absolute;
     letter-spacing: -0.3px;
     line-height: 26px;
     display: block;
-    min-width: 222px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.listing-card .top-row {
+    justify-content: space-between;
+}
+
+.listing-card .source {
+
 }
 
 .listing-card.sole .agent h2.bdg-name {
@@ -97,33 +121,26 @@ position: absolute;
 
 /* Responsive Header */
 .listing-card.premium .owner .bdg-name {
-    margin-right: 6px;
 }
 
 .listing-card.premium .owner .source {
-    min-width: 71px;
 }
 
 .listing-card .owner .bdg-name {
-    margin-right: 15px;
 }
 
 .listing-card .owner .source {
-    min-width: 62px;
 }
 
 .listing-card.sole .agent .bdg-name {
-    margin-right: 15px;
 }
 
 .listing-card .agent .bdg-name {
-    margin-right: 22px;
 }
 
 
 
 .listing-card .agent .source {
-    min-width: 55px;
 }
 
 .listing-card.sole .agent .source {
@@ -132,7 +149,6 @@ position: absolute;
 }
 
 .listing-card.sole .agent .source {
-    min-width: 83px;
 }
 
 
@@ -147,10 +163,11 @@ position: absolute;
     display: block;
     text-transform: uppercase;
     line-height: 26px;
-    flex: 0 0 auto;
     width: auto;
     max-width: 100%;
     position: relative;
+    padding-right: 17px;
+    flex-basis: auto;
 }
 
 .listing-card .owner .source::after,
@@ -185,8 +202,8 @@ position: absolute;
 }
 
 .listing-card .details {
+    margin-right: 8px;
     font-size: 16px;
-    min-width: 180px;
 }
 
 .listing-card .layout {
@@ -194,19 +211,30 @@ position: absolute;
     display: inline-block;
     border-right: solid 1px #000;
     line-height: 17px;
+    width: 87px;
 }
+
+.listing-card .layout span.bed {
+    margin-right: 34px;
+    position: relative;
+}
+
+.listing-card .layout span.bath {
+    position: relative;
+}
+
 
 .listing-card .layout .bath::after,
 .listing-card .layout .bed::after {
     content: ' ';
     background-size: 100%;
     height: 14px;
-    width: 31px;
+    width: 20px;
     background-repeat: no-repeat;
     display: inline-block;
-    position: relative;
-    top: 0px;
-    left: 5px;
+    position: absolute;
+    top: 2px;
+    left: 15px;
 }
 
 .listing-card .layout .bed::after {
@@ -291,49 +319,35 @@ position: absolute;
     font-size: 14px;
 }
 
-.listing-card .special {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.listing-card.featured .special::before {
+.listing-card.featured .listing-img::before {
     background: url(../svg/listing/featured.svg);
 }
 
-.listing-card.recommended .special::before {
+.listing-card.premium .listing-img::before {
+    background: url(../svg/listing/premium.svg);
+}
+
+.listing-card.recommended .listing-img::before {
     background: url(../svg/listing/recommended.svg);
 }
 
-.listing-card.vr .special::after {
-    background: url(../svg/listing/vr.svg);
+.listing-card.featured.premium .listing-img::before {
+    background: url(../svg/listing/featured-premium.svg);
 }
 
-.listing-card.featured .special::before,
-.listing-card.recommended .special::before,
-.listing-card.vr .special::after{
+.listing-card.featured .listing-img::before,
+.listing-card.premium .listing-img::before,
+.listing-card.recommended .listing-img::before,
+.listing-card.featured.premium .listing-img::before {
     position: absolute;
     top: 0px;
     left: 0px;
     content: ' ';
-    background-size: contain;
+    background-size: auto 100%;
     background-repeat: no-repeat;
-}
-
-.listing-card.featured .special::before,
-.listing-card.recommended .special::before {
     height: 33%;
-    width: 37%;
-    min-width: 125px;
-    min-height: 80px;
-    z-index: 3;
-}
-
-.listing-card.vr .special::after {
-    height: 25%;
-    width: 23%;
-    min-width: 71px;
-    min-height: 60px;
+    width: 100%;
+    display: block;
     z-index: 2;
 }
 
@@ -354,7 +368,7 @@ position: absolute;
     height: 40px;
     width: 44px;
     display: block;
-    z-index: 4;
+    z-index: 3;
     background-size: 100% 100%, auto;
     transform: scale(0.5,0.5);
     transform-origin: 100% 0;
@@ -530,10 +544,10 @@ position: absolute;
 
     }
     .listing-card .save, .listing-card .saved {
-        transform: scale(0.6,0.6);
+        transform: scale(0.7,0.7);
     }
     .listing-card .save:hover, .listing-card .saved:hover {
-        transform: scale(0.75,0.75);
+        transform: scale(0.8,0.8);
     }
 }
 
@@ -557,6 +571,7 @@ position: absolute;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        min-width: 180px;
     }
 }
 
