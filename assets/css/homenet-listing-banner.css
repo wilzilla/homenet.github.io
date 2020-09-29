@@ -29,7 +29,8 @@
     }
 
 .listing-banner-container .side-img img,
-.listing-banner-container *:before {
+.listing-banner-container *:before,
+.listing-banner-container *:after {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -117,7 +118,6 @@ height: 11vw;
     right: 0;
     border-radius: 50%;
       transition: 0.25s;
-cursor: pointer;
 z-index: 10;
 }
 
@@ -222,6 +222,7 @@ height: 300px;
             width: 555px;
             overflow: hidden;
         }
+
     }
 
     /* Desktop 1080p Default Screens */
@@ -241,6 +242,16 @@ height: 300px;
         .main-img img {
             min-width: 555px;
             width: auto;
+        }
+        .listing-banner.have-vr::after {
+            background: url(../svg/listing/vr.svg);
+        }
+
+        .listing-banner.have-vr::after {
+            height: 13.5%;
+            width: 102px;
+            min-height: 69px;
+            z-index: 2;
         }
     }
 
@@ -272,27 +283,26 @@ height: 300px;
 }
 
 .listing-banner.featured::before,
-.listing-banner.recommended::before {
+.listing-banner.recommended::before,
+.listing-banner.have-vr::after {
     position: absolute;
     top: 0px;
     left: 0px;
     content: ' ';
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.listing-banner.featured::before,
+.listing-banner.recommended::before {
 height: 18%;
     width: 150px;
     min-height: 92px;
-    z-index: 2;
+    z-index: 3;
 }
 
 
 
-.dIPnSz.active svg {
-    animation: 0.4s cubic-bezier(0.38, 0.7, 0.6, 0.29) 0s 1 normal none running gcegeJ;
-}
 
-.dIPnSz svg {
-    width: 20px;
-    height: 20px;
-    animation: 0.55s cubic-bezier(0.38, 0.7, 0.6, 0.29) 0s 1 normal none running leKisK;
-}
+
+
