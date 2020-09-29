@@ -307,7 +307,6 @@
 
         .img-frame {
             height: 60vh;
-            max-height: inherit;
         }
 
         .main-img img {
