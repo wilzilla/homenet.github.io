@@ -1,3 +1,12 @@
+/* custom */
+
+.listing-top {
+    background-color: 
+}
+
+
+/* tripfinder */
+
 .listing-content {
     margin-left: auto;
     margin-right: auto;
@@ -25,4 +34,36 @@
         width: 100%;
     }
 }
+
+
+.test-content-top {
+    width:100%;
+    background-color: red;
+}
+.test-content1 {
+    width:100%;
+    background-color: blue;
+}
+.test-content2 {
+    width:100%;
+    background-color: yellow;
+}
+.test-content3 {
+    width:100%;
+    background-color: green;
+}
+.test-content4 {
+    width:100%;
+    background-color: purple;
+}
+
+.avatar {
+    height: 70px;
+}
+
+.full-page {
+    height: 1500px;
+}
+
+
 

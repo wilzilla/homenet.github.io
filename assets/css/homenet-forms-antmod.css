@@ -1,0 +1,110 @@
+    .homenet-input {
+        border-color: var(--input-border);
+        color: var(--input-text-color);
+    }
+    
+    .homenet-input input.ant-input {
+        color: var(--input-text-color);
+    }
+    
+    .homenet-input.blue-input {
+        background-color: var(--blue-input-bg);
+    }
+    
+    .homenet-input.blue-input input.ant-input {
+        background-color: var(--blue-input-bg);
+    }
+    
+    .round-input {
+        border-radius: 100px;
+    }
+    
+    .ant-input.homenet-input,
+    .ant-input-affix-wrapper.homenet-input {
+        padding: 7.5px 11px 7.5px 25px;
+        font-size: 16px;
+        min-height: 43px;
+        transition: none;
+    }
+    
+    .homenet-input::placeholder,
+    .homenet-input *::placeholder {
+        color: var(--placeholder);
+    }
+    
+    .homenet-input::selection,
+    .homenet-input *::selection {
+        background-color: var(--input-select);
+    }
+    
+    .homenet-input>.ant-input {
+        transition: none;
+    }
+    
+    .homenet-input:hover,
+    .ant-input.homenet-input:focus {
+        border-color: var(--focus-border);
+    }
+    
+    .homenet-input .ant-input-prefix {
+        margin-right: 18px;
+        transition: none;
+    }
+    
+    .homenet-input svg {
+        fill: var(--input-svg);
+    }
+    
+    .homenet-input:focus,
+    .ant-input.homenet-input:focus,
+    .ant-input-affix-wrapper-focused,
+    .ant-input-affix-wrapper:focus {
+        border-color: var(--focus-border);
+        -webkit-box-shadow: var(--focus-shadow);
+        box-shadow: var(--focus-shadow);
+    }
+    
+    .homenet-textarea {
+        resize: vertical;
+    }
+    /* Form Scroll Bar */
+    
+    .scrollbar {
+        overflow-y: scroll !important;
+    }
+    
+    .scrollbar::-webkit-scrollbar {
+        background-color: transparent;
+        width: 16px;
+    }
+    
+    .scrollbar::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    .scrollbar::-webkit-scrollbar-track:hover {
+        background-color: transparent;
+    }
+    
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: var(--input-border);
+        border-radius: 16px;
+        border: 5px solid #fff;
+    }
+    
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: var(--focus-border);
+        border: 4.5px solid #fff;
+    }
+    
+    .scrollbar.blue-input::-webkit-scrollbar-thumb {
+        border: 5px solid var(--blue-input-bg);
+    }
+    
+    .scrollbar.blue-input::-webkit-scrollbar-thumb:hover {
+        border: 4.5px solid var(--blue-input-bg);
+    }
+    
+    .scrollbar::-webkit-scrollbar-button {
+        display: none
+    }

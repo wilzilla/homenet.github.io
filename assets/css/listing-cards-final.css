@@ -1,0 +1,753 @@
+/* GENERAL CSS */
+
+a:hover {
+    text-decoration: none;
+}
+
+ ::selection {
+    background-color: var(--selection_background);
+    color: var(--selection_color);
+}
+
+
+/* ****** LAYOUT DEMO TEMPLATE FOR SEARCH PAGE ******* */
+
+.search {
+    background-color: #e2e9ec
+}
+
+.account-demo {
+    background-color: #e9eff0;
+}
+
+.section .favorites {
+    width: 1062px;
+    margin: auto;
+}
+
+.demo-search-panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ****** end ****** */
+
+
+/* Shadow and No shadow with borders  class switcher for dark vs light background colors */
+
+.card-shadow {
+    -webkit-box-shadow: var(--card-shadow);
+    -moz-box-shadow: var(--card-shadow);
+    box-shadow: var(--card-shadow);
+    border: none;
+}
+
+.light-card-shadow {
+    -webkit-box-shadow: var(--light-card-shadow);
+    -moz-box-shadow: var(--light-card-shadow);
+    box-shadow: var(--light-card-shadow);
+    border: none;
+}
+
+.no-card-shadow .listing-info {
+    border-width: 0px 1px 1px;
+    border-style: solid;
+    border-bottom-left-radius: var(--card-radius);
+    border-bottom-right-radius: var(--card-radius);
+    border-color: #dadee2;
+}
+
+.no-card-shadow.listing-card .listing-img::after {
+    border: #dadee2 solid;
+    border-width: 1px 1px 0px;
+}
+
+
+/* ****** end ****** */
+
+.listing-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--card-radius);
+    line-height: 1.5;
+    font-size: 10px;
+    /* NOTE: Button Root Font Size 10px = 1em*/
+}
+
+.aspect-ratio {
+    padding-top: 75%;
+    position: relative;
+    min-height: 203px;
+    background-color: #fff;
+}
+
+.listing-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: var(--card-radius);
+    border-top-right-radius: var(--card-radius);
+    display: flex;
+    justify-content: center;
+}
+
+.listing-img-top {
+    height: 100%;
+    z-index: 1;
+}
+
+.listing-card .listing-img::after {
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    background: url(../svg/bg/listing/listing_bg_full.svg) no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-top-left-radius: var(--card-radius);
+    border-top-right-radius: var(--card-radius);
+}
+
+.listing-info {
+    padding: 2% 4% 3% 4%;
+    background-color: #fff;
+    color: #292929;
+}
+
+.title-source {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between !important;
+}
+
+.listing-card h2.bdg-name {
+    padding: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    font-size: 2em;
+    font-weight: 600;
+    color: #373737;
+    letter-spacing: -0.3px;
+    line-height: 26px;
+    display: block;
+    min-width: 222px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.listing-card.sole .agent h2.bdg-name {
+    min-width: 201px;
+}
+
+.listing-card .bdg-name a {
+    color: #373737;
+}
+
+.listing-card .bdg-name a:hover {
+    color: #4b9178;
+}
+
+.listing-card .bdg-name a:focus {
+    opacity: 0.6;
+}
+
+
+/* Responsive Header */
+
+.listing-card.premium .owner .bdg-name {
+    margin-right: 6px;
+}
+
+.listing-card.premium .owner .source {
+    min-width: 71px;
+}
+
+.listing-card .owner .bdg-name {
+    margin-right: 15px;
+}
+
+.listing-card .owner .source {
+    min-width: 62px;
+}
+
+.listing-card.sole .agent .bdg-name {
+    margin-right: 15px;
+}
+
+.listing-card .agent .bdg-name {
+    margin-right: 22px;
+}
+
+
+/* **** */
+
+.listing-card .agent .source {
+    min-width: 55px;
+}
+
+.listing-card.sole .agent .source {
+    letter-spacing: -0.25px;
+    font-size: 1.05em;
+}
+
+.listing-card.sole .agent .source {
+    min-width: 83px;
+}
+
+
+/* ----- */
+
+.listing-card .source {
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    padding: 0;
+    color: #373737;
+    display: block;
+    text-transform: uppercase;
+    line-height: 26px;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.listing-card .source span {
+    padding-right: 4px;
+}
+
+.listing-card .owner .source::after,
+.listing-card .agent .source::after {
+    content: ' ';
+    height: 14px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.listing-card .owner .source::after {
+    background: url(../svg/search_page/owner.svg) no-repeat;
+    background-size: 100% 100%, auto;
+}
+
+.listing-card .agent .source::after {
+    background: url(../svg/search_page/agent.svg) no-repeat;
+    background-size: 100% 100%, auto;
+}
+
+.listing-card .hood {
+    font-size: 1.2em;
+    color: #000;
+    display: block;
+    padding: 2px 0 5px 0;
+    /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; */
+}
+
+.listing-card .listing-btm {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.listing-card .info-container {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    margin-right: auto;
+    padding: 0;
+}
+
+.listing-card .details {
+    font-size: 16px;
+    min-width: 180px;
+}
+
+.listing-card .layout {
+    padding-right: 4px;
+    display: inline-block;
+    border-right: solid 1px #000;
+    line-height: 17px;
+    font-family: inherit;
+}
+
+.listing-card .layout .bath::after,
+.listing-card .layout .bed::after {
+    content: ' ';
+    background-size: 100%;
+    height: 14px;
+    width: 31px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 5px;
+}
+
+.listing-card .layout .bed::after {
+    background: url(../svg/listing/small_icons/bed_small.svg) no-repeat;
+}
+
+.listing-card .layout .bath::after {
+    background: url(../svg/listing/small_icons/bath_small.svg) no-repeat;
+}
+
+.listing-card .size {
+    padding: 0px 3px;
+    display: inline-block;
+    line-height: 15.5px;
+    letter-spacing: -0.1px;
+    font-family: inherit;
+}
+
+.listing-card .size span.num {
+    letter-spacing: -0.1px;
+}
+
+.listing-card .size .ft {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.listing-card .size span.sq {
+    font-size: 16px;
+}
+
+.listing-card .date {
+    font-size: 1.15em;
+    color: #383838;
+    margin: 2px 0 5px 0;
+}
+
+.listing-card .listing-type {
+    font-size: 1.2em;
+    color: #4d9d83;
+    margin: 6px 0 9px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.listing-card .contact-container {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+.listing-card .button-contact {
+    margin-bottom: 5px;
+}
+
+.listing-card .price {
+    background-color: rgba(44, 46, 47, 0.73);
+    display: block;
+    text-align: center;
+    transform: translateY(-66px);
+    position: absolute;
+    right: 10px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    min-width: 50px;
+    padding: 7px 18px 8px 18px;
+    z-index: 2;
+}
+
+.listing-card .sale {
+    font-size: 19px;
+    letter-spacing: -0.1px;
+    color: #fff;
+}
+
+.listing-card .sale span.cur {
+    padding-right: 4px;
+    font-size: 12px;
+}
+
+.listing-card .rent {
+    font-size: 19px;
+    letter-spacing: -0.1px;
+    color: #fff;
+}
+
+.listing-card .rent span.per {
+    padding-left: 3px;
+    font-size: 14px;
+}
+
+.listing-card .special {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.listing-card.featured .special::before {
+    background: url(../svg/listing/featured.svg);
+}
+
+.listing-card.recommended .special::before {
+    background: url(../svg/listing/recommended.svg);
+}
+
+.listing-card.vr .special::after {
+    background: url(../svg/listing/vr.svg);
+}
+
+.listing-card.featured .special::before,
+.listing-card.recommended .special::before,
+.listing-card.vr .special::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: ' ';
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.listing-card.featured .special::before,
+.listing-card.recommended .special::before {
+    height: 33%;
+    width: 37%;
+    min-width: 125px;
+    min-height: 80px;
+    z-index: 3;
+}
+
+.listing-card.vr .special::after {
+    height: 25%;
+    width: 23%;
+    min-width: 71px;
+    min-height: 60px;
+    z-index: 2;
+}
+
+.listing-card .save {
+    background: url(../svg/listing/small_icons/save.svg) no-repeat;
+}
+
+.listing-card .saved {
+    background: url(../svg/listing/small_icons/saved.svg) no-repeat;
+}
+
+.listing-card .save,
+.listing-card .saved {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    height: 40px;
+    width: 44px;
+    display: block;
+    z-index: 4;
+    background-size: 100% 100%, auto;
+    transform: scale(0.5, 0.5);
+    transform-origin: 100% 0;
+    cursor: pointer;
+}
+
+.listing-card .save:hover,
+.listing-card .saved:hover {
+    transform: scale(0.70, 0.70);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Elements Load Smoothing */
+
+.listing-card .listing-btm,
+.listing-card .hood,
+.listing-card .title-source,
+.listing-card .special::before,
+.listing-card .special::after,
+.listing-card .listing-img::after,
+.listing-card .price,
+.listing-card .save,
+.listing-card .saved {
+    animation: fadeIn 0.4s ease-in-out;
+    -moz-animation: fadeIn 0.4s ease-in-out;
+    -webkit-animation: fadeIn 0.4s ease-in-out;
+    -ms-animation: fadeIn 0.4s ease-in-out;
+    -o-animation: fadeIn 0.4s ease-in-out;
+}
+
+
+/* Layout General */
+
+.demo-search-panel.map {
+    padding: 0 6px 0 10px;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.listing-layout {
+    padding: 8px 6px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+
+/* Layout and Media Queries FOR SEARCHPAGE USE THESE FOR WIDTHS OF CARDS */
+
+
+/* With Map */
+
+@media screen and (min-width: 601px) {
+    .demo-search-panel.map {
+        padding: 0 10px 0 10px;
+    }
+    .demo-search-panel.map .listing-layout {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .demo-search-panel.map .listing-layout {
+        width: 33.3333333333%;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .demo-search-panel.map {
+        max-width: 51%;
+        padding: 0 6px 0 10px;
+    }
+    .demo-search-panel.map .listing-layout {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .demo-search-panel.map {
+        max-width: 60%;
+    }
+    .demo-search-panel.map .listing-layout {
+        width: 33.333333%;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .demo-search-panel.map .listing-layout {
+        width: 25%;
+    }
+}
+
+
+/* Full */
+
+.demo-search-panel.dont-show.map {
+    padding: 0 10px 0 10px;
+    max-width: 100%;
+}
+
+.demo-search-panel.dont-show.map .listing-layout {
+    padding: 10px 7px;
+}
+
+@media screen and (max-width: 939px) {
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 50%;
+        padding: 8px 1%;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 33.3333333333%;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1750px) {
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 16.666666%;
+    }
+}
+
+
+/* Favorites */
+
+.favorites {
+    padding: 0 10px 0 10px;
+    max-width: 100%;
+}
+
+.favorites .listing-layout {
+    width: 20%;
+    padding: 10px 7px;
+}
+
+@media screen and (min-width: 921px) {
+    .favorites .listing-layout {
+        width: 33.333333%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .favorites .listing-layout {
+        width: 50%;
+        padding: 8px 1%;
+    }
+}
+
+
+/* General Responsive */
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    .favorites .listing-layout,
+    .demo-search-panel.map .listing-layout,
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 100%;
+        padding: 8px 8.5%;
+    }
+    .listing-card .save,
+    .listing-card .saved {
+        transform: scale(0.6, 0.6);
+    }
+    .listing-card .save:hover,
+    .listing-card .saved:hover {
+        transform: scale(0.75, 0.75);
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .favorites .listing-layout,
+    .demo-search-panel.map .listing-layout,
+    .demo-search-panel.dont-show.map .listing-layout {
+        width: 100%;
+        padding: 8px 2%;
+    }
+    .listing-card .save,
+    .listing-card .saved {
+        transform: scale(0.6, 0.6);
+    }
+    .listing-card .save:hover,
+    .listing-card .saved:hover {
+        transform: scale(0.75, 0.75);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .listing-card h2.bdg-name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .listing-card h2.bdg-name {
+        width: auto;
+        min-width: 0;
+        flex: auto;
+    }
+}
+
+
+/**** Homenet Solid General Styles to ADD to General CSS ****/
+
+.homenet-btn {
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    /* transition: background-color .1s ease-in-out; */
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+/* Button General - Contact */
+
+.button-contact {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5em;
+    border-radius: 100px;
+    background-color: var(--homenet-teal);
+    border: 2px solid var(--homenet-teal);
+    letter-spacing: 0.5px;
+    min-width: 126px;
+    min-height: 41px;
+    color: #fff;
+}
+
+.button-contact:hover {
+    background-color: transparent;
+    color: var(--homenet-teal);
+    cursor: pointer;
+}
+
+.button-contact:active {
+    background-color: var(--homenet-teal);
+    color: #fff;
+    opacity: 0.7;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+
+/* Chinese */
+
+body.zh .listing-card {
+    font-size: 11px;
+}
+
+body.zh .listing-card * {
+    /* letter-spacing: 0px !important; */
+}
+
+body.zh .button-contact {
+    font-weight: 600;
+}
+
+body.zh .listing-card .source,
+body.zh .listing-card.sole .agent .source {
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+body.zh .listing-card .title-source {
+    margin-bottom: 7px;
+}
+
+body.zh .listing-card .details {
+    margin-bottom: 3px;
+}
+
+body.zh .listing-card .bdg-name {
+    margin-right: 0px !important;
+    margin-top: 3px;
+}
+
+body.zh .listing-card .source,
+body.zh .listing-card .bdg-name {
+    min-width: initial !important;
+}
+
+body.zh .listing-card h2.bdg-name {
+    font-size: 2.1em;
+}
+
+
+/* **** */

@@ -1,0 +1,300 @@
+/***** THEME VARIABLES *****/
+
+:root {
+    /*** HOMENET THEME COLORS ***/
+    --homenet-orange: #fd5721;
+    --homenet-flat-orange: #ff784d;
+    --homenet-bright-orange: #fe3a14;
+    --homenet-light-orange: #f76a3d;
+    --homenet-bg-orange: #ee5231;
+    --homenet-black-jade: #2e3f42;
+    --homenet-dark-jade: #364a4e;
+    --homenet-jade: #38626a;
+    --homenet-teal: #85c3ae;
+    --homenet-dark-teal: #7eb7a4;
+    --homenet-light-teal: #b8dcd0;
+    --homenet-dark-blue: #2c3e50;
+    --footer-color-main: #2d2e33;
+    --footer-color-sub: #2c393c;
+    /*** FONTS ***/
+    /* Homenet Font Family */
+    --font-main: "Muli", "Avenir", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    --font-second: "Montserrat", "Avenir", "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    --font-main-zhthin: "Muli", "Avenir", sans-serif;
+    --font-thin-zhthin: "Montserrat", "Avenir", sans-serif;
+    /* Homenet Fonts Colors */
+    --header-color: #394649;
+    --thin-font-color: #000;
+    --default-font-color: #333;
+    --input-font-color: #717171;
+    /* Default Font Colors */
+    --gray-font-color: #dcdcdc;
+    --gray-default-font: #7f7f7f;
+    --light-font-color: #f3f3f3;
+    /*** HOMENET LAYOUT ***/
+    /* Homenet Content Page Sections */
+    --page-header-height: 370px;
+    --engage-header-height: 550px;
+    /* Homenet Page Layout Colors */
+    --white-section: #fff;
+    --light-gray-section: #fcfcfc;
+    --gray-section: #f8f8f8;
+    --dark-gray-section: #f0f0f0;
+    --black-section: #222020;
+    --viridian: #1b2631;
+    --selection_background: #dcdcdc;
+    --selection_color: #232323;
+    /* Overlay rgba Colors */
+    --default_overlay: rgba(44, 44, 44, 0.4);
+    --color_overlay: rgba(35, 35, 70, 0.25);
+    --dark_overlay: rgba(20, 20, 20, 0.65);
+    --black_overlay: rgba(33, 33, 33, 0.5);
+    /* Borders Colors */
+    --default-border: rgba(153, 153, 153, 0.2);
+    --card-border: rgba(153, 153, 153, 0.1);
+    --white-border: rgba(236, 236, 236, 0.5);
+    --thin-border: rgba(236, 236, 236, 0.09);
+    --light-border: rgba(236, 236, 236, 0.2);
+    --button-border: rgba(236, 236, 236, 0.4);
+    /* Homenet White BG form focus borders and highlights */
+    --white-form-box-shadow: 0 0 8px 0 rgba(190, 229, 236, 0.9);
+    --white-form-border: #a0c1c7;
+    /*** SHADOWS ***/
+    /* Text Shadow */
+    --text-shadow-dark: rgba(31, 31, 31, 0.5);
+    --text-shadow-medium: rgba(31, 31, 31, 0.2);
+    --text-shadow-light: rgba(31, 31, 31, 0.1);
+    --button-shadow-light: rgba(11, 11, 11, 0.15);
+    /* Box Shadows */
+    --box-shadow-dark: rgba(21, 21, 21, 0.2);
+    --box-shadow-medium: rgba(31, 31, 31, 0.1);
+    --box-shadow-light: rgba(31, 31, 31, 0.02);
+    --box-shadow-boxes: rgba(31, 31, 31, 0.02);
+    /*** OTHER COLORS ***/
+    /* Functional Colors */
+    --yes-flat-green: #c6eace;
+    --no-flat-red: #ffc8b6;
+    /* Default Colors */
+    --black_default: #232323;
+    --blue: #3498db;
+    --indigo: #2874a6;
+    --purple: #8e44ad;
+    --pink: #d98880;
+    --red: #e94b35;
+    --orange: #d4ac0d;
+    --yellow: #f1c40f;
+    --green: #2ecc71;
+    --teal: #45b39d;
+    --cyan: #85c1e9;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --light-gray: #f7f9f9;
+    --dark-viridian: #2c3e50;
+    --primary: #3498db;
+    --secondary: #45b39d;
+    --success: #2ecc71;
+    --info: #85c1e9;
+    --warning: #f1c40f;
+    --danger: #e94b35;
+    --light: #f7f9f9;
+    --dark: #2c3e50;
+    --facebook: #3b5998;
+    --twitter: #00aced;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+    --whatsapp: #46cd77;
+    --link-share: #dd4b39;
+    --email: #007fb1;
+    /*** BREAKPOINTS ***/
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-sm-max: 575.98px;
+    --breakpoint-md-max: 767.98px;
+    --breakpoint-lg-max: 991.98px;
+    --breakpoint-xl-max: 1199.98px;
+    /*** HOMENET LISTING CARDS ***/
+    --card-radius: 7px;
+    --card-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.12);
+    --light-card-shadow: -3.5px 4.5px 15.5px rgb(0, 0, 0, 0.21);
+    /*** HOMENET FORM INPUTS ***/
+    --input-text-color: #2a324b;
+    --input-border: #d2d7df;
+    --blue-input-bg: #f5f7fc;
+    --input-svg: #6a7d95;
+    --placeholder: #a8b2c3;
+    --focus-border: #abb6c4;
+    --focus-shadow: 0px 0px 8px rgb(194, 204, 230, 0.62);
+    --input-select: #9db2e8;
+    --input-svg: #6a7d95;
+}
+
+
+/*** START OF GLOBAL STYLE ***/
+
+
+/*
+################
+Body
+################
+*/
+
+body {
+    font-family: var(--font-main);
+    font-weight: 400;
+    color: #1f2323;
+    text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    /* letter-spacing: 0.15px; */
+    word-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+body {
+    font-size: 16.5px;
+}
+
+body.zh .thin-zh {
+    font-family: var(--font-main-zhthin);
+}
+
+body.zh .thin-zh.font-second {
+    font-family: var(--font-second-zhthin);
+}
+
+
+/*
+################
+Font Main
+################
+*/
+
+.font-main {
+    font-family: var(--font-main);
+}
+
+
+/*
+################
+Font Second
+################
+*/
+
+.font-second {
+    font-family: var(--font-second);
+    letter-spacing: -0.1px;
+}
+
+
+/****/
+
+
+/* ANIMATIONS */
+
+@keyframes shake {
+    0% {
+        -webkit-transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes toTopFromBottom {
+    49% {
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes toTopFromBottom {
+    49% {
+        -moz-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -moz-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes toTopFromBottom {
+    49% {
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn ease 1.3s;
+    -webkit-animation: fadeIn ease 1.3s;
+    -moz-animation: fadeIn ease 1.3s;
+    -o-animation: fadeIn ease 1.3s;
+    -ms-animation: fadeIn ease 1.3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
