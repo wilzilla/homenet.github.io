@@ -108,3 +108,159 @@
     .scrollbar::-webkit-scrollbar-button {
         display: none
     }
+    
+    
+    /* SELECT */
+
+    /* *********** */
+    
+    .ant-select.homenet-select {
+      font-size: 13.5px;
+      font-weight: 600;
+    }
+    
+    .ant-select.homenet-select input {
+      font-size: 15px;
+    }
+    
+    .homenet-select .ant-select-arrow,
+    .homenet-select .ant-select-clear {
+      right: 18px;
+    }
+    
+    /* >>> Single Select and general <<< */
+
+    .ant-select.homenet-select .ant-select-selection-placeholder {
+      font-weight: 600;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      color: #343e5c;
+    }
+    
+    .homenet-select.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector,.homenet-select.ant-select-multiple .ant-select-selector {
+      border: 1px solid #d2d7df;
+      min-height: 47px;
+      min-width: 242px;
+      -webkit-transition: box-shadow 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: box-shadow 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    
+    .homenet-select.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector {
+      padding: 0 20px;
+    }
+    
+    .homenet-select.homenet-select-rnd.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector,
+    .homenet-select.homenet-select-rnd.ant-select-multiple .ant-select-selector{
+      border-radius: 47px;
+    }
+    
+    .homenet-select.ant-select-multiple .ant-select-selection-search-input,
+    .homenet-select.ant-select-multiple .ant-select-selection-placeholder{
+        padding-left: 2%;
+    }
+    
+    .ant-select-dropdown,
+    .ant-select-selector {
+      font-family: var(--font-second);
+    }
+    
+    .homenet-select.ant-select-single
+      .ant-select-selector
+      .ant-select-selection-item,
+    .homenet-select.ant-select-single
+      .ant-select-selector
+      .ant-select-selection-placeholder,
+    .homenet-select.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector
+      .ant-select-selection-search-input {
+      line-height: 47px;
+      height: 47px;
+      cursor: pointer;
+    }
+    
+    .homenet-select.ant-select-single .ant-select-selector .ant-select-selection-item,
+    .homenet-select.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+      text-align: center;
+      padding-left: 18px;
+    }
+    
+    .homenet-select.ant-select-single .ant-select-selector .ant-select-selection-item,
+    .homenet-select.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+      text-align: center;
+    }
+    
+    .homenet-select.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector
+      .ant-select-selection-search-input {
+      padding-left: 13%;
+    }
+    
+    .homenet-select .anticon-down svg {
+      transform: scale(0.80, 0.55);
+      stroke: #383838;
+      stroke-width: 130;
+      fill: #383838;
+    }
+    
+    .homenet-select.ant-select-single.ant-select-show-search.ant-select-open .ant-select-arrow {
+      left: 18px;
+    }
+    
+    .homenet-select .anticon-search svg {
+      transform: scale(1.3, 1.3);
+      stroke: #666;
+      stroke-width: 12px;
+      fill: #666;
+    }
+    
+    .homenet-select .anticon-close-circle svg {
+      transform: scale(1.7, 1.7);
+      z-index: 2;
+      fill: #fa6060;
+    }
+    
+    
+    .homenet-select.ant-select-multiple .ant-select-selector{
+      border-radius: 9px;
+    }
+    
+    .homenet-select.ant-select-show-search.ant-select-multiple .ant-select-selector {
+        cursor: pointer;
+    }
+    
+    .homenet-select.ant-select-multiple .ant-select-selection-item {
+        height: 32px;
+        border-radius: 50px !important;
+        padding: 5px 14px;
+    }
+    
+    
+    .homenet-select.ant-select-multiple .ant-select-selector {
+        min-height: 47px;
+        overflow-y: scroll;
+      }
+    
+    .homenet-select.ant-select-multiple .ant-select-selector::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .homenet-select.ant-select-multiple.ant-select-show-arrow .ant-select-selector, .homenet-select.ant-select-multiple.ant-select-allow-clear .ant-select-selector {
+        padding-left: 9px;
+        padding-right: 36px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      .homenet-select.ant-select .ant-select-clear {
+          opacity: 1;
+      }
+    }
+    
+    /* For custom Styles in Separate Dropbox */
+    .option-label-item > span {
+      margin-right: 6px;
+    }
+    
