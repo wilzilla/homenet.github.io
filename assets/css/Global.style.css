@@ -123,7 +123,7 @@
     /*** HOMENET FORM INPUTS ***/
     --input-height-sm: 31px; /* Used for search selectors and other forms */
     --input-height-lg: 43px; /* Used for listing process forms */
-    --input-height-xlg: 47px; /* Used for listing process selectors */
+    --input-height-xlg: 45px; /* Used for listing process selectors */
     --input-text-color: #2a324b;
     --input-border: #d2d7df;
     --blue-input-bg: #f5f7fc;

@@ -140,7 +140,7 @@
     .homenet-select.ant-select-single:not(.ant-select-customize-input)
       .ant-select-selector,.homenet-select.ant-select-multiple .ant-select-selector {
       border: 1px solid #d2d7df;
-      min-height: 47px;
+      min-height: var(--input-height-lg);
       min-width: 242px;
       -webkit-transition: box-shadow 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
       transition: box-shadow 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -154,7 +154,7 @@
     .homenet-select.homenet-select-rnd.ant-select-single:not(.ant-select-customize-input)
       .ant-select-selector,
     .homenet-select.homenet-select-rnd.ant-select-multiple .ant-select-selector{
-      border-radius: 47px;
+      border-radius: 100px;
     }
     
     .homenet-select.ant-select-multiple .ant-select-selection-search-input,
@@ -176,8 +176,8 @@
     .homenet-select.ant-select-single:not(.ant-select-customize-input)
       .ant-select-selector
       .ant-select-selection-search-input {
-      line-height: 47px;
-      height: 47px;
+      line-height: var(--input-height-lg);
+      height: var(--input-height-lg);
       cursor: pointer;
     }
     
@@ -239,7 +239,7 @@
     
     
     .homenet-select.ant-select-multiple .ant-select-selector {
-        min-height: 47px;
+        min-height: var(--input-height-lg);
         overflow-y: scroll;
       }
     
