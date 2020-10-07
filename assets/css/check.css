@@ -1,0 +1,145 @@
+@import 'antd/dist/antd.css';
+
+
+/* Empty Default */
+.homenet-check .ant-checkbox-inner {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+}
+
+/* Checked Revert to default */
+.homenet-check .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #d0d0d0;
+}
+
+/* ************ */
+
+/* Search Checked Color*/
+.homenet-check.search-check .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--homenet-dark-teal);
+    border-color: var(--homenet-dark-teal);
+  
+}
+.homenet-check.search-check.ant-checkbox-wrapper:hover .ant-checkbox-inner, .homenet-check.search-check .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: var(--homenet-teal);
+}
+
+/* Search Hover Border Color*/
+.homenet-check.search-check .ant-checkbox-checked::after {
+    border-color: var(--homenet-teal);
+}
+
+/* Search Hover Shadow Color */
+.homenet-check.search-check:hover .ant-checkbox{
+-webkit-box-shadow: 0px 0px 6px 2px rgba(133,195,174,0.5);
+-moz-box-shadow: 0px 0px 6px 2px rgba(133,195,174,0.5);
+box-shadow: 0px 0px 6px 2px rgba(133,195,174,0.5);
+}
+
+/* *********** */
+
+/* Form type Empty */
+.homenet-check.form-check .ant-checkbox-inner {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #d9deeb;
+    border-radius: 4px;
+}
+
+/* Form type  Checked Revert to default */
+.homenet-check.form-check .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #d9deeb;
+}
+
+/* Form type Checked Color*/
+.homenet-check.form-check .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--homenet-yes);
+    border-color: var(--homenet-yes);
+  
+}
+.homenet-check.form-check.ant-checkbox-wrapper:hover .ant-checkbox-inner, .homenet-check.form-check .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: var(--homenet-yes);
+    border-radius: 4px;
+}
+
+/* Form type Hover Border Color*/
+.homenet-check.form-check .ant-checkbox-checked::after {
+    border-color: var(--homenet-yes);
+    border-radius: 4px;
+}
+
+/* *************** */
+
+/* Med Check Box */
+.homenet-check.homenet-check-med .ant-checkbox-inner {
+    width: 18px;
+    height: 18px;
+}
+
+.homenet-check.homenet-check-med .ant-checkbox-checked .ant-checkbox-inner::after {
+    border: 2.9px solid #fff;
+    border-top: 0;
+    border-left: 0;
+}
+
+.homenet-check.homenet-check-med .ant-checkbox-inner::after {
+    width: 6px;
+    height: 10.5px;
+    top: 45.5%;
+    left: 24.5%;
+}
+
+/* Lg Check Box */
+.homenet-check-lg.ant-checkbox-wrapper .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+}
+
+.homenet-check-lg.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner::after {
+    border: 2.9px solid #fff;
+    border-top: 0;
+    border-left: 0;
+}
+
+.homenet-check-lg.ant-checkbox-wrapper .ant-checkbox-inner::after {
+    width: 6px;
+    height: 11px;
+    top: 8px;
+    left: 4.5px;
+}
+
+
+/* Custom Form Lg Check Box */
+
+.homenet-check-lg.form-check.ant-checkbox-wrapper .ant-checkbox-inner::after {
+    top: 7px;
+    left: 3.5px;
+}
+
+
+/* Faster Animations */
+
+.homenet-check.ant-checkbox-wrapper .ant-checkbox-checked::after {
+-webkit-animation: antCheckboxEffect 0.2s ease-in-out;
+    animation: antCheckboxEffect 0.2s ease-in-out;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+.homenet-check.ant-checkbox-wrapper .ant-checkbox-inner::after {
+  -webkit-transition: all 0.15s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.15s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+/* General */
+
+.homenet-check .ant-checkbox:hover::after, .homenet-check.ant-checkbox-wrapper:hover .ant-checkbox::after {
+    visibility: visible;
+}
+
+
+

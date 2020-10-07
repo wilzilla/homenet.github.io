@@ -1,0 +1,94 @@
+@import 'antd/dist/antd.css';
+
+/* *** DEFAULT SWITCH *** */
+
+.homenet-switch.ant-switch {
+    min-width: 82px;
+    height: 43px;
+    background-color: var(--homenet-no);
+}
+
+.homenet-switch.ant-switch-checked {
+  background-color: var(--homenet-yes);
+}
+
+.homenet-switch .ant-switch-handle {
+    position: absolute;
+    width: calc(43px * 0.6);
+    height: calc(43px * 0.6);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    left: 9px;
+}
+
+.homenet-switch.ant-switch-checked .ant-switch-handle {
+    left: calc(100% - 43px * 0.6 - 9px);
+}
+
+.homenet-switch .ant-switch-handle:before {
+    border-radius: 100%;
+}
+
+/* *** YES NO SWITCH *** */
+
+.homenet-yes-no.ant-switch {
+    min-width: 82px;
+    height: 43px;
+    background-color: var(--homenet-no);
+}
+
+.homenet-yes-no.ant-switch-checked {
+  background-color: var(--homenet-yes);
+}
+
+.homenet-yes-no .ant-switch-handle {
+    position: absolute;
+    width: calc(43px * 0.6);
+    height: calc(43px * 0.6);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    left: 9px;
+}
+
+.homenet-yes-no.ant-switch-checked .ant-switch-handle {
+    left: calc(100% - 43px * 0.6 - 9px);
+}
+
+.homenet-yes-no .ant-switch-handle:before {
+    border-radius: 100%;
+}
+
+.homenet-yes-no .ant-switch-inner {
+    position: absolute;
+    opacity: 0.3;
+    color: #000;
+    font-size: 13px;
+    left: calc(100% - 30px);
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    width: 20px;
+}
+
+.homenet-yes-no.ant-switch-checked .ant-switch-inner {
+    left: 10px;
+    margin: 0;
+}
+
+.homenet-yes-no .anticon svg {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+.homenet-yes-no .anticon svg path {
+    stroke-width: 80px;
+    stroke: #000;
+}
+
+
+
