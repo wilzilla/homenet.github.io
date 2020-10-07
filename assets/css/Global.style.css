@@ -121,6 +121,7 @@
     --card-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.12);
     --light-card-shadow: -3.5px 4.5px 15.5px rgb(0, 0, 0, 0.21);
     /*** HOMENET FORM INPUTS ***/
+    --input-height-sm: 31px; /* Used for search selectors and other forms */
     --input-height-lg: 43px;
     --input-text-color: #2a324b;
     --input-border: #d2d7df;
