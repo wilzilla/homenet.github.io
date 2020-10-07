@@ -132,11 +132,13 @@
     --focus-shadow: 0px 0px 8px rgb(194, 204, 230, 0.62);
     --input-select: #9db2e8;
     --input-svg: #6a7d95;
-    --handle-shadow: -1px 2px 5.5px -1px rgb(28, 33, 34, 50%);
+    --handle-shadow: -1px 2px 5.5px -2px rgb(28, 33, 34, 50%);
 
     /*** Yes and No/cancel/delete Colours ***/    
     --homenet-yes: #4be1ab;
     --homenet-no: #fa6060;
+
+    /* speed test */
 }
 
 
