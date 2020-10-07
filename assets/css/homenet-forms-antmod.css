@@ -23,7 +23,7 @@
     .ant-input-affix-wrapper.homenet-input {
         padding: 7.5px 11px 7.5px 25px;
         font-size: 16px;
-        min-height: 43px;
+        min-height: var(--input-height-lg);
         transition: none;
     }
     

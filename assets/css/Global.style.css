@@ -122,7 +122,8 @@
     --light-card-shadow: -3.5px 4.5px 15.5px rgb(0, 0, 0, 0.21);
     /*** HOMENET FORM INPUTS ***/
     --input-height-sm: 31px; /* Used for search selectors and other forms */
-    --input-height-lg: 43px;
+    --input-height-lg: 43px; /* Used for listing process forms */
+    --input-height-xlg: 47px; /* Used for listing process selectors */
     --input-text-color: #2a324b;
     --input-border: #d2d7df;
     --blue-input-bg: #f5f7fc;
@@ -134,11 +135,11 @@
     --input-svg: #6a7d95;
     --handle-shadow: -1px 2px 5.5px -2px rgb(28, 33, 34, 50%);
 
+
     /*** Yes and No/cancel/delete Colours ***/    
     --homenet-yes: #4be1ab;
     --homenet-no: #fa6060;
 
-    /* speed test */
 }
 
 
