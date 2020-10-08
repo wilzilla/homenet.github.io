@@ -5,16 +5,20 @@
         color: var(--input-text-color);
     }
 
-      .round-input {
-          border-radius: 100px;
-      }
+    
+    .med-height,
+    .med-height .ant-input {
+      min-height: var(--input-height-med);
+    }
 
-      .xlarge-height {
-        min-height: var(--input-height-xlg);
-      }
-
-      .large-height {
+      .large-height,
+      .large-height .ant-input {
         min-height: var(--input-height-lg);
+      }
+
+      .xlarge-height,
+      .xlarge-height .ant-input{
+        min-height: var(--input-height-xlg);
       }
 
       .homenet-input.wht-border {
@@ -33,11 +37,18 @@
         background-color: var(--blue-input-bg);
     }
 
+    .homenet-input.ant-input,
+    .homenet-input .ant-input {
+        line-height: 43px;
+  }
+
+    
     /* ****************** */
   
     .ant-input.homenet-input,
-    .ant-input-affix-wrapper.homenet-input {
-        padding: 7.5px 11px 7.5px 25px;
+    .ant-input-affix-wrapper.homenet-input,
+    .homenet-input .ant-input {
+        padding: 0px 11px 0px 25px;
         font-size: 16px;
         transition: none;
     }
@@ -57,6 +68,7 @@
     }
     
     .homenet-input:hover,
+    .homenet-input .ant-input:hover,
     .ant-input.homenet-input:focus {
         border-color: var(--focus-border);
     }
@@ -71,6 +83,7 @@
     }
     
     .homenet-input:focus,
+    .homenet-input .ant-input:focus,
     .ant-input.homenet-input:focus,
     .ant-input-affix-wrapper-focused,
     .ant-input-affix-wrapper:focus {
@@ -78,6 +91,42 @@
         -webkit-box-shadow: var(--focus-shadow);
         box-shadow: var(--focus-shadow);
     }
+
+/* Rounder Inputs */
+
+    .round-input {
+      border-radius: var(--rounded);
+  }
+
+  .round-input .ant-input-group-addon:first-child,
+.round-input .ant-input:first-child {
+border-top-left-radius: var(--rounded);
+border-bottom-left-radius: var(--rounded);
+}
+
+.round-input .ant-input-group-addon:last-child {
+border-top-right-radius: var(--rounded);
+border-bottom-right-radius: var(--rounded);
+}
+
+.curved-input {
+      border-radius: var(--curved);
+}
+
+.curved-input .ant-input-group-addon:first-child,
+.curved-input .ant-input:first-child {
+border-top-left-radius: var(--curved);
+border-bottom-left-radius: var(--curved);
+}
+
+.curved-input .ant-input-group-addon:last-child {
+border-top-right-radius: var(--curved);
+border-bottom-right-radius: var(--curved);
+}
+
+/* -------------- */
+
+/* Textarea */
     
     .homenet-textarea {
         resize: vertical;
@@ -162,14 +211,59 @@
       transition: box-shadow 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
+  /* For inside input smaller than button */
+    .homenet-select.xlarge-height.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector {
+      height: var(--input-height-xlg);
+    }
+
     .homenet-select.large-height.ant-select-single:not(.ant-select-customize-input)
-      .ant-select-selector,.homenet-select.xlarge-height.ant-select-multiple .ant-select-selector {
+    .ant-select-selector {
+    height: var(--input-height-lg);
+  }
+
+  .homenet-select.med-height.ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector {
+      height: var(--input-height-med);
+}
+
+  /* For Multiple Selector Height */
+
+    .homenet-select.xlarge-height.ant-select-multiple .ant-select-selector {
       min-height: var(--input-height-xlg);
     }
-    .homenet-select.xlarge-height.ant-select-single:not(.ant-select-customize-input)
-      .ant-select-selector,.homenet-select.xlarge-height.ant-select-multiple .ant-select-selector {
+    .homenet-select.large-height.ant-select-multiple .ant-select-selector {
       min-height: var(--input-height-lg);
     }
+
+     /* For Selector Button Height */
+
+    .homenet-select.ant-select-single
+    .ant-select-selector
+    .ant-select-selection-item,
+  .homenet-select.ant-select-single
+    .ant-select-selector
+    .ant-select-selection-placeholder,
+  .homenet-select.ant-select-single:not(.ant-select-customize-input)
+    .ant-select-selector
+    .ant-select-selection-search-input {
+    line-height: 43px; 
+    /* For Large and Xlarge line height */
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .homenet-select.med-height.ant-select-single
+  .ant-select-selector
+  .ant-select-selection-item,
+.homenet-select.med-height.ant-select-single
+  .ant-select-selector
+  .ant-select-selection-placeholder,
+.homenet-select.med-height.ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector
+  .ant-select-selection-search-input {
+  line-height: var(--input-height-med);
+}
     
     .homenet-select.ant-select-single:not(.ant-select-customize-input)
       .ant-select-selector {
@@ -192,19 +286,6 @@
       font-family: var(--font-second);
     }
     
-    .homenet-select.ant-select-single
-      .ant-select-selector
-      .ant-select-selection-item,
-    .homenet-select.ant-select-single
-      .ant-select-selector
-      .ant-select-selection-placeholder,
-    .homenet-select.ant-select-single:not(.ant-select-customize-input)
-      .ant-select-selector
-      .ant-select-selection-search-input {
-      line-height: 43px;
-      height: 100%;
-      cursor: pointer;
-    }
     
     .homenet-select.ant-select-single .ant-select-selector .ant-select-selection-item,
     .homenet-select.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
@@ -232,6 +313,7 @@
     
     .homenet-select.ant-select-single.ant-select-show-search.ant-select-open .ant-select-arrow {
       left: 18px;
+      right: initial;
     }
     
     .homenet-select .anticon-search svg {
@@ -248,8 +330,8 @@
     }
     
     
-    .homenet-select.ant-select-multiple .ant-select-selector{
-      border-radius: 7px;
+    .homenet-select.curved.ant-select-multiple .ant-select-selector{
+      border-radius: var(--curved);
     }
     
     .homenet-select.ant-select-show-search.ant-select-multiple .ant-select-selector {
@@ -267,12 +349,7 @@
         overflow-y: scroll;
       }
 
-      .homenet-select.xlarge-height.ant-select-multiple .ant-select-selector {
-        min-height: var(--input-height-xlg);
-      }
-      .homenet-select.large-height.ant-select-multiple .ant-select-selector {
-        min-height: var(--input-height-lg);
-      }
+
 
     
     .homenet-select.ant-select-multiple .ant-select-selector::-webkit-scrollbar {
