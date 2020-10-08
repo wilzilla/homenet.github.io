@@ -1,5 +1,7 @@
 /***** THEME VARIABLES *****/
 
+/* fuck you man taje a shower ya dirty cunt */
+
 :root {
     /*** HOMENET THEME COLORS ***/
     --homenet-orange: #fd5721;
@@ -121,7 +123,7 @@
     --card-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.12);
     --light-card-shadow: -3.5px 4.5px 15.5px rgb(0, 0, 0, 0.21);
     /*** HOMENET FORM INPUTS ***/
-    --input-height-sm: 31px; /* Used for search selectors and other forms */
+    --input-height-med: 39px; /* Used for search selectors and other forms */
     --input-height-lg: 43px; /* Used for listing process forms */
     --input-height-xlg: 45px; /* Used for listing process selectors */
     --input-text-color: #2a324b;
@@ -134,6 +136,8 @@
     --input-select: #9db2e8;
     --input-svg: #6a7d95;
     --handle-shadow: -1px 2px 5.5px -2px rgb(28, 33, 34, 50%);
+    --rounded: 100px;
+    --curved: 7px;
 
 
     /*** Yes and No/cancel/delete Colours ***/    
